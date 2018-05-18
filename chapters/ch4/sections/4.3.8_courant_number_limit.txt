@@ -1,0 +1,67 @@
+************************
+**Courant Number Limit**
+************************
+
+::
+
+	Courant Number Limit = <float>
+
+-----------------------
+**Description / Usage**
+-----------------------
+
+This parameter’s roll is to control time step growth based on the well-known Courant
+number criterion. This card applies only to level-set problems. This card imposes an
+upper limit on the time step size, irrespective of the variable time integrator already in
+place.
+
+=======================  ========================================================================
+<float>                  Any floating point number to indicate the Courant number limit.
+=======================  ========================================================================
+
+------------
+**Examples**
+------------
+
+A sample card that sets the Courant number to 0.2 is:
+::
+
+	Courant Number Limit = 0.2
+
+-------------------------
+**Techinical Discussion**
+-------------------------
+
+See GT-034 for a thorough discussion.
+
+----------
+**Theory**
+----------
+
+The time step limit imposed by this limit is computed as
+
+.. figure:: /figures/004_goma_physics.png
+	:align: center
+	:width: 90%
+
+Here e is the element, he is the average size of the element, C is the specified Courant
+number, and
+
+.. figure:: /figures/005_goma_physics.png
+	:align: center
+	:width: 90%
+
+--------
+**FAQs**
+--------
+
+No FAQs.
+
+--------------
+**References**
+--------------
+
+GT-034: Tutorial on time step parameter selection for level-set problems in GOMA.
+April 1, 2006. D. R. Noble
+
+.. TODO - There are equations in the "theory" section that I am unable to put in here properly so far, so I stuck in images of them instead for the time being. 
