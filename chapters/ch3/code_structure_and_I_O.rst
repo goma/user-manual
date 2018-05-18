@@ -71,8 +71,9 @@ output and for adjusting common run-time parameters. The general command line fo
 
 goma 	[-nd] [-se fn] [-so fn] [-i fn] [-c fn] [-s fn] [-ix fn] [-ox fn] [-d int] 
 		[-n int] [-r dbl] [-a args] [-restart fn] [-h] [-ts dbl] [-te dbl] [-cb dbl] 			
-	 	[-ce dbl] [-cd dbl] [-cn int] [-cmin dbl] [-cmax dbl] [-cm int] [-ct int] 			
-	 	[-c_bc int] [-c_df int] [-c_mn int] [-c_mp int] [-bc_list] [-v]
+	 	[-ce dbl] [-cd dbl] [-cn int] [-cmin dbl] [-cmax dbl] [-cm int] [-ct int] [-c_bc int]
+
+	 	[-c_df int] [-c_mn int] [-c_mp int] [-bc_list] [-v]
 
 Here *fn* denotes “file name”, *int* denotes “integer”, *dbl* denotes “float or double” and *args* denotes
 multiple sub-options or file names. The input line is parsed into options, which are preceded by a
@@ -81,7 +82,18 @@ default, if no options are specified, is the input option (e.g. “goma input.al
 “goma -i input.alt”). The following is a list of the command-line options and their
 descriptions (two ways are shown to specify each option, an abbreviated and a verbose form).
 
-**-a** *args* **-aprepro** *args*
+=================== ================================= =========================================
+   **-a** *args*           **-aprepro** *args*        
+   													   |	Preprocess input files through the APREPRO preprocessor [with args as arguments to APREPRO] before reading into *Goma*. With this option, *Goma* performs a UNIX system() call to run APREPRO which will preprocess the input file and the material data files. The APREPRO input file is preprocessed from “input” or the filenamespecified by the -input option and written to “tmp.input”. Likewise, the material data files are preprocessed from “[material name].mat” to “tmp.[material name].mat”. After the “-a” on the command line, options for APREPRO are preceded by two hyphens (--). For example, the command line “goma -i *input.pre* -a CONSTANT1=0.2 --vd” will preprocess “input.pre” and the material data files specified in *input.pre* using APREPRO, and will pass the argument -*vd* (which prints version number and values of all variables to the screen) and CONSTANT1=0.2 (which sets the variable CONSTANT1 equal to 0.2 for preprocessing) to APREPRO; the preprocessed files will be “*tmp.input*” and “*tmp*.[material name].*mat*”.)
+=================== ================================= =========================================
+
+|
+
++------------------+--------------------------------+
+|  **-a** *args*   |       **-aprepro** *args*      |
++------------------+--------------------------------+
+
+**-a** *args*  **-aprepro** *args* 
 
 Preprocess input files through the APREPRO preprocessor [with args
 as arguments to APREPRO] before reading into *Goma*. With this
@@ -168,15 +180,36 @@ of more urgent diagnostic error and timing messages.
 Redirect the standard output from *Goma* to *fn*. This output is comprised
 of less urgent informational messages.
 
-**ENTER THE COLUMNS HERE**
+============  ===========  ===============================================================
+**-ts**         dbl        Start time of simulation.
 
-**ENTER THE COLUMNS HERE**
 
-**ENTER THE COLUMNS HERE**
+**-te**         dbl        End time of simulation
 
-**ENTER THE COLUMNS HERE**
+**-cb**         dbl        Continuation: Start value (see Gates et al., SAND2000-2465)
 
-**ENTER THE COLUMNS HERE**
+**-ce**         dbl        Continuation: Final value (see Gates et al., SAND2000-2465)
+
+**-cd**         dbl        Continuation: Path step, ds (see Gates et al., SAND2000-2465)
+
+**-cn**         dbl        Continuation: Max number of path steps (see Gates et al., 2000)
+
+**-cm**         int        Continuation: Method (see Gates et al., 2000)
+
+**-ct**         int        Continuation: Type (see Gates et al., 2000)
+
+**-c_bc**       int        Continuation: Boundary condition ID (see Gates et al., 2000)
+
+**-c_df**       int        Continuatio n: BC Data Float ID (see Gates et al., 2000)
+  
+**-c_mn**       int        Continuation: Material ID (see Gates et al., 2000)
+
+**-c_mp**       int        Continuation: Method property ID (see Gates et al, 2000)
+ 
+**-bc_list**               Continuation: Method property ID (see Gates et al, 2000)
+
+**-v**        -version     Continuation: Method property ID (see Gates et al, 2000)
+============  ===========  ===============================================================
 
 *NOTE: To get the most up-to-date list, simple issue the* “goma -h” *command at the command
 line. Also note that the continuation input parameters are explained in the Advanced
@@ -186,3 +219,5 @@ The primary purpose of the command-line options is to allow the user an easy way
 input and output of Goma or to quickly change problem specifications. Most of the options are
 overrides of information in the problem description file, so in some cases it may be easier to edit the problem description file than to use command-line arguments.
 
+.. 
+	TODO - In this document when it starts with "**-a** *args* **-aprepro** *args*" needs help being formatted. The table is smashing the word too much, so the idea is unclear. It should be 3 column to help distinguish, but the width of the column need to be figured out. 
