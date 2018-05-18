@@ -176,3 +176,23 @@ interfaces in an Eulerian fashion, making the problem inherently transient.
 .. include:: /chapters/ch4/sections/4.3.10_time_step_error.txt
 
 .. include:: /chapters/ch4/sections/4.3.11_printing_frequency.txt
+
+.. include:: /chapters/ch4/sections/4.3.12_second_frequency_time.txt
+
+.. include:: /chapters/ch4/sections/4.3.13_initial_time.txt
+
+.. include:: /chapters/ch4/sections/4.3.14_fill_subcycle.txt
+
+.. include:: /chapters/ch4/sections/4.3.15_fill_weight_function.txt
+
+.. include:: /chapters/ch4/sections/4.3.16_level_set_interface_tracking.txt
+
+.. include:: /chapters/ch4/sections/4.3.17_level_set_semi_lagrange.txt
+
+.. include:: /chapters/ch4/sections/4.3.18_level_set_subgrid_integration_depth.txt
+
+.. include:: /chapters/ch4/sections/4.3.20_level_set_subelement_integration.txt
+
+.. include:: /chapters/ch4/sections/4.3.21_level_set_adaptive_integration.txt
+
+.. include:: /chapters/ch4/sections/4.3.23_level_set_adaptive_order.txt
