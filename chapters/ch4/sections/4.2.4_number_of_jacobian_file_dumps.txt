@@ -55,7 +55,7 @@ print out in an annotated format the entries containing the largest differences.
 	Number of Jacobian File Dumps = 2
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 This capability has proven itself to be very useful in tracking changes to the Jacobian

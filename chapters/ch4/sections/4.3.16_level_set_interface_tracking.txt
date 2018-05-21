@@ -26,7 +26,7 @@ A sample input card is:
 	Level Set Interface Tracking = yes
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 No discussion.

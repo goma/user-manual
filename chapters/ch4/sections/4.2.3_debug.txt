@@ -63,7 +63,7 @@ Following is a sample card:
 	Debug = -2
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 For options -1, -2, -3, viz. numerical Jacobian checking, the user must take care when

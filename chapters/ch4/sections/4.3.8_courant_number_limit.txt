@@ -29,7 +29,7 @@ A sample card that sets the Courant number to 0.2 is:
 	Courant Number Limit = 0.2
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 See GT-034 for a thorough discussion.

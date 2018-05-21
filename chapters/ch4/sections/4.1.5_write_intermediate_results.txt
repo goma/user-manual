@@ -42,7 +42,7 @@ Following is a sample card:
 	Write Intermediate Results = no
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 This file is useful to guard against machine crashes or accidental job kills, particularly

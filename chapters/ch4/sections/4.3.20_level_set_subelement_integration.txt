@@ -32,7 +32,7 @@ This example invokes the subelement integraton
 	Level Set Subelement Integration = ON
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 * **NOTE**: Level Set Length Scale must be set to zero.

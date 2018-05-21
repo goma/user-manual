@@ -41,7 +41,7 @@ the <integer> options, and the dependent [float] option when <integer> is set to
 	Printing Frequency = 0 10.
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 No discussion.

@@ -37,7 +37,7 @@ Following is a sample card:
 	Write Initial Solution = yes
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 This option is useful to activate when help is desired in debugging the startup portion of

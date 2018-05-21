@@ -49,7 +49,7 @@ details and important tips.
 	External Pixel Field = HEIGHT Q1 tread.txt 1
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 Please consult the tutorial GT-038 before using this capability. Many user tips are

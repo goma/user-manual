@@ -26,7 +26,7 @@ exported for use in other codes.
 No Examples.
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 See Appendix 2.

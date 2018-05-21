@@ -20,7 +20,7 @@ length scale of zero. Please see usage nodes below.
 =======================  ========================================================================
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 No Technical Discussion.

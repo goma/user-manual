@@ -31,7 +31,7 @@ Following is a sample card:
 	Pressure Datum = 1.0 atm
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 The value of this variable is stored in the unified problem description structure in cgs

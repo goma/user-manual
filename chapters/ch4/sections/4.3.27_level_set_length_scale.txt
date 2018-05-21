@@ -1,0 +1,59 @@
+**************************
+**Level Set Length Scale**
+**************************
+
+::
+
+	Level Set Length Scale = <float>
+
+-----------------------
+**Description / Usage**
+-----------------------
+
+On this card, the user specifies a single char_string.
+
+=======================  ========================================================================
+<float>                  This value represents the size of the region around the zero
+                         level set function contour in which interfacial physical
+                         quantities, for example, surface tension, will be present.
+=======================  ========================================================================
+
+Stability and conservation of phase volume are dependent upon this value to a
+significant degree. Experimentation has revealed that this float value should be
+between two and three times the average linear dimension of the elements in the mesh.
+
+------------
+**Examples**
+------------
+
+A typical length scale input card looks like:
+::
+
+	Level Set Length Scale = 0.3
+
+-------------------------
+**Technical Discussion**
+-------------------------
+
+The level set method is an *embedded* interface method. That is, the location of the
+interface is not known explicitly as a geometric parameter of the problem, but rather it
+is abstracted as a level contour of a higher dimensional function. This is convenient in
+many ways, but it does mean that phenomena associated with the interface, for
+example, surface tension, must enter the problem spread over a region near the zero
+level set contour. The *Level Set Length Scale* sets the size of this region.
+
+A good example of the application of the *Level Set Length Scale* parameter is in how
+surface tension is included in problems using level set interface tracking. The following
+tensor is added to the fluid momentum equation:
+
+.. figure:: /figures/006_goma_physics.png
+	:align: center
+	:width: 90%
+
+where *F* is the level set function itself, , **n** is the unit normal to the level
+set contour, *I* is the unit tensor, σ the surface tension, and δ/ :sub:`a` (F) is a “smooth” Dirac
+function given by:
+
+.. figure:: /figures/007_goma_physics.png
+	:align: center
+	:width: 90%

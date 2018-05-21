@@ -36,7 +36,7 @@ Following is a sample card:
 	Output EXODUS II file = out.exoII
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 Although allowed, it is not advisable to make this file name the same as the file name

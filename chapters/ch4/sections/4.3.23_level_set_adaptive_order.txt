@@ -33,7 +33,7 @@ This example invokes the subelement adaptive integration order:
 	Level Set Adaptive Order = 2
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 No Technical Discussion.

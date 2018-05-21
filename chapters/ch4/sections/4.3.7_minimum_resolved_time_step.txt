@@ -34,7 +34,7 @@ A sample card that sets the maximum time step to 10.0 follows:
 	Maximum Resolved Time Step = 10.0
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 See GT-034 for a thorough discussion.

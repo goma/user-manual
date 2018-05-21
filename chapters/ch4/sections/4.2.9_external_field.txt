@@ -100,7 +100,7 @@ The fourth example:
 	External Field = JE_N_1 Q1 emfields.exoII time_dependent
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 The field variables read into *Goma* from the Example cards can be accessed in any

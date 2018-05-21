@@ -39,7 +39,7 @@ If a constant time step is desired, use a negative value:
 	delta_t = -6.e-03
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 No discussion.

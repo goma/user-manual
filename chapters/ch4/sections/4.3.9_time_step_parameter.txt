@@ -27,13 +27,13 @@ This is a sample card that sets the time integration scheme to Trapezoidal rule:
 	Time step parameter = 0.5
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 ************************* *****************************
 ************************* *****************************
 ************************* *****************************
-************************* *****************************\
+************************* *****************************
 
 ----------
 **Theory**
@@ -56,4 +56,4 @@ SAND86-1816: NACHOS 2: A Finite Element Computer Program for Incompressible
 Flow Problems - Part 2 - User’s Manual, Gartling, David K. (September, 1987).
 
 .. 
-	TODO - In the "techuinical discussion" section the information needs to be added in once I have the math software avialabit to do equations. 
+	TODO - In the "technical discussion" section the information needs to be added in once I have the math software avialabit to do equations. 

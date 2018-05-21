@@ -33,7 +33,7 @@ simulation):
 	Maximum time = 105.
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 No discussion.

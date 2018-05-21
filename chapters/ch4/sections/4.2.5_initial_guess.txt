@@ -55,7 +55,7 @@ Following is a sample card:
 	Initial Guess = read_exoII_file      First_Iteration.exoII
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 This card provides the specification of the initial vector of unknowns in a problem. In

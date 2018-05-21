@@ -33,7 +33,7 @@ The following is a sample card that sets the fill subcycling rate to 4:
 	Fill Subcycle = 4
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 No discussion.

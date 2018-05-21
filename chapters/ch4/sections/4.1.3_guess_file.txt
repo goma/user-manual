@@ -34,7 +34,7 @@ Following is a sample card:
 	GUESS file = contin.dat
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 This file is typically a copy of the *SOLN file* thus being an exact replica of it. It

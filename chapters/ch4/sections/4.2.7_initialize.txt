@@ -54,7 +54,7 @@ Following is a sample card:
 	Initialize = VELOCITY1 0 0.
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 This card provides the means to globally set (i.e., the entire problem domain) initial

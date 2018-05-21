@@ -28,7 +28,7 @@ A sample card that sets the maximum time step to 10.0 follows:
 	Maximum time step = 10.0
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 This setting is useful for advection dominated simulations, such as FILL, where a

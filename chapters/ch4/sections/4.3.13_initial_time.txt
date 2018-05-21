@@ -41,7 +41,7 @@ units, or the closest time value to 10 time units, to start from:
 	Initial Time = -10.0
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 No discussion.

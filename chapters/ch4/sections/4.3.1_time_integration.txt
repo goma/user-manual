@@ -36,7 +36,7 @@ This is a sample card for a transient simulation:
 	Time integration = transient
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 No discussion.

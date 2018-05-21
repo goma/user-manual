@@ -36,7 +36,7 @@ Following is a sample card:
 	Output Level = 1
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 This specification allows the developer a means to output specific information that

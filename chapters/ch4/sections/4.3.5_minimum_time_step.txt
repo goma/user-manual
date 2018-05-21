@@ -29,7 +29,7 @@ A sample card that sets the minimum time step to 1.e-9 follows:
 	Minimum time step = 1.e-9
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 This specification provides a graceful way for the program to terminate based on the

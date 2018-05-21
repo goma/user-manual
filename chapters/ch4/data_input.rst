@@ -196,3 +196,9 @@ interfaces in an Eulerian fashion, making the problem inherently transient.
 .. include:: /chapters/ch4/sections/4.3.21_level_set_adaptive_integration.txt
 
 .. include:: /chapters/ch4/sections/4.3.23_level_set_adaptive_order.txt
+
+.. include:: /chapters/ch4/sections/4.3.25_overlap_quadrature_points.txt
+
+.. include:: /chapters/ch4/sections/4.3.26_level_set_pspp_filtering.txt
+
+.. include:: /chapters/ch4/sections/4.3.27_level_set_length_scale.txt

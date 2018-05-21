@@ -33,7 +33,7 @@ Following is a sample card:
 	Anneal Mesh on Output = yes
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 Annealing a mesh is accomplished by adding the displacements (from the solution) to

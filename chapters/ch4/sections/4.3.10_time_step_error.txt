@@ -78,7 +78,7 @@ To use the normalized value of the norm, the following would be specified:
 This would set the maximum time step error to be 1%.
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 Note that on porous flow problems the error in step-size is computed as a composite

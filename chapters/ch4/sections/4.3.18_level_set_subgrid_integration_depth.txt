@@ -31,7 +31,7 @@ This example sets the subgrid integration depth to two:
 	Level Set Subgrid Integration Depth = 2
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 Each level of subgrid integration leads to precipitous growth in computational

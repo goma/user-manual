@@ -34,7 +34,7 @@ time units after 15 time units:
 	Second frequency time = 15. 3.
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 No discussion.

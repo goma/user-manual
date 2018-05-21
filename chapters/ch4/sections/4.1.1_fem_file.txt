@@ -31,7 +31,7 @@ Following is a sample card:
 	FEM file = in.exoII
 
 -------------------------
-**Techinical Discussion**
+**Technical Discussion**
 -------------------------
 
 This file contains the finite element discretization of the problem domain. Finite
