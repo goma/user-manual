@@ -216,13 +216,16 @@ pseudoxml:
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
 
 
+# collect new image names into $(WANTED_IMAGES)
 BAD_IMAGES=$(wildcard figures/*.PNG)
 WANTED_IMAGES=${BAD_IMAGES:.PNG=.png}
 
+# create mask for targets with *.png name
 figures/%.png: figures/%.PNG
-	@echo "renaming $< to $@"
+#	@echo "renaming $< to $@"
 	cp $< $@
 
+# dependecy that will create new files with lowercase suffix(es? suffices?)
 .PHONY: namecase
 namecase: $(WANTED_IMAGES)
-	@echo "renamed .PNG files to .png files"
+	@echo "ensured .PNG files also have .png files"
