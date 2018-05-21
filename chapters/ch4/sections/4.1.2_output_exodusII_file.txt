@@ -60,5 +60,4 @@ No FAQs.
 
 The EXODUS II format is documented in:
 
-* EXODUS II: A Finite Element Data Model, Schoof, L. A. and V. R. Yarberry,
-SAND92-2137, Sandia National Laboratories, Albuquerque, NM.
+* EXODUS II: A Finite Element Data Model, Schoof, L. A. and V. R. Yarberry, SAND92-2137, Sandia National Laboratories, Albuquerque, NM.
