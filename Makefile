@@ -215,7 +215,14 @@ pseudoxml:
 	@echo
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
 
+
+BAD_IMAGES=$(wildcard figures/*.PNG)
+WANTED_IMAGES=${BAD_IMAGES:.PNG=.png}
+
+figures/%.png: figures/%.PNG
+	@echo "renaming $< to $@"
+	cp $< $@
+
 .PHONY: namecase
-namecase:
-	rename 's/\.PNG$\/\.png/' figures/*.PNG
+namecase: $(WANTED_IMAGES)
 	@echo "renamed .PNG files to .png files"
