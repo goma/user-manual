@@ -42,7 +42,7 @@ If a constant time step is desired, use a negative value:
 **Technical Discussion**
 -------------------------
 
-No discussion.
+No Discussion.
 
 ----------
 **Theory**

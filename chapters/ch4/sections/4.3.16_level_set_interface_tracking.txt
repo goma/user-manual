@@ -29,7 +29,7 @@ A sample input card is:
 **Technical Discussion**
 -------------------------
 
-No discussion.
+No Discussion.
 
 ----------
 **Theory**

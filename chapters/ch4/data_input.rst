@@ -202,3 +202,14 @@ interfaces in an Eulerian fashion, making the problem inherently transient.
 .. include:: /chapters/ch4/sections/4.3.26_level_set_pspp_filtering.txt
 
 .. include:: /chapters/ch4/sections/4.3.27_level_set_length_scale.txt
+
+.. include:: /chapters/ch4/sections/4.3.28_level_set_initialize.txt
+
+.. include:: /chapters/ch4/sections/4.3.30_level_set_initialization_method.txt
+
+.. include:: /chapters/ch4/sections/4.3.31_level_set_periodic_planes.txt
+
+.. include:: /chapters/ch4/sections/4.3.32_level_set_control_width.txt
+
+.. include:: /chapters/ch4/sections/4.3.33_level_set_timestep_control.txt
+

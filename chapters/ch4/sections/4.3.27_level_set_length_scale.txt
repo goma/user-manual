@@ -57,3 +57,31 @@ function given by:
 .. figure:: /figures/007_goma_physics.png
 	:align: center
 	:width: 90%
+
+In this example, the parameter α would be equal to one-half the *Level Set Length Scale*
+value specified on this card.
+
+----------
+**Theory**
+----------
+
+No Theory.
+
+--------
+**FAQs**
+--------
+
+How should the Length Scale value be chosen? Trial and error is often the best method
+to determine an appropriate value for this parameter. However, experience has shown
+that values for Level Set Length Scale that are between two and three times the average
+element linear dimension seem to work best.
+
+--------------
+**References**
+--------------
+
+GT-020.1: Tutorial on Level Set Interface Tracking in GOMA, February 27, 2001, T.A.
+Baer
+
+..
+	 TODO - There are two equation pictures that I put in for someone to write. There is also a equation in line 53 between the comas that needs to be inserted. 

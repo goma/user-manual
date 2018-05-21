@@ -44,7 +44,7 @@ the <integer> options, and the dependent [float] option when <integer> is set to
 **Technical Discussion**
 -------------------------
 
-No discussion.
+No Discussion.
 
 ----------
 **Theory**

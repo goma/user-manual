@@ -44,7 +44,7 @@ units, or the closest time value to 10 time units, to start from:
 **Technical Discussion**
 -------------------------
 
-No discussion.
+No Discussion.
 
 ----------
 **Theory**

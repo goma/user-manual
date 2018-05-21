@@ -39,7 +39,7 @@ This is a sample card for a transient simulation:
 **Technical Discussion**
 -------------------------
 
-No discussion.
+No Discussion.
 
 ----------
 **Theory**

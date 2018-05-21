@@ -37,7 +37,7 @@ time units after 15 time units:
 **Technical Discussion**
 -------------------------
 
-No discussion.
+No Discussion.
 
 ----------
 **Theory**
