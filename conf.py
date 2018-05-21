@@ -32,9 +32,11 @@ import shlex
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.mathjax',
     'sphinx.ext.pngmath',
 ]
+
+# removed from extensions for compaitibility
+#     'sphinx.ext.mathjax',
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
