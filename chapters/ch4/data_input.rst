@@ -213,3 +213,14 @@ interfaces in an Eulerian fashion, making the problem inherently transient.
 
 .. include:: /chapters/ch4/sections/4.3.33_level_set_timestep_control.txt
 
+.. include:: /chapters/ch4/sections/4.3.34_level_set_renormalization_tolerance.txt
+
+.. include:: /chapters/ch4/sections/4.3.35_level_set_renormalization_method.txt
+
+.. include:: /chapters/ch4/sections/4.3.36_level_set_renormalization_frequency.txt
+
+.. include:: /chapters/ch4/sections/4.3.37_restart_time_integration_after_renormalization.txt
+
+.. include:: /chapters/ch4/sections/4.3.38_level_set_reconstruction_method.txt
+
+.. include:: /chapters/ch4/sections/4.3.39_level_set_contact_extension.txt
