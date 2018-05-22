@@ -1,0 +1,69 @@
+*****************************
+**Matrix Residual Norm Type**
+*****************************
+
+::
+
+	Matrix residual norm type = {char_string}
+
+-----------------------
+**Description / Usage**
+-----------------------
+
+This optional card selects the type of norm that is used to measure the size of the
+residuals occurring during the solution of the linear matrix system *r(z) = b - Az*, where
+*z* is an approximation to the solution x of the linear matrix problem *Ax = b*. The types
+of norms used by the linear solver are controlled by values of {char_string}:
+
+ .. figure:: /figures/012_goma_physics.png
+			:align: center
+			:width: 90%
+
+The (0) superscript for the r0 specification indicates the initial value of the residual.
+
+If the *Matrix residual norm type* card is omitted, the default is **r0.**
+
+------------
+**Examples**
+------------
+
+Following is a sample card:
+::
+
+	Matrix residual norm type = r0
+
+-------------------------
+**Technical Discussion**
+-------------------------
+
+For direct factorization linear solution algorithms, the norm should become very small
+in the single iteration that is performed. This card is more pertinent when an iterative
+solution algorithm has been specified.
+
+Note the distinction between the residual for the overall global Newton iteration and
+use of the term residual to describe an aspect of the linear solver iteration. For the linear
+matrix systems, a residual *r* may be computed for any guess of the solution to *Ax = b* as
+*r(z) = b - Az*. If *z = x*, the actual solution, then the residual is zero; otherwise, it is 
+some
+vector with a nonzero norm.
+
+----------
+**Theory**
+----------
+
+No Theory.
+
+--------
+**FAQs**
+--------
+
+No FAQs.
+
+--------------
+**References**
+--------------
+
+No References.
+
+.. 
+	TODO - Equation/ Table needs to be added with using the math function I believe. This would be in lines 18-20 where the picture lies right now. 

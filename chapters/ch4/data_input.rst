@@ -224,3 +224,91 @@ interfaces in an Eulerian fashion, making the problem inherently transient.
 .. include:: /chapters/ch4/sections/4.3.38_level_set_reconstruction_method.txt
 
 .. include:: /chapters/ch4/sections/4.3.39_level_set_contact_extension.txt
+
+.. include:: /chapters/ch4/sections/4.3.40_level_set_slave_surface.txt
+
+.. include:: /chapters/ch4/sections/4.3.42_ignore_level_set_dependencies.txt
+
+.. include:: /chapters/ch4/sections/4.3.43_force_initial_level_set_renormalization.txt
+
+.. include:: /chapters/ch4/sections/4.3.44_number_of_phase_functions.txt
+
+.. include:: /chapters/ch4/sections/4.3.45_phase_function_slave_surface.txt
+
+.. include:: /chapters/ch4/sections/4.3.46_phase_function_initialization_method.txt
+
+.. include:: /chapters/ch4/sections/4.3.47_phase_function_renormalization_tolerance.txt
+
+.. include:: /chapters/ch4/sections/4.3.49_phase_function_renormalization_method.txt
+
+**Continuation Specifications**
+###############################
+
+This section of input records is used to direct all automatic continuation procedures. The entire
+section is completely optional. Basically, automatic continuation can be accomplished in steady
+state simulations (see *Time Integration* card) through any one or combination of parameters.
+These parameters can be any one or combination of the input floats required on the boundary
+condition cards (see Section 4.10) or material property cards (see Chapter 5). The cards in this
+section are used to specify the parameters that will be marched automatically, the method of
+marching (e.g. zero-order, first-order, multiparameter first-order, etc.), the limits of parameter
+values, and other sundry options. Much of this capability can now be managed from the LOCA
+library package (Library of Continuation Algorithms - Salinger et al. 2002).
+
+Input specifications for this section of input records is discussed in a separate, comprehensive
+manual (Gates, et. al., 2000); an update to this manual has been completed during the summer of
+2006 (Labreche, et. al., 2006).
+
+**Hunting Specifications**
+##########################
+
+The cards in this section are used to direct multiparameter continuation with the hunting
+technique, which is a linear, multiparameter capability. The user is referred to discussions for the
+*Continuation Specifications* for the important details of Continuation. As is true for the
+*Continuation Specifications*, this entire section is completely optional. *Hunting Specification*
+cards are used in conjunction with *Continuation Specifications.*
+
+Input specifications for this section of input records is discussed in a separate, comprehensive
+manual (Gates, et. al., 2000); an update to this manual has been completed during the summer of
+2006 (Labreche, et. al., 2006).
+
+**Augmenting Conditions Specifications**
+########################################
+
+Input records in this section are used to direct the solution of augmenting constraints on the base
+system of differential equations. Addition of these conditions may require some programming in
+the file user_ac.c. This entire section of the input deck is optional.
+
+Input specifications for this section of input records is discussed in a separate, comprehensive
+manual (Gates, et. al., 2000); an update to this manual has been completed during the summer of
+2006 (Labreche, et. al., 2006).
+
+**Solver Specifications**
+#########################
+
+This required section directs the nonlinear iteration strategy with associated parameters (e.g.,
+Newton’s method options), matrix solution strategy and parameters, and other sundry options and
+toggles for the pressure stabilization approach and linear stability analysis capability. With regard
+to the parameters associated with matrix solution methods, it is important to understand that there
+are two major classes of solvers - direct and iterative solvers. Direct solvers are the most robust,
+but can be computationally impractical for some larger systems. Iterative solvers and associated
+preconditioners are the only practical options for large-scale problems (viz., very large twodimensional
+problems and virtually all three-dimensional problems). Choosing the solver settings
+for good convergence of iterative matrix solvers can be an artful task for Navier-Stokes problems
+and other poorly conditioned systems. It is recommended that the user consult the comprehensive
+report by Schunk, et al. (2002) for an overview and further usage tips.
+
+.. include:: /chapters/ch4/sections/4.7.1_solution_algorithm.txt
+
+.. include:: /chapters/ch4/sections/4.7.2_matrix_storage_format.txt
+
+.. include:: /chapters/ch4/sections/4.7.3_preconditioner.txt
+
+.. include:: /chapters/ch4/sections/4.7.4_matrix_subdomain_solver.txt
+
+.. include:: /chapters/ch4/sections/4.7.5_matrix_scaling.txt
+
+.. include:: /chapters/ch4/sections/4.7.6_matrix_residual_norm_type.txt
+
+.. include:: /chapters/ch4/sections/4.7.7_matrix_output_type.txt
+
+.. include:: /chapters/ch4/sections/4.7.8_matrix_factorization_reuse.txt

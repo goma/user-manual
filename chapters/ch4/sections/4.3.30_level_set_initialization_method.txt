@@ -118,7 +118,7 @@ Two examples of initialization methods are provide below:
 ::
 
 	Level Set Initialization Method = Surfaces 3
-		SURF = PLANE -1. 0. 0. -3.
+            SURF = PLANE -1. 0. 0. -3.
 		SURF = CIRCLE -2 0 1
 		SURF = CIRCLE -3 0 0.5
 
