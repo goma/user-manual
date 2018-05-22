@@ -312,3 +312,49 @@ report by Schunk, et al. (2002) for an overview and further usage tips.
 .. include:: /chapters/ch4/sections/4.7.7_matrix_output_type.txt
 
 .. include:: /chapters/ch4/sections/4.7.8_matrix_factorization_reuse.txt
+
+.. include:: /chapters/ch4/sections/4.7.9_matrix_graph_fillin.txt
+
+.. include:: /chapters/ch4/sections/4.7.10_matrix_factorization_overlap.txt
+
+.. include:: /chapters/ch4/sections/4.7.11_matrix_overlap_type.txt
+
+.. include:: /chapters/ch4/sections/4.7.12_matrix_auxiliary_vector.txt
+
+.. include:: /chapters/ch4/sections/4.7.13_matrix_drop_tolerance.txt
+
+.. include:: /chapters/ch4/sections/4.7.14_matrix_polynomial_order.txt
+
+.. include:: /chapters/ch4/sections/4.7.15_matrix_reorder.txt
+
+.. include:: /chapters/ch4/sections/4.7.16_matrix_factorization_save.txt
+
+.. include:: /chapters/ch4/sections/4.7.17_matrix_ilut_fill_factor.txt
+
+.. include:: /chapters/ch4/sections/4.7.18_matrix_rilu_relax_factor.txt
+
+.. include:: /chapters/ch4/sections/4.7.19_matrix_bilu_threshold.txt
+
+.. include:: /chapters/ch4/sections/4.7.20_matrix_relative_threshold.txt
+
+.. include:: /chapters/ch4/sections/4.7.21_matrix_absolute_threshold.txt
+
+.. include:: /chapters/ch4/sections/4.7.22_size_of_krylov_subspace.txt
+
+.. include:: /chapters/ch4/sections/4.7.23_orthogonalization.txt
+
+.. include:: /chapters/ch4/sections/4.7.24_maximum_linear_solve_iterations.txt
+
+.. include:: /chapters/ch4/sections/4.7.25_number_of_newton_iterations.txt
+
+.. include:: /chapters/ch4/sections/4.7.26_modified_newton_tolerance.txt
+
+.. include:: /chapters/ch4/sections/4.7.27_jacobian_reform_time_stride.txt
+
+.. include:: /chapters/ch4/sections/4.7.28_newton_correction_factor.txt
+
+.. include:: /chapters/ch4/sections/4.7.29_normalized_residual_tolerance.txt
+
+.. include:: /chapters/ch4/sections/4.7.30_normalized_correction_tolerance.txt
+
+.. include:: /chapters/ch4/sections/4.7.31_residual_ratio_tolerance.txt
