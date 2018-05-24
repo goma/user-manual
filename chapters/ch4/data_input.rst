@@ -358,3 +358,5 @@ report by Schunk, et al. (2002) for an overview and further usage tips.
 .. include:: /chapters/ch4/sections/4.7.30_normalized_correction_tolerance.txt
 
 .. include:: /chapters/ch4/sections/4.7.31_residual_ratio_tolerance.txt
+
+.. include:: /chapters/ch4/sections/4.7.32_pressure_stabilization.txt
