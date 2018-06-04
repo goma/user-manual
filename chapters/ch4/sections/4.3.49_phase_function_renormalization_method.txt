@@ -95,4 +95,4 @@ No FAQs.
 No Reference.
 
 .. 
-	TODO - An equation needs to be inserted in lines 66-68. The other equation picture was not cooperating, so this euquation would need to be placed in the table after it says "function field:".
+	TODO - An equation needs to be inserted in lines 66-68. The other equation picture was not cooperating, so this euquation would need to be placed in the table after it says "function field:" in line 22.

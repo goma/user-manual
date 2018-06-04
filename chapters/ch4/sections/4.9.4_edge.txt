@@ -127,4 +127,3 @@ No FAQs.
 
 GT-021.2: Common Geometry Model (CGM) Usage for GOMA, August 20, 2002, M.
 M. Hopkins
-

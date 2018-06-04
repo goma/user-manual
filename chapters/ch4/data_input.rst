@@ -361,7 +361,6 @@ report by Schunk, et al. (2002) for an overview and further usage tips.
 
 .. include:: /chapters/ch4/sections/4.7.32_pressure_stabilization.txt
 
-
 **Eigensolver Specifications**
 ##############################
 
@@ -627,3 +626,4 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
+
