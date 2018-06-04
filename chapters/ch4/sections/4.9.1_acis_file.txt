@@ -1,0 +1,64 @@
+*************
+**ACIS File**
+*************
+
+::
+
+	ACIS file = <file_name>
+
+-----------------------
+**Description / Usage**
+-----------------------
+
+This optional card allows the user to read in an ACIS .sat file containing solid model
+geometry. The valid input form is:
+
+=======================  =============================================================
+<file_name>              **satfile,** the name of the ACIS file (usually with a .sat
+                         extension) containing predefined geometry.
+=======================  =============================================================
+
+There is no default <file_name>.
+
+------------
+**Examples**
+------------
+
+Here is a sample card:
+::
+
+	ACIS file = my_geometry.sat
+
+-------------------------
+**Technical Discussion**
+-------------------------
+
+This file contains ACIS geometry. It is usually created from within Cubit via an
+
+::
+
+	export acis **“satfile”** ascii
+
+command. Any geometry within the current Cubit scope is then exported to **satfile.** If
+geometry has been named then those user-defined names are also exported. The
+geometry defined within **satfile** is then available for boundary conditions and further
+geometry constructions within the *Goma* input file.
+
+----------
+**Theory**
+----------
+
+No Theory.
+
+--------
+**FAQs**
+--------
+
+No FAQs.
+
+--------------
+**References**
+--------------
+
+GT-021.2: Common Geometry Model (CGM) Usage for GOMA, August 20, 2002, M.
+M. Hopkins

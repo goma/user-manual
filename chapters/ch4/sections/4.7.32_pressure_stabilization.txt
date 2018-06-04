@@ -1,6 +1,6 @@
-****************************
+**************************
 **Pressure Stabilization**
-****************************
+**************************
 
 ::
 
@@ -13,17 +13,21 @@
 This optional card indicates whether or not pressure stabilization should be used. Valid
 options are
 
-=================== ======================================================================
-**yes**             Use the Galerkin Least square pressure stabilization method
-                    developed by Hughes, et al. (1986).
-**local**           Use the Galerkin Least square pressure stabilization method
-                    with local scaling.
-**pspp**            Use polynomial stabilized pressure projection stabilization
-                    method developed by Dohrmann and Bochev (2004).
-**pspp_e**          Use polynomial stabilized pressure projection method with
-                    upgrade for nonuniform/graded meshes (recommended).
-**no**              Do not use any pressure stabilization.
-=================== ======================================================================
+
+=======================  =======================================================================
+**yes**                  Use the Galerkin Least square pressure stabilization method
+                         developed by Hughes, et. al. (1986).
+**local**                Use the Galerkin Least square pressure stabilization method
+                         with local scaling.
+**pspp**                 Use polynomial stabilized pressure projection stabilization
+                         method developed by Dohrmann and Bochev (2004). Please
+                         see Level Set PSPP filtering card if using with
+                         the level-set front tracking technique.
+**pspp_e**               Use polynomial stabilized pressure projection method with
+                         upgrade for nonuniform/graded meshes (recommended)
+**no**                   Do not use any pressure stabilization.
+=======================  =======================================================================
+
 
 The amount of pressure stabilization to use is specified with the *Pressure Stabilization
 Scaling* card.
