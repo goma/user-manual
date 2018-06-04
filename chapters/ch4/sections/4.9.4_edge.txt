@@ -1,0 +1,130 @@
+********
+**EDGE**
+********
+
+::
+
+	EDGE = <edge_name> {char_list} <input_list>
+
+-----------------------
+**Description / Usage**
+-----------------------
+
+This optional card allows the user to create edges (curves). There are multiple formats,
+each of which has variable input requirements, each of which is described below.
+
+The first parameter supplies a name
+
+::
+
+	edge_name      user-supplied name for the new edge.
+
+while the {char_list} parameter, which has four options, identifies the geometric nature
+of the edge. The four options have unique inputs (<input_list>) parameterizing its
+curve; these are listed below for each {char_list} option:
+
+================= ======================================================================
+**STRAIGHT**      vertex1 - an endpoint (see *VERTEX*) of the new edge.
+
+                  vertex2 - an endpoint (see *VERTEX*) of the new edge.
+**ELLIPSE**       vertex1 - an endpoint (see *VERTEX*) of the new edge.
+
+                  vertex2 - an endpoint (see *VERTEX*) of the new edge.
+
+                  x       - x-coordinate of control point (see Technical Discussion).
+
+                  y       - y-coordinate of control point (see Technical Discussion).
+
+                  z       - z-coordinate of control point (see Technical Discussion).
+
+                  orientation - a direction for sweeping the curve (see Technical 
+                                Discussion) **FORWARD** & **REVERSED**
+**PARABOLA**      vertex1 - an endpoint (see *VERTEX*) of the new edge.
+
+                  vertex2 - an endpoint (see *VERTEX*) of the new edge.
+
+                  x       - x-coordinate of control point (see Technical Discussion).
+
+                  y       - y-coordinate of control point (see Technical Discussion).
+
+                  z       - z-coordinate of control point (see Technical Discussion).
+
+                  orientation - a direction for sweeping the curve (see Technical 
+                                Discussion) **FORWARD** & **REVERSED**
+**COMPOSITE**     <integer> N, the number of curves to be composited together.
+
+                  edge1, ..., edgeN names of the N edges to be composited together.
+================= ======================================================================
+
+If the *Geometry Specifications* section is present, then the *END OF EDGE* card is
+required, even if there are no *EDGE* cards.
+
+There is no default value for any argument.
+
+------------
+**Examples**
+------------
+
+Here is a sample card of each edge type:
+::
+
+	EDGE = edge1 STRAIGHT v1 v2
+
+::
+
+	EDGE = edge2 ELLIPSE v2 v3 1.0 1.1 0.0 FORWARD
+
+::
+
+	EDGE = edge3 PARABOLA v3 v4 -2.1 0.3 0.0 REVERSED
+
+::
+
+	EDGE = big_edge COMPOSITE 3 edge1 edge2 edge3
+
+where the vertices v1 through v4 must already exist.
+
+-------------------------
+**Technical Discussion**
+-------------------------
+
+In its simplest form, the *EDGE* command creates a STRAIGHT segment between the
+two endpoints. The vertices required in the STRAIGHT, ELLIPSE, and PARABOLA
+forms, as well as the edges required in the COMPOPSITE form must already exist.
+They can be created via other Goma input *VERTEX* and *EDGE* commands, or they can
+be read from an ACIS .sat file via the *ACIS file* command.
+
+In the ELLIPSE form, the EDGE command creates a curve from **vertex1** to **vertex2**
+along an ellipse with one of the foci equal to the control point (x,y,z). This is often
+used to create circular arcs, where (x,y,z) is in fact the center of the circle that **vertex1**
+and **vertex2** lie upon. The **orientation** parameter determines if the short arc is selected
+(FORWARD) or the long one (REVERSED).
+
+The PARABOLA form is similar to the ELLIPSE form except that the control vertex
+(x,y,z) is the focus of the parabola.
+
+The COMPOSITE form will create a new curve that is simply the union of the **N** curves
+**edge1**, **edge2**, ..., **edgeN**.
+
+Note that extensive use of the EDGE command has only occured in 2D; 3D capability
+is not guaranteed.
+
+----------
+**Theory**
+----------
+
+No Theory.
+
+--------
+**FAQs**
+--------
+
+No FAQs.
+
+--------------
+**References**
+--------------
+
+GT-021.2: Common Geometry Model (CGM) Usage for GOMA, August 20, 2002, M.
+M. Hopkins
+

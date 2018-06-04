@@ -1,0 +1,47 @@
+***************
+**END OF EDGE**
+***************
+
+::
+
+	END OF EDGE
+
+-----------------------
+**Description / Usage**
+-----------------------
+
+This card is required if the *Geometry Specifications* section is present. It indicates the
+end of the list of *EDGE* commands. It is required even if there are no *EDGE* cards.
+
+------------
+**Examples**
+------------
+
+Here is the card:
+::
+
+	END OF EDGE
+
+-------------------------
+**Technical Discussion**
+-------------------------
+
+No Discussion.
+
+----------
+**Theory**
+----------
+
+No Theory.
+
+--------
+**FAQs**
+--------
+
+No FAQs.
+
+--------------
+**References**
+--------------
+
+No References.

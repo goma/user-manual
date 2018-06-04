@@ -360,3 +360,146 @@ report by Schunk, et al. (2002) for an overview and further usage tips.
 .. include:: /chapters/ch4/sections/4.7.31_residual_ratio_tolerance.txt
 
 .. include:: /chapters/ch4/sections/4.7.32_pressure_stabilization.txt
+
+
+**Eigensolver Specifications**
+##############################
+
+The ability to solve for the stability of a base flow is a very powerful tool. Often, the important
+characteristics of a flow can be summarized in the answer to the question “is the flow stable?”.
+Although the following cards are in active use at the time of this writing, sweeping changes are
+coming to the eigensolver sections of *Goma*. In particular, the old code (called “eggroll”) is being
+replaced with newer methods (in the ARPACK library), as well as being coupled to the
+continuation and tracking algorithms (in the LOCA library).
+
+Input specifications for this section of input records is discussed in a separate, comprehensive
+manual (Gates, et. al., 2000); an update to this manual will be completed during the summer of
+2006 (Labreche, et. al., 2006). Either of these manuals contains a thorough discussion of how to
+successfully compute the stability and interesting modes of an underlying base flow.
+
+**Geometry Specifications**
+###########################
+
+Geometry commands allow the user to import geometry from a pre-existing file in the ACIS
+format (files with the “.sat” extension) and to generate geometry through primitive commands
+within the *Goma* input file. This geometry is usually of an analytic nature which helps
+convergence. It is used with the *MESH_CONSTRAINT* boundary condition (and soon to initialize
+a level set). The main advantage in using geometry is one of practicality - once the geometry is
+created to generate a mesh within CUBIT, that same geometry can be exported and used within
+*Goma* without a laborious reconstruction of the geometry through other BC commands. At the
+time of this writing, only 2D geometry had been verified.
+
+The geometry capability is only available when the CGM library is linked in. A tutorial has been
+written to assist in defining input at the present time. The user is referred to that document at the present time (GT-021.2, Common Geometry Model (CGM) Usage for GOMA, August 22, 2002,
+M. M. Hopkins).
+
+.. include:: /chapters/ch4/sections/4.9.4_edge.txt
+
+.. include:: /chapters/ch4/sections/4.9.5_end_of_edge.txt
+
+.. include:: /chapters/ch4/sections/4.9.6_face.txt
+
+.. include:: /chapters/ch4/sections/4.9.7_end_of_face.txt
+
+.. include:: /chapters/ch4/sections/4.9.8_end_of_body.txt
+
+.. include:: /chapters/ch4/sections/4.9.9_exported_geometry_file.txt
+
+**Boundary Condition Specifications**
+#####################################
+
+The broad range of mechanics capabilities that has been built into *Goma* necessitates an equally
+broad range of boundary conditions (BCs) to provide all boundary condition information that the
+differential equations specified in the *Problem Description* section will require for a well-posed
+system. The BCs for *Goma* have been categorized according to the differential equation set to
+which they apply. First are listed those boundary conditions which can be applied to any equation
+followed by BCs for mesh, real solid, fluid momentum, energy, mass, continuity, porous, stress,
+gradient, shear rate, fill and potential equations. Each boundary condition (BC) card follows a
+general syntax as follows:
+
+::
+
+	BC = <bc_name> <bc_type> <bc_id> {integer_list}/{float_list}
+
+The <bc_name> identifies the desired control of the physics/mechanics at the boundary as
+identified by the <bc_type> and its associated <bc_id>. The <bc_type> is either nodeset, NS
+(NODEBC or POINBC in EXODUS II) or sideset, SS (ELEMBC in EXODUS II) depending on
+the <bc_name> and can be located in the problem domain by means of its flag or <bc_id> number
+(set in EXODUS II). The {integer_list} and/or {float_list} specify parameters of the boundary
+condition. Within each equation category are Dirichlet nodeset boundary conditions (i.e. T, U, V,
+W, DX, DY, DZ, Y, S11, S12, S13, S22, S23, S33, G11, G12, G13, G21, G22, G23, G31, G32,
+G33) that can be handled (i.e., processed) in two ways in *Goma*. The first way is application of the
+BC as a “hard-set” on the primitive variable, and the second as a residual equation; differences in
+these methods are discussed below. The cards belonging to this category have the following
+general syntax:
+
+::
+
+	BC = <bc_name> <bc_type> <bc_id> <float1> <float2>
+
+where <float2> flags whether a hard-set or residual equation is to be used.
+
+Prior to introducing individual boundary conditions and their parameters, some general comments
+regarding the first category of BCs, boundary condition types and the resolution of boundary
+condition conflicts will be made.
+
+**Any Equation Boundary Conditions** - There are several boundary condition types that are
+not necessarily best binned with a specific equation type. The FIX, GD_* and TABLE boundary
+condition types are general and can be applied to any equation type. A general description of these
+types (called Category 1 conditions) is given below.
+
+**Boundary Condition Types** - Beyond the generalized boundary conditions types and the Dirichlet
+types, *Goma* has strong-collocated, weak form, and several others that are intrinsic to the
+Galerkin finite element method; these are applied in a variety of ways. Because of this, boundary
+conditions at a given node might interact in ways that produce unexpected results. For this reason,
+it is important to understand the differing methods of application that occur in *Goma* and how
+each affects the other. In addition, by cleverly mixing boundary conditions, the analyst is often
+able to achieve a desired result, but only if the nature of each boundary condition is understood.
+Toward this end, the user will find a *special label* assigned to each boundary condition, which,
+with the ensuing explanation below, will provide each user with an understanding of how that BC
+is applied within *Goma*.
+
+On each boundary condition card, the boundary condition type appears in the **Description/Usage**
+section. These are the following boundary condition types that will be found here:
+
+* **DIRICHLET (DC)**
+* **STRONGLY INTEGRATED (SIC)**
+* **STRONGLY INTEGRATED EDGE (SIC_EDGE)**
+* **COLLOCATED (PCC)**
+* **COLLOCATED EDGE (PCC_EDGE)**
+* **WEAKLY INTEGRATED (WIC)**
+
+The following sections discuss the method of application of each boundary condition type along
+with the implications of using each.
+
+**DIRICHLET (DC):**
+
+In the hierarchy of boundary conditions, Dirichlet conditions are at the top.
+Nothing trumps a Dirichlet conditions. A Dirichlet condition is applied by
+discarding all mechanics information related to a particular field variable that has
+been accumulated at a given node and replacing it with a direct assignment of the
+nodal unknown of that field with a fixed *a priori* value. Algorithmically, applying
+a Dirichlet condition on a degree of freedom at a node involves zeroing the entire equation row, inserting a unity value on the diagonal element of the Jacobian
+matrix, inserting a zero value at the appropriate place in the residual vector, and
+inserting the known boundary condition value at the appropriate place in the
+solution vector. This is referred to in many places as the “*hard set*” method. An
+alternate formulation imposes the boundary condition by replacing the mechanics
+equation at a node with the simple *residual equation*, EQUATION , where φ and φ0
+are the nodal unknown field and its assigned value, respectively.The sensitivities
+of this residual equation are entered into the Jacobian appropriately and solution
+takes place normally.
+
+Dirichlet conditions are strictly node-based. Neighbor nodes and shared elements
+have no influence on them. For this reason, all Dirichlet conditions are applied to
+nodesets. Furthermore, Dirichlet conditions are assigned the highest precedence in
+terms of boundary conditions. If a Dirichlet condition appears at a node, it will be
+applied. Any other boundary condition that could be applied will be discarded (at
+that node).
+
+Dirichlet conditions are limited, however in that they can only affect the nodal
+value of a degree of freedom. Derived quantities cannot be set with a Dirichlet
+condition. You will never see a Dirichlet condition being applied to a heat flux for
+example.
+
+
+.. TODO - 

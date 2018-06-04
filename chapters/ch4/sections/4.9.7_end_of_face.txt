@@ -1,0 +1,48 @@
+***************
+**END OF FACE**
+***************
+
+::
+
+	END OF FACE
+
+-----------------------
+**Description / Usage**
+-----------------------
+
+This card is required if the *Geometry Specifications* section is present. Although there
+is currently no legal *FACE* command, it is expected to exist in the future and this card
+will be required at that time.
+
+------------
+**Examples**
+------------
+
+Here is the card:
+::
+
+	END OF FACE
+
+-------------------------
+**Technical Discussion**
+-------------------------
+
+No Discussion.
+
+----------
+**Theory**
+----------
+
+No Theory.
+
+--------
+**FAQs**
+--------
+
+No FAQs.
+
+--------------
+**References**
+--------------
+
+No References.

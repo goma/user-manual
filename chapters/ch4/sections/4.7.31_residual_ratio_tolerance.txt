@@ -67,4 +67,4 @@ No FAQs.
 
 No References.
 
-.. TODO - on line 43 the sub script is nly working on the rn not the r0.
+.. TODO - on line 43 the sub script is only working on the rn not the r0.
