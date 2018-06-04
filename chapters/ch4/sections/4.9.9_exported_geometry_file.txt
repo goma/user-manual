@@ -13,9 +13,9 @@
 This optional card specifies a filename into which the user-defined geometry is
 exported. Valid card syntax is given by:
 
-================== ============================================================
+================== =================================================================
 <file_name>        **satfile**, name of the export file for user-defined geometry.
-================== ============================================================
+================== =================================================================
 
 There is no default value for satfile.
 
