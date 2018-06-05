@@ -22,11 +22,12 @@ during the course of the computation.
                           phase function field: 
 
                           *EQUATION*
+
 			                    The finite element interpolating functions make this an easy task
-			                    for *Goma*. For each mesh node, *k*, a minimum distance to this
-                          set of points is determined, D\ :sub:`k` and the value of phase
-                          function at that node is replaced by D\ :sub:`k` multiplied 
-                          by the original phase function sign at that node. This method is
+			                    for *Goma*. For each mesh node, *k*, a minimum distance to this set  
+                          of points is determined, D\ :sub:`k` and the value of phase
+                          function at that node is replaced by D\ :sub:`k` multiplied by the
+                          original phase function sign at that node. This method is
                           fast and robust and, given sufficiently refined meshes and
                           high order (Q2) interpolation of the phase function fields,
                           reasonably accurate. Howeverr, for lower order

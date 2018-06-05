@@ -361,6 +361,14 @@ report by Schunk, et al. (2002) for an overview and further usage tips.
 
 .. include:: /chapters/ch4/sections/4.7.32_pressure_stabilization.txt
 
+.. include:: /chapters/ch4/sections/4.7.33_pressure_stabilization_scaling.txt
+
+.. include:: /chapters/ch4/sections/4.7.34_linear_stability.txt
+
+.. include:: /chapters/ch4/sections/4.7.35_filter_concentration.txt
+
+.. include:: /chapters/ch4/sections/4.7.36_disable_viscosity_sensitivities.txt
+
 **Eigensolver Specifications**
 ##############################
 
@@ -391,6 +399,12 @@ time of this writing, only 2D geometry had been verified.
 The geometry capability is only available when the CGM library is linked in. A tutorial has been
 written to assist in defining input at the present time. The user is referred to that document at the present time (GT-021.2, Common Geometry Model (CGM) Usage for GOMA, August 22, 2002,
 M. M. Hopkins).
+
+.. include:: /chapters/ch4/sections/4.9.1_acis_file.txt
+
+.. include:: /chapters/ch4/sections/4.9.2_vertex.txt
+
+.. include:: /chapters/ch4/sections/4.9.3_end_of_vertex.txt
 
 .. include:: /chapters/ch4/sections/4.9.4_edge.txt
 
@@ -625,6 +639,8 @@ some sections of interspersed comments accompany each boundary condition categor
 .. include:: /chapters/ch4/sections/4.10.4_gd_linear.txt
 
 .. include:: /chapters/ch4/sections/4.10.5_gd_parab.txt
+
+.. include:: /chapters/ch4/sections/4.10.6_gd_polyn.txt
 
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 

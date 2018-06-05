@@ -37,7 +37,7 @@ This file contains ACIS geometry. It is usually created from within Cubit via an
 
 ::
 
-	export acis **“satfile”** ascii
+	export acis “satfile” ascii
 
 command. Any geometry within the current Cubit scope is then exported to **satfile.** If
 geometry has been named then those user-defined names are also exported. The

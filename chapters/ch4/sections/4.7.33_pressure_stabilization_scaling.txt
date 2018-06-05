@@ -43,18 +43,24 @@ obtained may be less accurate. A good choice for **tau** is 0.1.
 The scaling value, **tau,** is further scaled inside of *Goma*. Knowledge of this scaling is
 sometimes useful. First, an average Reynolds number (*Re*) is computed according to:
 
-*EQUATION*
+ .. figure:: /figures/017_goma_physics.png
+	:align: center
+	:width: 90%
 
 where ρ and μ are local values for density and viscosity, ||U|| is a norm of the velocity
 field, and <h> is a global average value for element size. If Re < 3.0, the pressure
 stabilization scaling is given by this expression:
 
-*EQUATION*
+ .. figure:: /figures/018_goma_physics.png
+	:align: center
+	:width: 90%
 
 On the other hand, if Re > 3.0, the following scales the pressure stabilization terms in
 the continuity equation:
 
-*EQUATION*
+ .. figure:: /figures/019_goma_physics.png
+	:align: center
+	:width: 90%
 
 ----------
 **Theory**
@@ -74,4 +80,5 @@ No FAQs.
 
 No References.
 
-.. TODO - insert photos of equations; Equations need to be inserted in the place in which the phots take place right now.
+.. 
+	TODO - Equations need to be inserted in the place in which the photos take place right now.
