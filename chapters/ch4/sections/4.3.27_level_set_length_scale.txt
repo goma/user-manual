@@ -46,19 +46,19 @@ A good example of the application of the *Level Set Length Scale* parameter is i
 surface tension is included in problems using level set interface tracking. The following
 tensor is added to the fluid momentum equation:
 
-.. figure:: /figures/006_goma_physics.png
-	:align: center
-	:width: 90%
+.. math:: 
 
-where *F* is the level set function itself, , **n** is the unit normal to the level
-set contour, *I* is the unit tensor, σ the surface tension, and δ/ :sub:`a` (F) is a “smooth” Dirac
+   \underline{\underline{T}} = \sigma \delta_{\alpha} \left( F \right) \left( \underline{\underline{I}} - \underline{n} \,\underline{n} \right)
+
+where :math:`F` is the level set function itself, :math:`\underline{n}` is the unit normal to the level
+set contour, :math:`\underline{\underline{I}}` is the unit tensor, :math:`\sigma` the surface tension, and :math:`\delta_{\alpha} \left( F \right)` is a “smooth” Dirac
 function given by:
 
-.. figure:: /figures/007_goma_physics.png
-	:align: center
-	:width: 90%
+.. math::
 
-In this example, the parameter α would be equal to one-half the *Level Set Length Scale*
+   \delta_{\alpha} \left( F \right) = \lvert \nabla F \rvert \frac{1 + \cos \left( \pi F/\alpha \right)}{2 \alpha}, \quad \lvert F \rvert \leq \alpha
+
+In this example, the parameter :math:`\alpha` would be equal to one-half the *Level Set Length Scale*
 value specified on this card.
 
 ----------

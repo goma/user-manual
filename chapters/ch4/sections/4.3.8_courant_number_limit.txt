@@ -40,16 +40,16 @@ See GT-034 for a thorough discussion.
 
 The time step limit imposed by this limit is computed as
 
-.. figure:: /figures/004_goma_physics.png
-	:align: center
-	:width: 90%
+.. math:: 
 
-Here e is the element, he is the average size of the element, C is the specified Courant
+   \mathrm{d}t_{\mathrm{limit}} = C \min_{e} \left| \frac{h_e}{ \lVert \hat{U} \rVert_e} \right|
+
+Here :math:`e` is the element, :math:`h_e` is the average size of the element, :math:`C` is the specified Courant
 number, and
 
-.. figure:: /figures/005_goma_physics.png
-	:align: center
-	:width: 90%
+.. math:: 
+
+   \lVert \hat{U} \rVert_e = \frac{\int_{e}^{} \delta_{\alpha} \left( \phi \right) \underline{v} \cdot \underline{n} \, d \Omega}{\int_{e}^{} \delta_{\alpha} \left( \phi \right) \, d \Omega}
 
 --------
 **FAQs**

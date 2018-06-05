@@ -26,7 +26,7 @@ see usage nodes below.
 **Examples**
 ------------
 
-This example invokes the subelement integraton
+This example invokes the subelement integration
 ::
 
 	Level Set Subelement Integration = ON
@@ -39,7 +39,7 @@ This example invokes the subelement integraton
 
 * Because of the construction of an in-element interface meshing to find this
   representation, subelement integration cannot be used currently for three
-  dimensional problems. Subgrid integration can be, however, but h tis inefficient.
+  dimensional problems. Subgrid integration can be, however, but it is inefficient.
 
 * Best to use this integration approach with the property specification method of
   “Second Level-Set “property_name”, e.g. Second Level Set Density, etc.
