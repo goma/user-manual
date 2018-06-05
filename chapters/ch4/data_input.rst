@@ -642,6 +642,14 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/sections/4.10.6_gd_polyn.txt
 
+.. include:: /chapters/ch4/sections/4.10.7_gd_time.txt
+
+.. include:: /chapters/ch4/sections/4.10.8_gd_circ.txt
+
+.. include:: /chapters/ch4/sections/4.10.9_gd_table.txt
+
+.. include:: /chapters/ch4/sections/4.10.10_table_wicv.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 

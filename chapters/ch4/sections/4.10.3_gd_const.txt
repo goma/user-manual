@@ -16,11 +16,11 @@ This boundary condition of type *Category 1* (see discussion) is used to impose 
 constant value for any nodal variable, using the residual function form
 
  .. figure:: /figures/021_goma_physics.png
-	:align: center
-	:width: 90%
+      :width: 90%
+      :align: center
 
 C\ :sub:`1` being the constant value (<float>) and x being the <variable_name>. This boundary
-condition card can be used in combination with any of the other *GD_* *conditions as a
+condition card can be used in combination with any of the other *GD_** conditions as a
 building block to construct more complicated conditions. Please see the examples on
 all of these cards for details and instructive uses. Definitions of the input parameters are
 as follows:
