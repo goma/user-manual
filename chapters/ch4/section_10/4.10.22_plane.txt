@@ -82,3 +82,6 @@ GT-001.4: GOMA and SEAMS tutorial for new users, February 18, 2002, P. R. Schunk
 and D. A. Labreche
 
 GT-013.2: Computations for slot coater edge section, October 10, 2002, T.A. Baer
+
+.. 
+	TODO - The image in line 19 needs to be repalced with the equation.
