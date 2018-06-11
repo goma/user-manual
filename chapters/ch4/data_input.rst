@@ -96,17 +96,17 @@ named external files that contain information about the finite element mesh, the
 solution vector, and output options for saving solutions for continuation, remesh, etc. The
 required and optional input records are as follows:
 
-.. include:: /chapters/ch4/sections/4.1.1_fem_file.txt
+.. include:: /chapters/ch4/section_1/4.1.1_fem_file.txt
 
-.. include:: /chapters/ch4/sections/4.1.2_output_exodusII_file.txt
+.. include:: /chapters/ch4/section_1/4.1.2_output_exodusII_file.txt
 
-.. include:: /chapters/ch4/sections/4.1.3_guess_file.txt
+.. include:: /chapters/ch4/section_1/4.1.3_guess_file.txt
 
-.. include:: /chapters/ch4/sections/4.1.4_soln_file.txt
+.. include:: /chapters/ch4/section_1/4.1.4_soln_file.txt
 
-.. include:: /chapters/ch4/sections/4.1.5_write_intermediate_results.txt
+.. include:: /chapters/ch4/section_1/4.1.5_write_intermediate_results.txt
 
-.. include:: /chapters/ch4/sections/4.1.6_write_initial_solution.txt
+.. include:: /chapters/ch4/section_1/4.1.6_write_initial_solution.txt
 
 **General Specifications**
 ##########################
@@ -117,27 +117,27 @@ another exoII file), individual field variable initialization, debugging options
 diagnostic options, etc. This section and several of its input records are required, as indicated
 below.
 
-.. include:: /chapters/ch4/sections/4.2.1_number_of_processors.txt
+.. include:: /chapters/ch4/section_2/4.2.1_number_of_processors.txt
 
-.. include:: /chapters/ch4/sections/4.2.2_output_level.txt
+.. include:: /chapters/ch4/section_2/4.2.2_output_level.txt
 
-.. include:: /chapters/ch4/sections/4.2.3_debug.txt
+.. include:: /chapters/ch4/section_2/4.2.3_debug.txt
 
-.. include:: /chapters/ch4/sections/4.2.4_number_of_jacobian_file_dumps.txt
+.. include:: /chapters/ch4/section_2/4.2.4_number_of_jacobian_file_dumps.txt
 
-.. include:: /chapters/ch4/sections/4.2.5_initial_guess.txt
+.. include:: /chapters/ch4/section_2/4.2.5_initial_guess.txt
 
-.. include:: /chapters/ch4/sections/4.2.7_initialize.txt
+.. include:: /chapters/ch4/section_2/4.2.7_initialize.txt
 
-.. include:: /chapters/ch4/sections/4.2.9_external_field.txt
+.. include:: /chapters/ch4/section_2/4.2.9_external_field.txt
 
-.. include:: /chapters/ch4/sections/4.2.10_export_field.txt
+.. include:: /chapters/ch4/section_2/4.2.10_export_field.txt
 
-.. include:: /chapters/ch4/sections/4.2.11_external_pixel_field.txt
+.. include:: /chapters/ch4/section_2/4.2.11_external_pixel_field.txt
 
-.. include:: /chapters/ch4/sections/4.2.12_pressure_datum.txt
+.. include:: /chapters/ch4/section_2/4.2.12_pressure_datum.txt
 
-.. include:: /chapters/ch4/sections/4.2.13_anneal_mesh_on_output.txt
+.. include:: /chapters/ch4/section_2/4.2.13_anneal_mesh_on_output.txt
 
 **Time Integration Specifications**
 ###################################
@@ -155,91 +155,91 @@ In addition to the transient parameter information, some Level-Set function info
 supplied to *Goma* in this section. The method of Level-Sets is used to track fluid-fluid or fluidsolid
 interfaces in an Eulerian fashion, making the problem inherently transient.
 
-.. include:: /chapters/ch4/sections/4.3.1_time_integration.txt
+.. include:: /chapters/ch4/section_3/4.3.1_time_integration.txt
 
-.. include:: /chapters/ch4/sections/4.3.2_delta_t.txt
+.. include:: /chapters/ch4/section_3/4.3.2_delta_t.txt
 
-.. include:: /chapters/ch4/sections/4.3.3_maximum_number_of_time_steps.txt
+.. include:: /chapters/ch4/section_3/4.3.3_maximum_number_of_time_steps.txt
 
-.. include:: /chapters/ch4/sections/4.3.4_maximum_time.txt
+.. include:: /chapters/ch4/section_3/4.3.4_maximum_time.txt
 
-.. include:: /chapters/ch4/sections/4.3.5_minimum_time_step.txt
+.. include:: /chapters/ch4/section_3/4.3.5_minimum_time_step.txt
 
-.. include:: /chapters/ch4/sections/4.3.6_maximum_time_step.txt
+.. include:: /chapters/ch4/section_3/4.3.6_maximum_time_step.txt
 
-.. include:: /chapters/ch4/sections/4.3.7_minimum_resolved_time_step.txt
+.. include:: /chapters/ch4/section_3/4.3.7_minimum_resolved_time_step.txt
 
-.. include:: /chapters/ch4/sections/4.3.8_courant_number_limit.txt
+.. include:: /chapters/ch4/section_3/4.3.8_courant_number_limit.txt
 
-.. include:: /chapters/ch4/sections/4.3.9_time_step_parameter.txt
+.. include:: /chapters/ch4/section_3/4.3.9_time_step_parameter.txt
 
-.. include:: /chapters/ch4/sections/4.3.10_time_step_error.txt
+.. include:: /chapters/ch4/section_3/4.3.10_time_step_error.txt
 
-.. include:: /chapters/ch4/sections/4.3.11_printing_frequency.txt
+.. include:: /chapters/ch4/section_3/4.3.11_printing_frequency.txt
 
-.. include:: /chapters/ch4/sections/4.3.12_second_frequency_time.txt
+.. include:: /chapters/ch4/section_3/4.3.12_second_frequency_time.txt
 
-.. include:: /chapters/ch4/sections/4.3.13_initial_time.txt
+.. include:: /chapters/ch4/section_3/4.3.13_initial_time.txt
 
-.. include:: /chapters/ch4/sections/4.3.14_fill_subcycle.txt
+.. include:: /chapters/ch4/section_3/4.3.14_fill_subcycle.txt
 
-.. include:: /chapters/ch4/sections/4.3.15_fill_weight_function.txt
+.. include:: /chapters/ch4/section_3/4.3.15_fill_weight_function.txt
 
-.. include:: /chapters/ch4/sections/4.3.16_level_set_interface_tracking.txt
+.. include:: /chapters/ch4/section_3/4.3.16_level_set_interface_tracking.txt
 
-.. include:: /chapters/ch4/sections/4.3.17_level_set_semi_lagrange.txt
+.. include:: /chapters/ch4/section_3/4.3.17_level_set_semi_lagrange.txt
 
-.. include:: /chapters/ch4/sections/4.3.18_level_set_subgrid_integration_depth.txt
+.. include:: /chapters/ch4/section_3/4.3.18_level_set_subgrid_integration_depth.txt
 
-.. include:: /chapters/ch4/sections/4.3.20_level_set_subelement_integration.txt
+.. include:: /chapters/ch4/section_3/4.3.20_level_set_subelement_integration.txt
 
-.. include:: /chapters/ch4/sections/4.3.21_level_set_adaptive_integration.txt
+.. include:: /chapters/ch4/section_3/4.3.21_level_set_adaptive_integration.txt
 
-.. include:: /chapters/ch4/sections/4.3.23_level_set_adaptive_order.txt
+.. include:: /chapters/ch4/section_3/4.3.23_level_set_adaptive_order.txt
 
-.. include:: /chapters/ch4/sections/4.3.25_overlap_quadrature_points.txt
+.. include:: /chapters/ch4/section_3/4.3.25_overlap_quadrature_points.txt
 
-.. include:: /chapters/ch4/sections/4.3.26_level_set_pspp_filtering.txt
+.. include:: /chapters/ch4/section_3/4.3.26_level_set_pspp_filtering.txt
 
-.. include:: /chapters/ch4/sections/4.3.27_level_set_length_scale.txt
+.. include:: /chapters/ch4/section_3/4.3.27_level_set_length_scale.txt
 
-.. include:: /chapters/ch4/sections/4.3.28_level_set_initialize.txt
+.. include:: /chapters/ch4/section_3/4.3.28_level_set_initialize.txt
 
-.. include:: /chapters/ch4/sections/4.3.30_level_set_initialization_method.txt
+.. include:: /chapters/ch4/section_3/4.3.30_level_set_initialization_method.txt
 
-.. include:: /chapters/ch4/sections/4.3.31_level_set_periodic_planes.txt
+.. include:: /chapters/ch4/section_3/4.3.31_level_set_periodic_planes.txt
 
-.. include:: /chapters/ch4/sections/4.3.32_level_set_control_width.txt
+.. include:: /chapters/ch4/section_3/4.3.32_level_set_control_width.txt
 
-.. include:: /chapters/ch4/sections/4.3.33_level_set_timestep_control.txt
+.. include:: /chapters/ch4/section_3/4.3.33_level_set_timestep_control.txt
 
-.. include:: /chapters/ch4/sections/4.3.34_level_set_renormalization_tolerance.txt
+.. include:: /chapters/ch4/section_3/4.3.34_level_set_renormalization_tolerance.txt
 
-.. include:: /chapters/ch4/sections/4.3.35_level_set_renormalization_method.txt
+.. include:: /chapters/ch4/section_3/4.3.35_level_set_renormalization_method.txt
 
-.. include:: /chapters/ch4/sections/4.3.36_level_set_renormalization_frequency.txt
+.. include:: /chapters/ch4/section_3/4.3.36_level_set_renormalization_frequency.txt
 
-.. include:: /chapters/ch4/sections/4.3.37_restart_time_integration_after_renormalization.txt
+.. include:: /chapters/ch4/section_3/4.3.37_restart_time_integration_after_renormalization.txt
 
-.. include:: /chapters/ch4/sections/4.3.38_level_set_reconstruction_method.txt
+.. include:: /chapters/ch4/section_3/4.3.38_level_set_reconstruction_method.txt
 
-.. include:: /chapters/ch4/sections/4.3.39_level_set_contact_extension.txt
+.. include:: /chapters/ch4/section_3/4.3.39_level_set_contact_extension.txt
 
-.. include:: /chapters/ch4/sections/4.3.40_level_set_slave_surface.txt
+.. include:: /chapters/ch4/section_3/4.3.40_level_set_slave_surface.txt
 
-.. include:: /chapters/ch4/sections/4.3.42_ignore_level_set_dependencies.txt
+.. include:: /chapters/ch4/section_3/4.3.42_ignore_level_set_dependencies.txt
 
-.. include:: /chapters/ch4/sections/4.3.43_force_initial_level_set_renormalization.txt
+.. include:: /chapters/ch4/section_3/4.3.43_force_initial_level_set_renormalization.txt
 
-.. include:: /chapters/ch4/sections/4.3.44_number_of_phase_functions.txt
+.. include:: /chapters/ch4/section_3/4.3.44_number_of_phase_functions.txt
 
-.. include:: /chapters/ch4/sections/4.3.45_phase_function_slave_surface.txt
+.. include:: /chapters/ch4/section_3/4.3.45_phase_function_slave_surface.txt
 
-.. include:: /chapters/ch4/sections/4.3.46_phase_function_initialization_method.txt
+.. include:: /chapters/ch4/section_3/4.3.46_phase_function_initialization_method.txt
 
-.. include:: /chapters/ch4/sections/4.3.47_phase_function_renormalization_tolerance.txt
+.. include:: /chapters/ch4/section_3/4.3.47_phase_function_renormalization_tolerance.txt
 
-.. include:: /chapters/ch4/sections/4.3.49_phase_function_renormalization_method.txt
+.. include:: /chapters/ch4/section_3/4.3.49_phase_function_renormalization_method.txt
 
 **Continuation Specifications**
 ###############################
@@ -297,77 +297,77 @@ for good convergence of iterative matrix solvers can be an artful task for Navie
 and other poorly conditioned systems. It is recommended that the user consult the comprehensive
 report by Schunk, et al. (2002) for an overview and further usage tips.
 
-.. include:: /chapters/ch4/sections/4.7.1_solution_algorithm.txt
+.. include:: /chapters/ch4/section_7/4.7.1_solution_algorithm.txt
 
-.. include:: /chapters/ch4/sections/4.7.2_matrix_storage_format.txt
+.. include:: /chapters/ch4/section_7/4.7.2_matrix_storage_format.txt
 
-.. include:: /chapters/ch4/sections/4.7.3_preconditioner.txt
+.. include:: /chapters/ch4/section_7/4.7.3_preconditioner.txt
 
-.. include:: /chapters/ch4/sections/4.7.4_matrix_subdomain_solver.txt
+.. include:: /chapters/ch4/section_7/4.7.4_matrix_subdomain_solver.txt
 
-.. include:: /chapters/ch4/sections/4.7.5_matrix_scaling.txt
+.. include:: /chapters/ch4/section_7/4.7.5_matrix_scaling.txt
 
-.. include:: /chapters/ch4/sections/4.7.6_matrix_residual_norm_type.txt
+.. include:: /chapters/ch4/section_7/4.7.6_matrix_residual_norm_type.txt
 
-.. include:: /chapters/ch4/sections/4.7.7_matrix_output_type.txt
+.. include:: /chapters/ch4/section_7/4.7.7_matrix_output_type.txt
 
-.. include:: /chapters/ch4/sections/4.7.8_matrix_factorization_reuse.txt
+.. include:: /chapters/ch4/section_7/4.7.8_matrix_factorization_reuse.txt
 
-.. include:: /chapters/ch4/sections/4.7.9_matrix_graph_fillin.txt
+.. include:: /chapters/ch4/section_7/4.7.9_matrix_graph_fillin.txt
 
-.. include:: /chapters/ch4/sections/4.7.10_matrix_factorization_overlap.txt
+.. include:: /chapters/ch4/section_7/4.7.10_matrix_factorization_overlap.txt
 
-.. include:: /chapters/ch4/sections/4.7.11_matrix_overlap_type.txt
+.. include:: /chapters/ch4/section_7/4.7.11_matrix_overlap_type.txt
 
-.. include:: /chapters/ch4/sections/4.7.12_matrix_auxiliary_vector.txt
+.. include:: /chapters/ch4/section_7/4.7.12_matrix_auxiliary_vector.txt
 
-.. include:: /chapters/ch4/sections/4.7.13_matrix_drop_tolerance.txt
+.. include:: /chapters/ch4/section_7/4.7.13_matrix_drop_tolerance.txt
 
-.. include:: /chapters/ch4/sections/4.7.14_matrix_polynomial_order.txt
+.. include:: /chapters/ch4/section_7/4.7.14_matrix_polynomial_order.txt
 
-.. include:: /chapters/ch4/sections/4.7.15_matrix_reorder.txt
+.. include:: /chapters/ch4/section_7/4.7.15_matrix_reorder.txt
 
-.. include:: /chapters/ch4/sections/4.7.16_matrix_factorization_save.txt
+.. include:: /chapters/ch4/section_7/4.7.16_matrix_factorization_save.txt
 
-.. include:: /chapters/ch4/sections/4.7.17_matrix_ilut_fill_factor.txt
+.. include:: /chapters/ch4/section_7/4.7.17_matrix_ilut_fill_factor.txt
 
-.. include:: /chapters/ch4/sections/4.7.18_matrix_rilu_relax_factor.txt
+.. include:: /chapters/ch4/section_7/4.7.18_matrix_rilu_relax_factor.txt
 
-.. include:: /chapters/ch4/sections/4.7.19_matrix_bilu_threshold.txt
+.. include:: /chapters/ch4/section_7/4.7.19_matrix_bilu_threshold.txt
 
-.. include:: /chapters/ch4/sections/4.7.20_matrix_relative_threshold.txt
+.. include:: /chapters/ch4/section_7/4.7.20_matrix_relative_threshold.txt
 
-.. include:: /chapters/ch4/sections/4.7.21_matrix_absolute_threshold.txt
+.. include:: /chapters/ch4/section_7/4.7.21_matrix_absolute_threshold.txt
 
-.. include:: /chapters/ch4/sections/4.7.22_size_of_krylov_subspace.txt
+.. include:: /chapters/ch4/section_7/4.7.22_size_of_krylov_subspace.txt
 
-.. include:: /chapters/ch4/sections/4.7.23_orthogonalization.txt
+.. include:: /chapters/ch4/section_7/4.7.23_orthogonalization.txt
 
-.. include:: /chapters/ch4/sections/4.7.24_maximum_linear_solve_iterations.txt
+.. include:: /chapters/ch4/section_7/4.7.24_maximum_linear_solve_iterations.txt
 
-.. include:: /chapters/ch4/sections/4.7.25_number_of_newton_iterations.txt
+.. include:: /chapters/ch4/section_7/4.7.25_number_of_newton_iterations.txt
 
-.. include:: /chapters/ch4/sections/4.7.26_modified_newton_tolerance.txt
+.. include:: /chapters/ch4/section_7/4.7.26_modified_newton_tolerance.txt
 
-.. include:: /chapters/ch4/sections/4.7.27_jacobian_reform_time_stride.txt
+.. include:: /chapters/ch4/section_7/4.7.27_jacobian_reform_time_stride.txt
 
-.. include:: /chapters/ch4/sections/4.7.28_newton_correction_factor.txt
+.. include:: /chapters/ch4/section_7/4.7.28_newton_correction_factor.txt
 
-.. include:: /chapters/ch4/sections/4.7.29_normalized_residual_tolerance.txt
+.. include:: /chapters/ch4/section_7/4.7.29_normalized_residual_tolerance.txt
 
-.. include:: /chapters/ch4/sections/4.7.30_normalized_correction_tolerance.txt
+.. include:: /chapters/ch4/section_7/4.7.30_normalized_correction_tolerance.txt
 
-.. include:: /chapters/ch4/sections/4.7.31_residual_ratio_tolerance.txt
+.. include:: /chapters/ch4/section_7/4.7.31_residual_ratio_tolerance.txt
 
-.. include:: /chapters/ch4/sections/4.7.32_pressure_stabilization.txt
+.. include:: /chapters/ch4/section_7/4.7.32_pressure_stabilization.txt
 
-.. include:: /chapters/ch4/sections/4.7.33_pressure_stabilization_scaling.txt
+.. include:: /chapters/ch4/section_7/4.7.33_pressure_stabilization_scaling.txt
 
-.. include:: /chapters/ch4/sections/4.7.34_linear_stability.txt
+.. include:: /chapters/ch4/section_7/4.7.34_linear_stability.txt
 
-.. include:: /chapters/ch4/sections/4.7.35_filter_concentration.txt
+.. include:: /chapters/ch4/section_7/4.7.35_filter_concentration.txt
 
-.. include:: /chapters/ch4/sections/4.7.36_disable_viscosity_sensitivities.txt
+.. include:: /chapters/ch4/section_7/4.7.36_disable_viscosity_sensitivities.txt
 
 **Eigensolver Specifications**
 ##############################
@@ -400,23 +400,23 @@ The geometry capability is only available when the CGM library is linked in. A t
 written to assist in defining input at the present time. The user is referred to that document at the present time (GT-021.2, Common Geometry Model (CGM) Usage for GOMA, August 22, 2002,
 M. M. Hopkins).
 
-.. include:: /chapters/ch4/sections/4.9.1_acis_file.txt
+.. include:: /chapters/ch4/section_9/4.9.1_acis_file.txt
 
-.. include:: /chapters/ch4/sections/4.9.2_vertex.txt
+.. include:: /chapters/ch4/section_9/4.9.2_vertex.txt
 
-.. include:: /chapters/ch4/sections/4.9.3_end_of_vertex.txt
+.. include:: /chapters/ch4/section_9/4.9.3_end_of_vertex.txt
 
-.. include:: /chapters/ch4/sections/4.9.4_edge.txt
+.. include:: /chapters/ch4/section_9/4.9.4_edge.txt
 
-.. include:: /chapters/ch4/sections/4.9.5_end_of_edge.txt
+.. include:: /chapters/ch4/section_9/4.9.5_end_of_edge.txt
 
-.. include:: /chapters/ch4/sections/4.9.6_face.txt
+.. include:: /chapters/ch4/section_9/4.9.6_face.txt
 
-.. include:: /chapters/ch4/sections/4.9.7_end_of_face.txt
+.. include:: /chapters/ch4/section_9/4.9.7_end_of_face.txt
 
-.. include:: /chapters/ch4/sections/4.9.8_end_of_body.txt
+.. include:: /chapters/ch4/section_9/4.9.8_end_of_body.txt
 
-.. include:: /chapters/ch4/sections/4.9.9_exported_geometry_file.txt
+.. include:: /chapters/ch4/section_9/4.9.9_exported_geometry_file.txt
 
 **Boundary Condition Specifications**
 #####################################
@@ -630,29 +630,47 @@ and stand alone; the remaining cards belong to the categories of conditions disc
 ordering of input cards within this collection of BC input records (i.e., section) is sequential and
 some sections of interspersed comments accompany each boundary condition category.
 
-.. include:: /chapters/ch4/sections/4.10.1_number_of_bc.txt
+.. include:: /chapters/ch4/section_10/4.10.1_number_of_bc.txt
 
-.. include:: /chapters/ch4/sections/4.10.2_fix.txt
+.. include:: /chapters/ch4/section_10/4.10.2_fix.txt
 
-.. include:: /chapters/ch4/sections/4.10.3_gd_const.txt
+.. include:: /chapters/ch4/section_10/4.10.3_gd_const.txt
 
-.. include:: /chapters/ch4/sections/4.10.4_gd_linear.txt
+.. include:: /chapters/ch4/section_10/4.10.4_gd_linear.txt
 
-.. include:: /chapters/ch4/sections/4.10.5_gd_parab.txt
+.. include:: /chapters/ch4/section_10/4.10.5_gd_parab.txt
 
-.. include:: /chapters/ch4/sections/4.10.6_gd_polyn.txt
+.. include:: /chapters/ch4/section_10/4.10.6_gd_polyn.txt
 
-.. include:: /chapters/ch4/sections/4.10.7_gd_time.txt
+.. include:: /chapters/ch4/section_10/4.10.7_gd_time.txt
 
-.. include:: /chapters/ch4/sections/4.10.8_gd_circ.txt
+.. include:: /chapters/ch4/section_10/4.10.8_gd_circ.txt
 
-.. include:: /chapters/ch4/sections/4.10.9_gd_table.txt
+.. include:: /chapters/ch4/section_10/4.10.9_gd_table.txt
 
-.. include:: /chapters/ch4/sections/4.10.10_table_wicv.txt
+.. include:: /chapters/ch4/section_10/4.10.10_table_wicv.txt
 
-.. include:: /chapters/ch4/sections/4.10.11_table_wics.txt
+.. include:: /chapters/ch4/section_10/4.10.11_table_wics.txt
 
-.. include:: /chapters/ch4/sections/4.10.12_table.txt
+.. include:: /chapters/ch4/section_10/4.10.12_table.txt
+
+.. include:: /chapters/ch4/section_10/4.10.13_distng.txt
+
+.. include:: /chapters/ch4/section_10/4.10.14_dxdydz.txt
+
+.. include:: /chapters/ch4/section_10/4.10.15_dxuser_dyuser_dzuser.txt
+
+.. include:: /chapters/ch4/section_10/4.10.17_dxyzdistng.txt
+
+.. include:: /chapters/ch4/section_10/4.10.18_splinexyz_geomxyz.txt
+
+.. include:: /chapters/ch4/section_10/4.10.19_spline_geom.txt
+
+.. include:: /chapters/ch4/section_10/4.10.21_planexyz.txt
+
+.. include:: /chapters/ch4/section_10/4.10.22_plane.txt
+
+.. include:: /chapters/ch4/section_10/4.10.23_moving_plane.txt
 
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 

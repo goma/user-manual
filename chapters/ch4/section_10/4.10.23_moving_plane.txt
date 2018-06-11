@@ -1,0 +1,42 @@
+****************
+**MOVING_PLANE**
+****************
+
+::
+
+	BC = MOVING_PLANE <bc_id> <floatlist>
+
+-----------------------
+**Description / Usage**
+-----------------------
+
+**(PCC/ROTATED MESH)**
+
+The *MOVING_PLANE* card is used to specify a surface (solid) boundary position
+versus time for a planar surface (cf. *PLANE* boundary condition card). It is applied as a
+rotated condition on the mesh equations (see *EQ* cards *mesh1, mesh2, mesh3*). The
+form of the equation is given by
+
+ .. figure:: /figures/035_goma_physics.png
+	:align: center
+	:width: 90%
+
+and the function g(t) is defined as
+
+	 .. figure:: /figures/036_goma_physics.png
+	:align: center
+	:width: 90%
+
+Definitions of the input parameters are given below; note that <floatlist> has seven
+parameters corresponding to the seven constants in the above equations:
+
+====================== ============================================================
+**MOVING_ PLANE**      Name of the boundary condition name (<bc_name>).
+**SS**                 Type of boundary condition (<bc_type>), where **SS** denotes
+                       side set in the EXODUS II database
+
+
+
+
+
+
