@@ -38,9 +38,9 @@ Following is a sample card:
 
 The mixed measure used here is:
 
- .. figure:: /figures/016_goma_physics.png
-			:align: center
-			:width: 70%
+.. math::
+
+   \sqrt{ \sum \frac{ {\Delta x_i}^2}{1 + {x_i}^2} }
 
 This measures the relative size of the update vector when the solution vector is large
 (i.e., size of unknowns is greater than 1), and measures the absolute size of the update

@@ -44,13 +44,13 @@ Following is a sample card:
 
 The convergence rate is defined as:
 
- .. figure:: /figures/015_goma_physics.png
-			:align: center
-			:width: 70%
+ .. math::
+
+    \mathrm{convergence} \, \mathrm{rate} = \frac{\log \left( \mathrm{current} L_1 \mathrm{norm} \right) }{\log \left( \mathrm{previous} L_1 \mathrm{norm} \right)}
 
 This rate should be equal to 2 when Newton’s method is in its region of convergence
 (this is what it means to converge quadratically). A secant method would have a
-convergence rate of 1 + 5) ⁄ 2 (the golden ratio!), approximately 1.6.
+convergence rate of :math:`1 + \sqrt{5}/2` (the golden ratio!), approximately 1.6.
 
 The residual norm is simply the L\ :sub:`1` norm of the residual after a Newton iteration.
 

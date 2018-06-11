@@ -43,19 +43,19 @@ Let **t** be the value specified with the Matrix Absolute Threshold card. For a 
 preconditioner (**ilut, ilu, rilu, icc**), each value on the diagonal undergoes the following
 substitution:
 
- .. figure:: /figures/013_goma_physics.png
-			:align: center
-			:width: 70%
+ .. math::
+
+    d_{\mathrm{new}} = r * d_{\mathrm{old}} + \mathrm{sgn} \left( d_{\mathrm{old}}  \right) * t
 
 For the **bilu** preconditioner, each singular value of the diagonal block preconditioner is
 compared to:
 
- .. figure:: /figures/014_goma_physics.png
-			:align: center
-			:width: 70%
+ .. math::
 
-where σ1 is the largest singular value of the diagonal block under consideration. All σ\ :sub:`k`
-are modified (if necessary) to be at least as large as σ\ :sub:`min`.
+    \sigma_{\mathrm{min}} = r * \sigma_1 + t
+
+where σ1 is the largest singular value of the diagonal block under consideration. All :math:`\sigma_k`
+are modified (if necessary) to be at least as large as :math:`\sigma_{\mathrm{min}}`.
 
 The appropriate values for the threshold can vary over many orders of magnitude
 depending on the situation. Refer to Schunk, et. al., 2002 for information and for
