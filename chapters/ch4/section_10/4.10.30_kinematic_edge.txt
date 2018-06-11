@@ -44,7 +44,7 @@ Definitions of the input parameters are as follows:
 
 ::
 
-     BC = KINEMATIC_EDGE SS 10 20 0.0
+     BC = KINEMATIC_SPECIES SS 10 2 0.0
 
 In this example, the *KINEMATIC_EDGE* boundary condition is applied to the line
 defined by the intersection of side sets 10 and 20. The normal vector used in
