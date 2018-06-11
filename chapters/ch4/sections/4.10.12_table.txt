@@ -1,0 +1,124 @@
+*********
+**TABLE**
+*********
+
+::
+
+	BC = TABLE SS <bc_id> {X|Y|Z|TIME} {ordinate} [species] {interpolation} [FILE = <fname>] [NAME = <identifier>]
+
+-----------------------
+**Description / Usage**
+-----------------------
+
+**(PCC/VARIED))**
+
+This boundary condition is a stand-alone version of the more complicated *GD_TABLE*
+card. It allows the user to supply arbitrary univariate (one abscissa and one ordinate)
+data about the spatial variation of unknowns fields on a boundary. The abscissa will be
+one of the three spatial coordinates or time and the ordinate is one of a choice of
+unknown field variables. All *TABLE_BC* conditions must have attached tabular data as
+a list of paired float values either directly following the card or in a separate file
+(identified on the card). The list of data pairs is terminated by the string “END TABLE”
+on its own line.
+
+Definitions of the input parameters are as follows:
+
+======================= ===========================================================================
+**TABLE**               Name of the boundary condition.
+**SS**                  Type of boundary condition (<bc_type>), where **SS**
+                        denotes side set in the EXODUS II database.
+<bc_id>                 The boundary flag identifier, an integer associated with
+                        <bc_type> that identifies the boundary location (side set
+                        in EXODUS II) in the problem domain.
+**{X|Y|Z|TIME}**        A char_string that identifies the independent table
+                        variable (abscissa). The strings X,Y, and Z refer of
+                        course to the three spatial coordinates. Depending on the
+                        choice here, the x, y, or z coordinate value at a given
+                        point, respectively, is used to obtain an interpolated
+                        ordinate value using the attached table data. If the TIME
+                        string appears here, however, the current simulation
+                        time is used to interpolate an ordinate value. This single
+                        value is applied uniformly to the sideset.
+{ordinate}              This string associates a variable type with the values of
+                        the ordinate in the attached table. It also identifies the
+                        equation that is supplanted by the boundary condition
+                        on the sideset. The following table lists the available
+                        string choices and the corresponding equation
+                        component clobbered by the boundary condition.
+======================= ===========================================================================
+
+|
+
+============================= ============ ================================
+**String**                    **replaces** **Equation***
+----------------------------- ------------ --------------------------------
+VELOCITY1 or U                             R_MOMENTUM1
+VELOCITY2 or V                             R_MOMENTUM2
+VELOCITY3 or W                             R_MOMENTUM3
+MASS_FRACTION or Y or SPECIES              R_MASS
+TEMPERATURE                                R_ENERGY
+MESH_DISPLACEMENT1 or DX                   R_MESH1
+MESH_DISPLACEMENT2 or DY                   R_MESH2
+MESH_DISPLACEMENT3 or DZ                   R_MESH3
+PRESSURE or P                              R_PRESSURE
+SOLID_DISPLACEMENT1 or DX_RS               R_SOLID1
+SOLID_DISPLACEMENT2 or DY_RS               R_SOLID2
+SOLID_DISPLACEMENT3 or DZ_RS               R_SOLID3
+SHEAR_RATE or SH                           R_SHEAR_RATE
+============================= ============ ================================
+
+|
+
+============================= ============ ================================
+**String**                    **replaces** **Equation***
+----------------------------- ------------ --------------------------------
+S11                                        R_STRESS11
+S12                                        R_STRESS11
+S22                                        R_STRESS11
+S13                                        R_STRESS11
+S23                                        R_STRESS11
+S33                                        R_STRESS11
+============================= ============ ================================
+
+|
+
+============================= ============ ================================
+**String**                    **replaces** **Equation***
+----------------------------- ------------ --------------------------------
+S11_1                                      R_STRESS11_1
+S12_1                                      R_STRESS12_1
+S22_1                                      R_STRESS22_1
+S13_1                                      R_STRESS13_1
+S23_1                                      R_STRESS23_1
+S33_1                                      R_STRESS33_1
+============================= ============ ================================
+
+|
+
+============================= ============ ================================
+**String**                    **replaces** **Equation***
+----------------------------- ------------ --------------------------------
+S11_2                                      R_STRESS11_2
+S12_2                                      R_STRESS12_2
+S22_2                                      R_STRESS22_2
+S13_2                                      R_STRESS13_2
+S23_2                                      R_STRESS23_2
+S33_2                                      R_STRESS33_2
+============================= ============ ================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
