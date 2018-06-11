@@ -672,6 +672,20 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.23_moving_plane.txt
 
+.. include:: /chapters/ch4/section_10/4.10.24_slopexyz.txt
+
+.. include:: /chapters/ch4/section_10/4.10.25_slope.txt
+
+.. include:: /chapters/ch4/section_10/4.10.26_kinematic.txt
+
+.. include:: /chapters/ch4/section_10/4.10.27_kinematic_petrov.txt
+
+.. include:: /chapters/ch4/section_10/4.10.28_kinematic_colloc.txt
+
+.. include:: /chapters/ch4/section_10/4.10.29_kinematic_disc.txt
+
+.. include:: /chapters/ch4/section_10/4.10.30_kinematic_edge.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
