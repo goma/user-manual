@@ -36,23 +36,17 @@ examples below will clarify its use. Definitions of the input parameters are as 
                     modulation. Permissible values for this parameter are
                     LINEAR, EXPONENTIAL, and SINUSOIDAL.
 <integer2>          Set this required but unused parameter to zero.
-<float1>            C\ :sub:`0` model parameter
-<float2>            C\ :sub:`1` model parameter
+<float1>            :math:`C_0` model parameter
+<float2>            :math:`C_1` model parameter
 =================== =================================================================
 
 The functional form of each time-modulation model is as follows:
 
- .. figure:: /figures/026_goma_physics.png
-	:align: center
-	:width: 90%
-
- .. figure:: /figures/027_goma_physics.png
-	:align: center
-	:width: 90%
-
- .. figure:: /figures/028_goma_physics.png
-	:align: center
-	:width: 90%
+===================== ===============================================================
+LINEAR:               :math:`f(t) = C_0 + C_1t`
+EXPONENTIAL:          :math:`f(t) = \exp \left(C_0 + C_1t \right)`
+SINUSOIDAL:           :math:`f(t) = \sin \left(C_0 + C_1t \right)`  
+===================== ===============================================================
 
 ------------
 **Examples**
@@ -71,7 +65,7 @@ Following is a sample card set:
 
 	BC = GD_LINEAR SS 1 R_MESH_NORMAL 0 MESH_POSITION1 0 0. -1.
 
-This set of cards leads to the application of x = sin(10.0 + 2t) to the normal component
+This set of cards leads to the application of :math:`x = sin(10.0 + 2t)` to the normal component
 of the mesh displacement at side set 1. If side set 1 were a surface of constant x (viz.
 normal in the x-direction) then this condition could be used to impose a piston motion
 to the surface. Recall that *GD_LINEAR* cards are additive with each other and

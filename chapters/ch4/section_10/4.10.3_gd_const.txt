@@ -15,11 +15,11 @@
 This boundary condition of type *Category 1* (see discussion) is used to impose a
 constant value for any nodal variable, using the residual function form
 
- .. figure:: /figures/021_goma_physics.png
-      :width: 90%
-      :align: center
+.. math::
 
-C\ :sub:`1` being the constant value (<float>) and x being the <variable_name>. This boundary
+   x - C_1 = 0
+
+:math:`C_1` being the constant value (<float>) and :math:`x` being the <variable_name>. This boundary
 condition card can be used in combination with any of the other *GD_** conditions as a
 building block to construct more complicated conditions. Please see the examples on
 all of these cards for details and instructive uses. Definitions of the input parameters are
@@ -44,7 +44,7 @@ as follows:
 <integer2>        Species number of the concentration variable.The value
                   should be 0 unless the <variable_name> is of type
                   MASS_FRACTION.
-<float>           Value of variable, C\ :sub:`1`.
+<float>           Value of variable :math:`C_1`.
 ================= ==========================================================================
 
 ------------
@@ -56,12 +56,12 @@ Following is a sample card:
 
 	BC = GD_CONST SS 2 R_MESH_NORMAL 0 MASS_FRACTION 0 0.2
 
-This boundary condition results in the equation C\ :sub:`1` - 0.2 = 0 being applied as a
-boundary condition to the mesh-motion equation and being rotated into a normaltangential
-basis. C\ :sub:`1` is the concentration of the zeroth species. The equation is actually
+This boundary condition results in the equation :math:`C_1 - 0.2 = 0` being applied as a
+boundary condition to the mesh-motion equation and being rotated into a normal-tangential
+basis. :math:`C_1` is the concentration of the zeroth species. The equation is actually
 applied as a replacement to the normal component of the mesh motion equation and in
 this case would cause the mesh surface, defined by side set 2, to move as the
-isoconcentration surface of C\ :sub:`1` = 0.2.
+isoconcentration surface of :math:`C_1 = 0.2`.
 
 -------------------------
 **Technical Discussion**

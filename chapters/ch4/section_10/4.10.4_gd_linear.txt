@@ -15,11 +15,11 @@
 This boundary condition of type *Category 1* (see discussion) is used to impose a linear
 function for any nodal variable, using the residual function form
 
- .. figure:: /figures/022_goma_physics.png
-	:align: center
-	:width: 90%
+.. math::
 
-where C\ :sub:`1` and C\ :sub:`2` being the constant values and x representing any variable
+   C_1 + C_2x = 0
+
+where :math:`C_1` and :math:`C_2` being the constant values and :math:`x` representing any variable
 (<variable_name>). This boundary condition card can be used in combination with any
 of the other *GD_** conditions as a building block to construct more complicated
 conditions. Moreover, the resulting boundary condition can be applied as a strong
@@ -44,8 +44,8 @@ follows:
                     above for *Category 1*).
 <integer2>          Species number of the concentration variable.The value
                     should be 0 unless the <variable_name> is of type MASS_FRACTION.
-<float1>            Intercept, C\ :sub:`1`
-<float2>            Slope, C\ :sub:`2`
+<float1>            Intercept :math:`C_1`
+<float2>            Slope :math:`C_2`
 =================== =====================================================================
 
 ------------
@@ -57,7 +57,7 @@ Following is a sample card:
 
 	BC = GD_LINEAR SS 1 R_MESH1 0 MESH_POSITION1 0 -1. 2.
 
-This boundary condition results in the equation 2.0*x - 1.0 = 0 to be applied as a
+This boundary condition results in the equation :math:`2.0*x - 1.0 = 0` to be applied as a
 boundary condition to the x-component of the mesh motion equation. x is the xcomponent
 of the mesh position (N.B. not displacement, as *MESH_POSITION1* would
 be replaced by *MESH_DISPLACEMENT1* in the above). The equation is actually

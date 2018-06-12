@@ -13,12 +13,12 @@
 **(PCC/VARIED)**
 
 This boundary condition of type *Category 1* (see discussion) is used to impose a
-polynomial function for any nodal variable, using the residual function form of a 6thorder
+polynomial function for any nodal variable, using the residual function form of a 6\ :sup:`th` order
 polynomial dependence on a variable
 
- .. figure:: /figures/024_goma_physics.png
-	:align: center
-	:width: 90%
+.. math::
+
+   C_1 + C_2x + C_3x^2 + C_4x^3 + C_5x^4 + C_6x^5 + C_7x^6 = 0
 
 There are three required and four optional parameters in the <float_list>; definitions of
 the input parameters are as follows:
@@ -40,13 +40,13 @@ the input parameters are as follows:
                     above for *Category 1*).
 <integer2>          Species number of the concentration variable. The value
                     should be 0 unless the <variable_name> is of type MASS_FRACTION.
-<float1>            Intercept, C\ :sub:`1`.
-<float2>            Slope, C\ :sub:`2`.
-<float3>            Acceleration, C\ :sub:`3`.
-<float4>            Coefficient for 3rd-order term, C\ :sub:`4`.
-<float5>            Coefficient for 4th-order term, C\ :sub:`5`.
-<float6>            Coefficient for 5th-order term, C\ :sub:`6`.
-<float7>            Coefficient for 6th-order term, C\ :sub:`7`.
+<float1>            Intercept :math:`C_1`.
+<float2>            Slope :math:`C_2`.
+<float3>            Acceleration :math:`C_3`.
+<float4>            Coefficient for 3rd-order term :math:`C_4`.
+<float5>            Coefficient for 4th-order term :math:`C_5`.
+<float6>            Coefficient for 5th-order term :math:`C_6`.
+<float7>            Coefficient for 6th-order term :math:`C_7``.
 =================== =====================================================================
 
 ------------
@@ -64,13 +64,13 @@ Following is a set of sample cards:
 
 This boundary condition results in the equation
 
- .. figure:: /figures/025_goma_physics.png
-	:align: center
-	:width: 90%
+.. math::
+
+   C_1 + C_2x + C_3x^2 + C_4x^3 + C_5x^4 + C_6x^5 + C_7x^6 = T
 
 to be applied as a boundary condition on the energy equation, i.e., made a boundary
 condition on temperature with second card, which brings in a dependence on
-temperature. Here the coefficients are set by APREPRO, *x* is the x-component of the
+temperature. Here the coefficients are set by APREPRO, :math:`x` is the x-component of the
 mesh position (N.B. not displacement, as *MESH_POSITION2* would be replaced by
 *MESH_DISPLACEMENT2* in the above).
 

@@ -521,11 +521,11 @@ integrated boundary conditions. These boundary conditions replace the mechanics
 equation at the i\ :sup:`th` node with a surface integral of some derived quantity. The
 general form of these conditions is:
 
- .. figure:: /figures/020_goma_physics.png
-	:align: center
-	:width: 90%
+.. math::
 
-where in this case g(*x*) is not a residual equation but some derived quantity. Unlike
+   \int_{S} \phi_i \, g(\mathbf{x}) \, \mathrm{d}S = 0
+
+where in this case :math:`g(\mathbf{x})` is not a residual equation but some derived quantity. Unlike
 strong constraints, this term is not multiplied by a penalizing factor before it is
 added to the accumulated mechanics equation at node *i*. Consequently, it
 represents boundary contributions to the mechanics at that node. Note also that

@@ -15,11 +15,11 @@
 This boundary condition of type *Category 1* (see discussion) is used to impose a
 quadratic function for any nodal variable, using the residual function form
 
- .. figure:: /figures/023_goma_physics.png
-	:align: center
-	:width: 90%
+ .. math::
 
-where C\ :sub:`1`, C\ :sub:`2` and C\ :sub:`3` are the constant values (<*floati*>) and *x* represents any variable
+    C_1 + C_2x + C_3x^2 = 0
+
+where :math:`C_1`, :math:`C_2`, and :math:`C_3` are the constant values (<*float*>) and :math:`x` represents any variable
 (<variable_name>). This boundary condition card can be used in combination with any
 of the other *GD_** conditions as a building block to construct more complicated
 conditions. Moreover, the resulting boundary condition can be applied as a strong
@@ -44,9 +44,9 @@ follows:
                     the discussion above for *Category 1*).
 <integer2>          Species number of the concentration variable.The value
                     should be 0 unless the <variable_name> is of type MASS_FRACTION.
-<float1>            Intercept, C\ :sub:`1`.
-<float2>            Slope, C\ :sub:`2`.
-<float3>            Acceleration, C\ :sub:`3`.
+<float1>            Intercept :math:`C_1`.
+<float2>            Slope :math:`C_2`.
+<float3>            Acceleration :math:`C_3`.
 =================== =====================================================================
 
 ------------
@@ -62,7 +62,7 @@ Following is a sample card:
 
 	BC = GD_LINEAR SS 4 R_MESH1 0 MESH_DISPLACEMENT1 0   0. -1.
 
-This boundary condition results in the equation -3*y2-2.0*y + 1.0 = 0 to be applied as a
+This boundary condition results in the equation :math:`-3*y^2-2.0*y + 1.0 = 0` to be applied as a
 boundary condition to the x-component of the mesh motion equation. y is the ycomponent
 of the mesh position (N.B. not displacement, as *MESH_POSITION2* would
 be replaced by *MESH_DISPLACEMENT2* in the above). The equation is actually

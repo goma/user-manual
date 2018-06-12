@@ -15,11 +15,11 @@
 This boundary condition of type *Category 1* (see discussion) is used to impose a
 quadratic function for any nodal variable using the residual function form
 
- .. figure:: /figures/029_goma_physics.png
-	:align: center
-	:width: 90%
+.. math::
 
-where C\ :sub:`1`, C\ :sub:`2` and C\ :sub:`3` are the constant values (<*floati*>) and x represents any variable
+   -{C_1}^2 + C_3 \left( x - C_2\right)^2 = 0.
+
+where :math:`C_1`, :math:`C_2`, and :math:`C_3` are the constant values (<*float*>) and :math:`x` represents any variable
 (<variable_name>). This boundary condition card can be used in combination with any
 of the other *GD_** conditions as a building block to construct more complicated
 conditions. *GD_CIRC* happens to be a convenient building block for circles or
@@ -29,7 +29,7 @@ see the examples on all of these cards for details and instructive uses. Definit
 input parameters are as follows: (convenient for circles):
 
 =================== =================================================================
-**GD_TIME**         Name of the boundary condition (<bc_name>).
+**GD_CIRC**         Name of the boundary condition (<bc_name>).
 **SS**              Type of boundary condition (<bc_type>), where **SS**
                     denotes side set in the EXODUS II database.
 <bc_id>             The boundary flag identifier, an integer associated with
@@ -48,10 +48,10 @@ input parameters are as follows: (convenient for circles):
 <integer2>          Species number of the concentration variable. The value
                     should be 0 unless the <variable_name> is of type
                     *MASS_FRACTION*.
-<float1>            Radius, C\ :sub:`0`. This *should appear in only one* GD_CIRC
+<float1>            Radius :math:`C_1`. This *should appear in only one* GD_CIRC
                     *condition on each boundary*.
-<float2>            Origin, C\ :sub:`1`.
-<float3>            Ellipticity, C\ :sub:`2`.
+<float2>            Origin :math:`C_2`.
+<float3>            Ellipticity :math:`C_3`.
 =================== =================================================================
 
 ------------
