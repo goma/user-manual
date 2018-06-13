@@ -14,45 +14,46 @@ This optional card format provides a mechanism for reading-in nodal field variab
 stored in an EXODUS II file. Each field variable is specified on a separate input card,
 with the following input parameters:
 
-============================  ===============================================================
-<char_string1>                Name of the nodal field to be read; it should correspond
-                              to a nodal variable name in the EXODUS II file.
-{char_string2}                Two- to eight-character value that identifies the type of
-                              interpolation to be applied to the external variable field.
-                              Possible values are as follows:
-
-                              =============   ===============================================
-                                 **Q1**       - Linear
-                                 **Q2**       - Quadratic
-                                **Q2_LSA**    - Special quadratic for 3D analysis of 2D LSA
-                                 **Q1_D**     - Linear with special surface dofs
-                                 **Q2_D**     - Quadratic with special surface dofs
-                               **Q2_D_LSA**   - Special quadratic discontinuous for 3D
-                                                analysis of 2D LSA
-                                 **PQ1**      - Bilinear discontinuous
-                                 **PQ2**      - Biquadratic discontinuous
-                                 **P0**       - Piecewise constant
-                                 **Pl**       - Piecewise linear
-                                 **SP**       - Subparametric; linear on interior,
-                                                quadratic on surface
-                              =============   ===============================================
-<file_name>                   Name of the EXODUS II file from which the nodal field
-                              is to be read. When Goma is compiled with
-                              LIBRARY_MODE defined (see Appendix 2) and the
-                              external field will be passed into Goma from a driver
-                              code, this entry will be either IMPORT (for nodal
-                              variables) or IMPORT_EV (for element variables),
-                              instead of a file name.
-[char_string3]                Optional character string. Only optional available is
-                              **“timedependent”** which enables nodal variables to be
-                              interpolated to the current time step. This option is
-                              useful for transient coupling, viz. a case in which a
-                              transient field variable is used to drive a time-dependent
-                              simulation. A good example of this is a transient current
-                              density field from a electromagnetics calculation being
-                              used to drive a transient thermal calculation with Joule 
-                              heating.
-============================  ===============================================================
++------------------+----------------------------------------------------------------+
+| <char_string1>   |   Name of the nodal field to be read; it should correspond     |
+|                  |   to a nodal variable name in the EXODUS II file.              |
++------------------+----------------------------------------------------------------+
+| {char_string2}   |   Two- to eight-character value that identifies the type of    |
+|                  |   interpolation to be applied to the external variable field.  |
+|                  |   Possible values are as follows:                              |
+|                  |                                                                |
+|                  |   * **Q1**       - Linear                                      |
+|                  |   * **Q2**       - Quadratic                                   |
+|                  |   * **Q2_LSA**   - Special quadratic for 3D analysis of 2D LSA |
+|                  |   * **Q1_D**     - Linear with special surface dofs            |
+|                  |   * **Q2_D**     - Quadratic with special surface dofs         |
+|                  |   * **Q2_D_LSA** - Special quadratic discontinuous for 3D      |
+|                  |                    analysis of 2D LSA                          |
+|                  |   * **PQ1**      - Bilinear discontinuous                      |
+|                  |   * **PQ2**      - Biquadratic discontinuous                   |
+|                  |   * **P0**       - Piecewise constant                          |
+|                  |   * **Pl**       - Piecewise linear                            |
+|                  |   * **SP**       - Subparametric; linear on interior,          |
+|                  |                    quadratic on surface                        |
++------------------+----------------------------------------------------------------+
+|<file_name>       |   Name of the EXODUS II file from which the nodal field        |
+|                  |   is to be read. When Goma is compiled with                    |
+|                  |   LIBRARY_MODE defined (see Appendix 2) and the                |
+|                  |   external field will be passed into Goma from a driver        |
+|                  |   code, this entry will be either IMPORT (for nodal            |
+|                  |   variables) or IMPORT_EV (for element variables),             |
+|                  |   instead of a file name.                                      |
++------------------+----------------------------------------------------------------+
+|[char_string3]    |   Optional character string. Only optional available is        |
+|                  |   **“timedependent”** which enables nodal variables to be      |
+|                  |   interpolated to the current time step. This option is        |
+|                  |   useful for transient coupling, viz. a case in which a        |
+|                  |   transient field variable is used to drive a time-dependent   |
+|                  |   simulation. A good example of this is a transient current    |
+|                  |   density field from a electromagnetics calculation being      |
+|                  |   used to drive a transient thermal calculation with Joule     |
+|                  |   heating.                                                     |
++------------------+----------------------------------------------------------------+
 
 ------------
 **Examples**

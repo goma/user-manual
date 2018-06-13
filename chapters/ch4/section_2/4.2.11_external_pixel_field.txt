@@ -16,30 +16,31 @@ chosen interpolation. After GOMA execution these fields are output in exodusII
 format in a file map.exoII. Please see discussion below and Tutorial GT-038 for more
 details and important tips.
 
-============================  ===================================================================
-<char_string1>                Name of the nodal field to be read; it should correspond
-                              to a nodal variable name you wish to have in the output
-                              EXODUS II file. If you subsequently wish to read the
-                              field in again and use as an EXTERNAL_FIELD model
-                              on other material property card, the chosen name matters.
-{Q1 | Q2}                     The type of interpolation to be applied to the external
-                              pixel field variable field. Possible values are as follows:
++------------------+----------------------------------------------------------------+
+|<char_string1>    | Name of the nodal field to be read; it should correspond       |
+|                  | to a nodal variable name you wish to have in the output        |
+|                  | EXODUS II file. If you subsequently wish to read the           |
+|                  | field in again and use as an EXTERNAL_FIELD model              |
+|                  | on other material property card, the chosen name matters.      |
++------------------+----------------------------------------------------------------+
+|{Q1 | Q2}         | The type of interpolation to be applied to the external        |
+|                  | pixel field variable field. Possible values are as follows:    |
+|                  |                                                                |
+|                  |    * Q1  -  Linear                                             |
+|                  |    * Q2  -  Quadratic                                          |
++------------------+----------------------------------------------------------------+
+|<file_name>       | Name of the text file name with the pixel points. The          |
+|                  | pixel field format in this file should be as follows:          |
+|                  |                                                                |
+|                  |    * # pixel points                                            |
+|                  |    * x_1, y_1, z_1 value                                       |
+|                  |    * x_2, y_2, z_2 value                                       |
+|                  |    * ...                                                       |
+|                  |    * x_N, y_n, z_n value                                       |
++------------------+----------------------------------------------------------------+
+|<integer1>        | Material block ID to which the pixel field is mapped.          |
++------------------+----------------------------------------------------------------+
 
-                              =======================  =======================
-                              Q1                       Linear
-                              Q2                       Quadratic
-                              =======================  =======================
-<file_name>                   Name of the text file name with the pixel points. The
-                              pixel field format in this file should be as follows:
-
-                              # pixel points
-                              x_1, y_1, z_1 value
-                              x_2, y_2, z_2 value
-                              ...
-                              x_N, y_n, z_n value
-<integer1>                    Material block ID to which the pixel field is mapped.
-============================  ===================================================================
- 
 ------------
 **Examples**
 ------------
