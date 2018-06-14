@@ -688,6 +688,22 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.31_kinematic_species.txt
 
+.. include:: /chapters/ch4/section_10/4.10.32_kin_displacement_petrov.txt
+
+.. include:: /chapters/ch4/section_10/4.10.33_kin_displacement_colloc.txt
+
+.. include:: /chapters/ch4/section_10/4.10.34_kin_displacement.txt
+
+.. include:: /chapters/ch4/section_10/4.10.35_kin_leak.txt
+
+.. include:: /chapters/ch4/section_10/4.10.36_kin_chem.txt
+
+.. include:: /chapters/ch4/section_10/4.10.37_force.txt
+
+.. include:: /chapters/ch4/section_10/4.10.38_norm_force.txt
+
+.. include:: /chapters/ch4/section_10/4.10.39_rep_force.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 

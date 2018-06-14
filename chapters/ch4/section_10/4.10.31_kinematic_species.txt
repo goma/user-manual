@@ -96,4 +96,4 @@ GTM-007.1: New Multicomponent Vapor-Liquid Equilibrium Capabilities in GOMA,
 December 10, 1998, A. C. Sun
 
 ..
-	 TODO - The picture in line 64 needs to be exchanged with the equation. In lines 68-73, it says "**EQUATION**" everytime there is supposed to be something from the equation that needs to be written. 
+	 TODO - The picture in line 64 needs to be exchanged with the equation. In lines 68-73, where it says "**EQUATION**" everytime there is supposed to be something from the equation that needs to be written. 
