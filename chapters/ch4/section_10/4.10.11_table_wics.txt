@@ -47,21 +47,31 @@ Definitions of the input parameters are as follows:
 
 |
 
-============================================ ========================= ================================
-**String**                                   **replaces**              **Equation**
--------------------------------------------- ------------------------- --------------------------------
-VELOCITY1 or U                               liquid x-traction         R_MOMENTUM1
-VELOCITY2 or V                               liquid y-traction         R_MOMENTUM2
-VELOCITY3 or W                               liquid z-traction         R_MOMENTUM3
-TEMPERATURE                                  diffusive energy flux     R_ENERGY
-MESH_DISPLACEMENT1 or DX or MESH_POSITION1   mesh x-traction           R_MESH1
-MESH_DISPLACEMENT2 or DY or MESH_POSITION2   mesh y-traction           R_MESH2
-MESH_DISPLACEMENT3 or DZ or MESH_POSITION3   mesh z-traction           R_MESH3
-SOLID_DISPLACEMENT1                          solid x-traction          R_SOLID1
-SOLID_DISPLACEMENT2                          solid y-traction          R_SOLID2
-SOLID_DISPLACEMENT3                          solid z-traction          R_SOLID3
-S[1-3][1-3]_[1-7]                            polymer mode traction     R_STRESS[1-3][1-3]_[1-7]
-============================================ ========================= ================================
++-------------------------------------------+--------------------------+------------------------------+
+|**String**                                 |  **replaces**            |  **Equation**                |
++-------------------------------------------+--------------------------+------------------------------+
+|VELOCITY1 or U                             |  liquid x-traction       |  R_MOMENTUM1                 |
++-------------------------------------------+--------------------------+------------------------------+
+|VELOCITY2 or V                             |  liquid y-traction       |  R_MOMENTUM2                 |
++-------------------------------------------+--------------------------+------------------------------+
+|VELOCITY3 or W                             |  liquid z-traction       |  R_MOMENTUM3                 |
++-------------------------------------------+--------------------------+------------------------------+
+|TEMPERATURE                                |  diffusive energy flux   |  R_ENERGY                    |
++-------------------------------------------+--------------------------+------------------------------+
+|MESH_DISPLACEMENT1 or DX or MESH_POSITION1 |  mesh x-traction         |  R_MESH1                     |
++-------------------------------------------+--------------------------+------------------------------+
+|MESH_DISPLACEMENT2 or DY or MESH_POSITION2 |  mesh y-traction         |  R_MESH2                     |
++-------------------------------------------+--------------------------+------------------------------+
+|MESH_DISPLACEMENT3 or DZ or MESH_POSITION3 |  mesh z-traction         |  R_MESH3                     |
++-------------------------------------------+--------------------------+------------------------------+
+|SOLID_DISPLACEMENT1                        |  solid x-traction        |  R_SOLID1                    |
++-------------------------------------------+--------------------------+------------------------------+
+|SOLID_DISPLACEMENT2                        |  solid y-traction        |  R_SOLID2                    |
++-------------------------------------------+--------------------------+------------------------------+
+|SOLID_DISPLACEMENT3                        |  solid z-traction        |  R_SOLID3                    |
++-------------------------------------------+--------------------------+------------------------------+
+|S[1-3][1-3]_[1-7]                          |  polymer mode traction   |  R_STRESS[1-3][1-3]_[1-7]    |
++-------------------------------------------+--------------------------+------------------------------+
 
 |
 

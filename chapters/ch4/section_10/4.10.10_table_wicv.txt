@@ -47,13 +47,15 @@ Definitions of the input parameters are as follows:
 
 |
 
-========================================== ================= ================
-**String**                                 **replaces**      **Equation**
------------------------------------------- ----------------- ----------------
-VELOCITY1 or U                             liquid tractions  R_MOMENTUM[1-3]
-MESH_DISPLACEMENT1 or DX or MESH_POSITION1 mesh tractions    R_MESH[1-3]
-SOLID_DISPLACEMENT1                        solid tractions   R_SOLID[1-3]
-========================================== ================= ================
++------------------------------------------+-----------------+----------------+
+|**String**                                | **replaces**    |  **Equation**  |
++------------------------------------------+-----------------+----------------+
+|VELOCITY1 or U                            | liquid tractions| R_MOMENTUM[1-3]|
++------------------------------------------+-----------------+----------------+
+|MESH_DISPLACEMENT1 or DX or MESH_POSITION1| mesh tractions  | R_MESH[1-3]    |
++------------------------------------------+-----------------+----------------+
+|SOLID_DISPLACEMENT1                       | solid tractions | R_SOLID[1-3]   |
++------------------------------------------+-----------------+----------------+
 
 |
 
