@@ -61,11 +61,11 @@ equation residuals is replaced by this condition.
 
 The mathematical form of this distinguishing condition is as follows:
 
-.. figure:: /figures/032_goma_physics.png
-	:align: center
-	:width: 90%
+.. math::
 
-where T\ :sub:`mp` is the specified temperature parameter. This condition has been used
+   T - T_{\mathrm{mp}} = 0
+
+where :math:`T_{\mathrm{mp}}` is the specified temperature parameter. This condition has been used
 extensively for macroscale and microscale melting problems, whereby one needs to
 distinguish a molten region from a solidified or mushy region with liquidus and solidus
 temperatures. In three dimensions usage needs to be completed with a companion *ROT*

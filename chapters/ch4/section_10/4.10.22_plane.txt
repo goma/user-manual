@@ -16,9 +16,9 @@ This card is used to specify a surface (solid) boundary position of a planar sur
 applied as a rotated condition on the mesh equations (see *EQ* cards *mesh1, mesh2
 mesh3*). The form of this equation is given by
 
- .. figure:: /figures/034_goma_physics.png
-	:align: center
-	:width: 90%
+.. math::
+
+   f(x, y, z) = ax + by + cz + d = 0
 
 Definitions of the input parameters are given below; note that <floatlist> has four
 parameters corresponding to the four constants in the equation:
@@ -30,10 +30,10 @@ parameters corresponding to the four constants in the equation:
 <bc_id>            The boundary flag identifier, an integer associated with
                    <bc_type> that identifies the boundary location (side set in
                    EXODUS II) in the problem domain.
-<float1>           *a* in function f(x, y, z)
-<float2>           *b* in function f(x, y, z)
-<float3>           *c* in function f(x, y, z)
-<float4>           *d* in function f(x, y, z)
+<float1>           :math:`a` in function :math:`f(x, y, z)`
+<float2>           :math:`b` in function :math:`f(x, y, z)`
+<float3>           :math:`c` in function :math:`f(x, y, z)`
+<float4>           :math:`d` in function :math:`f(x, y, z)`
 ================== ========================================================================
 
 ------------
@@ -46,7 +46,7 @@ Following is a sample input card:
      BC = PLANE SS 3 0.0 1.0 0.0 -0.3
 
 results in setting the side set elements along the side set 3 to a plane described by the
-equation f(x, y, z, t) = y – 0.3 = 0 .
+equation :math:`f(x, y, z, t) = y – 0.3 = 0` .
 
 -------------------------
 **Technical Discussion**

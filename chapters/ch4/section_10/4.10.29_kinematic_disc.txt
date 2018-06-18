@@ -67,9 +67,9 @@ into a gas.
 This boundary condition card is used for a distinguishing condition and its functional
 form is:
 
-.. figure:: /figures/040_goma_physics.png
-	:align: center
-	:width: 90%
+.. math::
+
+   \rho_1 \underline{n} \cdot \left( \underline{v} - \underline{v}_s \right) \rvert_1 = \rho_2 \underline{n} \cdot \left( \underline{v} - \underline{v}_s \right) \rvert_2
 
 where 1 denotes evaluation in phase 1 and 2 denotes evaluation in phase 2.
 

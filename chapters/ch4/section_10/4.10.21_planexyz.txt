@@ -17,9 +17,9 @@ description as a replacement on the X, Y, or Z-component (*PLANEX, PLANEY,
 PLANEZ*, respectively) of the mesh equations (see *EQ* cards *mesh1, mesh2*, or *mesh3*).
 The form of this equation is given by
 
- .. figure:: /figures/033_goma_physics.png
-	:align: center
-	:width: 90%
+.. math::
+
+   f(x, y, z) = ax + by + cz + d = 0
 
 This mathematical form and its usage is exactly like the BC = PLANE boundary
 condition card (see PLANE for description), but is applied to the mesh motion
@@ -37,10 +37,10 @@ that <floatlist> has four parameters corresponding to the four constants in the 
 <bc_id>                        The boundary flag identifier, an integer associated with
                                <bc_type> that identifies the boundary location (side set
                                in EXODUS II) in the problem domain.
-<float1>                       *a* in function f(x, y, z)
-<float2>                       *b* in function f(x, y, z)
-<float3>                       *c* in function f(x, y, z)
-<float4>                       *d* in function f(x, y, z)
+<float1>                       :math:`a` in function :math:`f(x, y, z)`
+<float2>                       :math:`b` in function :math:`f(x, y, z)`
+<float3>                       :math:`c` in function :math:`f(x, y, z)`
+<float4>                       :math:`d` in function :math:`f(x, y, z)`
 ============================== ==========================================================
 
 ------------
@@ -54,7 +54,7 @@ direction):
 
      BC = PLANEX SS 101 1.0 1.0 -2.0   100.0
 
-This boundary condition leads to the application of the equation 1.0x + 1.0y – 2.0z = –100.0
+This boundary condition leads to the application of the equation :math:`1.0x + 1.0y – 2.0z = –100.0`
 to the *mesh1* equation on EXODUS II side set number 101.
 
 -------------------------

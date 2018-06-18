@@ -61,13 +61,13 @@ multivalued) variables at an interface, and it must be invoked on fields that em
 **Q1_D** or **Q2_D** interpolation functions to “tie” together or constrain the extra degrees
 of freedom at the interface in question. The mathematical form is
 
-.. figure:: /figures/043_goma_physics.png
-	:align: center
-	:width: 90%
+.. math::
 
-Here **EQUATION** and **EQUATION** are the gas and liquid velocity vectors at the free surface, respectively; **EQUATION** is the mesh velocity at the same location; **EQUATION** and **EQUATION** are the liquid and gas phase
-densities, respectively; **EQUATION** and **EQUATION** are the liquid and gas phase volume fractions of
-component *i*; and **EQUATION** and **EQUATION** the mass fluxes of component *i*. This condition constrains
+   \underline{n} \cdot \left[ \left( \underline{v}_s - {\underline{v}}^l \right) {y_i}^l \rho^l - {\underline{j}_i}^l \right] = \underline{n} \cdot \left[ \left( \underline{v}_s - {\underline{v}}^g \right) {y_i}^g \rho^g - {\underline{j}_i}^g \right]
+
+Here :math:`{\underline{v}}^l` and :math:`{\underline{v}}^g` are the gas and liquid velocity vectors at the free surface, respectively; :math:`\underline{v}_s` is the mesh velocity at the same location; :math:`\rho^l` and :math:`\rho^g` are the liquid and gas phase
+densities, respectively; :math:`{y_i}^l` and :math:`{y_i}^g` are the liquid and gas phase volume fractions of
+component :math:`i`; and :math:`{\underline{j_i}}^l` and :math:`{\underline{j_i}}^g` the mass fluxes of component :math:`i`. This condition constrains
 only one of two phase concentrations at the discontinuous interface. The other needs to
 come from a Dirichlet boundary condition like (BC =) Y, or an equilibrium boundary
 condition like *VL_EQUIL*.

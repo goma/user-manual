@@ -15,7 +15,7 @@
 This boundary condition card applies a slope at the boundary of a *LAGRANGIAN,
 TALE*, or *ARBITRARY* solid (see *Mesh Motion* card) such that the normal vector to the
 surface is colinear with the vector specified as input, viz 
-n\ :sub:`˜` ⋅ n\ :sub:`˜spec` = 0 . Here n\ :sub:`˜spec`
+:math:`\underline{n} \cdot \underline{n}_{\mathrm{spec}} = 0`. Here :math:`\underline{n}_{\mathrm{spec}}`
 is the vector specified component-wise via the three <floatlist> parameters on the input
 card. Definitions of the input parameters are as follows:
 
@@ -26,9 +26,9 @@ card. Definitions of the input parameters are as follows:
 <bc_id>                         The boundary flag identifier, an integer associated with
                                 <bc_type> that identifies the boundary location (side set in
                                 EXODUS II) in the problem domain.
-<float1>                        X-component of the slope vector n\ :sub:`˜spec`
-<float2>                        Y-component of the slope vector n\ :sub:`˜spec`
-<float3>                        Z-component of the slope vector n\ :sub:`˜spec`
+<float1>                        X-component of the slope vector :math:`\underline{n}_{\mathrm{spec}}`
+<float2>                        Y-component of the slope vector :math:`\underline{n}_{\mathrm{spec}}`
+<float3>                        Z-component of the slope vector :math:`\underline{n}_{\mathrm{spec}}`
 =============================== ==============================================================
 
 ------------

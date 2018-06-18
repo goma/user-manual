@@ -57,13 +57,13 @@ the surface delineated by side set 10.
 
 The functional form of the kinematic boundary condition is:
 
-.. figure:: /figures/041_goma_physics.png
-	:align: center
-	:width: 90%
+.. math::
 
-Here n\ :sub:`˜cl` is the unit normal tangent vector to a line in space defined by two surfaces, in
-the plane of the primary surface, viz. tangent to that surface. v\ :sub:`˜` is the velocity of the
-fluid, v\ :sub:`˜s` is the velocity of the surface (or mesh). This condition only makes sense in
+   \underline{n}_{\mathrm{cl}} \cdot \left( \underline{v} - \underline{v}_s \right) = 0
+
+Here :math:`\underline{n}_{\mathrm{cl}}` is the unit normal tangent vector to a line in space defined by two surfaces, in
+the plane of the primary surface, viz. tangent to that surface. :math:`\underline{v}` is the velocity of the
+fluid, :math:`\underline{v}_s` is the velocity of the surface (or mesh). This condition only makes sense in
 three dimensions, and needs to be directed with *ROT* conditions for proper application.
 
 .. figure:: /figures/042_goma_physics.png

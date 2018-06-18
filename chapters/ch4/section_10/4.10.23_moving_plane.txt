@@ -17,15 +17,15 @@ versus time for a planar surface (cf. *PLANE* boundary condition card). It is ap
 rotated condition on the mesh equations (see *EQ* cards *mesh1, mesh2, mesh3*). The
 form of the equation is given by
 
-.. figure:: /figures/035_goma_physics.png
-	:align: center
-	:width: 90%
+.. math::
 
-and the function g(t) is defined as
+   f(x, y, z, t) = ax + by + cz + d + g(t) = 0
 
-.. figure:: /figures/036_goma_physics.png
-	:align: center
-	:width: 90%
+and the function :math:`g(t)` is defined as
+
+.. math::
+
+   g(t) = \lambda_1t + \lambda_2t^2 + \lambda_3t^3
 
 Definitions of the input parameters are given below; note that <floatlist> has seven
 parameters corresponding to the seven constants in the above equations:
@@ -37,13 +37,13 @@ parameters corresponding to the seven constants in the above equations:
 <bc_id>                The boundary flag identifier, an integer associated with
                        <bc_type> that identifies the boundary location (side set in
                        EXODUS II) in the problem domain.
-<float1>               *a* in function f(x, y, z)
-<float2>               *b* in function f(x, y, z)
-<float3>               *c* in function f(x, y, z)
-<float4>               *d* in function f(x, y, z)
-<float5>               λ\ :sub:`1` coefficient in g(t)
-<float6>               λ\ :sub:`2` coefficient in g(t)
-<float7>               λ\ :sub:`3` coefficient in g(t)
+<float1>               :math:`a` in function :math:`f(x, y, z, t)`
+<float2>               :math:`b` in function :math:`f(x, y, z, t)`
+<float3>               :math:`c` in function :math:`f(x, y, z, t)`
+<float4>               :math:`d` in function :math:`f(x, y, z, t)`
+<float5>               :math:`\lambda_1` coefficient in :math:`g(t)`
+<float6>               :math:`\lambda_2` coefficient in :math:`g(t)`
+<float7>               :math:`\lambda_3` coefficient in :math:`g(t)`
 ====================== ============================================================
 
 ------------
@@ -58,9 +58,9 @@ The boundary condition card
 results in a plane originally positioned at y = 0.3 to move at a velocity of -*0.1*, viz.
 the position of all nodes on the plane will follow:
 
-.. figure:: /figures/037_goma_physics.png
-	:align: center
-	:width: 90%
+.. math::
+
+   f(x, y, z, t) = y - 0.3 + 0.1t = 0
 
 -------------------------
 **Technical Discussion**

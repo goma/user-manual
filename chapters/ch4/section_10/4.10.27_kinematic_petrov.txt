@@ -58,11 +58,11 @@ Galerkin fashion with a weighting function equal to the interpolation function f
 velocity, the residual of the equation is formed as weighted by the directional derivative
 of the basis functions along the free surface. Specifically,
 
-.. figure:: /figures/039_goma_physics.png
-	:align: center
-	:width: 90%
+.. math::
 
-where the nodal basis function ϕ\ :sup:`i` is replaced by **EQUATION** in the residual equation. Compare
+   \int \left\{ \underline{n} \cdot \left( \underline{v} - \underline{v}_s \right) - \dot{m} \right\} \phi^i \, \mathrm{d}A = R^i = 0
+
+where the nodal basis function :math:`\phi^i` is replaced by :math:`\frac{\partial}{\partial s} \phi^i` in the residual equation. Compare
 this to the *KINEMATIC* boundary condition description.
 
 ----------
