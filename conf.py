@@ -225,10 +225,7 @@ latex_elements = {
 
 # Additional stuff for the LaTeX preamble.
 'preamble': """
-%XeLaTeX packages
-\usepackage{xltxtra}
-\usepackage{fontspec} %Font package
-\usepackage{xunicode}""",
+""",
 
 # Latex figure (float) alignment
 #'figure_align': 'htbp',

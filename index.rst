@@ -7,7 +7,7 @@ Goma User Guide
 ===============
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 3
 
    chapters/ch1/intro
    chapters/ch2/background_information
