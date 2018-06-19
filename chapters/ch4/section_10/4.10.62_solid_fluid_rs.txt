@@ -76,8 +76,8 @@ The functional form of the *SOLID_FLUID_RS* boundary condition is:
 	:align: center
 	:width: 90%
 
-where **EQUATION** is the fluid phase stress tensor given by any one of the specified fluid-phase
-constitutive equations, and **EQUATION** is the real-solid solid phase stress tensor, also given by
+where :math:`\underline{T}` is the fluid phase stress tensor given by any one of the specified fluid-phase
+constitutive equations, and :math:`\underline{\sigma}` is the real-solid solid phase stress tensor, also given by
 any one of the solid-phase constitutive equation (see *Mat* file specifications). :math:`\lambda` is a
 scaling factor that defaults to unity (and is usually best taken as such unless some
 scaling is invoked). With this boundary condition, the local residual and Jacobian
@@ -113,4 +113,4 @@ SAND2000-0807: TALE: An Arbitrary Lagrangian-Eulerian Approach to Fluid-
 Structure Interaction Problems, P. R. Schunk (May 2000)
 
 .. 
-	TODO - Line 72 contains a picture that needs to be repalced with the equation. Also where is says "**EQUATION**" a letter needs to be written in the correct foramt.
+	TODO - Line 72 contains a picture that needs to be repalced with the equation. 

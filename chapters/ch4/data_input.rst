@@ -758,6 +758,12 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.69_uvwvary.txt
 
+.. include:: /chapters/ch4/section_10/4.10.70_uvwuser.txt
+
+.. include:: /chapters/ch4/section_10/4.10.71_no_slip_no_slip_rs.txt
+
+.. include:: /chapters/ch4/section_10/4.10.72_velo_normal.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
