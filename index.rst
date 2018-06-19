@@ -3,11 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Tutorial's documentation!
-====================================
+Goma User Guide
+===============
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
    chapters/ch1/intro
    chapters/ch2/background_information

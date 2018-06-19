@@ -22,11 +22,9 @@ during the course of the computation.
                           :math:`m` discrete points is constructed that lie on the zero 
                           contour of the :math:`j` -th phase function field:
 
-                          .. math::
-
-                             \mathbf{P} = \left\{ \left( x_i, y_i, z_i \right), \,  
+                             :math:`\mathbf{P} = \left\{ \left( x_i, y_i, z_i \right), \,  
                               i = 1,2, \ldots m | \quad \phi_j \left( x_i, y_i, z_i \right) 
-                              = 0 \right\}
+                              = 0 \right\}`
 
                           The finite element interpolating functions make this an easy task
                           for *Goma*. For each mesh node :math:`k`, a minimum distance 

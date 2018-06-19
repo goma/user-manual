@@ -24,11 +24,9 @@ Each method is described below; see also the Technical Discussion.
 =======================  ========================================================================
 **Huygens**              In this method a set of m points P is constructed:
 
-                         .. math::
-
-                            \mathbf{P} = \left\{ \left( x_i, y_i, z_i \right), \,  
+                            :math:`\mathbf{P} = \left\{ \left( x_i, y_i, z_i \right), \,  
                             i = 1,2, \ldots m | \quad \phi_j \left( x_i, y_i, z_i \right) 
-                            = 0 \right\}
+                            = 0 \right\}`
 
                          which in a sense represent a discretization of the 
                          interface location. The finite element interpolation

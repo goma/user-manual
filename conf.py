@@ -53,9 +53,14 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Tutorial'
-copyright = '2018, Lauren Gruda'
-author = 'Lauren Gruda'
+project = """Goma 6.0 - A Full-Newton Finite Element Program for
+Free and Moving Boundary Problems with Coupled Fluid/
+Solid Momentum, Energy, Mass, and Chemical Species
+Transport: User's Guide"""
+copyright = ''
+author = """P. Randall Schunk, Rekha R. Rao, Ken S. Chen, Duane A. Labreche, Amy C. Sun,
+Matthew M. Hopkins, Harry K. Moffat, R. Allen Roach, Polly L. Hopkins and Patrick K.
+Notz, S. A. Roberts"""
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -219,7 +224,11 @@ latex_elements = {
 #'pointsize': '10pt',
 
 # Additional stuff for the LaTeX preamble.
-#'preamble': '',
+'preamble': """
+%XeLaTeX packages
+\usepackage{xltxtra}
+\usepackage{fontspec} %Font package
+\usepackage{xunicode}""",
 
 # Latex figure (float) alignment
 #'figure_align': 'htbp',
@@ -229,8 +238,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'Tutorial.tex', 'Tutorial Documentation',
-   'Lauren Gruda', 'manual'),
+  (master_doc, 'goma-manual.tex', 'Goma User Guide',
+   r"P. Randall Schunk \and Rekha R. Rao \and Ken S. Chen \and Duane A. Labreche \and Amy C. Sun \and Matthew M. Hopkins \and Harry K. Moffat \and R. Allen Roach \and Polly L. Hopkins \and Patrick K. Notz \and S. A. Roberts", 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
