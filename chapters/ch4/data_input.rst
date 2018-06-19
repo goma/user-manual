@@ -722,6 +722,24 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.49_var_ca_edge.txt
 
+.. include:: /chapters/ch4/section_10/4.10.50_var_ca_user.txt
+
+.. include:: /chapters/ch4/section_10/4.10.51_friction.txt
+
+.. include:: /chapters/ch4/section_10/4.10.52_solid_fluid.txt
+
+.. include:: /chapters/ch4/section_10/4.10.53_penetration.txt
+
+.. include:: /chapters/ch4/section_10/4.10.55_porous_kin.txt
+
+.. include:: /chapters/ch4/section_10/4.10.56_sdc_kin_sf.txt
+
+.. include:: /chapters/ch4/section_10/4.10.57_dxdydz_rs.txt
+
+.. include:: /chapters/ch4/section_10/4.10.58_force_rs.txt
+
+.. include:: /chapters/ch4/section_10/4.10.59_norm_force_rs.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 

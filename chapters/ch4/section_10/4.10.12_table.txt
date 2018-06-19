@@ -356,3 +356,13 @@ No FAQs.
 --------------
 
 No References.
+
+_____________________________________________________________________________
+
+Category 2: Boundary Conditions for the Mesh Equations
+
+The boundary conditions in this section involve the mesh motion equations in LAGRANGIAN or
+ARBITRARY form (cf. *Mesh Motion* card). These conditions can be used to pin the mesh, specify
+its slope at some boundary intersection, apply a traction to a surface, etc. Several more boundary
+conditions that are applied to the mesh motion equations but include other problem physics are
+also available.
