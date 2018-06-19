@@ -740,6 +740,24 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.59_norm_force_rs.txt
 
+.. include:: /chapters/ch4/section_10/4.10.60_rep_force_rs.txt
+
+.. include:: /chapters/ch4/section_10/4.10.61_force_user_rs.txt
+
+.. include:: /chapters/ch4/section_10/4.10.62_solid_fluid_rs.txt
+
+.. include:: /chapters/ch4/section_10/4.10.63_splinexyz_rs.txt
+
+.. include:: /chapters/ch4/section_10/4.10.64_spline_rs.txt
+
+.. include:: /chapters/ch4/section_10/4.10.65_friction_rs.txt
+
+.. include:: /chapters/ch4/section_10/4.10.67_uvw.txt
+
+.. include:: /chapters/ch4/section_10/4.10.68_puvw.txt
+
+.. include:: /chapters/ch4/section_10/4.10.69_uvwvary.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
