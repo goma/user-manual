@@ -132,7 +132,7 @@ latex: namecase
 	      "(use \`make latexpdf' here to do that automatically)."
 
 .PHONY: latexpdf
-latexpdf:
+latexpdf: namecase
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
 	@echo "Running LaTeX files through pdflatex..."
 	$(MAKE) PDFLATEX=xelatex -C $(BUILDDIR)/latex all-pdf
