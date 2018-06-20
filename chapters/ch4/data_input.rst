@@ -764,6 +764,16 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.72_velo_normal.txt
 
+.. include:: /chapters/ch4/section_10/4.10.73_velo_normal_ls.txt
+
+.. include:: /chapters/ch4/section_10/4.10.75_velo_norm_colloc.txt
+
+.. include:: /chapters/ch4/section_10/4.10.77_velo_normal_disc.txt
+
+.. include:: /chapters/ch4/section_10/4.10.78_velo_normal_edge.txt
+
+.. include:: /chapters/ch4/section_10/4.10.79_velo_normal_edge_int.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
