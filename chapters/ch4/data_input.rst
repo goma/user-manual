@@ -794,6 +794,22 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.89_velo_tangent_solid.txt
 
+.. include:: /chapters/ch4/section_10/4.10.91_velo_slip_solid.txt
+
+.. include:: /chapters/ch4/section_10/4.10.92_discontinuous_velo.txt
+
+.. include:: /chapters/ch4/section_10/4.10.93_hydrostatic_symm.txt
+
+.. include:: /chapters/ch4/section_10/4.10.94_flow_pressure.txt
+
+.. include:: /chapters/ch4/section_10/4.10.95_flow_stressnobc.txt
+
+.. include:: /chapters/ch4/section_10/4.10.96_flow_gradv.txt
+
+.. include:: /chapters/ch4/section_10/4.10.97_flow_press_user.txt
+
+.. include:: /chapters/ch4/section_10/4.10.98_flow_hydrostatic.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
