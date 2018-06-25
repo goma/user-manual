@@ -810,6 +810,18 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.98_flow_hydrostatic.txt
 
+.. include:: /chapters/ch4/section_10/4.10.100_flowrate.txt
+
+.. include:: /chapters/ch4/section_10/4.10.101_pressure_user.txt
+
+.. include:: /chapters/ch4/section_10/4.10.102_cont_tang_vel.txt
+
+.. include:: /chapters/ch4/section_10/4.10.103_cont_norm_vel.txt
+
+.. include:: /chapters/ch4/section_10/4.10.104_vnorm_leak.txt
+
+.. include:: /chapters/ch4/section_10/4.10.105_capillary.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 

@@ -30,12 +30,13 @@ Definitions of the input parameters are as follows:
 |<float>       | :math:`P_{applied}`, the applied pressure.                      |
 +--------------+-----------------------------------------------------------------+
 |[integer]     | An optional parameter.                                          |
-|              |                                                                 |
-|              |   * blank/-1 the pressure in the normal stress is replaced      |
-|              |     by :math:`P_{applied}`.                                     |
-|              |   * ≠ –1 the pressure in the solution vector is                 |
-|              |     retained in the normal stress.                              |
-+--------------+-----------------------------------------------------------------+
++--------------+------------+----------------------------------------------------+
+|              |   blank/-1 | the pressure in the normal stress is replaced      |
+|              |            | by :math:`P_{applied}`.                            |
++--------------+------------+----------------------------------------------------+
+|              |   ≠ –1     |the pressure in the solution vector is              |
+|              |            | retained in the normal stress.                     |
++--------------+------------+----------------------------------------------------+
 
 ------------
 **Examples**
