@@ -774,6 +774,26 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.79_velo_normal_edge_int.txt
 
+.. include:: /chapters/ch4/section_10/4.10.80_velo_tangent.txt
+
+.. include:: /chapters/ch4/section_10/4.10.81_velo_tangent_edge.txt
+
+.. include:: /chapters/ch4/section_10/4.10.82_velo_tangent_edge_int.txt
+
+.. include:: /chapters/ch4/section_10/4.10.83_velo_tangent_3D.txt
+
+.. include:: /chapters/ch4/section_10/4.10.84_velo_slip.txt
+
+.. include:: /chapters/ch4/section_10/4.10.85_velo_slip_rot.txt
+
+.. include:: /chapters/ch4/section_10/4.10.86_velo_slip_fill.txt
+
+.. include:: /chapters/ch4/section_10/4.10.87_velo_slip_electrokinetic.txt
+
+.. include:: /chapters/ch4/section_10/4.10.88_velo_slip_electrokinetic3D.txt
+
+.. include:: /chapters/ch4/section_10/4.10.89_velo_tangent_solid.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
