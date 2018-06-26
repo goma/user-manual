@@ -844,6 +844,24 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.118_fluid_solid.txt
 
+.. include:: /chapters/ch4/section_10/4.10.120_fluid_solid_rs.txt
+
+.. include:: /chapters/ch4/section_10/4.10.121_darcy_continuous.txt
+
+.. include:: /chapters/ch4/section_10/4.10.122_vn_porous.txt
+
+.. include:: /chapters/ch4/section_10/4.10.123_capillary_shear_visc.txt
+
+.. include:: /chapters/ch4/section_10/4.10.124_velo_theta_cox.txt
+
+.. include:: /chapters/ch4/section_10/4.10.125_velo_theta_hoffman.txt
+
+.. include:: /chapters/ch4/section_10/4.10.126_velo_theta_tpl.txt
+
+.. include:: /chapters/ch4/section_10/4.10.128_sheet_endslop.txt
+
+.. include:: /chapters/ch4/section_10/4.10.129_tension_sheet.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
