@@ -830,6 +830,20 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.109_cap_endforce.txt
 
+.. include:: /chapters/ch4/section_10/4.10.110_surftang_edge.txt
+
+.. include:: /chapters/ch4/section_10/4.10.111_cap_endforce_scalar.txt
+
+.. include:: /chapters/ch4/section_10/4.10.112_surftang_scalar_edge.txt
+
+.. include:: /chapters/ch4/section_10/4.10.113_fill_ca.txt
+
+.. include:: /chapters/ch4/section_10/4.10.114_moving_ca.txt
+
+.. include:: /chapters/ch4/section_10/4.10.116_sdc_stefanflow.txt
+
+.. include:: /chapters/ch4/section_10/4.10.118_fluid_solid.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
