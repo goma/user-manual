@@ -862,6 +862,16 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.129_tension_sheet.txt
 
+.. include:: /chapters/ch4/section_10/4.10.130_t.txt
+
+.. include:: /chapters/ch4/section_10/4.10.131_t_user.txt
+
+.. include:: /chapters/ch4/section_10/4.10.133_qconv.txt
+
+.. include:: /chapters/ch4/section_10/4.10.134_qrad.txt
+
+.. include:: /chapters/ch4/section_10/4.10.135_qside.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
