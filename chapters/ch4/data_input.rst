@@ -822,6 +822,14 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.105_capillary.txt
 
+.. include:: /chapters/ch4/section_10/4.10.106_cap_repulse.txt
+
+.. include:: /chapters/ch4/section_10/4.10.107_cap_recoil_press.txt
+
+.. include:: /chapters/ch4/section_10/4.10.108_elec_traction.txt
+
+.. include:: /chapters/ch4/section_10/4.10.109_cap_endforce.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
