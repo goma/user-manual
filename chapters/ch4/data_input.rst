@@ -872,6 +872,12 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.135_qside.txt
 
+.. include:: /chapters/ch4/section_10/4.10.136_t_contact_resis_t_contact_resis_2.txt
+
+.. include:: /chapters/ch4/section_10/4.10.137_quser.txt
+
+.. include:: /chapters/ch4/section_10/4.10.139_q_velo_slip.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
