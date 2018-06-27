@@ -894,6 +894,20 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.149_y_discontinuous.txt
 
+.. include:: /chapters/ch4/section_10/4.10.150_yflux.txt
+
+.. include:: /chapters/ch4/section_10/4.10.151_yflux_const.txt
+
+.. include:: /chapters/ch4/section_10/4.10.152_yflux_equil.txt
+
+.. include:: /chapters/ch4/section_10/4.10.154_yflux_sulfidation.txt
+
+.. include:: /chapters/ch4/section_10/4.10.155_yflux_sus.txt
+
+.. include:: /chapters/ch4/section_10/4.10.157_yflux_bv.txt
+
+.. include:: /chapters/ch4/section_10/4.10.158_yflux_hor.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
