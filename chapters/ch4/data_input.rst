@@ -878,6 +878,22 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.139_q_velo_slip.txt
 
+.. include:: /chapters/ch4/section_10/4.10.140_q_laser_weld.txt
+
+.. include:: /chapters/ch4/section_10/4.10.141_q_vapor_bc.txt
+
+.. include:: /chapters/ch4/section_10/4.10.143_vp_equil.txt
+
+.. include:: /chapters/ch4/section_10/4.10.144_latent_heat.txt
+
+.. include:: /chapters/ch4/section_10/4.10.145_latent_heat_internal.txt
+
+.. include:: /chapters/ch4/section_10/4.10.146_y.txt
+
+.. include:: /chapters/ch4/section_10/4.10.147_yuser.txt
+
+.. include:: /chapters/ch4/section_10/4.10.149_y_discontinuous.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 

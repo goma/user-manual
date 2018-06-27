@@ -1,0 +1,96 @@
+************************
+**LATENT_HEAT_INTERNAL**
+************************
+
+::
+
+	BC = LATENT_HEAT_INTERNAL SS {char_string} <integer_list> <float>
+
+-----------------------
+**Description / Usage**
+-----------------------
+
+**(WIC/ENERGY)**
+
+This boundary condition card is used for latent heat release/adsorption at an internal
+interface. See usage comments in the Technical Discussion.
+
+The <integer_list> requires two values be specified; definitions of the input 
+parameters are as follows:
+
++------------------------+----------------------------------------------------------+
+|**LATENT_HEAT_INTERNAL**| Name of the boundary condition (<bc_name>).              |
++------------------------+----------------------------------------------------------+
+|**SS**                  | Type of boundary condition (<bc_type>), where **SS**     |
+|                        | denotes side set in the EXODUS II database.              |
++------------------------+----------------------------------------------------------+
+|<bc_id>                 | The boundary flag identifier, an integer associated with |
+|                        | <bc_type> that identifies the boundary location (side set|
+|                        | in EXODUS II) in the problem domain.                     |
++------------------------+----------------------------------------------------------+
+|{char_string}           | Variable name with the following permissible values:     |
+|                        |                                                          |
+|                        |   * **LIQUID_VAPOR**                                     |
+|                        |   * **SOLID_LIQUID**                                     |
+|                        |                                                          |
++------------------------+----------------------------------------------------------+
+|<integer1>              | NOT ACTIVE. Any integer will do.                         |
++------------------------+----------------------------------------------------------+
+|<integer2>              | NOT ACTIVE. Any integer will do.                         |
++------------------------+----------------------------------------------------------+
+|<float3>                | Value of latent heat of vaporization/fusion for a pure   |
+|                        | material case, in units of Energy/mass.                  |
++------------------------+----------------------------------------------------------+
+
+------------
+**Examples**
+------------
+
+The following is a sample input card:
+::
+
+   BC = LATENT_HEAT_INTERNAL SS 40 SOLID_LIQUID 1 2 2.6e5
+
+-------------------------
+**Technical Discussion**
+-------------------------
+
+The *LATENT_HEAT_INTERNAL* card should be used for internal surfaces, or
+interfaces, at which transfer is governed by actual physics being modeled as a part of
+the problem. See *LATENT_HEAT* card for further information.
+
+----------
+**Theory**
+----------
+
+No Theory.
+
+--------
+**FAQs**
+--------
+
+No FAQs.
+
+--------------
+**References**
+--------------
+
+No References.
+
+______________________________________________________________________________________
+
+Category 6: Boundary Conditions for the Mass Equations
+
+The collection of boundary conditions in this category are applied to the mass balance equations,
+specifically the species component balance equations. Most boundary conditions are weakly
+integrated conditions defining fluxes at internal or external surfaces, although strongly integrated
+and Dirichlet conditions are also available to control known values of dependent variables or
+integrated quantities. Boundary conditions are available for chemical species as well as charged
+species, suspensions and liquid metals. An important capability in *Goma* is represented by the
+discontinuous variable boundary conditions, for which users are referred to Schunk and Rao
+(1994) and Moffat (2001). Care must be taken if the species concentration is high enough to be
+outside of the *dilute species* assumption, in which case transport of species through boundaries
+will affect the volume of the bounding fluids. In these cases, users are referred to the
+*VNORM_LEAK* condition for the fluid momentum equations and to *KIN_LEAK* for the solid
+momentum (mesh) equations. And finally, users are cautioned about different bases for
+concentration (volume, mass, molar) and several discussions on or references to units.
