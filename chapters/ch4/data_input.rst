@@ -908,6 +908,20 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.158_yflux_hor.txt
 
+.. include:: /chapters/ch4/section_10/4.10.160_yflux_orr.txt
+
+.. include:: /chapters/ch4/section_10/4.10.162_yflux_user.txt
+
+.. include:: /chapters/ch4/section_10/4.10.164_yflux_alloy.txt
+
+.. include:: /chapters/ch4/section_10/4.10.165_ytotalflux_const.txt
+
+.. include:: /chapters/ch4/section_10/4.10.166_vl_equil.txt
+
+.. include:: /chapters/ch4/section_10/4.10.167_vl_poly.txt
+
+.. include:: /chapters/ch4/section_10/4.10.169_vl_equil_pseudorxn.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
