@@ -922,6 +922,22 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.169_vl_equil_pseudorxn.txt
 
+.. include:: /chapters/ch4/section_10/4.10.170_is_equil_pseudorxn.txt
+
+.. include:: /chapters/ch4/section_10/4.10.171_surface_charge.txt
+
+.. include:: /chapters/ch4/section_10/4.10.172_p.txt
+
+.. include:: /chapters/ch4/section_10/4.10.174_pspg.txt
+
+.. include:: /chapters/ch4/section_10/4.10.176_pressure_datum.txt
+
+.. include:: /chapters/ch4/section_10/4.10.177_category_8.txt
+
+.. include:: /chapters/ch4/section_10/4.10.178_porous_liq_pressure.txt
+
+.. include:: /chapters/ch4/section_10/4.10.179_porous_liq_flux_const.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
