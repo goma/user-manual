@@ -1,0 +1,7 @@
+
+________________________________________________________________________________________
+
+Category 15: Boundary Conditions applied on Level Set Interfaces
+
+These boundary conditions are designed to apply conditions in materials along surfaces whose
+position is monitored using Level Set Interface Tracking.

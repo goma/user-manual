@@ -1018,6 +1018,14 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.229_pf_capillary.txt
 
+.. include:: /chapters/ch4/section_10/4.10.230_category_15.txt
+
+.. include:: /chapters/ch4/section_10/4.10.231_ls_adc.txt
+
+.. include:: /chapters/ch4/section_10/4.10.233_ls_ca_h.txt
+
+.. include:: /chapters/ch4/section_10/4.10.235_ls_capillary.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
