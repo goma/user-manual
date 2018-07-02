@@ -938,6 +938,20 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.179_porous_liq_flux_const.txt
 
+.. include:: /chapters/ch4/section_10/4.10.180_porous_gas_pressure.txt
+
+.. include:: /chapters/ch4/section_10/4.10.182_porous_gas.txt
+
+.. include:: /chapters/ch4/section_10/4.10.184_porous_gas_flux_const.txt
+
+.. include:: /chapters/ch4/section_10/4.10.185_porous_conv.txt
+
+.. include:: /chapters/ch4/section_10/4.10.186_porous_flux.txt
+
+.. include:: /chapters/ch4/section_10/4.10.187_porous_pressure.txt
+
+.. include:: /chapters/ch4/section_10/4.10.189_p_liq_user.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
