@@ -1004,6 +1004,20 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.218_current_orr.txt
 
+.. include:: /chapters/ch4/section_10/4.10.220_volt_user.txt
+
+.. include:: /chapters/ch4/section_10/4.10.221_category_14.txt
+
+.. include:: /chapters/ch4/section_10/4.10.222_lagrange_no_slip.txt
+
+.. include:: /chapters/ch4/section_10/4.10.224_overset_fluid_solid_baaijens_fluid_solid.txt
+
+.. include:: /chapters/ch4/section_10/4.10.225_overset_solid_fluid_baaijens_solid_fluid.txt
+
+.. include:: /chapters/ch4/section_10/4.10.227_f1_f2_f3_f4_f5.txt
+
+.. include:: /chapters/ch4/section_10/4.10.229_pf_capillary.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
