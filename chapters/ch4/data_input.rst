@@ -970,6 +970,26 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.199_g11.txt
 
+.. include:: /chapters/ch4/section_10/4.10.200_g12.txt
+
+.. include:: /chapters/ch4/section_10/4.10.201_g13.txt
+
+.. include:: /chapters/ch4/section_10/4.10.202_g21.txt
+
+.. include:: /chapters/ch4/section_10/4.10.203_g22.txt
+
+.. include:: /chapters/ch4/section_10/4.10.204_g23.txt
+
+.. include:: /chapters/ch4/section_10/4.10.205_g31.txt
+
+.. include:: /chapters/ch4/section_10/4.10.206_g32.txt
+
+.. include:: /chapters/ch4/section_10/4.10.207_g33.txt
+
+.. include:: /chapters/ch4/section_10/4.10.208_sh.txt
+
+.. include:: /chapters/ch4/section_10/4.10.209_f.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 

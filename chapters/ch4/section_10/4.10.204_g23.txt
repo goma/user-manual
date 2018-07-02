@@ -1,30 +1,30 @@
 *******
-**G11**
+**G23**
 *******
 
 ::
 
-	BC = G11 NS <bc_id> <float1> [float2]
+	BC = G23 NS <bc_id> <float1> [float2]
 
 -----------------------
 **Description / Usage**
 -----------------------
 
-**(DC/GRADIENT11)**
+**(DC/GRADIENT23)**
 
-This Dirichlet boundary condition specification is used to set a constant xx-velocity
+This Dirichlet boundary condition specification is used to set a constant yz-velocity
 gradient component of the velocity gradient tensor. Definitions of the input parameters
 are as follows:
 
 ============ ====================================================================
-**G11**      Boundary condition name (<bc_name>) that defines the xx-velocity
+**G23**      Boundary condition name (<bc_name>) that defines the yz-velocity
              gradient.
 **NS**       Type of boundary condition (<bc_type>), where **NS** denotes
              node set in the EXODUS II database.
 <bc_id>      The boundary flag identifier, an integer associated with
              <bc_type> that identifies the boundary location (node set in
              EXODUS II) in the problem domain.
-<float1>     Value of xx-velocity gradient.
+<float1>     Value of yz-velocity gradient.
 [float2]     An optional parameter (that serves as a flag to the code for a
              Dirichlet boundary condition). If a value is present, and is
              not -1.0, the condition is applied as a residual equation.
@@ -38,15 +38,15 @@ are as follows:
 **Examples**
 ------------
 
-The following is a sample card for applying a Dirichlet condition on the xx-velocity
+The following is a sample card for applying a Dirichlet condition on the yz-velocity
 gradient component on node set 100:
 ::
 
-   BC = G11 NS 100   5.0
+   BC = G23 NS 100   5.0
 
 ::
 
-   BC = G11 NS 100   5.0   1.0
+   BC = G23 NS 100   5.0   1.0
 
 where the second example uses the “residual” method for applying the same Dirichlet
 condition.
@@ -60,7 +60,7 @@ We solve a simple least squares equation to determine the continuous velocity gr
 estimates of the second derivative of the velocity field for applications in complex
 rheology. The velocity gradient equation is:
 
-.. figure:: /figures/177_goma_physics.png
+.. figure:: /figures/182_goma_physics.png
 	:align: center
 	:width: 90%
 
