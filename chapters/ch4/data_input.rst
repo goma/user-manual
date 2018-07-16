@@ -1050,6 +1050,16 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.259_sharp_ca_2d.txt
 
+.. include:: /chapters/ch4/section_10/4.10.261_sharp_cox_velocity.txt
+
+.. include:: /chapters/ch4/section_10/4.10.263_sharp_hoffman_velocity.txt
+
+.. include:: /chapters/ch4/section_10/4.10.265_sharp_wetlin_velocity.txt
+
+.. include:: /chapters/ch4/section_10/4.10.267_wetting_speed_blake.txt
+
+.. include:: /chapters/ch4/section_10/4.10.269_wetting_speed_cox.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 

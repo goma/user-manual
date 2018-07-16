@@ -31,7 +31,8 @@ A description of the input parameters follows:
 <float1>                 :math:`\theta_s`, the static contact angle in degress.
 <float2>                 V_0 is a pre-exponential velocity factor (see functional
                          form below).
-<float3>                 g is a thermally scaled surface tension, i.e. σ/2nkT.
+<float3>                 g is a thermally scaled surface tension, i.e. :math:`\sigma`
+                         /2nkT.
 <float4>                 :math:`\beta`, slip coefficient.
 <float5>                 :math:`t_{relax}` is a relaxation time which can be used to  
                          smooth the imposed contact point velocity for transient problems. Set to zero for no smoothing.
