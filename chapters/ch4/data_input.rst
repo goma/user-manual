@@ -1040,6 +1040,16 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.249_ls_qlaser.txt
 
+.. include:: /chapters/ch4/section_10/4.10.251_ls_recoil_pressure.txt
+
+.. include:: /chapters/ch4/section_10/4.10.253_ls_vapor_ls_qvapor.txt
+
+.. include:: /chapters/ch4/section_10/4.10.255_ls_yflux.txt
+
+.. include:: /chapters/ch4/section_10/4.10.257_sharp_blake_velocity.txt
+
+.. include:: /chapters/ch4/section_10/4.10.259_sharp_ca_2d.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
