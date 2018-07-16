@@ -1026,6 +1026,10 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.235_ls_capillary.txt
 
+.. include:: /chapters/ch4/section_10/4.10.237_ls_flow_pressure.txt
+
+.. include:: /chapters/ch4/section_10/4.10.239_ls_fluid_solid_contact.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
