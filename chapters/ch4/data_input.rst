@@ -1030,6 +1030,16 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.239_ls_fluid_solid_contact.txt
 
+.. include:: /chapters/ch4/section_10/4.10.241_ls_inlet.txt
+
+.. include:: /chapters/ch4/section_10/4.10.243_ls_no_slip.txt
+
+.. include:: /chapters/ch4/section_10/4.10.245_ls_q.txt
+
+.. include:: /chapters/ch4/section_10/4.10.247_ls_qrad.txt
+
+.. include:: /chapters/ch4/section_10/4.10.249_ls_qlaser.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
