@@ -1084,6 +1084,20 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.288_sh_tens.txt
 
+.. include:: /chapters/ch4/section_10/4.10.290_sh_k.txt
+
+.. include:: /chapters/ch4/section_10/4.10.292_sh_fluid_stress.txt
+
+.. include:: /chapters/ch4/section_10/4.10.294_lub_press.txt
+
+.. include:: /chapters/ch4/section_10/4.10.295_grad_lub_press.txt
+
+.. include:: /chapters/ch4/section_10/4.10.297_shell_filmp.txt
+
+.. include:: /chapters/ch4/section_10/4.10.298_shell_filmh.txt
+
+.. include:: /chapters/ch4/section_10/4.10.299_shell_partc.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
