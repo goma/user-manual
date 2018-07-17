@@ -1072,6 +1072,18 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.278_hoffman_dirichlet.txt
 
+.. include:: /chapters/ch4/section_10/4.10.280_velo_slip_ls.txt
+
+.. include:: /chapters/ch4/section_10/4.10.281_category_16.txt
+
+.. include:: /chapters/ch4/section_10/4.10.282_shell_surface_charge.txt
+
+.. include:: /chapters/ch4/section_10/4.10.284_shell_surface_charge_sic.txt
+
+.. include:: /chapters/ch4/section_10/4.10.286_surface_electric_field.txt
+
+.. include:: /chapters/ch4/section_10/4.10.288_sh_tens.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
