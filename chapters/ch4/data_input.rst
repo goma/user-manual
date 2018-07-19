@@ -1116,6 +1116,18 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.309_shell_sh_fp_flux.txt
 
+.. include:: /chapters/ch4/section_10/4.10.310_lupb_sh_fp_match.txt
+
+.. include:: /chapters/ch4/section_10/4.10.311_apr.txt
+
+.. include:: /chapters/ch4/section_10/4.10.313_apr_plane_tran.txt
+
+.. include:: /chapters/ch4/section_10/4.10.315_api.txt
+
+.. include:: /chapters/ch4/section_10/4.10.317_api_plane_tran.txt
+
+.. include:: /chapters/ch4/section_10/4.10.318_end_of_bc.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
