@@ -1098,6 +1098,24 @@ some sections of interspersed comments accompany each boundary condition categor
 
 .. include:: /chapters/ch4/section_10/4.10.299_shell_partc.txt
 
+.. include:: /chapters/ch4/section_10/4.10.300_shell_grad_fp.txt
+
+.. include:: /chapters/ch4/section_10/4.10.301_shell_grad_fp_nobc.txt
+
+.. include:: /chapters/ch4/section_10/4.10.302_shell_grad_fh.txt
+
+.. include:: /chapters/ch4/section_10/4.10.303_shell_grad_fh_nobc.txt
+
+.. include:: /chapters/ch4/section_10/4.10.304_shell_grad_pc.txt
+
+.. include:: /chapters/ch4/section_10/4.10.305_shell_lubp_solid.txt
+
+.. include:: /chapters/ch4/section_10/4.10.306_shell_temp.txt
+
+.. include:: /chapters/ch4/section_10/4.10.308_shell_open_press_shell_open_press_2.txt
+
+.. include:: /chapters/ch4/section_10/4.10.309_shell_sh_fp_flux.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. 
 
