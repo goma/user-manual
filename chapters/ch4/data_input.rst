@@ -1174,6 +1174,24 @@ treat all boundaries so that the behavior is well defined. An important example 
 
 .. include:: /chapters/ch4/section_11/4.11.5_end_of_rot.txt
 
+**Problem Description**
+#######################
+
+This section directs all input specifications required for differential equations, material type, mesh motion type, coordinate system, finite element basis function type, and several other input tasks. This section of input records, with the exception of the *Number of Materials* card (the first one
+below), must be repeated for each material region in the problem. Within that region of the problem domain (and the corresponding section of the input file) there are no restrictions as to which differential or constraint equations can be specified, which is a unique capability of *Goma*.
+
+However, some combinations or specifications do not make much sense, e.g., a cylindrical coordinate region combined with a cartesian one. It is recommended that the user consult the usage tutorials and example problems to get a feel for how this section is constructed.
+
+.. include:: /chapters/ch4/section_12/4.12.1_number_of_materials.txt
+
+.. include:: /chapters/ch4/section_12/4.12.2_mat.txt
+
+.. include:: /chapters/ch4/section_12/4.12.3_coordinate_system.txt
+
+.. include:: /chapters/ch4/section_12/4.12.4_element_mapping.txt
+
+.. include:: /chapters/ch4/section_12/4.12.5_mesh_motion.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. Line 1146 contains a phtot that needs to be changed into an equation.
 
