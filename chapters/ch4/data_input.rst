@@ -1238,6 +1238,18 @@ However, some combinations or specifications do not make much sense, e.g., a cyl
 
 .. include:: /chapters/ch4/section_12/4.12.29_vort_lambda.txt
 
+.. include:: /chapters/ch4/section_12/4.12.30_porous_sat.txt
+
+.. include:: /chapters/ch4/section_12/4.12.31_porous_unsat.txt
+
+.. include:: /chapters/ch4/section_12/4.12.32_porous_liq.txt
+
+.. include:: /chapters/ch4/section_12/4.12.33_porous_gas.txt
+
+.. include:: /chapters/ch4/section_12/4.12.34_porous_deform.txt
+
+.. include:: /chapters/ch4/section_12/4.12.35_porous_energy.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. Line 1146 contains a phtot that needs to be changed into an equation.
 
