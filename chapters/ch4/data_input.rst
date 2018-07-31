@@ -1200,6 +1200,18 @@ However, some combinations or specifications do not make much sense, e.g., a cyl
 
 .. include:: /chapters/ch4/section_12/4.12.9_default_material_species_type.txt
 
+.. include:: /chapters/ch4/section_12/4.12.10_number_of_viscoelastic_modes.txt
+
+.. include:: /chapters/ch4/section_12/4.12.11_number_of_eq.txt
+
+.. include:: /chapters/ch4/section_12/4.12.12_energy.txt
+
+.. include:: /chapters/ch4/section_12/4.12.13_momentum.txt
+
+.. include:: /chapters/ch4/section_12/4.12.14_pmomentum.txt
+
+.. include:: /chapters/ch4/section_12/4.12.15_stress.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. Line 1146 contains a phtot that needs to be changed into an equation.
 
