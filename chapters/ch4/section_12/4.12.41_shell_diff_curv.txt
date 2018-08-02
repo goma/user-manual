@@ -1,24 +1,24 @@
 *******************
-**shell_curvature**
+**shell_diff_curv**
 *******************
 
 ::
 
-	EQ = shell_curvature {Galerkin_wt} {K} {Interpol_fnc} <floatlist>
+	EQ =shell_diff_curv {Galerkin_wt} SH_KD {Interpol_fnc} <float1>
 
 -----------------------
 **Description / Usage**
 -----------------------
 
-This card provides information for solving a definition equation for total curvature of a
-two-dimensional shell element. Note that this equation is not yet available in three
-dimensions. The curvature is required by the inextensible cylindrical shell capability in
-Goma. See references cited below. Note that <floatlist> contains one constant and it
-should always be set to one. The Galerkin weight and the interpolation function must
-be the same for the code to work properly.
+This card provides information for solving a definition equation for the total surface
+curvature in a 2-dimensional bar element, intended for use with shell diffusive flux
+problems. Note that this equation is not yet available in three dimensions and is in fact
+untested at this time. Note that <floatlist> contains one constant and it should always be
+set to one. The Galerkin weight and the interpolation function must be the same for the
+code to work properly.
 
 +-------------------+----------------------------------------------------------+
-|**shell_curvature**|Name of the equation to be solved.                        |
+|**shell_diff_curv**|Name of the equation to be solved.                        |
 +-------------------+----------------------------------------------------------+
 |{Galerkin_wt}      |Two- or four-character value that defines the type of     |
 |                   |weighting function for this equation, where:              |
@@ -26,17 +26,18 @@ be the same for the code to work properly.
 |                   | * **Q1**-Linear                                          |
 |                   | * **Q2**-Quadratic                                       |
 +-------------------+----------------------------------------------------------+
-|**K**              |Name of the variable associated with the shell curvature  |
+|**SH_KD**          |Name of the variable associated with the shell curvature  |
 |                   |equation.                                                 |
 +-------------------+----------------------------------------------------------+
 |{Interpol_fnc}     |Two- or four-character value that defines the             |
 |                   |interpolation function used to represent the variable     |
-|                   |**K** where:                                              |
+|                   |**SH_KD** where:                                          |
 |                   |                                                          |
 |                   | * **Q1**-Linear Continuous                               |
 |                   | * **Q2**-Quadratic Continuous                            |
 +-------------------+----------------------------------------------------------+
-|<float1>           |Multiplier on whole equation. Set to 1.0.                 |
+|<float1>           |Multiplier on diffusion term (i.e. the whole equation).   |
+|                   |Set to 1.0.                                               |
 +-------------------+----------------------------------------------------------+
 
 ------------
@@ -47,25 +48,20 @@ The following is a sample card that uses linear continuous curvature interpolati
 weight function:
 ::
 
-   EQ = momentum1 Q1 K Q1 1.0
+   EQ = shell_diff_curv Q1 SH_KD Q1 1.0
 
 -------------------------
 **Technical Discussion**
 -------------------------
 
-Complete tutorial on the use of this equation exists. See GT-27.
+The equation solved is the surface curvature definition :math:`\kappa` = :math:`\Delta_s` :math:`\underline{n}` = (I – :math:`\underline{n}` :math:`\underline{n}`) • :math:`\Delta` n. See
+discussion for EQ = shell_surf_div_v.
 
 ----------
 **Theory**
 ----------
 
-The structural shell equation capability in Goma builds on the shell-element capability
-built by Pat Notz and Ed Wilkes in FY03. Basically we are solving the following
-equations for the shell tension and shell curvature (this card):
-
-.. figure:: /figures/304_goma_physics.png
-	:align: center
-	:width: 90%
+No Theory.
 
 --------
 **FAQs**
@@ -77,7 +73,5 @@ No FAQs.
 **References**
 --------------
 
-GT-27
-
-..
-	TODO - Line 66 contains a photo that needs to be written as an equation.
+Edwards, D. A., Brenner, H., Wasan, D. T., 1991. Interfacial Transport Processes and
+Rheology. Butterworth-Heinemann, Boston.

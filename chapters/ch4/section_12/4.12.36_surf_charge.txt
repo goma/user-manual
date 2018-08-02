@@ -26,7 +26,7 @@ follows:
 |                 | * **Q2**-Quadratic                                       |
 +-----------------+----------------------------------------------------------+
 |**QS**           |Name of the variable associated with the shell curvature  |
-|                 |equaton.                                                  |
+|                 |equation.                                                 |
 +-----------------+----------------------------------------------------------+
 |{Interpol_fnc}   |Two- or four-character value that defines the             |
 |                 |interpolation function used to represent the variable     |

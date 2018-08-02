@@ -1258,6 +1258,26 @@ However, some combinations or specifications do not make much sense, e.g., a cyl
 
 .. include:: /chapters/ch4/section_12/4.12.39_shell_angle.txt
 
+.. include:: /chapters/ch4/section_12/4.12.40_shell_diff_flux.txt
+
+.. include:: /chapters/ch4/section_12/4.12.41_shell_diff_curv.txt
+
+.. include:: /chapters/ch4/section_12/4.12.42_shell_normal.txt
+
+.. include:: /chapters/ch4/section_12/4.12.43_shell_surf_curv.txt
+
+.. include:: /chapters/ch4/section_12/4.12.44_shell_surf_div_v.txt
+
+.. include:: /chapters/ch4/section_12/4.12.45_grad_v_dot_n1, grad_v_dot_n2, grad_v_dot_n3.txt
+
+.. include:: /chapters/ch4/section_12/4.12.46_n_dot_curl_v.txt
+
+.. include:: /chapters/ch4/section_12/4.12.47_acous_preal.txt
+
+.. include:: /chapters/ch4/section_12/4.12.48_acous_pimag.txt
+
+.. include:: /chapters/ch4/section_12/4.12.49_acous_reyn_stress.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. Line 1146 contains a phtot that needs to be changed into an equation.
 

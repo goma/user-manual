@@ -28,7 +28,7 @@ the interpolation function must be the same for the code to work properly.
 |                    | * **Q2**-Quadratic                                       |
 +--------------------+----------------------------------------------------------+
 |**SH_ANG{1|2}**     |SH_ANG{1|2} Name of the variable associated with the shell|
-|                    |angle equaton.                                            |
+|                    |angle equation.                                           |
 +--------------------+----------------------------------------------------------+
 |{Interpol_fnc}      |Two- or four-character value that defines the             |
 |                    |interpolation function used to represent the variable     |
