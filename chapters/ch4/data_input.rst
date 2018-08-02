@@ -1296,6 +1296,25 @@ However, some combinations or specifications do not make much sense, e.g., a cyl
 
 .. include:: /chapters/ch4/section_12/4.12.59_shell_sat_closed.txt
 
+.. include:: /chapters/ch4/section_12/4.12.61_shell_sat_gasn.txt
+
+.. include:: /chapters/ch4/section_12/4.12.63_shell_sat_open.txt
+
+.. include:: /chapters/ch4/section_12/4.12.64_shell_sat_open_2.txt
+
+.. include:: /chapters/ch4/section_12/4.12.66_shell_deltah.txt
+
+.. include:: /chapters/ch4/section_12/4.12.68_end_of_eq.txt
+
+.. include:: /chapters/ch4/section_12/4.12.69_end_of_mat.txt
+
+**Post Processing Specifications**
+##################################
+
+This section lists the post-processing options that are accessible within *Goma*. Each card below triggers calculations of the nodal values of a given function, which are then written to the EXODUS II output file. Normally these values are smoothed before writing them to the output file. For most of these cards a keyword is the only input; if the keyword is **yes**, the post-processing variable is calculated and written to the file; if the keyword is **no**, no output is generated for that variable. All of these cards are optional and can appear in any order.
+
+The sections below list the post-processing options and a brief description of each. *Users are cautioned - for large, time-dependent runs, the output of many post-processing variables may lead to excessively large EXODUS II output files*.
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. Line 1146 contains a phtot that needs to be changed into an equation.
 
