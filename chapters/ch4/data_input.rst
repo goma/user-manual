@@ -1315,6 +1315,24 @@ This section lists the post-processing options that are accessible within *Goma*
 
 The sections below list the post-processing options and a brief description of each. *Users are cautioned - for large, time-dependent runs, the output of many post-processing variables may lead to excessively large EXODUS II output files*.
 
+.. include:: /chapters/ch4/section_13/4.13.1_stream_function.txt
+
+.. include:: /chapters/ch4/section_13/4.13.2_streamwise_normal_stress.txt
+
+.. include:: /chapters/ch4/section_13/4.13.3_cross_stream_shear_rate.txt
+
+.. include:: /chapters/ch4/section_13/4.13.4_mean_shear_rate.txt
+
+.. include:: /chapters/ch4/section_13/4.13.5_pressure_contours.txt
+
+.. include:: /chapters/ch4/section_13/4.13.6_fill_contours.txt
+
+.. include:: /chapters/ch4/section_13/4.13.7_concentration_contours.txt
+
+.. include:: /chapters/ch4/section_13/4.13.8_stress_contours.txt
+
+.. include:: /chapters/ch4/section_13/4.13.9_first_invariant_of_strain.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. Line 1146 contains a phtot that needs to be changed into an equation.
 
