@@ -1278,6 +1278,24 @@ However, some combinations or specifications do not make much sense, e.g., a cyl
 
 .. include:: /chapters/ch4/section_12/4.12.49_acous_reyn_stress.txt
 
+.. include:: /chapters/ch4/section_12/4.12.50_potential1.txt
+
+.. include:: /chapters/ch4/section_12/4.12.51_potential2.txt
+
+.. include:: /chapters/ch4/section_12/4.12.52_lubp.txt
+
+.. include:: /chapters/ch4/section_12/4.12.53_lubp_2.txt
+
+.. include:: /chapters/ch4/section_12/4.12.55_shell_energy.txt
+
+.. include:: /chapters/ch4/section_12/4.12.56_shell_filmp.txt
+
+.. include:: /chapters/ch4/section_12/4.12.57_shell_filmh.txt
+
+.. include:: /chapters/ch4/section_12/4.12.58_shell_partc.txt
+
+.. include:: /chapters/ch4/section_12/4.12.59_shell_sat_closed.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. Line 1146 contains a phtot that needs to be changed into an equation.
 

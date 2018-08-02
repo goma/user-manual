@@ -30,8 +30,8 @@ function must be the same for the code to work properly.
 |{Interpol_fnc}      |Two-character value that defines the interpolation        |
 |                    |function used to represent the variable **SH**, where:    |
 |                    |                                                          |
-|                    | * **Q1**-Linear Continuous                               |
-|                    | * **Q2**-Quadratic Continuous                            |
+|                    | * **Q1**-Linear                                          |
+|                    | * **Q2**-Quadratic                                       |
 +--------------------+----------------------------------------------------------+
 |<float1>            |currently not used.                                       |
 +--------------------+----------------------------------------------------------+
