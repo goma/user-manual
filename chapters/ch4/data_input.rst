@@ -1369,6 +1369,26 @@ The sections below list the post-processing options and a brief description of e
 
 .. include:: /chapters/ch4/section_13/4.13.29_mass_diffusion_vectors.txt
 
+.. include:: /chapters/ch4/section_13/4.13.30_diffusive_mass_flux_vectors.txt
+
+.. include:: /chapters/ch4/section_13/4.13.31_mass_fluxlines.txt
+
+.. include:: /chapters/ch4/section_13/4.13.32_energy_conduction_vectors.txt
+
+.. include:: /chapters/ch4/section_13/4.13.33_energy_fluxlines.txt
+
+.. include:: /chapters/ch4/section_13/4.13.34_time_derivatives.txt
+
+.. include:: /chapters/ch4/section_13/4.13.35_mesh_stress_tensor.txt
+
+.. include:: /chapters/ch4/section_13/4.13.36_real_solid_stress_tensor.txt
+
+.. include:: /chapters/ch4/section_13/4.13.37_mesh_strain_tensor.txt
+
+.. include:: /chapters/ch4/section_13/4.13.38_viscoplastic_def_grad_tensor.txt
+
+.. include:: /chapters/ch4/section_13/4.13.39_lagrangian_convection.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. Line 1146 contains a phtot that needs to be changed into an equation.
 
