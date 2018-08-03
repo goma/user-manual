@@ -1345,6 +1345,14 @@ The sections below list the post-processing options and a brief description of e
 
 .. include:: /chapters/ch4/section_13/4.13.15_electric_field.txt
 
+.. include:: /chapters/ch4/section_13/4.13.16_electric_field_magnitude.txt
+
+.. include:: /chapters/ch4/section_13/4.13.17_enormsq_field.txt
+
+.. include:: /chapters/ch4/section_13/4.13.18_enormsq_field_norm.txt
+
+.. include:: /chapters/ch4/section_13/4.13.19_viscosity.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. Line 1146 contains a phtot that needs to be changed into an equation.
 
