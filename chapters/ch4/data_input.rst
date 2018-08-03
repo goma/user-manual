@@ -1411,6 +1411,16 @@ The sections below list the post-processing options and a brief description of e
 
 .. include:: /chapters/ch4/section_13/4.13.50_liquid_phase_darcy_velocity_in_porous_media.txt
 
+.. include:: /chapters/ch4/section_13/4.13.52_liquid_phase_darcy_velocity_in_porous_media.txt
+
+.. include:: /chapters/ch4/section_13/4.13.54_capillary_pressure_in_porous_media.txt
+
+.. include:: /chapters/ch4/section_13/4.13.56_grid_peclet_number_in_porous_media.txt
+
+.. include:: /chapters/ch4/section_13/4.13.57_supg_velocity_in_porous_media.txt
+
+.. include:: /chapters/ch4/section_13/4.13.58_vorticity_vector.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. Line 1146 contains a phtot that needs to be changed into an equation.
 
