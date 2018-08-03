@@ -1353,6 +1353,22 @@ The sections below list the post-processing options and a brief description of e
 
 .. include:: /chapters/ch4/section_13/4.13.19_viscosity.txt
 
+.. include:: /chapters/ch4/section_13/4.13.21_density.txt
+
+.. include:: /chapters/ch4/section_13/4.13.22_lame_mu.txt
+
+.. include:: /chapters/ch4/section_13/4.13.23_lame_lambda.txt
+
+.. include:: /chapters/ch4/section_13/4.13.24_von_mises_strain.txt
+
+.. include:: /chapters/ch4/section_13/4.13.25_von_mises_stress.txt
+
+.. include:: /chapters/ch4/section_13/4.13.27_navier_stokes_residuals.txt
+
+.. include:: /chapters/ch4/section_13/4.13.28_moving_mesh_residuals.txt
+
+.. include:: /chapters/ch4/section_13/4.13.29_mass_diffusion_vectors.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. Line 1146 contains a phtot that needs to be changed into an equation.
 
