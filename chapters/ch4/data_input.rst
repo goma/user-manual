@@ -1389,6 +1389,28 @@ The sections below list the post-processing options and a brief description of e
 
 .. include:: /chapters/ch4/section_13/4.13.39_lagrangian_convection.txt
 
+.. include:: /chapters/ch4/section_13/4.13.40_normal_and_tangent_vectors.txt
+
+.. include:: /chapters/ch4/section_13/4.13.41_error_zz_velocity.txt
+
+.. include:: /chapters/ch4/section_13/4.13.42_error_zz_heat_flux.txt
+
+.. include:: /chapters/ch4/section_13/4.13.43_error_zz_pressure.txt
+
+.. include:: /chapters/ch4/section_13/4.13.44_user_defined_post_processing.txt
+
+.. include:: /chapters/ch4/section_13/4.13.45_porous_saturation.txt
+
+.. include:: /chapters/ch4/section_13/4.13.46_total_density_of_solvents_in_porous_media.txt
+
+.. include:: /chapters/ch4/section_13/4.13.47_density_of_solvents_in_gas_phase_in_porous_media.txt
+
+.. include:: /chapters/ch4/section_13/4.13.48_density_of_liquid_phase_in_porous_media.txt
+
+.. include:: /chapters/ch4/section_13/4.13.49_gas_phase_darcy_velocity_in_porous_media.txt
+
+.. include:: /chapters/ch4/section_13/4.13.50_liquid_phase_darcy_velocity_in_porous_media.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. Line 1146 contains a phtot that needs to be changed into an equation.
 
