@@ -1458,6 +1458,20 @@ further be used to as an objective function evaluator for engineering optimizati
 
 .. include:: /chapters/ch4/section_14/4.14.12_end_of_data_sens.txt
 
+**Post Processing Particle Traces**
+###################################
+
+This option enables the calculation of particle trajectories and computed quantities along the
+trajectories. The coordinates of the trajectory starting point and time-stepping parameters are
+input using the cards in this section. The computation of quantities along the trajectories and their
+subsequent output is controlled through the *usr_ptracking* routine in user_post.c.
+
+.. include:: /chapters/ch4/section_15/4.15.1_post_processing_particle_traces.txt
+
+.. include:: /chapters/ch4/section_15/4.15.2_particle.txt
+
+.. include:: /chapters/ch4/section_15/4.15.3_end_of_particles.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. Line 1146 contains a phtot that needs to be changed into an equation.
 
