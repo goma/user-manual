@@ -1452,6 +1452,12 @@ further be used to as an objective function evaluator for engineering optimizati
 
 .. include:: /chapters/ch4/section_14/4.14.9_end_of_flux_sens.txt
 
+.. include:: /chapters/ch4/section_14/4.14.10_post_processing_date_sensitivities.txt
+
+.. include:: /chapters/ch4/section_14/4.14.11_data_sens.txt
+
+.. include:: /chapters/ch4/section_14/4.14.12_end_of_data_sens.txt
+
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. Line 1146 contains a phtot that needs to be changed into an equation.
 
