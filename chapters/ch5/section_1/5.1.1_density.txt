@@ -1,0 +1,17 @@
+***********
+**Density**
+***********
+
+::
+
+   Density = {model_name} {float_list}  [M/L3]
+
+-----------------------
+**Description / Usage**
+-----------------------
+
+This required card is used to specify the model, and all associated parameters, for
+density. Definitions of the input parameters are as follows:
+
+..
+	TODO - In line 7 when in says "[M/L3]" the 3 is supposed to be superscript but for some reason it will not allow me to no matter what I try. 

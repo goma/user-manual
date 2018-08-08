@@ -7,13 +7,13 @@ Goma User Guide
 ===============
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 5
 
    chapters/ch1/intro
    chapters/ch2/background_information
    chapters/ch3/code_structure_and_I_O
    chapters/ch4/data_input
-
+   chapters/ch5/data_input_material_files
 
 Indices and tables
 ==================
