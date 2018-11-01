@@ -134,3 +134,23 @@ processes lead to density changes, though during any analysis cycle, the density
 .. include:: /chapters/ch5/section_1/5.0.1_default_database.txt
 
 .. include:: /chapters/ch5/section_1/5.1.1_density.txt
+
+**Mechanical Properties and Constitutive Equations**
+####################################################
+
+This section of the material property input specifies the type of model, for both solids and fluids,
+that relates stress and strain (or strain-rate) as well as the various parameters for these models.
+Models for solids are relatively simple compared to solid mechanics codes but cover the primary
+needs in fluid-solid problems. The models for fluids are quite extensive, covering Newtonian,
+generalized-Newtonian, rate-dependent models, thermally-dependent models, curing and particleladen
+models and combinations of these. These properties are used in the solid and fluid
+momentum conservation equations.
+
+.. include:: /chapters/ch5/section_2/5.2.1_solid_constitutive_equation.txt
+
+
+
+
+
+
+
