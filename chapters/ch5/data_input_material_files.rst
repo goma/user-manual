@@ -148,6 +148,15 @@ momentum conservation equations.
 
 .. include:: /chapters/ch5/section_2/5.2.1_solid_constitutive_equation.txt
 
+.. include:: /chapters/ch5/section_2/5.2.2_plasticity_equation.txt
+
+.. include:: /chapters/ch5/section_2/5.2.3_convective_lagrangian_velocity.txt
+
+
+
+
+
+
 
 
 
