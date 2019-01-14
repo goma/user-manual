@@ -152,7 +152,7 @@ momentum conservation equations.
 
 .. include:: /chapters/ch5/section_2/5.2.3_convective_lagrangian_velocity.txt
 
-
+.. include:: /chapters/ch5/section_2/5.2.4_lame_mu.txt
 
 
 
