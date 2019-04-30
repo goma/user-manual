@@ -154,12 +154,12 @@ momentum conservation equations.
 
 .. include:: /chapters/ch5/section_2/5.2.4_lame_mu.txt
 
+.. include:: /chapters/ch5/section_2/5.2.5_lame_lambda.txt
 
+.. include:: /chapters/ch5/section_2/5.2.6_stress_free_solvent_vol_frac.txt
 
+.. include:: /chapters/ch5/section_2/5.2.7_solid_thermal_expansion.txt
 
-
-
-
-
+.. include:: /chapters/ch5/section_2/5.2.8_solid_reference_temperature.txt
 
 
