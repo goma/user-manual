@@ -1,0 +1,169 @@
+*****************************
+Polymer Constitutive Equation
+*****************************
+
+::
+
+   Polymer Constitutive Equation = {model_name}
+
+-----------------------
+**Description / Usage**
+-----------------------
+
+This required card is used to specify the polymer constitutive equation. A single input
+parameter must be defined, that being the {model_name}.
+
++-----------------+------------------------------------------------------------------------------------------------------------+
+|{model_name}     |Name of the constitutive equation model, being one of the following values: **NOPOLYMER, OLDROYDB, GIESEKUS,|
+|                 |PTT, WHITE-METZNER**. Several of these polymer constitutive models require additional parameters for the    |
+|                 |polymer properties that are entered via additional cards, as described below. Please see the Example section|
+|                 |and the tutorial referenced below.                                                                          |
++-----------------+------------------------------------------------------------------------------------------------------------+
+
+Thus,
+
++-----------------+------------------------------------------------------------------------------------------------------------+
+|**NOPOLYMER**    |For Newtonian and generalized Newtonian models. No floating point values are required.                      |
++-----------------+------------------------------------------------------------------------------------------------------------+
+|**OLDROYDB**     |For the Oldroyd-B constitutive model. This option requires four floating point values, which are described  |
+|                 |below.                                                                                                      |
++-----------------+------------------------------------------------------------------------------------------------------------+
+|**GIESEKUS**     |For the Giesekus model. This option requires five floating point values, which are described below.         |
++-----------------+------------------------------------------------------------------------------------------------------------+
+|**PTT**          |For the Phan-Thien Tanner model. This option requires six floating point values, which are described below. |
++-----------------+------------------------------------------------------------------------------------------------------------+
+|**WHITE_METZNER**|For the White-Metzner model. This option is not currently working.                                          |
++-----------------+------------------------------------------------------------------------------------------------------------+
+
+------------
+**Examples**
+------------
+
+The following is a sample card that sets the polymer constitutive equation to
+**NOPOLYMER**. This option does not require any additional cards since it indicates
+that there is no polymer constitutive equation present.
+
+::
+
+   Polymer Constitutive Equation = NOPOLYMER
+
+The following is a sample card that sets the polymer constitutive equation to
+**OLDROYDB**. This option requires four cards describing the polymer stress
+formulation, weight function, viscosity and time constant.
+
+::
+
+   Polymer Constitutive Equation = OLDROYDB
+
+::
+
+   Polymer Stress Formulation = EVSS_F
+
+::
+
+   Polymer Weight Function = GALERKIN
+
+::
+
+   Polymer Viscosity = CONSTANT 1.
+
+::
+
+   Polymer Time Constant = CONSTANT 0.02
+
+The following is a sample card that sets the polymer constitutive equation to
+**GIESEKUS**. This option requires five cards describing the polymer stress formulation,
+weight function, viscosity, time constant and mobility parameter.
+
+::
+
+   Polymer Constitutive Equation = GIESEKUS
+
+::
+
+   Polymer Stress Formulation = EVSS_F
+
+::
+
+   Polymer Weight Function = GALERKIN
+
+::
+
+   Polymer Viscosity = CONSTANT 1.
+
+::
+
+   Polymer Time Constant = CONSTANT 0.2
+
+::
+
+   Mobility Parameter = CONSTANT 0.1
+
+The following is a sample card that sets the polymer constitutive equation to 
+**PHANTHIEN TANNER** (or **PTT**). This option requires six additional cards that set the
+polymer stress formulation, weight function for the stress equation, viscosity, time
+constant and nonlinear PTT parameters.:
+
+::
+
+   Polymer Consitutive Equation = PTT
+
+::
+
+   Polymer Stress Formulation = EVSS_F
+
+::
+
+   Polymer Weight Function = GALERKIN
+
+::
+
+   Polymer Viscosity = CONSTANT 8000.
+
+::
+
+   Polymer Time Constant = CONSTANT 0.01
+
+::
+
+   PTT Xi parameter = CONSTANT 0.10
+
+::
+
+   PTT Epsilon parameter = CONSTANT 0.05
+
+The following is a sample card that sets the polymer constitutive equation to
+**WHITE_METZNER**. This option is not currently functional for multimode
+viscoelasticity. If needed it could be resurrected with only minimal changes to the input
+parser.
+
+::
+
+   Polymer Consitutive Equation = WHITE_METZNER
+
+-------------------------
+**Technical Discussion**
+-------------------------
+
+The viscoelastic tutorial is helpful for usage issues such as extensions from single mode
+to multimodes.
+
+----------
+**Theory**
+----------
+
+No Theory.
+
+--------
+**FAQs**
+--------
+
+No FAQs.
+
+--------------
+**References**
+--------------
+
+GT-014.1: Tutorial for Running Viscoelastic Flow Problems with GOMA, June 21,
+2000, R. R. Rao
+
