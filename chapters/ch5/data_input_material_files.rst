@@ -289,21 +289,239 @@ mechanisms that are charge-dependent.
 
 .. include:: /chapters/ch5/section_4/5.4.7_permeability.txt
 
+.. include:: /chapters/ch5/section_4/5.4.8_liquid_phase_compressibility.txt
 
+.. include:: /chapters/ch5/section_4/5.4.9_liquid_phase_reference_pressure.txt
 
+.. include:: /chapters/ch5/section_4/5.4.10_flowing_liquid_viscosity.txt
 
+.. include:: /chapters/ch5/section_4/5.4.11_inertia_coefficient.txt
 
+.. include:: /chapters/ch5/section_4/5.4.12_capillary_network_stress.txt
 
+.. include:: /chapters/ch5/section_4/5.4.13_rel_gas_permeability.txt
 
+.. include:: /chapters/ch5/section_4/5.4.14_rel_liq_permeability.txt
 
+.. include:: /chapters/ch5/section_4/5.4.15_saturation.txt
 
+.. include:: /chapters/ch5/section_4/5.4.16_porous_weight_function.txt
 
+.. include:: /chapters/ch5/section_4/5.4.17_porous_mass_lumping.txt
 
+.. include:: /chapters/ch5/section_4/5.4.19_porous_diffusion_constitutive_equation.txt
 
+.. include:: /chapters/ch5/section_4/5.4.20_porous_gas_diffusivity.txt
 
+.. include:: /chapters/ch5/section_4/5.4.21_porous_latent_heat_vaporization.txt
 
+.. include:: /chapters/ch5/section_4/5.4.22_porous_latent_heat_fusion.txt
 
+.. include:: /chapters/ch5/section_4/5.4.23_porous_vapor_pressure.txt
 
+.. include:: /chapters/ch5/section_4/5.4.24_porous_liquid_volume_expansion.txt
+
+.. include:: /chapters/ch5/section_4/5.4.25_porous_gas_constants.txt
+
+**Species Properties**
+######################
+
+The section of material properties defines the models and parameters governing diffusive mass
+transport, whether it be ordinary, forced or thermal diffusion of species. Included in those
+generalizations are electrical potential-driven species movements. Models include those for single
+species, especially particle-laden suspensions, binary species and multi-component systems.
+Models for various equations of mass transport are included, various models of diffusion
+properties, different representations of species by means of molar, mass or volume concentrations,
+various models of vapor pressure for multiphase flow and on material boundaries for lumped
+parameter analyses, and properties for charged species.
+
+.. include:: /chapters/ch5/section_5/5.5.1_number_of_species.txt
+
+.. include:: /chapters/ch5/section_5/5.5.2_diffusion_constitutive_equation.txt
+
+.. include:: /chapters/ch5/section_5/5.5.3_species_weight_function.txt
+
+.. include:: /chapters/ch5/section_5/5.5.4_number_of_chemical_reactions.txt
+
+.. include:: /chapters/ch5/section_5/5.5.5_reaction_rate.txt
+
+.. include:: /chapters/ch5/section_5/5.5.6_thermodynamic_potential.txt
+
+.. include:: /chapters/ch5/section_5/5.5.7_interfacial_area.txt
+
+.. include:: /chapters/ch5/section_5/5.5.8_butler_volmer_j.txt
+
+.. include:: /chapters/ch5/section_5/5.5.9_butler_volmer_ij.txt
+
+.. include:: /chapters/ch5/section_5/5.5.10_solution_temperature.txt
+
+.. include:: /chapters/ch5/section_5/5.5.11_porosity.txt
+
+.. include:: /chapters/ch5/section_5/5.5.12_diffusivity.txt
+
+.. include:: /chapters/ch5/section_5/5.5.13_shear_rate_diffusivity.txt
+
+.. include:: /chapters/ch5/section_5/5.5.14_viscosity_diffusivity.txt
+
+.. include:: /chapters/ch5/section_5/5.5.15_curvature_diffusivity.txt
+
+.. include:: /chapters/ch5/section_5/5.5.16_fickian_diffusivity.txt
+
+.. include:: /chapters/ch5/section_5/5.5.17_gravity_based_diffusivity.txt
+
+.. include:: /chapters/ch5/section_5/5.5.18_q_tensor_diffusivity.txt
+
+.. include:: /chapters/ch5/section_5/5.5.19_species_time_integration.txt
+
+.. include:: /chapters/ch5/section_5/5.5.20_advective_scaling.txt
+
+.. include:: /chapters/ch5/section_5/5.5.21_latent_heat_vaporization.txt
+
+.. include:: /chapters/ch5/section_5/5.5.22_latent_heat_fusion.txt
+
+.. include:: /chapters/ch5/section_5/5.5.23_vapor_pressure.txt
+
+.. include:: /chapters/ch5/section_5/5.5.24_species_volume_expansion.txt
+
+.. include:: /chapters/ch5/section_5/5.5.25_standard_state_chemical_potential.txt
+
+.. include:: /chapters/ch5/section_5/5.5.26_pure_species_chemical_potential.txt
+
+.. include:: /chapters/ch5/section_5/5.5.27_chemical_potential.txt
+
+.. include:: /chapters/ch5/section_5/5.5.28_reference_concentration.txt
+
+.. include:: /chapters/ch5/section_5/5.5.29_molecular_weight.txt
+
+.. include:: /chapters/ch5/section_5/5.5.30_specific_volume.txt
+
+.. include:: /chapters/ch5/section_5/5.5.31_molar_volume.txt
+
+.. include:: /chapters/ch5/section_5/5.5.32_charge_number.txt
+
+.. include:: /chapters/ch5/section_5/5.5.33_non_condensable_molecular_weight.txt
+
+.. include:: /chapters/ch5/section_5/5.5.34_non_volatile_molar_volume.txt
+
+.. include:: /chapters/ch5/section_5/5.5.35_non_volatile_specific_volume.txt
+
+.. include:: /chapters/ch5/section_5/5.5.36_flory_huggins_parameters.txt
+
+**Source Terms**
+################
+
+Source term models cover the internal generation of pressure (in fluids and solids), energy,
+species component mass and electrical potential for each of the main differential equations.
+Several representations are available for fluids, and the user should be aware of some
+consistencies required with density models (see details below). For all of the source models, the
+user must heed the following warning:
+
+**Make sure the equation term multipliers for the source terms being used are set to unity**
+*(Section 4.12 - Problem Description and Equation specification in Volume 1).*
+
+.. include:: /chapters/ch5/section_6/5.6.1_navier_stokes_source.txt
+
+.. include:: /chapters/ch5/section_6/5.6.2_solid_body_source.txt
+
+.. include:: /chapters/ch5/section_6/5.6.3_mass_source.txt
+
+.. include:: /chapters/ch5/section_6/5.6.4_heat_source.txt
+
+.. include:: /chapters/ch5/section_6/5.6.5_species_source.txt
+
+.. include:: /chapters/ch5/section_6/5.6.6_current_source.txt
+
+.. include:: /chapters/ch5/section_6/5.6.7_initialize.txt
+
+**Shell Equation Properties and Models**
+########################################
+
+In this section we list all “material-region” specific models and properties associated with
+GOMA’s extensive shell equation capability. Currently we have specialized shell equations for
+Reynolds lubrication flow (lubp), open Reynolds film flow (shell_film_H), energy (shell_energy,
+convection and diffusion, coupled with lubrication), thin porous media (closed cell and open cell),
+melting and phase change and more. While many of these cards are actual material properties,
+most are geometry and kinematic related. The most appropriate place for these cards are region/
+material files because they are actually boundary conditions and related parameters which arise
+from the reduction of order (integration through the thin film). For more information, please see
+the shell-equation tutorial (GT-036).
+
+.. include:: /chapters/ch5/section_7/5.7.1_upper_height_function_constants.txt
+
+.. include:: /chapters/ch5/section_7/5.7.2_lower_height_function_constants.txt
+
+.. include:: /chapters/ch5/section_7/5.7.3_upper_velocity_function_constants.txt
+
+.. include:: /chapters/ch5/section_7/5.7.4_lower_velocity_function_constants.txt
+
+.. include:: /chapters/ch5/section_7/5.7.5_upper_contact_angle.txt
+
+.. include:: /chapters/ch5/section_7/5.7.6_lower_contact_angle.txt
+
+.. include:: /chapters/ch5/section_7/5.7.7_lubrication_fluid_source.txt
+
+.. include:: /chapters/ch5/section_7/5.7.8_lubrication_momentum_source.txt
+
+.. include:: /chapters/ch5/section_7/5.7.9_turbulent_lubrication_model.txt
+
+.. include:: /chapters/ch5/section_7/5.7.10_shell_energy_source_QCONV.txt
+
+.. include:: /chapters/ch5/section_7/5.7.11_shell_energy_source_sliding_contact.txt
+
+.. include:: /chapters/ch5/section_7/5.7.12_shell_energy_source_viscous_dissipation.txt
+
+.. include:: /chapters/ch5/section_7/5.7.13_shell_energy_source_external.txt
+
+.. include:: /chapters/ch5/section_7/5.7.14_FSI_deformation_model.txt
+
+.. include:: /chapters/ch5/section_7/5.7.15_film_evaporation_model.txt
+
+.. include:: /chapters/ch5/section_7/5.7.16_disjoining_pressure_model.txt
+
+.. include:: /chapters/ch5/section_7/5.7.17_diffusion_coefficient_model.txt
+
+.. include:: /chapters/ch5/section_7/5.7.18_porous_shell_radius.txt
+
+.. include:: /chapters/ch5/section_7/5.7.19_porous_shell_height.txt
+
+.. include:: /chapters/ch5/section_7/5.7.21_porous_shell_closed_porosity.txt
+
+.. include:: /chapters/ch5/section_7/5.7.22_porous_shell_closed_gas_pressure.txt
+
+.. include:: /chapters/ch5/section_7/5.7.23_porous_shell_atmospheric_pressure.rst
+
+.. include:: /chapters/ch5/section_7/5.7.24_porous_shell_reference_pressure.txt
+
+.. include:: /chapters/ch5/section_7/5.7.25_porous_shell_cross_permeability.txt
+
+.. include:: /chapters/ch5/section_7/5.7.26_porous_shell_gas_diffusivity.txt
+
+.. include:: /chapters/ch5/section_7/5.7.27_porous_shell_gas_temperature_constant.txt
+
+.. include:: /chapters/ch5/section_7/5.7.28_porous_shell_henrys_law_constant.txt
+
+References
+##########
+
+.. include:: /chapters/ch5/section_7/5.7.31_references.txt
+
+Appendix 1: Goma Documentation Lists
+####################################
+
+The documents identified in this appendix constitute a current list of instructional, technical and
+reference material for Goma and the CRMPC Consortium of Companies.
+
+.. include:: /chapters/ch5/section_7/5.7.32_appendix_1.txt
+
+Appendix 2: Using Goma in Library Mode
+######################################
+
+.. include:: /chapters/ch5/section_7/5.7.33_appendix_2.txt
+
+Index
+#####
+
+.. include:: /chapters/ch5/section_7/5.7.34_index.txt
 
 
 
