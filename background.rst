@@ -1,12 +1,12 @@
 ==========================
-**Background Information**
+Background Information
 ==========================
 
-**Program Features**
+Program Features
 ####################
 
 
-**Free and Moving Boundary Capabilites**
+Free and Moving Boundary Capabilites
 ****************************************
 
 *Goma* is a general purpose program designed for the solution of both steady and transient, two and
@@ -53,7 +53,7 @@ algorithm causes smooth boundaries of the pseudo-solid to slide tangentially in 
 fashion. Further details of this algorithm and the corresponding equations can be found in several
 references (e.g., Sackinger, Schunk, and Rao, 1995).
 
-**Coordinate Systems and Frames of Reference**
+Coordinate Systems and Frames of Reference
 **********************************************
 
 Coordinate systems accessible through this version of *Goma* include two-dimensional and threedimensional
@@ -74,7 +74,7 @@ classes of materials (cf. Schunk, 2000). Finally, a pure Lagrangian frame of ref
 our mesh moves with the material. This formulation is quite common in solid mechanics and is
 one advocated here for truly solid regions.
 
-**Problem Physics and Thermophysical Properties**
+Problem Physics and Thermophysical Properties
 *************************************************
 
 This brief section summarizes the physics capabilities in **Goma** and the thermophysical properties
@@ -164,7 +164,7 @@ models for Eulerian front tracking schemes, Eulerian/Eulerian fluid-structural i
 capability, multiphase porous energy equation, Generalized surface and volume user-defined
 Lagrange multiplier constraints, and much more.
 
-**Advanced Capabilities**
+Advanced Capabilities
 *************************
 
 Several developments in *Goma* that enable advanced engineering analysis of complex systems
@@ -175,7 +175,7 @@ al., 2002), linear stability analysis of any dynamic system using normal modes, 
 2000; contact authors for a more recent version) for a complete user description of these features.
 The input record sections required to activate these features are not covered in this document.
 
-**Numerical Methods**
+Numerical Methods
 #####################
 
 With over 150 different boundary conditions for 70 plus differential equation types, *Goma’s*
@@ -241,7 +241,7 @@ global Jacobian matrix and compares it with its analytical counterpart. This too
 developers to check the consistency of newly-created equations (whether bulk or boundary
 constraints) with their corresponding analytic Jacobian contributions.
 
-**Portability, Software Library Infrastructure, and Code Accessibility**
+Portability, Software Library Infrastructure, and Code Accessibility
 ########################################################################
 
 *Goma* is written in the C programming language (specifically Kernighan and Ritchie, 1988, C

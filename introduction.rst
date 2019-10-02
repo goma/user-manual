@@ -1,4 +1,4 @@
-**Introduction**
+Introduction
 ================
 
 "*Goma*," which means rubber, gum, or elastic in Spanish, is a two- or three-dimensional finite

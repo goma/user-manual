@@ -1,8 +1,8 @@
 ==========================
-**Code Structure and I/O**
+Code Structure and I/O
 ==========================
 
-**Files for Data Input**
+Files for Data Input
 ########################
 
 The *Goma* file I/O structure is diagrammed in Figure 2. Input to the program is divided into six
@@ -60,7 +60,7 @@ command-line options. The only EXODUS II file required when running *Goma* is th
 containing the current problem mesh. All others are either output for postprocessing or used to
 supply auxiliary external fields (e.g. magnetic fields).
 
-**Command-Line Arguments**
+Command-Line Arguments
 ##########################
 
 *Goma* can be run using only the input files (all four listed above) to describe the problem and to
