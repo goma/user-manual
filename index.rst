@@ -8,7 +8,10 @@ Goma User Manual
    background
    code_structure_and_io
    problem_description_file
-   chapters/ch5/data_input_material_files
+   material_files
+   references
+   documentation_lists
+   library_mode
 
 Indices and tables
 ==================
