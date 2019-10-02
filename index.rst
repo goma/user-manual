@@ -7,7 +7,7 @@ Goma User Guide
 ===============
 
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 1
 
    chapters/ch1/intro
    chapters/ch2/background_information
@@ -19,6 +19,5 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
 

@@ -234,7 +234,7 @@ designates the species equation being solved for this component.
 	:align: center
 	:width: 90%
 
-where :math:`\x_i` is the mole fraction of ionic species *i*, :math:`\rho_0` is the base electrolyte
+where :math:`x_i` is the mole fraction of ionic species *i*, :math:`\rho_0` is the base electrolyte
 density and is *a* constant.
 
 * The **LEVEL_SET** density model is used to vary the density in the flow regime
