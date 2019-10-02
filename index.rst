@@ -7,7 +7,7 @@ Goma User Manual
    introduction
    background
    code_structure_and_io
-   chapters/ch4/data_input
+   problem_description_file
    chapters/ch5/data_input_material_files
 
 Indices and tables
