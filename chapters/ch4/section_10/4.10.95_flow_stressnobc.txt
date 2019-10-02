@@ -101,17 +101,7 @@ Renary (1997), Griffiths (1997) and Sani and Gresho (1994) discuss this.
 * As noted above, this boundary condition is currently implemented only for
   generalized Newtonian fluid models. Polymeric fluid models will not work with it.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

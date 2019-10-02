@@ -51,17 +51,7 @@ smaller pores in the skeleton relative to large pores. Contouring this quantity 
 some indication of the level of suction exerted on the porous-skeleton, which is
 relevant when the skeleton is taken as deformable.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

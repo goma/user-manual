@@ -30,17 +30,7 @@ has no input parameters, it always appears as
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

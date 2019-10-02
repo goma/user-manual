@@ -88,17 +88,7 @@ matrix and the porous term:
 The particle momentum equations have been added to *Goma* as part of a research
 project and are not currently in use for production computing.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

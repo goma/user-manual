@@ -44,17 +44,7 @@ If a constant time step is desired, use a negative value:
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -45,23 +45,8 @@ Here Einstein’s summation convention applies, viz.
 	:align: center
 	:width: 90%
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. 
 	TODO - Lines 38 and 44 are photos that need to be swapped with the equations.

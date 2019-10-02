@@ -41,23 +41,8 @@ The vorticity vector function, :math:`\underline\omega` , is defined in terms of
 	:align: center
 	:width: 90%
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. 
 	TODO - Line 40 is a photo that needs to be replaced with the correct equation. 

@@ -41,17 +41,7 @@ These quantities can be employed in a hedge-hog or vector plot to visualize the 
 conduction pathways across a domain (cf. the vector option in BLOT, or the hedge-hog
 option in Mustafa, for example).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

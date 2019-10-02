@@ -85,23 +85,8 @@ pulsating flow, piston motion, roll-eccentricity effects in coating, time-evolvi
 temperature transients, etc. can all be constructed using this card. The examples at the
 end of this section on *GD_** options will help the user construct such functions.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
- 
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. 
 	TODO - There are three images spanding from lien 45 to 55 the equation need to be wrtten as well as the word a colon.

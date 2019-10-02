@@ -39,17 +39,7 @@ The energy fluxlines are calculated in this sample input card:
 The *Energy Conduction Vectors* must also be activated for this post processing option
 to work.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

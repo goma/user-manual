@@ -36,17 +36,7 @@ Porous Shell Gas Temperature Constant= CONSTANT 1.e10
 
 No Technical Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

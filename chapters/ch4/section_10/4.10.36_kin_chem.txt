@@ -53,17 +53,7 @@ This function is built from the same function as boundary condition *KIN_LEAK*, 
 appropriate details. The stoichiometric coefficients are read from the *KIN_CHEM* card
 or set equal to 1.0 in the absence of *KIN_CHEM*.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

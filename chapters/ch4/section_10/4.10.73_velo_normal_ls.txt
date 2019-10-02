@@ -58,17 +58,7 @@ The following is a sample input card:
 
 The technical discussion under VELO_NORMAL largely applies here as well.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

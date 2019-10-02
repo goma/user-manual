@@ -142,22 +142,7 @@ Some more usage notes as follows:
 	:align: center
 	:width: 90%
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO -Lines 92 and 141 have pictures that need to be swapped with the correct equations.

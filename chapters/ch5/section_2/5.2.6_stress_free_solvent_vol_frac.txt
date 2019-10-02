@@ -57,17 +57,7 @@ the volume fraction of component i (specified by the *EQ = species_bulk* card), 
 the volume fraction of total solvents at the stress free state. Clearly, as the solvent
 concentration decreases the local volume of solid decreases, creating a rising stress.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -39,17 +39,7 @@ appropriately. If the **BOUSS** or **BOUSSINESQ** model is turned on on the Navi
 Stokes Source card, then both thermal and species volume expansion effects are
 included if the coefficients are nonzero. .
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

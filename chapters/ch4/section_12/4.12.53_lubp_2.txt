@@ -73,23 +73,8 @@ The equation solved is as follows:
 
 The third term multiplier activates the Couette flow terms.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 ..
 	TODO - Line 64 contains a photo that needs to be written as an equation.

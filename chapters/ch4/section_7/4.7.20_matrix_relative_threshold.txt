@@ -61,17 +61,7 @@ The appropriate values for the threshold can vary over many orders of magnitude
 depending on the situation. Refer to Schunk, et. al., 2002 for information and for
 further guidance.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

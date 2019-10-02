@@ -71,23 +71,8 @@ where :math:`E_0` is the enthalpy, including the effect of phase change through 
 * This equation is required to couple with SH_TEMP to solve for the local
   temperature. f
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 ..
 	TODO - Line 61 contains a photo that needs to be written as an equation.

@@ -82,17 +82,7 @@ or a doubling of the surface tension effect. For these cases, the integer parame
 this card is set to a -1 or a +1 to signify that the surface tension forces are applied 
 to the negative or positive side of the interface curve, respectively.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

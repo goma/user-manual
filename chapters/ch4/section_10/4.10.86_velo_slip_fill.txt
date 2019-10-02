@@ -83,17 +83,7 @@ interface.
   impenetrability condition, *VELO_NORMAL* for example, in conjunction with this
   boundary condition for appropriate results.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

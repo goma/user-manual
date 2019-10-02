@@ -119,17 +119,7 @@ irreducible water saturation is 0w, the irreducible air saturation 0air, and are
 provided by the user as input parameters. Pc is the capillary pressure which has a lower
 limit of 1.E-5.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -93,17 +93,7 @@ premultiplying constant is related to contact angle and surface tension by
 balancing capillary and disjoining force where the wetting line meets the precursor film.
 See Schwartz (1998) for further detail.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

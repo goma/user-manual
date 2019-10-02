@@ -66,23 +66,8 @@ The following is a sample input card:
   a weakly integrated condition. Therefore, it is additive with other weak conditions,
   but is superseded by strong conditions or Dirichlet conditions.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 
 

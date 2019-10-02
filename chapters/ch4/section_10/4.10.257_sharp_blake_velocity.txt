@@ -84,11 +84,6 @@ following form when the velocity smoothing is not used,
 	:align: center
 	:width: 90%
 
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

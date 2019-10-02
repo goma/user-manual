@@ -66,17 +66,7 @@ conditions apply to the real-solid elasticity in *TOTAL_ALE* problems. All other
 boundary conditions on force and displacement, viz. those without the *_RS*, are applied
 to the mesh motion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -70,17 +70,7 @@ interpolation and turns on all term multipliers except for the mass matrix:
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

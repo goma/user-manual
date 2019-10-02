@@ -40,17 +40,7 @@ specification of the *Molecular Weight* and *Specific Volume*. The redundancy, w
 be allowed to remain, arose through simultaneous additions to the code by developers
 working on different projects.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

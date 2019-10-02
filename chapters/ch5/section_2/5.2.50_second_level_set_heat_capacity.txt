@@ -56,20 +56,5 @@ the interface will show a constant heat capacity of 1.0e-4.
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

@@ -68,17 +68,7 @@ it in as follows in the input script:
 
 With the JOULE model, this field is used to compute the Joule heating term.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

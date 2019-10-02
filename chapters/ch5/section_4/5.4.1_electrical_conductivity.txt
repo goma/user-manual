@@ -98,17 +98,7 @@ contribution to the electrical conductivity since its charge number is zero.
 Lastly, *Goma* calculates the conductivity in function assemble_potential as material
 properties are being loaded.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

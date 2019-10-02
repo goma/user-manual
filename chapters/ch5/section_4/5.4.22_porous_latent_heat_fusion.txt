@@ -47,17 +47,7 @@ that depends on the evaporation/condensation rate. *Fusion* implies a liquid to 
 transition. It is envisioned that this card will someday be used for porous flow in mushy
 zones of solidifying metals, or the freezing of water in a porous solid.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

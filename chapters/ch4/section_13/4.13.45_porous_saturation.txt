@@ -38,17 +38,7 @@ This sample input card turns off writing of saturation to the EXODUS II file:
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

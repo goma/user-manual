@@ -39,17 +39,7 @@ The following sample card requests **LAMBDA** be written to the EXODUS II file:
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

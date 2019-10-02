@@ -450,20 +450,5 @@ var = SHELL_PRESS_OPEN_2
 
 var = SHELL_LUB_CURV_2
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

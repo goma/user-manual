@@ -61,17 +61,7 @@ pressure, you Saturation/capillary pressure curve must be shifted accordingly, a
 your boundary conditions. Also, remember these pressures will affect your solid
 pressure state in poroelastic problems.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

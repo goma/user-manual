@@ -49,17 +49,7 @@ This condition applies a particles volume fractioin of 0.0 at nodeset 100.
 
 The equation applied at the specified nodeset in place of the particles conservation equation.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

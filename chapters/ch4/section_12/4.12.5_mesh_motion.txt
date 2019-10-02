@@ -41,17 +41,7 @@ The following is a sample card that sets the mesh motion scheme to be arbitrary:
 
 For the *TOTAL_ALE* mesh motion option we must supply elastic properties and solid constitutive equations for both the mesh and the real solid. It is best to consult the example tutorials cited below for details.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

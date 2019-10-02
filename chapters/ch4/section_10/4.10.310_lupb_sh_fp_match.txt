@@ -44,23 +44,8 @@ This condition applies the matching tie condition at a side set boundary between
 
 The best example of the use of this equation is the exit of a metered coating flow. It must be used together with a flux-matching condition LUBP_SH_FP_FLUX.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 _______________________________________________________________________
 

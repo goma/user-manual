@@ -67,17 +67,7 @@ paper for details. An additional improvement to that technique was developed
 internally to Sandia which better accommodates graded meshes. This technique is
 invoked with the pspp_e option, which we recommend.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

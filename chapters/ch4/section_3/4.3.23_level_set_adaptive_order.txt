@@ -38,17 +38,7 @@ This example invokes the subelement adaptive integration order:
 
 No Technical Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

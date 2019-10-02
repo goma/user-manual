@@ -50,22 +50,7 @@ where :math:`\phi_i` is the finite element trial function, **n** is the outward-
 
 * The condition replaces the residual equation shell_partc at the boundary.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Line 45 has an image that needs to be replaced with the equation. 

@@ -57,17 +57,7 @@ or *POROUS_TWO_PHASE*, the density of solvent in the liquid phase only is given 
 where S is the saturation (see *Porous Saturation* card). Compare this with the quantity
 computed with the *Total density of solvents in porous media* card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

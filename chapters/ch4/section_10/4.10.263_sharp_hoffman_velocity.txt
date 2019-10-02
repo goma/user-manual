@@ -92,11 +92,6 @@ of the wetting velocity. As a result, for very high Capillary numbers, i.e.
 > :math:`10^6`, the
 iteration procedure in Goma may need to be modified.
 
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -46,17 +46,7 @@ interface is better described between the points on the interface. However, the
 calculation of the faceted geometry is slightly more expensive computationally. Also,
 the current implementation is limited to 2-dimensional simulations.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

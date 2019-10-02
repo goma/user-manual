@@ -88,22 +88,7 @@ inclusion of all relevant surface tension terms is performed.
   specified in the material file multiplied by the value of <float>. Reasons for doing
   this are somewhat obscure but important to the practitioners of this art.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Lines 71 has a photo that needs to be replaced with the real equation.

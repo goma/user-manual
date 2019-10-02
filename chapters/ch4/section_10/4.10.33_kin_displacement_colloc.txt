@@ -54,17 +54,7 @@ neighboring *TALE* or fluid *ARBITRARY* region is 12.
 
 See discussions on the *KINEMATIC_COLLOC* and *KIN_DISPLACEMENT* cards.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

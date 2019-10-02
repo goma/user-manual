@@ -253,17 +253,7 @@ augmenting condition. The POR_LIQ_FLUX term is valid only for saturated media
 and the Darcy velocity is defined by :math:`\nu_{darcy}` = (:math:`\kappa` / :math:`\mu`) :math:`\Delta` 
 :math:`p_{liq}` . For the more general case, refer to the *POROUS_LIQ_FLUX_CONST* boundary condition.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

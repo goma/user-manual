@@ -69,20 +69,5 @@ the other side of the interface is solved for via a *KINEMATIC_SPECIES* boundary
 condition. Note, this boundary condition is not covered by the test suite, and thus, 
 may or may not work.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

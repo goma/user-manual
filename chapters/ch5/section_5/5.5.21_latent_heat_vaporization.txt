@@ -36,17 +36,7 @@ The following is a sample input card:
 
 See the discussion for the *Latent Heat Fusion* model.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -86,17 +86,7 @@ respectively.
      return ( cos_CA );
     }
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

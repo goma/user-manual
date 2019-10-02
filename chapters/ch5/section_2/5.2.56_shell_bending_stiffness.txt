@@ -33,17 +33,7 @@ The details of each model option are given below:
 |                     | * <float1> - Standard value of the coefficient D.                                                      |
 +---------------------+--------------------------------------------------------------------------------------------------------+
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

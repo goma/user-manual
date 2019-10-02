@@ -43,17 +43,7 @@ abnormal returns from Aztec are possible and are indicated on the LIS status lin
 the Aztec User’s Guide (Hutchinson, Shadid and Tuminaro, 1995) for further
 interpretation of different abnormal return status indicators.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -54,22 +54,7 @@ This boundary condition is applied at sideset 100.
 * Note that the sideset as generated in CUBIT or related software is actually 
   attached to the continuum domain and not the shell face, as those faces (top and bottom of sheet and not the edges) are not true finite element sides. Most mesh generators will not allow sidesets to be include shell element faces. GOMA figures out the right thing to do.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Line 46 has an image that needs to be replaced with the equation. 

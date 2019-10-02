@@ -57,17 +57,7 @@ weight function:
 The equation solved is the surface curvature definition :math:`\kappa` = :math:`\Delta_s` :math:`\underline{n}` = (I – :math:`\underline{n}` :math:`\underline{n}`) • :math:`\Delta` n. See
 discussion for EQ = shell_surf_div_v.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

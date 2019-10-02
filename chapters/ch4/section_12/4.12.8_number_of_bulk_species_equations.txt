@@ -38,17 +38,7 @@ Following is a sample card:
 
 See the discussion for the “*Number of bulk species*” card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

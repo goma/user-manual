@@ -194,17 +194,7 @@ the “right” linear solver requires experience, understanding and sometimes, 
 
 Note that these options might change with time as this version of Trilinos becomes the default case.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

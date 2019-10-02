@@ -118,11 +118,6 @@ WETTING_SPEED_BLAKE card:
 	:align: center
 	:width: 90%
 
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

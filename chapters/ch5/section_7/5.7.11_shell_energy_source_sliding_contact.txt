@@ -79,20 +79,5 @@ derived.
 NOTE: If this card is used and there is no upper-wall or lower wall sliding motion, and
 error is thrown.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

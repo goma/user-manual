@@ -44,20 +44,5 @@ suspension particles leaving the domain is tied to the Phillips diffusive-flux m
 Please refer to discussions on *HYDRODYNAMIC* diffusivity to gain more
 understanding of the suspension flux model.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

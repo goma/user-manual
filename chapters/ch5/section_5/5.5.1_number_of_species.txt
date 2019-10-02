@@ -25,17 +25,7 @@ No Example.
 The *Number of Species* is now determined by *Goma* from the *Problem Specification* for
 each material in the *Goma* input file.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

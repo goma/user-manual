@@ -30,20 +30,5 @@ the mesh during domain decomposition, on the **mpirun** command line when execut
 Goma and on the **fix** command line when reassembling solution files calculated on
 decomposed meshes.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

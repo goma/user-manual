@@ -114,17 +114,7 @@ are supplanted.
   not a problem, but in three dimensions it can impose a considerable hardship on
   the analyst.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

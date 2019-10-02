@@ -60,20 +60,5 @@ and is applied in place of the normal component of the mesh motion equations, i.
 a rotated type boundary condition. If used in three dimensions, it will require a rotation
 description with the *ROT* cards.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

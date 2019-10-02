@@ -62,20 +62,5 @@ LEVEL_SET momentum source model. For one thing, it makes no sense and for
 another thing the values specified on the latter model are simply the gravitational
 acceleration and therefore are inconsistent with this card.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

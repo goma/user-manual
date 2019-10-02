@@ -44,17 +44,7 @@ equation for species 0.
 The advective terms in the species conservation equations take the form, u ⋅ ∇c where
 c is the species concentration and u the fluid velocity.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

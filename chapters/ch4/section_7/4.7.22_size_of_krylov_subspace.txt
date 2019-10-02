@@ -49,17 +49,7 @@ iterations increases nonlinearly with **m** (but see the *Orthogonalization* car
 doubling of **m** will result in more than a doubling of space and time requirements. So
 simply choosing a very large dimension is generally not recommended.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

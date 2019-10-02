@@ -46,17 +46,7 @@ The following is a sample card that sets the power law exponent to 0.2:
 
 See Description/Usage for *Liquid Constitutive Equation* card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

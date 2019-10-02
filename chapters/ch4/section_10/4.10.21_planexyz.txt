@@ -69,17 +69,7 @@ used to force the application of the planar geometry to a specific component of 
 mesh stress equation residuals. Full understanding of the boundary rotation concept is
 necessary to understand these reasons (see *Rotation Specifications*).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

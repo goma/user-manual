@@ -49,17 +49,7 @@ This example invokes the subelement integration
 
 * **NOTE** that the Level Set Renormalization method must be set to Huygens.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

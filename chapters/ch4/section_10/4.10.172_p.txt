@@ -65,23 +65,8 @@ same Dirichlet condition.
 See the technical discussion for the *UVW* velocity for a discussion of the two ways of
 applying Dirichlet boundary conditions.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 
 

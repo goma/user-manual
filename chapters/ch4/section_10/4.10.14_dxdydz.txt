@@ -74,17 +74,7 @@ conditions as residual equations, as discussed above. Examples of how these cond
 are used to move solid structures relative to a fluid, as in a roll-coating flow, are
 contained in the references below.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

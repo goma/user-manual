@@ -38,17 +38,7 @@ The value of this variable is stored in the unified problem description structur
 units. It is then used in consistency checks and as input into some equation of state
 routines, such as the ideal gas equation of state routine.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

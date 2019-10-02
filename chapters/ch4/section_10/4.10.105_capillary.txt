@@ -90,22 +90,7 @@ is the surface divergence operator defined as :math:`\Delta_s^f` = (I â€“ nn) â‹
 * The optional (integer) element block ID corresponds to the material numbers given
   in the *Problem Description* section of the input file.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Line 66 has a photo that needs to be replaced with the real equation.

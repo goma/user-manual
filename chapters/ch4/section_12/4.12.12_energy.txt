@@ -138,23 +138,8 @@ with the energy equation.
 
 This enrichment function allows discontinuity in value and gradient along interface but maintains continuity at element edges/faces. Appears to be method of choice for Pressure discontinuity. Produces interface integral for terms integrated by parts that allows for specifying a weak integrated conditions. This is needed in the laser welding heat transfer problem.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 ..
 	TODO - Lined 122, 128, and 132 contain photos that need to be exchnaged with the equations. 

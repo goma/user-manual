@@ -67,17 +67,7 @@ If the exponential decay option is used, the flux vector has the form,
 
 where C and Cmax are volume fractions of suspension locally and at maximum packing.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

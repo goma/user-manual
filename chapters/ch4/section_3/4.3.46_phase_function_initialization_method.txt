@@ -175,17 +175,7 @@ Three examples of initialization methods for a single phase function are provide
 
 Please consult Level Set Initialization Method card for discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

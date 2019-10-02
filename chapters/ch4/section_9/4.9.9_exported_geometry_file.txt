@@ -41,17 +41,7 @@ checked for correctness, etc. The relevant CUBIT command is
 
 	import acis “satfile”
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

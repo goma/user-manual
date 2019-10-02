@@ -91,11 +91,6 @@ to pin the contact line there and allow it to take on any macroscale contact ang
 a certain range. The line can release again if the meniscus pulls the contact line
 sufficiently to overcome specified bounds.
 
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

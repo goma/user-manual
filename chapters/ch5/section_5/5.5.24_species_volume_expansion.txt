@@ -41,17 +41,7 @@ The following is a sample input card:
 WARNING: Please be aware that if the thermal volume expansion coefficient is also
 nonzero, the buoyancy force will be augmented.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

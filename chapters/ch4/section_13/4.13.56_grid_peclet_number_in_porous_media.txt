@@ -42,17 +42,7 @@ This is a sample input card to activate calculation of the Peclet Number:
 
 See discussion for the *Porous Weight Function* card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

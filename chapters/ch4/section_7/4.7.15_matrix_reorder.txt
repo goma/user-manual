@@ -42,21 +42,6 @@ summary, users are encouraged to try RCM reordering when using iterative solvers
 foregoing the option only as a further resort in the face of repeated convergence
 failures.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 

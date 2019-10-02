@@ -381,17 +381,7 @@ momentum source models.
 The user must also take special care that the source term multipliers for the momentum
 equation are set to unity.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

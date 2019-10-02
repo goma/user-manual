@@ -62,17 +62,7 @@ The second card applies only to 3D problems.
 
 For 2D problems, the defining equation is: :math:`\Theta` = atan[ :math:`n_x`, :math:`n_y`]  where Q is shell_angle1 and :math:`n_x` and :math:`n_y` are the components of the normal vector to the shell surface. There is an analogous definition for shell_angle2.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

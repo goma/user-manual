@@ -47,17 +47,7 @@ The following is a sample input card:
 
 Please refer to the technical discussion given under **HYDRO** section of the *Diffusivity* card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

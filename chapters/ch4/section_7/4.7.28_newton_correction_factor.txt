@@ -97,17 +97,7 @@ while the f\ :sub:`2`, f\ :sub:`4`, and f\ :sub:`6` values are interval endpoint
 must be in ascending order, 0 < f\ :sub:`2` < f\ :sub:`4` < f\ :sub:`6`. Although no such restriction is put on the
 relaxation factors, they should generally satisfy 0 < f\ :sub:`5` ≤ f\ :sub:`3` ≤ f\ :sub:`1` ≤ 1.0.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

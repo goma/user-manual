@@ -53,11 +53,6 @@ An example application of this boundary condition card is to address the need to
 some load pressure to a solid Lagrangian region, like a rubber roller, so as to squeeze
 and drive flow in a liquid region.
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

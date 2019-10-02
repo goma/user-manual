@@ -36,17 +36,7 @@ This is a sample input card to activate calculation of SUPG Velocity:
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

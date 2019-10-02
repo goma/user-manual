@@ -34,11 +34,6 @@ approximately a narrow fixed-width strip on either side of the zero level set co
 The width of this strip is twice the *Level Set Length Scale* multiplied by the float value
 supplied on this card.
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

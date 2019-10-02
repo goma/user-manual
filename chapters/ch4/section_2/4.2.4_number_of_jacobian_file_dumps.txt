@@ -78,23 +78,8 @@ Internal Sandia users can find the auxiliary program, **checkGomaJac**, in the d
 subdirectories for other platforms. External users should contact Goma support staff to
 obtain the tool.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. 
 	TODO - I tried wriitng the equation out, but line 66 is definatly not how it is suppsoed to look. I could not for the life of me figure out how to do a superscript and cubscript on one letter in lines 68-69. Kris said there is a math thing to help me do this.

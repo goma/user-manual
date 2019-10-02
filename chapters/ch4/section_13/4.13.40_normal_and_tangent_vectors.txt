@@ -48,17 +48,7 @@ surfaces, and *Goma* takes many steps to make them so. The surface normal crosse
 Galerkin weighted residuals are formed (see description for *ROT* cards). Imperfections
 or defects in the mesh can lead to nonsmooth fields.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

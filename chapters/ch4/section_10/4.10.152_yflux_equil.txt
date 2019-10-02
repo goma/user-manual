@@ -58,17 +58,7 @@ The following is a sample input card:
 This boundary condition is very similar to *VL_EQUIL* and *VL_POLY* except that it is
 only applied at an external boundary where vapor phase is not modeled in the problem.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

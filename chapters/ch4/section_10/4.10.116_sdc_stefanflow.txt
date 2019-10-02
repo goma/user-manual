@@ -97,17 +97,7 @@ interface. The source term to be used will be taken from multiple previously spe
   variables on either side of an interface (**TIE** boundary conditions). The user is
   referred to Moffat (2001) for detailed presentation on discontinuous variables.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

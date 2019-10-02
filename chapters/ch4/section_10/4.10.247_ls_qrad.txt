@@ -53,17 +53,7 @@ This is the level-set counterpart to *BC = QRAD* which is the same boundary cond
 applied to a parameterized mesh surface. Please see the discussion of that input record
 for the functional form of this boundary condition.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

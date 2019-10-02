@@ -53,17 +53,7 @@ of 0.5, and maximum packing volume fraction of 0.64.
 
 No Technical Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

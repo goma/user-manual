@@ -54,17 +54,7 @@ the domain.
 Please see Rao (1996) memo for a more detailed discussion of pressure stabilization
 and its implementation in *Goma*.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

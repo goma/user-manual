@@ -103,17 +103,7 @@ side set 40 and side set 50.
 * Related boundary conditions: *CA_EDGE_INT, CA_EDGE_CURVE,
   CA_EDGE_CURVE_INT, VAR_CA_EDGE, VAR_CA_USER*.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

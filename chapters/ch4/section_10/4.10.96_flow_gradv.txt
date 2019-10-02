@@ -78,22 +78,7 @@ function of pressure and velocity unknowns as any other term.
   value. This is done by setting the optional input integer to -1 and providing the
   imposed value in :math:`P_{applied}` ; otherwise, the value set in :math:`P_{applied}` is ignored.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Line 68 contains a photo that needs to be exchanged for the equation.

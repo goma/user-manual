@@ -87,11 +87,6 @@ The following is a sample input card:
   the mesh motion is by definition always zero so this constraint reverts to the
   previous expression.
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

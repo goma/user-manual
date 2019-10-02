@@ -67,17 +67,7 @@ the mass matrix for time derivatives:
 
 This card is not yet in use.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

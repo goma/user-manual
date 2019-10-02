@@ -45,17 +45,7 @@ the natural convective force due to concentration differences.
 The card is also used in various places where a value for a species concentration is
 needed. However, the species unknown variable is not included in the solution vector.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

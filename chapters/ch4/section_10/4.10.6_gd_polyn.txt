@@ -82,23 +82,8 @@ This condition is not used as often as *GD_LINEAR* and *GD_PARAB*, and in fact
 supersedes those conditions. Please consult the example discussions on the other *GD_**
 options and the example section after *GD_TABLE* for more descriptive examples.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
- 
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. 
 	TODO - In line 19 and 67 the images need to be replaced with the actual equations.

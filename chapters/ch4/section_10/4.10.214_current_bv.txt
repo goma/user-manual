@@ -53,17 +53,7 @@ Users are referred to Chen (2000) for details of the Butler-Volmer model and als
 Newman (1991), particularly Equations 8.6 and 8.10 and Chapter 8, pp. 188-189 in the
 latter.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

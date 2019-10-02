@@ -51,17 +51,7 @@ than the number of species equations. For nondilute systems, an equation of stat
 be implicitly used within *Goma* to solve for the value of the species unknown variable
 for the last species.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

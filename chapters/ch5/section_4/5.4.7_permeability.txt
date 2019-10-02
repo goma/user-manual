@@ -153,17 +153,7 @@ The **PSD_WEXP** and **PSD_SEXP** are similar pore-size distribution models to
 **PSD_VOL**. The references below should be consulted for details on how to use these
 models.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

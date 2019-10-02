@@ -40,20 +40,5 @@ and obviate the need to compute another expensive preconditioner at the later st
 Although a lot of time may be saved by re-using a previous factorization, the loss in
 accuracy may cause convergence problems.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

@@ -53,20 +53,5 @@ algorithm where it is used to fix the value of the color function at an inlet or
 boundary. In the level set formulation, it is used less but is still useful in defining the
 absolute fixed location of an interface by setting the value assigned to 0 on a node set.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

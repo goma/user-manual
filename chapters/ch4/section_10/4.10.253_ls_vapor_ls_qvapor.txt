@@ -53,17 +53,7 @@ melting point temperature is taken from the material property “Liquidus Temper
 This boundary condition is still in the developmental stage. In using it is advisable to
 be working with the Sandia Goma code team.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

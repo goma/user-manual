@@ -77,23 +77,8 @@ This boundary condition can be applied regardless of the *Mesh Motion* type, and
 convenient to use in place of *PLANE* when one desires to move the plane with time
 normal to itself.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. 
 	TODO - The images in lines 20,26, and 61 need to be repalced with the equations.

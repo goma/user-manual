@@ -43,17 +43,7 @@ the mesh stress is exactly that and not the true stress of the material. For *TO
 mesh motion types, use Real Solid Stress Tensor option to get the true solid material
 stresses.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

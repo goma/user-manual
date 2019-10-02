@@ -150,11 +150,6 @@ where j is the net charge or current source in units of A/cm3; zi is the charge 
 ci is the molar concentration in units of moles/cm3, respectively, of species i; F is the
 Faraday’s constant ( ≡ 96487 C/mole); and n is the number of charge species present.
 
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

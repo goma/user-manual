@@ -48,17 +48,7 @@ boundary and the value specified on the card. This force is applied as a weakly
 integrated condition and if the *VELO_SLIP_FILL* condition is not present, the
 *FILL_CA* will be overwritten and *ipso facto* absent.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

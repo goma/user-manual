@@ -102,17 +102,7 @@ residuals for this augmenting condition.
   be read from the ASCII *GUESS file* by specifying *read* on the *Initial Guess* card
   and on the *Augmenting Conditions Initial Guess* card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

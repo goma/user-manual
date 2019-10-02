@@ -58,22 +58,7 @@ being modeled.
 The *QRAD* boundary condition can be used in place of *QCONV* by simply setting the
 emissivity value to zero.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO -Line 48 has a picture that needs to be changed out with the correct equation.

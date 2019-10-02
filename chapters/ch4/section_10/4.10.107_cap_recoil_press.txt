@@ -51,17 +51,7 @@ Currently this boundary condition has coefficients for only iron and water. Seve
 required pieces of information to use this boundary condition are not in final form, and the user can expect future changes and improvements. This boundary condition is
 designed for use with *Q_LASER_WELD*.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

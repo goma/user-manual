@@ -48,17 +48,7 @@ Here :math:`v_l` represents the Darcy flux, or Darcy velocity, in the gas phase,
 permeability of the porous medium, :math:`k_l` is the relative permeabilities for the liquid and
 liquid phases respectively, :math:`\mu_l` are the liquid viscosity, :math:`p_l` is the pressure in the liquid phase, and g is the gravitational force vector. :math:`\rho_l` is the density of the liquid phase.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

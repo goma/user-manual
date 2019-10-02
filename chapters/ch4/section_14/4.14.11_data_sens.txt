@@ -94,17 +94,7 @@ NOTE: In order to compute data sensitivities with respect to dirichlet boundary
 condition floats, the boundary conditions need to be "soft" set in the input file, i.e. the
 optional parameter should be set to 1.0.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -264,11 +264,6 @@ respetively, the anodic and cathodic transfer coefficients; F is the Faraday’s
 are, respectively, the electrode and electrolyte potentials in unit of V; U0 is the
 open-circuit potential in unit of V; and T is temperature in unit of K.
 
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

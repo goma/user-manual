@@ -87,11 +87,6 @@ be supplemented by a statement of mass conservation across the interface, which 
 depend on whether the solid phase is of *CONTINUOUS* or *POROUS* media (see *Media
 Type* card).
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

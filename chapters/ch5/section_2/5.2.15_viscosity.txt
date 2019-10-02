@@ -110,17 +110,7 @@ The following is a sample card that sets the viscosity to USER:
 The viscosity specified by this input card is used with the **NEWTONIAN** *Liquid
 Constitutive Equation*.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

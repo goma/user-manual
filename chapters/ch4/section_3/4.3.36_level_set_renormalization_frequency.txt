@@ -43,20 +43,5 @@ still relatively small. Since the average gradient is used, this condition might
 renormalization. By setting an upper limit for the number of time steps that can pass
 before renormalization, situations such as this can be remedied.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

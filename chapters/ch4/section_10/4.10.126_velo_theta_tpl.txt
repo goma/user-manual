@@ -133,22 +133,7 @@ other functional forms.
 	:align: center
 	:width: 90%
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Lines 86, 90, and 132 have photos that needs to be replaced with the real equation.

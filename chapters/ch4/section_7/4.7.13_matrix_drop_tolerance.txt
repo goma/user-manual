@@ -41,20 +41,5 @@ The two main parameters when using the ILUT preconditioner are this card and the
 *Matrix ILUT fill factor* card. The restrictions in *Matrix ILUT fill factor* take precedence
 over the dropped entries caused by this card.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

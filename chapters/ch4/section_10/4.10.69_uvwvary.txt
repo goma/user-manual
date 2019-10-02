@@ -124,17 +124,7 @@ sideset.
 * This is a collocated-type boundary condition. It is applied exactly at nodal
   locations but has lower precedence of application than direct Dirichlet conditions.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -33,17 +33,7 @@ interface types from multiple fluids requires more than one level-set field. Thi
 capability can also be deployed for tracking imprinted solid surfaces (moving) together
 with capillary free surfaces. Consult the tutorials.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

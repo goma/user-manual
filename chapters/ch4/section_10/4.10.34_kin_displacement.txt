@@ -74,17 +74,7 @@ mesh motion and is applied as a distinguishing condition on the mesh between a f
 and *TALE* solid region. In essence, it maintains a real solid displacement field such that
 no real-solid mass penetrates the boundary described by this condition.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

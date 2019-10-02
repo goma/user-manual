@@ -71,23 +71,8 @@ acoustic pressure and its gradient. P is the amplitude of the acoustic pressure
 	:align: center
 	:width: 90%
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 ..
 	TODO - Line 64 contains a photo that needs to be written as an equation.

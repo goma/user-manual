@@ -41,20 +41,5 @@ The following sample card requests **MU** be written to the EXODUS II file:
 See the material file *Viscosity* card for an explanation of the models for which the
 viscosity is variable and dependent on the flow field and other variables.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

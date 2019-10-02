@@ -44,17 +44,7 @@ kinetics mechanisms and a rigorous treatment of gas phase transport property
 evaluation. In order to maintain internal consistency, the new treatment must be used in
 its entirety.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

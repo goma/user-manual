@@ -64,17 +64,7 @@ SAT, HEIGHT, PERM, CROSS_PERM, SH_SAT_CL_POROSITY, etc. These are
 specially designated external fields which are mapped to variations in these properties
 corresponding to thin porous media. Please see GT-038.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

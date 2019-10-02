@@ -102,11 +102,6 @@ floating point on this card, should be set to zero. As of 6/13/02 this card has 
 implemented for pure liquid solvents, so that no equilibrium solvent partitioning across
 the interface is present.
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

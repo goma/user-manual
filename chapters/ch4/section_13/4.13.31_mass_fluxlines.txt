@@ -43,17 +43,7 @@ types (see *Diffusion Constitutive Equation* card). In the *FICKIAN* case, the f
 computed with the base, constant diffusivity. Also, the *Mass Diffusion Vectors* post
 processing option must also be activated for this option to work.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

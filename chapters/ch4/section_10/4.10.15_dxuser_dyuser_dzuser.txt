@@ -60,17 +60,7 @@ Please consult the user-definition subroutines for examples.
 
 No Technical Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

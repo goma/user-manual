@@ -71,17 +71,7 @@ applications without having to resort to the shell equations. It is a strongly i
 rotated boundary condition on the mesh equations. It can only be used in twodimensional
 applications.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

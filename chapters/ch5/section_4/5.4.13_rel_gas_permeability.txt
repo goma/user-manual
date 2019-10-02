@@ -72,17 +72,7 @@ viscosity, and the gas-phase relative permeability is calculated using
 For the **CONSTANT** option the floating point constant must include the effect of
 viscosity, viz. the constant represents krelg/μgas
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

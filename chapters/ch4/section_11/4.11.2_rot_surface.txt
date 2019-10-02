@@ -181,17 +181,7 @@ In almost every case the boundary condition constraint will replace the normal r
 
 Specification of a seed vector method is needed so that a unique pair of tangent vectors may be determined at each point on the surface. The BASIS, BASIS_FIRST and BASIS_RESEED use the finite element grid in the surface as a means of defining the first tangent vector. They can employ averaging over elements that share a node. They should be employed on surfaces for which it is difficult to find a single consistent seed vector for every point on the surface. The SEED method finds the projection of the vector supplied in the surface at the point of interest. This projection vector is normalized to obtain the first tangent vector. It should be clear that only vectors that are never normal to any point on the surface will be suitable. In practice, this condition can sometimes be hard to meet for some surfaces. In these cases, the other seeding methods should be used.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

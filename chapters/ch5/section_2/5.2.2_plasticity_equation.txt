@@ -72,11 +72,6 @@ are covered in the EVP tutorial (GT-019.1). Usage examples for four different st
 scenarios are given, including a solid yielding from an applied mechanical load and a
 solid yielding from high shrinkage stress during drying.
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

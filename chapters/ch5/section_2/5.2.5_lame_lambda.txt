@@ -87,17 +87,7 @@ Important note that when one desires an incompressible solid through the use of
 Lambda expansion term is also added on. So to get a truly incompressible response,
 one must set the *Lame LAMBDA* coefficient to zero.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

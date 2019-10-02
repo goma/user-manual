@@ -52,17 +52,7 @@ calculated normal vectors. This is equivalent to the old “toggle = 0”.
 **Technical Discussion**
 -------------------------
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

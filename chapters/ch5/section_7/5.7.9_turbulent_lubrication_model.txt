@@ -47,17 +47,7 @@ Following is a sample card:
 Several other models can be implemented in this instance. We chose this simple
 model which derives from Prandtl mixing length theory.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

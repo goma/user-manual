@@ -99,17 +99,7 @@ to speed up your runs by foregoing a fresh Jacobian formation, but still maintai
 convergence. Moreover, without a Jacobian formation, the **lu** solver (see the *Solution
 Algorithm* card) can use a previously factored matrix and simply do a resolve.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

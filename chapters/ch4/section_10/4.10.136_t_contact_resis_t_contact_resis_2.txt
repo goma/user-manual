@@ -75,22 +75,7 @@ sure this occurs. In CUBIT, for example, you have to add “wrt volume 1 2” li
 qualifiers on the side set command. The reason for the “double application” of this
 condition is to pick up the all the terms from both sides of the interface with the proper sign. The nodes at the interface have two temperatures, one from each side, and so two weak form applications of this equation are required, one from each side.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO -Line 65 has a picture that needs to be changed out with the correct equation.

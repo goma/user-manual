@@ -53,17 +53,7 @@ Tolerance* card for a solution to be considered converged.
 If rel < 1.0 (larger values are not really imposing any restrictions), mixed measure
 values are output instead of the update vector norms.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

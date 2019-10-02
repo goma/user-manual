@@ -68,17 +68,7 @@ The positive side of the interface will show a constant viscosity of 1.0.
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -34,20 +34,5 @@ The following sample card sets the maximum number of time steps to 100:
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

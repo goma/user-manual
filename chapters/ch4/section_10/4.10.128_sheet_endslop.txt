@@ -63,20 +63,5 @@ conditions is not general and therefore they should only be applied to web geome
 that are predominantly horizontal. That is, the x component of the normal vector to the
 web sideset should at each point be less than or equal to the y component.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

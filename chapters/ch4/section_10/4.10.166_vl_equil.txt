@@ -81,17 +81,7 @@ equilibrium expression comes from a temperature-dependent vapor pressure model.
 Either Riedel or Antoine temperature-dependent vapor pressure model can be specified
 in the *VAPOR PRESSURE* material card in order to link temperature to Raoult’s law.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

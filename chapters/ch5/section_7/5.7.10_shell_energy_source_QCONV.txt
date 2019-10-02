@@ -62,20 +62,5 @@ transfer coefficient H is
 
 Here cf is the coefficient of friction, which for now is taken as 8./Re.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

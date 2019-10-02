@@ -38,17 +38,7 @@ The following sample card requests **LAME_MU** be written to the EXODUS II file:
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

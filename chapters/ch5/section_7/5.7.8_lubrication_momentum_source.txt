@@ -57,17 +57,7 @@ is the interface with TORO that also makes the Lorentz scaling (lsf) necessary s
 the fixed set of units in TORO (MKS) can be adjusted to the user-selected units in
 Goma.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

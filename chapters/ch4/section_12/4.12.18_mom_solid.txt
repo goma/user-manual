@@ -75,17 +75,7 @@ well as the liquid phase. We have termed this capability TALE for “total arbit
 Lagrangian Eulerian” and details of implementation and usage for Goma can be found
 in Schunk (2000).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

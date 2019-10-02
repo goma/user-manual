@@ -58,17 +58,7 @@ A sample input card for this material property might look like this:
 
 * See the reference below for a discussion of Thermal Battery modeling with *Goma*.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

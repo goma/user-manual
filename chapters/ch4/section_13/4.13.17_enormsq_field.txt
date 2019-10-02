@@ -41,17 +41,7 @@ This post-processing variable is equal to :math:`\underline{\Delta}` :math:`enor
 
 See also the *Enormsq Field Norm* post processing option.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

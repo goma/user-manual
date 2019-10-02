@@ -50,20 +50,5 @@ with information from adjacent processors during the approximate factorizations 
 to build preconditioners. This card should be omitted or given a value of **none** for serial
 executions.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

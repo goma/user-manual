@@ -72,17 +72,7 @@ Faraday’s constant ( 96487 *C/mole*); *R* is the universal gasl constant ( 8.3
 *J/mole-K*); *T* is temperature in unit of *K*; *V* and :math:`\phi` are, respectively, the electrode and
 electrolyte potentials in unit of *V*; :math:`U_0` and is the open-circuit potential in unit of *V*.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

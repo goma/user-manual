@@ -203,17 +203,7 @@ model for drying problems but has not been completed. The roots for this may be 
 in the source code but the model is not yet functional; it was not listed above as a valid
 Heat Source option.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

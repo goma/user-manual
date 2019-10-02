@@ -44,17 +44,7 @@ inexact. This card allows the user to force the concentration of species **i** t
 to fall within a strict concentration range **[min,max]** after the Newton iterations have
 terminated.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

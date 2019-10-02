@@ -72,17 +72,7 @@ case, viz. *POROUS_SATURATED* media type, this condition is applied as
 	:align: center
 	:width: 90%
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

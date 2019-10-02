@@ -85,17 +85,7 @@ normal velocity set by :math:`V_n` (the input value).
   element block ID of the liquid in this case. This also applies to the *KINEMATIC*
   and *KINEMATIC_PETROV* boundary conditions.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

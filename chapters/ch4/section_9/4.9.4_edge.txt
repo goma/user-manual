@@ -109,17 +109,7 @@ The COMPOSITE form will create a new curve that is simply the union of the **N**
 Note that extensive use of the EDGE command has only occured in 2D; 3D capability
 is not guaranteed.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -40,17 +40,7 @@ The following example input card does not request output of the stain tensor:
 Definitions of the strain tensor depend on the solid constitutive equation type (see
 description for *Solid Constitutive Equation* card).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

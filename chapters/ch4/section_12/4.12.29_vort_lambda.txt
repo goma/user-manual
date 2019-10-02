@@ -47,20 +47,5 @@ No Examples.
 This equation type is used for a research capability involving the flows of suspensions
 in curvilinear coordinates and is not currently being used for production computations.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

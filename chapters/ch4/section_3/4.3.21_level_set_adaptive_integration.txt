@@ -25,17 +25,7 @@ length scale of zero. Please see usage nodes below.
 
 No Technical Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

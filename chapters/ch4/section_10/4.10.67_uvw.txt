@@ -83,17 +83,7 @@ This residual equation is included in the Newton’s method iteration scheme lik
 other residual equation. Note that in this case, nothing is set in the solution vector since
 that will occur automatically as part of the iteration method.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

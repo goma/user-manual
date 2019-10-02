@@ -109,22 +109,7 @@ value of :math:`k^f` that would lead to good numerical behavior would be 100 cm
 :math:`s^{-1}`,
 equivalent to a reaction with a reactive sticking coefficient of 0.01 at 1 atm and 300 K for a molecule whose molecular weight is near to :math:`N_2` or :math:`H_2S`.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Lines 65, 69, 75, and 81 have photos that need to be replaced with the proper equations.

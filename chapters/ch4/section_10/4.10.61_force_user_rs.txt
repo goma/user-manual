@@ -77,17 +77,7 @@ spatially varying. The *FORCE_RS* and *NORM_FORCE_RS* boundary conditions can
 be used for constant forces. This condition is applied as a weak integrated condition in
 Goma, and hence will be additive with others of its kind.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

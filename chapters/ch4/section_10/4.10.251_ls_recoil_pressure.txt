@@ -55,17 +55,7 @@ required pieces of information to use this boundary condition are not in final f
 the user can expect future changes and improvements. This boundary condition is
 designed for use with *LS_QLASER*.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

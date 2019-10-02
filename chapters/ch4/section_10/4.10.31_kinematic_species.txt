@@ -72,17 +72,7 @@ only one of two phase concentrations at the discontinuous interface. The other n
 come from a Dirichlet boundary condition like (BC =) Y, or an equilibrium boundary
 condition like *VL_EQUIL*.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

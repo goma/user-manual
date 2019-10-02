@@ -44,17 +44,7 @@ function or the level set distance function (i.e., the *FILL* unknown). The user
 refer to the tutorial on Level Set Computations for a detailed description of level set
 interface tracking. (See References.)
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

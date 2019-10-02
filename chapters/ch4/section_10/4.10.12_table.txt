@@ -339,23 +339,8 @@ strong point collocated condition.
 Interpolation orders for this method are limited to *LINEAR* and *QUADRATIC* with the
 latter requiring an odd number of data points be supplied in the table.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 _____________________________________________________________________________
 

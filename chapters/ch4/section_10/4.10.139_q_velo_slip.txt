@@ -41,20 +41,5 @@ The following is a sample input card:
 Use of this boundary condition requires specification of the slip velocity components
 by using either the *VELO_SLIP* or *VELO_SLIP_ROT* boundary condition.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

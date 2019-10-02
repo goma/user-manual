@@ -78,17 +78,7 @@ be applied only on side of the interface and not both which would result in canc
 This is much the same as was seen for the LS_CAPILLARY boundary condition and
 the reader is referred to that card for a more detailed discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

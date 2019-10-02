@@ -74,17 +74,7 @@ P1_XV, Q1_XV, Q2_XV** interpolations. These are MOST COMMONLY used for the
 continuity equation for better accuracy of representing pressure across level-set
 interfaces with surface tension.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -66,17 +66,7 @@ gas law.
 This boundary condition is not used as often as the *FORCE_RS* or *FORCE_USER_RS*
 counterparts.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

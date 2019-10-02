@@ -52,17 +52,7 @@ The following is a sample card that sets the polymer time constant to 1.0:
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

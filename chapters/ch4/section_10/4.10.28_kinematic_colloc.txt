@@ -55,20 +55,5 @@ velocity, the residual equation is formed at each node directly, in a collocated
 without Galerkin integration. This method is better suited for high-capillary number
 cases in which Galerkin’s method is often not the best approach.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

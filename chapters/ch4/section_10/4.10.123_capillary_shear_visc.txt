@@ -98,22 +98,7 @@ microstructures flowing in the surface. The best source of discussion of this eq
 is a book by Edwards et al. (1991. *Interfacial Transport Processes and Rheology*.
 Butterworth-Heinemann, Boston).
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Lines 67 and 80 have photos that needs to be replaced with the real equation.

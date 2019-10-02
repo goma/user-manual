@@ -33,17 +33,7 @@ Not entirely clear what this card does, but in the vicinity of the level-set int
 Bochev PSPP stabilization scheme is altered. This is recommended when this pressure
 stabilization scheme is deployed. See the Pressure Stabilization card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

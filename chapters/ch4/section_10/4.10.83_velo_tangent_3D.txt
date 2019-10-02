@@ -82,22 +82,7 @@ applied in the direction of the curvature.
   which the roll speed can be set using this condition. The axis vectors of both roll
   coaters are supplied on the card.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - In line 68, the photo needs to be repalced by the proper equation.

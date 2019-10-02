@@ -44,17 +44,7 @@ An example card requesting viscoelastic stress components be written:
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

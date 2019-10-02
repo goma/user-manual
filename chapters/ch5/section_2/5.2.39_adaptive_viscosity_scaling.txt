@@ -59,17 +59,7 @@ scaling. The papers by Sun, et. al. (1996) and Sun, et. al (1999) provide a good
 discussion of the theory behind its usage. CRMPC presentations by R.R. Rao
 demonstrates its usefulness for *Goma* calculations.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

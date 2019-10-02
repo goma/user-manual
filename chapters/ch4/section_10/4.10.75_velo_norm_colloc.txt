@@ -72,22 +72,7 @@ velocity set by <float> above.
   desirable to enforce a normal velocity component unambiguously at a point in the
   mesh.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 

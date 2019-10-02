@@ -60,17 +60,7 @@ phase. Interestingly, it forces one to set the pore-phase pressure datum to the 
 datum in the continuous phase, and that effects the level of the Saturation versus
 capillary pressure curve (see *Saturation* material card).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

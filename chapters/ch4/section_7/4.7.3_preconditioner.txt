@@ -76,17 +76,7 @@ The most popular setting is **dom_decomp**, with a subdomain solver specified in
 *Matrix Subdomain Solver* card. For further details, consult Mike Heroux’s recipe for
 applying preconditioners and what to dial the knobs to (in Schunk, et. al., 2002).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -107,17 +107,7 @@ solid surface in contact with the free surface at this point.
 	:align: center
 	:width: 90%
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -49,20 +49,5 @@ The equation applied at the specified nodeset in place of Reynold’s lubricatio
 equation for confined flow. Note that it is not to be used for the film-flow
 lubrication equations.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

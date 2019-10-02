@@ -63,11 +63,6 @@ distinguish a molten region from a solidified or mushy region with liquidus and 
 temperatures. In three dimensions, usage needs to be completed with a companion *ROT*
 input card which directs the equation application of the condition.
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

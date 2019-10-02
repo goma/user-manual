@@ -85,17 +85,7 @@ Note that on porous flow problems the error in step-size is computed as a compos
 measure of all porous-flow variables, viz. these cannot currently be controlled
 separately.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -69,17 +69,7 @@ For a discussion of the discontinuous Galerkin method see Fortin and Fortin (198
 Baaijens (1994) or Baaijens (1998). Internal (Sandia) users may find T. A. Baer’s
 Gordon Conference presentation (1997) helpful.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

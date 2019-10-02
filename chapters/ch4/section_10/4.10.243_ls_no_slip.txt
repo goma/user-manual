@@ -89,17 +89,7 @@ the input deck, the user must indicate that this phase function is slaved and al
 identify the sideset number of the boundary on the solid material which is the fluid/
 solid interface.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

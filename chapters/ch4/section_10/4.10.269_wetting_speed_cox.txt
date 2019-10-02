@@ -101,11 +101,6 @@ added to the fluid momentum equation for the corresponding node j, vis:
 	:align: center
 	:width: 90%
 
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

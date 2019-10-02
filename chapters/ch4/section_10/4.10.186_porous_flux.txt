@@ -83,17 +83,7 @@ added for applications in which liquid is being squeezed out of a medium and the
 drips off or disappears, as liquid is not allowed to be sucked back in (Heaviside
 function, *H*), although the condition could be furbished for this.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

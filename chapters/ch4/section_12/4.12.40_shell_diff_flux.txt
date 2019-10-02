@@ -56,17 +56,7 @@ This is only a preliminary implementation of a shell quantity conservation equat
 is not currently operational. When it is fully implemented, the number of required
 equation term multiplier entries will be adjusted acordingly.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

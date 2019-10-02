@@ -85,17 +85,7 @@ latter vector.
   *Goma*) and all comments appearing for the latter apply equally well for this
   boundary condition.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

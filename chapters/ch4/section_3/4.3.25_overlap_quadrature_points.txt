@@ -35,17 +35,7 @@ Please consult the overset grid capability tutorial for futher discussion. (Ref.
 below). This is to be use with AC_OVERLAP, or the augmenting condition of
 type AC = OV.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

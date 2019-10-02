@@ -47,17 +47,7 @@ is given by the linearized Butler-Volmer kinetic model as in the hydrogen-oxidat
 reaction of a hydrogen-fueled polymer-electrolyte-membrane fuel cell. See the
 *user_bc.c* routine for details.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

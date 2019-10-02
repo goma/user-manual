@@ -28,17 +28,7 @@ This card turns on writing of diffusive mass flux vectors to the EXODUS II file:
 
 Please see description for *Mass Diffusion Vectors* card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

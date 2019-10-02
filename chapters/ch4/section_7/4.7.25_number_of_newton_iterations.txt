@@ -54,17 +54,7 @@ The optional second parameter can be used to invoke a modified Newton iteration.
 this value is missing, the stride is set to unity. This capability enables the user to save
 on assembly time when near a solution, particularly when doing transient simulations.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

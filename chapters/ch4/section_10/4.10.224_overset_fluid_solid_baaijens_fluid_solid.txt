@@ -67,17 +67,7 @@ This condition set applies a fluid traction condition to a surface defined by ph
 See discussion on LANGRANGE_NO_SLIP. This condition applies the fluid traction
 boundary term on the fluid momentum equation.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

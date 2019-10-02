@@ -75,23 +75,8 @@ The equation solved is as follows:
   then the advection term is stabilized with standard streamwise-upwinding-Petrov-
   Galerkin approach.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 ..
 	TODO - Line 63 contains a photo that needs to be written as an equation.

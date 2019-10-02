@@ -58,17 +58,7 @@ monotonic and well behaved, viz. to keep it from going below zero. Another exped
 to aid in keeping the front smooth and monotonic is to use mass lumping (cf. *Mass
 Lumping* card).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

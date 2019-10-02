@@ -69,17 +69,7 @@ evolve from its initial value (that presumably is different than the imposed val
 value imposed on this card. The user should expect that the contact angle will
 instantaneously jumped to the imposed value.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

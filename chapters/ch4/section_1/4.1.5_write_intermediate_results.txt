@@ -51,17 +51,7 @@ for very large problems, as it can be used to restart a simulation (by using thi
 debugging tool, giving the analyst the ability to use highly relaxed Newton iterations to
 see how a free boundary problem diverges.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

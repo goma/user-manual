@@ -80,17 +80,7 @@ in the “advection” term--it has nothing to do with advection), and the multi
 assembled value derived from the voltage equation (stored in the “source” term--again
 the name of the term is somewhat artificial).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

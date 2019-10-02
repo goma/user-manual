@@ -86,17 +86,7 @@ normal vectors must be constant.
 * Related boundary conditions: *CA_EDGE, CA_EDGE_INT,
   CA_EDGE_CURVE_INT, VAR_CA_EDGE, VAR_CA_USER*.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

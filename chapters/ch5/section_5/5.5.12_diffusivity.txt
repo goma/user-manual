@@ -473,11 +473,6 @@ as defined in the following Fickian flux model (cf. Newman, 1991; Chen, et. al.,
 
 is taken to be constant. Here, ci is molar concentration of species i.
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

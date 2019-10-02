@@ -70,17 +70,7 @@ three dimensions, and needs to be directed with *ROT* conditions for proper appl
 	:align: center
 	:width: 90%
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

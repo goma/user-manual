@@ -45,17 +45,7 @@ The following is a sample card that sets the high rate viscosity to 10.:
 
 See Description/Usage for *Liquid Constitutive Equation* card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

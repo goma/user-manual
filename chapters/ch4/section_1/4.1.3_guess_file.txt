@@ -44,17 +44,7 @@ solution could also be used; the user is cautioned about the potential difficult
 restarting from non-converged solution. (See *Initial Guess* card about (re-)starting from
 a binary file.)
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

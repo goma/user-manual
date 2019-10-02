@@ -70,20 +70,5 @@ momentum equations (see *Navier-Stokes Source* card. )
 The electric field is defined by :math:`\underline{E}` = –:math:`\Delta` :math:`\phi`. In some cases it may be more convenient to
 solve equations for the potential field and the electric field.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

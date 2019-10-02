@@ -43,17 +43,7 @@ It has been observed that when these terms are included for very highly shear-th
 models the result can be non-convergence. In such situations, disabling these terms can often result in a convergent answer but at a convergence rate far less than the usual
 quadratic.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -77,17 +77,7 @@ where F˜ is the deformation gradient tensor, φ0 is the initial porosity, and �
 porosity. This equation is invoked with the *porous_deform* option on the *EQ*
 specifications.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

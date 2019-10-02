@@ -133,17 +133,7 @@ are taken to be constant, as in the case of multicomponent diffusion of neutral 
 in concentrated solutions. Here, the charged species definitions are the same as for the
 **FICKIAN_CHARGED** model.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

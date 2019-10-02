@@ -68,17 +68,7 @@ suspensions of monodisperse spherical particles at low Reynolds number by Garsid
 and Al-Dibouni (1977). Richardson-Zaki approach will not yield a zero f(φ) if φ
 approaches maximum packing, so it is recommended that **CONSTANT** is used.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

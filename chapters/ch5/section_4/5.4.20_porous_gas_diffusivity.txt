@@ -74,17 +74,7 @@ and if in addition it is temperature dependent, this expression is multiplied by
 	:align: center
 	:width: 90%
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -144,11 +144,6 @@ where E is the Young’s modulus and υ is Poisson’s ratio. A significant limi
 
 The **POWER_LAW** option could easily be adapted to a concentration measure, viz. made dependent on the concentration of some species (see EQ = *species_bulk* card). This can be done through the user option, and in fact in usr_lame_mu function of file user_mp.c in the *Goma* distribution has an example that is appropriate. Also note that all of these models are available for the elastoviscoplastic option on the *Plasticity* card, and for the real-solid in *TOTAL_ALE* mesh motion.
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

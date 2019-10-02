@@ -57,17 +57,7 @@ These fields must be named JE_N_1, JE_N_2, and JE_N_3 for the three components o
 the current density and BE_N_1, BE_N_2, and BE_N_3 for the three components of
 the magnetic field.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

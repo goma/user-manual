@@ -65,23 +65,8 @@ of the basis functions along the free surface. Specifically,
 where the nodal basis function :math:`\phi^i` is replaced by :math:`\frac{\partial}{\partial s} \phi^i` in the residual equation. Compare
 this to the *KINEMATIC* boundary condition description.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. 
 	TODO - The picture in line 61 needs to be replaced with the equation and in line 65 where it says, "**EQUATION**" it needs to be written out. 

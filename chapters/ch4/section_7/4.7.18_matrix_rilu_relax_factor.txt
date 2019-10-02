@@ -42,20 +42,5 @@ Some limiting values for fac provide specific behavior:
 
 The value of *k* is set by the *Matrix graph fillin* card.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

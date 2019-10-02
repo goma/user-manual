@@ -65,17 +65,7 @@ Following is a sample card:
 When the **ENTHALPY** option is used, the liquidus (Tl) and solidus (Ts) temperatures
 must be added through the *Liquidus Temperature and Solidus Temperature* cards.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

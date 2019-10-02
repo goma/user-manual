@@ -74,17 +74,7 @@ made (see the 3D stability of 2D flow memo).
 See the Advanced Capabilities document (Gates, et. al., 2001), or it’s replacement
 (Labreche, et. al., 2002).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

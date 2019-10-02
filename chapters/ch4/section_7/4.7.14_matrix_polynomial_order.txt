@@ -40,20 +40,5 @@ than 10. In some, if not all, cases, a value of 0 is meaningless.
 
 This card is not used if the preconditioner does not use matrix polynomials.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

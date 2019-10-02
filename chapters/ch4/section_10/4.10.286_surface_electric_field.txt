@@ -58,17 +58,7 @@ In this case, the term n • :math:`\Delta` *V*
 and its potential sensitivities are evaluated within the bulk
 element for inclusion in the surface charge balance along the shell surface.. I
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -53,23 +53,8 @@ This boundary condition sets the scalar shear rate unknown to 0.5 on nodeset 10.
 The scalar shear rate unknown field is otherwise known as the second invariant of the
 rate of deformation tensor.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 _______________________________________________________________________________________
 

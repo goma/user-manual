@@ -79,17 +79,7 @@ A simple example of using this card in context is shown below.
 If a fixed mesh or a subparametric mesh problem is being solved, the point coordinates
 printed to the file will be the undeformed coordinates.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

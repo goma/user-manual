@@ -83,17 +83,7 @@ of the two ways of applying Dirichlet boundary conditions.
 For details of the stress tensor and its use for solving viscoelastic flow problems, please
 see the viscoelastic flow tutorial (Rao, 2000).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

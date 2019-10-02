@@ -43,17 +43,7 @@ procedure that when a level set computation runs into computational difficulty t
 step in recovery should be to restart with a forced initial renormalization using this
 card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

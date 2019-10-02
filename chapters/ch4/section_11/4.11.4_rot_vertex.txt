@@ -162,17 +162,7 @@ In the first example, the vertex is at the intersection of side sets 3, 4 and 6,
 * Very often *VERTEX* cards are used to resolve ambiguities that arise at 
   points where multiple *SURFACE* or *EDGE* cards could apply.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

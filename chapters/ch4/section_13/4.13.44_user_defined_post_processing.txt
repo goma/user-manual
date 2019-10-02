@@ -51,20 +51,5 @@ guide you through the process.
 
 See the function user_post in user_post.c.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

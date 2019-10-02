@@ -75,23 +75,8 @@ rotations are not actually performed.
 As a bit of software trivia, this is the first distinguishing condition ever written in
 *Goma*, and one of the first boundary conditions, period.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. 
 	TODO - The image on line 64 needs to be replaced by the actual equation.

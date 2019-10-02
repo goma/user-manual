@@ -35,17 +35,7 @@ Two examples of initialization methods are provide below:
 
 Not clear whether this capability has been used and tested much. (12/3/2012)
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

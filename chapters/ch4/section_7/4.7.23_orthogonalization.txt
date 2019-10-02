@@ -39,17 +39,7 @@ expense of possibly losing convergence. A good indication that you should not ha
 used the **modified** setting is a premature “leveling off” of the sequence of residuals
 produced internally within **gmres.**
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

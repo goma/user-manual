@@ -53,17 +53,7 @@ stoichiometric phase is equal to
 	:align: center
 	:width: 90%
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

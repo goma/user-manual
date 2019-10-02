@@ -147,17 +147,7 @@ substrate is moving at the fixed velocity (0, -1., 0.).
 
   where φ\ :sub:`i` is the shape function associated with node *i*.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -69,23 +69,8 @@ coefficient, and :math:`\omega` is the frequency (rad/sec).
 	:align: center
 	:width: 90%
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 ..
 	TODO - Line 69 contains a photo that needs to be written as an equation.

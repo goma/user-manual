@@ -48,20 +48,5 @@ This condition applied at sideset 100.
 * This condition is similar to the SHELL_GRAD_FP boundary condition, except
   that the condition is now a weak integrated condition that is *added* to the residual equations, instead of replacing them and the flux is no longer specified.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

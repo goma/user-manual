@@ -74,23 +74,8 @@ distinguishing condition. Please consult the example discussions on the other *G
 options for more detailed examples, as this boundary condition card can be used in an
 additive way with other *GD_** cards.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. 
 	TODO - Line 18 needs to be replaced with the actual equation rather than a photo of the equation.

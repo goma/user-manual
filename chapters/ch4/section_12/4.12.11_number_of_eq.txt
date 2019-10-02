@@ -50,17 +50,7 @@ and then the auxiliary modes are set by the *Number of viscoelastic modes* card.
 see the viscoelastic tutorial memo (Rao, 2000) for a detailed discussion of multimode
 viscoelasticity.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

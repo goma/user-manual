@@ -49,17 +49,7 @@ suspension particles would correct suspension migration behavior in parallel-pla
 cone-and-plate. However, this correction term is not frame-invariant; hence, it cannot
 be used in generalized flow geometry. It is therefore not recommended.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

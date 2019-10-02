@@ -56,20 +56,5 @@ concentration (or volume fraction in this case) to diffusion coefficient by empl
 SUSPENSION viscosity model in the material file. See SUSPENSION viscosity model for
 further detail
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

@@ -169,11 +169,6 @@ and couple the volume dilation to changes in solvent content. Plane strain impli
 there is no deformation in the z-direction; plane stress implies there is no stress change
 in the z-direction.
 
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

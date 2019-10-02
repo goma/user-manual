@@ -43,20 +43,5 @@ number of the preconditioner, as reported when using the **bilu** option, should
 Try increasing up to around 1.0e-3 to get added benefit. The **bilu** preconditioner is not
 actually the cheapest or most efficient preconditioner, but it is very robust.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

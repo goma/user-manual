@@ -55,23 +55,8 @@ An example:
   also useful to have it on outflow boundaries as well, just in case a backflow
   situation arises.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 ______________________________________________________________________________
 

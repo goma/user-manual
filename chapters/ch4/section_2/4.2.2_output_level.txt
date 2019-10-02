@@ -43,17 +43,7 @@ This specification allows the developer a means to output specific information t
 would be helpful in diagnosing problems in the software. Currently, the output options
 are limited.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

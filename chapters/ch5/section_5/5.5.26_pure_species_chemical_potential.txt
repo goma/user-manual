@@ -49,17 +49,7 @@ Following is a sample card:
 The values in this card are only applicable to the *IS_EQUIL_PSEUDORXN* boundary
 condition currently.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

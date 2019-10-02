@@ -51,17 +51,7 @@ See *FLUID_SOLID* description.
 
 See *FLUID_SOLID* description.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

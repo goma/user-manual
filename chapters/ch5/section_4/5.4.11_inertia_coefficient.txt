@@ -38,17 +38,7 @@ inertial term in the **POROUS_BRINKMAN** equations.
 
 See references below for discussion on use of this card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

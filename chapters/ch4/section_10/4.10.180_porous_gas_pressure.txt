@@ -58,17 +58,7 @@ this card in these situations, you are setting also the saturation level based o
 capillary pressure, defined as :math:`p_{gas}` - :math:`p_{liq}` = :math:`p_c` . The convention in Goma is that when
 the capillary pressure :math:`p_c` is greater than zero, the saturation level is less than unity, viz.the medium is partially saturated. When :math:`p_c` is less than zero, i.e., when the liquid phase pressure is greater than the gas phase pressure, then the medium is saturated (in this case the capillary pressure is poorly defined, though). Also, this pressure sets the datum of pressure for deformable porous media and must be set in a manner compatible with the solid-stress values on the boundaries of the porous matrix.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

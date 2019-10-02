@@ -44,17 +44,7 @@ The following is a sample input card:
 The values in this card are currently only applicable to the *IS_EQUIL_PSEUDORXN*
 boundary condition.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

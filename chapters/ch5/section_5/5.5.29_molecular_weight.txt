@@ -44,17 +44,7 @@ example, when *YFLUX_EQUIL* is invoked in the input deck, an equilibrium problem
 solved rigorously which requires gas and liquid mole fractions. The conversion from
 mass fraction to mole fraction requires molecular weight information.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

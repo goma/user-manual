@@ -110,11 +110,6 @@ fraction, then we have a volume flux. So *kin_bc_leak* is consistent.
 The burden here lies with the user to be consistent with a chosen set of units. A
 common approach is to build density into the mass transfer coefficient h\ :sub:`i` .
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

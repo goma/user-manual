@@ -44,23 +44,8 @@ The following is a sample input card for a heat flux model requiring two paramet
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 
 

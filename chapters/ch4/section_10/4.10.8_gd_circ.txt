@@ -77,23 +77,8 @@ of 1.0 (note the radius only appears on one card).
 
 No Technical Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
- 
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. 
 	TODO - In line 18 the picture needs to be replaced by the correct equation.

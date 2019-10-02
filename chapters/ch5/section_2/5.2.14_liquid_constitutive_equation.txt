@@ -650,11 +650,6 @@ in Bird, et al. (1987). Details of the continuous yield stress model used in the
 Carreau-Yasuda (**BINGHAM**) model, which is a Carreau model combined with a
 continuous yield stress model, can be found in Papanastasiou (1987).
 
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

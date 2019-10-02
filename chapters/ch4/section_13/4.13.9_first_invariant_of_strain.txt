@@ -40,17 +40,7 @@ It should be noted that the mesh strain is equivalent to the material strain for
 *LAGRANGIAN* mesh motion types. For *ARBITRARY* or *TOTAL_ALE* mesh motion
 types (see *Mesh Motion* card), the strain is strictly related to mesh and not the material.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

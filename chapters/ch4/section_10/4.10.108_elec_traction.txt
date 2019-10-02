@@ -109,22 +109,7 @@ the etm function argument. The normal term multipliers couldn’t be used becaus
 boundary condition can be applied from within a material that doesn’t have the
 momentum equations defined (or properly set).
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Lines 87 and 97 have photos that needs to be replaced with the real equation.

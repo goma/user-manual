@@ -122,17 +122,7 @@ will occur infrequently enough that this is not a significant problem. However, 
 should be aware of this assumption and be careful that these events do not occur on a
 regular basis as then the mass loss might be more significant.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

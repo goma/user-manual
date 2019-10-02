@@ -69,17 +69,7 @@ The following is a sample card that utilizes the modified WLF shift function.
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

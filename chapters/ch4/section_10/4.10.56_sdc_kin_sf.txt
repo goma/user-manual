@@ -99,17 +99,7 @@ previously specified multiple VL_EQUIL_PSEUDORXN cards.
   boundary for a variable that is continuous across the interface. The user is referred
   to Moffat (2001) for detailed presentation on discontinuous variables.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -141,17 +141,7 @@ reason for this is historical and uninteresting from a user point of view.
   *VELO_SLIP* card will be overridden in those locations and the velocity field will
   deviate appropriately from the substrate velocity.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

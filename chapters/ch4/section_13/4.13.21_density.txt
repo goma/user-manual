@@ -37,17 +37,7 @@ This is an example of the input to request density be written to the EXODUS II f
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

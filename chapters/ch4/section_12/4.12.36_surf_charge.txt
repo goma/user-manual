@@ -81,17 +81,7 @@ evaluate sensitivities to interior bulk variable degrees of freedom . This term,
 physically an integral part of the surface charge equation, is applied through the
 SURFACE_ELECTRIC_FIELD_BC boundary condition.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

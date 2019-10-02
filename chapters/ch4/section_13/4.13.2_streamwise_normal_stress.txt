@@ -45,23 +45,8 @@ As of 2/9/02 this function is computed with the based viscosity, and not the str
 dependent viscosity as might be the case for viscosity models other than *NEWTONIAN*
 (see *Viscosity* card).
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 ..
 	TODO - Line 17 contains a photo that needs to be written as an equation.

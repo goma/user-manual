@@ -42,17 +42,7 @@ Following is a sample card:
 Although allowed, it is not advisable to make this file name the same as the file name
 input on the *FEM file* card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

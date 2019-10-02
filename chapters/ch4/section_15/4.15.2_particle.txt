@@ -96,17 +96,7 @@ The trajectory is computed using a coupled set of ordinary differential equation
 	:align: center
 	:width: 90%
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

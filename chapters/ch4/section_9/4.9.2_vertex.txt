@@ -43,17 +43,7 @@ component to 0.0 (it is always required). The **x, y** coordinates may, of cours
 z, r cylindrical coordinates instead of cartesian coordinates. This geometry may be
 exported through the *Exported geometry* file card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

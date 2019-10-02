@@ -84,22 +84,7 @@ specified on the card float_list:
 * Users are again cautioned that this boundary condition is untested and potentially
   inconsistent. It may not work.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Lines 59 and 68 have photos that needs to be replaced with the real equation.

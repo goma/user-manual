@@ -94,17 +94,7 @@ microstructural features. In the **VAN_GENUCHTEN** model, such parameter effects
 are embodied in the Saturation dependence, which is empirically fit through the
 saturation function.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

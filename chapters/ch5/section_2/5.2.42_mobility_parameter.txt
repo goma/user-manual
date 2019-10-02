@@ -39,20 +39,5 @@ The following is a sample card that sets the mobility parameter to 0.2:
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

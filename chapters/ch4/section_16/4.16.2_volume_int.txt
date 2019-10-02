@@ -135,17 +135,7 @@ The volume integrations are carried out as follows:
 |                        |:math:`\rho_{liq}` :math:`\phi` S] dV                          |
 +------------------------+---------------------------------------------------------------+
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

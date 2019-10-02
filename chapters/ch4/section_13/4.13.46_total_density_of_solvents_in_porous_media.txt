@@ -65,17 +65,7 @@ equilibrium relation. The total density of the gas phase (**Rho_Total_gas**) wil
 vapor density fro air and a volume fraction of zero (0) since air is insoluble. The total
 density of the solid in the gas (**Rho_Total_solid**) is zero (0).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

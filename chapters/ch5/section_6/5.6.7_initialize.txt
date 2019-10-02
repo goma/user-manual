@@ -76,20 +76,5 @@ specify different concentrations of the same species in different materials.
 Note: for a comprehensive list of initializable variables, consult Volume 1 “Initialize”
 card.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

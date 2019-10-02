@@ -157,17 +157,7 @@ This card specifies rotation of the mesh equations along the edge of intersectio
 
 * A very important restriction exists for EDGE and VERTEX rotation conditions. It is a necessary requirement that all elements that are present on an edge have only a single segment present on the edge curve. An element may therefore never contribute more than two corner vertex nodes to the set of nodes on an edge curve. If there are more than two such nodes for a given element, *Goma* will terminate with a *“Side not connected to edge”* error. If such a situation exists, the only solution is to remesh the geometry to eliminate such elements.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

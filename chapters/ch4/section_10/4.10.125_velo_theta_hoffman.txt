@@ -116,22 +116,7 @@ and SHARP_HOFFMAN_VELOCITY for level-set versions.
 * This condition was motivated by the Hoffman empirical correlation (cf. Stephan F.
   Kistler, “Hydrodynamics of Wetting,” in Wettability edited by John Berg, 1993).
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Lines 84, 90, 97, and 101 have photos that needs to be replaced with the real equation.

@@ -47,22 +47,7 @@ The convective heat flux is defined as
 
 where *h* and :math:`T_s` are the convective heat transfer coefficient and the sink temperature, respectively.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO -Line 44 has a picture that needs to be changed out with the correct equation.

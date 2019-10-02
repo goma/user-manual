@@ -95,20 +95,5 @@ some of these parameters:
   value set for the *Solidus Temperature* (in *Thermal Properties* portion of the 
   material file).
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

@@ -88,17 +88,7 @@ polygons the workaround is to create them in Cubit and pass them to Goma via the
 The POLY_VERT command is identical to the POLY command except the vertices are
 referenced by name instead of specified numerically.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

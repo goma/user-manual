@@ -89,17 +89,7 @@ real-solid *TOTAL_ALE* side of the boundary).
 *TOTAL_ALE* mesh motion regions cannot be porous and deformable (as of 11/19/
 2001).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

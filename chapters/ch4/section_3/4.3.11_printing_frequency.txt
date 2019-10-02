@@ -46,17 +46,7 @@ the <integer> options, and the dependent [float] option when <integer> is set to
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

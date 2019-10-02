@@ -46,20 +46,5 @@ Contouring these residuals can indicate where the convergence of a problem is be
 delayed, and give the user/developer some clues as to the boundary condition or local
 region of the mesh which is responsible.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

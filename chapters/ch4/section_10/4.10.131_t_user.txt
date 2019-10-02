@@ -45,17 +45,7 @@ The following is a sample input card with two parameters passed to function tuse
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

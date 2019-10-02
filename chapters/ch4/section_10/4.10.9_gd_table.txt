@@ -130,17 +130,7 @@ This capability is widely used for geometry and velocity profile boundary condit
 that do not have a convenient closed form. Note that for geometry specifications you
 cannot specify multi-valued functions, like for a cutback angle.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

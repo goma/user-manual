@@ -62,23 +62,8 @@ the continuity equation:
 
    \frac{ \mathrm{tau} {\langle h \rangle} }{2 \rho \lVert U \rVert}   
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. 
 	TODO - Equations need to be inserted in the place in which the photos take place right now.

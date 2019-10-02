@@ -43,20 +43,5 @@ when different processors derive different estimates for the same solution unkno
 
 This overlap option is moot for serial problems whose data decomposition is trivial.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

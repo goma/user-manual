@@ -60,17 +60,7 @@ anticipate that these boundary conditions will be used much. Nonetheless, this
 condition allows Dirichlet conditions to be applied to each of the five additional level
 set fields.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

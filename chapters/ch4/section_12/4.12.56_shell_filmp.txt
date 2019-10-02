@@ -75,23 +75,8 @@ The equation solved is as follows:
 
 * This equation has to be used with the equation describing SHELL_FILMH.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 ..
 	TODO - Line 65 contains a photo that needs to be written as an equation.

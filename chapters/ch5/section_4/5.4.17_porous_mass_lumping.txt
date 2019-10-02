@@ -53,17 +53,7 @@ accuracy in space, and wiggles form.
 
 Mass lumping is not currently available for saturated deformable porous flow.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

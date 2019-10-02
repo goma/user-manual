@@ -85,11 +85,6 @@ uniformly on a surface that is large enough such that this surface never penetra
 predefined planar boundary. Hence, this condition can be use to impose an
 impenetrable contact condition.
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**
@@ -98,11 +93,6 @@ No Theory.
 On internal two-sided side sets, this boundary condition results in double the force in
 the same direction.
 
---------------
-**References**
---------------
-
-No References.
 
 .. 
 	TODO - Equations need to replace the images in lines 63 and 70.

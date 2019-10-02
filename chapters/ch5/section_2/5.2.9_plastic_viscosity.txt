@@ -85,11 +85,6 @@ Together with these properties one must specify the elastic constants *Lame Mu* 
 
 See Schunk, et. al., 2001 (GT-019.1).
 
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

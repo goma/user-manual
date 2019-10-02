@@ -47,17 +47,7 @@ fate, the linear system always undergoes a row sum scaling (equivalent to the **
 option) before these other scalings are applied. Note that when a nontrivial scaling is
 selected, the matrix is overwritten with a rescaled system.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

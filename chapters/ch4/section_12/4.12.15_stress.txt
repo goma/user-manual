@@ -83,17 +83,7 @@ interpolation is discontinuous and flux continuity is maintained by performing s
 integrals. For details of the implementation of the discontinuous Galerkin method in
 *Goma* please see the viscoelastic tutorial memo (Rao, 2000).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

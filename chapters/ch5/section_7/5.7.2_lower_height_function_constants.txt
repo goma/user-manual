@@ -90,21 +90,6 @@ where shell.dat is a table with 2 columns, the first the position, the second th
 The material function model ROLL_ON prescribes the squeezing/separation motion of
 two non-parallel flate plates about a hinge point, as shown in the figure below.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 

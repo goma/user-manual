@@ -59,23 +59,8 @@ The *LATENT_HEAT_INTERNAL* card should be used for internal surfaces, or
 interfaces, at which transfer is governed by actual physics being modeled as a part of
 the problem. See *LATENT_HEAT* card for further information.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 ______________________________________________________________________________________
 

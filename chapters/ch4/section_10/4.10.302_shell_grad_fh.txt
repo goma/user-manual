@@ -51,22 +51,7 @@ the surface, :math:`\Sigma` and is the slope specified in the <float1>.
 
 * The condition replaces the residual equation shell_filmh at the boundary.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Line 45 has an image that needs to be replaced with the equation. 

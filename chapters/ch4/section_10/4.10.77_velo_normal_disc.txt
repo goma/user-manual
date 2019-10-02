@@ -74,17 +74,7 @@ of the problem.
   velocity at the interface, and to thermal contact resistance type problems. The best
   example of this is rapid evaporation of a liquid component into a gas.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

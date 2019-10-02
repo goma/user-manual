@@ -45,17 +45,7 @@ conditions are such that the saturation front is sharp.
 
 See discussion on *Liquid phase compressibility* card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

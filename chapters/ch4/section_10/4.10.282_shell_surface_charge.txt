@@ -60,22 +60,7 @@ where **E** is the electric field vector, the superscripts (*o*) and (*i*) denot
 :math:`\varepsilon` is the electrical permittivity, 
 E = –:math:`\Delta` V is the electric field and *V* is the voltage or electric potential.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO -Line 55 has a photo hat needs to be replaces with an equation.

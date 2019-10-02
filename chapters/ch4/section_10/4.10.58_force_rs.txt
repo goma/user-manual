@@ -55,11 +55,6 @@ is used, consider the need to apply some load pressure to a real solid of a *TOT
 region, like a rubber roller, so as to squeeze and drive flow in a liquid region. Some of
 the usage tutorials cited below will direct you to some specifics.
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

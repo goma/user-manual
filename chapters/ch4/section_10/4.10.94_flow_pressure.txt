@@ -82,22 +82,7 @@ should be able to deduce the appropriate sign for his/her pressure value.
   then be used to couple the imposed pressure to the average flow rate over the
   boundary for an even more advanced capability.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Line 49 contains a photo that needs to be exchanged for the equation.

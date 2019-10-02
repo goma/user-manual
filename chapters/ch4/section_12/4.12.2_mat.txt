@@ -41,17 +41,7 @@ Note, the “.mat” extension is not specified explicitly, but appended to the 
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

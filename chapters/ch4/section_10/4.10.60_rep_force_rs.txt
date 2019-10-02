@@ -74,17 +74,7 @@ card is used, consider the need to apply some load pressure uniformly on a surfa
 is large enough such that this surface never penetrates a predefined planar boundary.
 This condition hence can be use to impose an impenetrable contact condition.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

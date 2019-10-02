@@ -42,17 +42,7 @@ initial surfaces. If the initial surfaces are static, then the level set surface
 the level set function is reinitialized at each Newton iteration to match the moving
 surface.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

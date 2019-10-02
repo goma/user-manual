@@ -67,17 +67,7 @@ For saturated media (viz. *Media Type* of *POROUS_SATURATED*), this discussion i
 not relevant. In this case, one must only consider the pressure level as it may effect the
 isotropic stress in poroelastic problems.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

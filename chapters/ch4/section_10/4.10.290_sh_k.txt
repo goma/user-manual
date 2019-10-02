@@ -51,17 +51,7 @@ This condition sets a curvature of zero at Nodeset 100.
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

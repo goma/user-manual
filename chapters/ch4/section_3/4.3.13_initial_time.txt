@@ -46,17 +46,7 @@ units, or the closest time value to 10 time units, to start from:
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -64,17 +64,7 @@ See discussion on LAGRANGE_NO_SLIP. Basically, this condition results in a
 boundary traction set by the Lagrange multiplier constraint to be applied to the solid
 momentum equation (note the weak term that appears on that equation).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

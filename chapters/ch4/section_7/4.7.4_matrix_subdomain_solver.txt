@@ -76,17 +76,7 @@ Trilinos library (as AztecOO), which is actively being developed and maintained 
 Sandia National Laboratories. Note that some features can only be accessed through
 Trilinos, as indicated above.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -41,17 +41,7 @@ The following is a sample card that sets the polymer stress formulation to EVSS_
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

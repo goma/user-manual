@@ -42,17 +42,7 @@ This sample input card does not activate Def_Grad output to the EXODUS II file:
 
 Please see complete discussion in Schunk, et. el. (2001).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

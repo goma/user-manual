@@ -78,17 +78,7 @@ model applies here as well. The only significant difference is that the velocity
 substrate is not a fixed vector; instead, it is tangent to the cylindrical substrate with a
 magnitude consistent with the radius of the cylinder and the rotation rate.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

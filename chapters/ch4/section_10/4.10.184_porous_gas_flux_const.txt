@@ -69,23 +69,8 @@ is the gas-phase pressure, and the other quantities on the second term help defi
 Darcy velocity. The *const* quantity is the input parameter described above (<float1>).
 Note that this sets the flux relative to the boundary motion to the *const* value, but by virtue of the Galerkin weak form this condition is automatically applied with *const = 0* if no boundary condition is applied at the boundary.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 ..
 	TODO - Line 59 has a photo that needs to be changed into an equation.

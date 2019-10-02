@@ -66,17 +66,7 @@ hardwired right now in GOMA source, PRS 1/23/2013).
 In the case of the SHRINKAGE model, an additional term is added on to the deviatoric
 stress:
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

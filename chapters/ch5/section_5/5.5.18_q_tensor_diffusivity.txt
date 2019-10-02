@@ -44,17 +44,7 @@ of circumstances: steady simple shear flow. Their analogous definitions in other
 regimes, as well as the selection of the coefficients, is an active area of research. The
 interested reader should review the references listed below.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

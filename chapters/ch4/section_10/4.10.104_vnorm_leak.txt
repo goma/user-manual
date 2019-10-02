@@ -50,22 +50,7 @@ of the momentum equation. Similar to *KIN_LEAK*, this flux provides an overall m
 transfer balance at an interface. Please refer to the technical discussion of *KIN_LEAK*
 boundary card.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Line 17 has a photo that needs to be replaced with the real equation.

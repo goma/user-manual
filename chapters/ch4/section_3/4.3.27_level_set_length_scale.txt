@@ -61,11 +61,6 @@ function given by:
 In this example, the parameter :math:`\alpha` would be equal to one-half the *Level Set Length Scale*
 value specified on this card.
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

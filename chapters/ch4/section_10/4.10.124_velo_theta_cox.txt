@@ -121,22 +121,7 @@ SHARP_COX_VELOCITY for level-set versions.
   Stephan F. Kistler, “Hydrodynamics of Wetting,” in Wettability edited by John
   Berg, 1993 ).
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Lines 81, 87, 93, and 101 have photos that needs to be replaced with the real equation.

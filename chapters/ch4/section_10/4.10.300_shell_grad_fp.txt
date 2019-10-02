@@ -50,20 +50,5 @@ the surface, and q is the volumetric flux specified in the <float1>. Careful att
 
 The condition replaces the residual equation shell_filmp at the boundary.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

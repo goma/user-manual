@@ -60,23 +60,8 @@ Often, this card will allow you to speed up your runs by foregoing a fresh Jacob
 reformation, the **lu** solver (see the *Solution Algorithm* card) can use a previously
 factored matrix and simply do a resolve.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. 
 	TODO - An equation needs to be written to replace the photo on lines 47-49. Also, in in line 53 there is a equation that needs to take the space of "1 + 5) ⁄ 2" loctaed before it says "(the golden ratio!)".

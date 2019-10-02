@@ -37,17 +37,7 @@ A sample input specification for this card is:
 
 The divergence of the fluid velocity field is defined as the scalar :math:`\Delta` • :math:`\underline{v}`.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

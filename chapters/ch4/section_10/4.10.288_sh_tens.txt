@@ -55,17 +55,7 @@ This condition sets a tension of 10.0 at Nodeset 100.
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

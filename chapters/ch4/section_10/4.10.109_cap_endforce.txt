@@ -78,22 +78,7 @@ divergence theorem still applies (for this boundary condition).
   the capillary force. Old input decks can be updated simply by changing the name
   of the boundary condition without changing the parameters.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Lines 55 has a photo that needs to be replaced with the real equation.

@@ -51,17 +51,7 @@ constant, T is the temperature, and :math:`\rho_v` is the equilibrium vapor pres
 vapor pressure can be affected by local meniscus curvature through the Kelvin equation
 (cf. Schunk, 2002 and *Porous Vapor Pressure* card).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

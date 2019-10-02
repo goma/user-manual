@@ -136,23 +136,8 @@ Jacobian, a few things should be tried:
 
 * Check the settings in *mm_numjac.h*.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 ..
 	TODO - Lines 100-102 need to be formatted in a different way that makes more sense for this problem. I am unsure what is the best way for this. 

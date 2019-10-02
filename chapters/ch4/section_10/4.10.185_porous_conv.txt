@@ -63,17 +63,7 @@ condition is used for a single component liquid solvent and has not been furbish
 single component of that solvent. Also, as of 11/02/01 the condition has not been
 tested.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -45,17 +45,7 @@ The following is a sample input card:
 The **SUPG** weighting is applied only to the advective term in the Energy conservation
 equation and Jacobian assembly.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

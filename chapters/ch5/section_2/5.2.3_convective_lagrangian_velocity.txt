@@ -112,17 +112,7 @@ where :math:`F_m` is the material deformation gradient tensor (computed somewhat
 depending on the formulation, as described in the references below), and :math:`v_sfs` is the
 stress-free state velocity field specified by this card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -72,17 +72,7 @@ evaluating surface integrals. For details of the implementation of the DG method
 *Goma* please see the viscoelastic tutorial memo (Rao, 2000). Note that DG methods are
 not necessarily recommended for the level set equation since it is inherently smooth.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

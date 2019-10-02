@@ -44,17 +44,7 @@ Currently this option is available only for *FICKIAN* and *HYDRODYNAMIC* mass fl
 types (see *Diffusion Constitutive Equation* card). In the *FICKIAN* case, the flux is
 computed with the base, constant diffusivity.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

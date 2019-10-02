@@ -49,11 +49,6 @@ tolerance is exceeded. That is, exceeding the tolerance by one phase function fi
 triggers renormalization for that field. The other phase function fields are left
 unaltered.
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

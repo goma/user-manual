@@ -37,20 +37,5 @@ The following is a sample card that sets the cure gel point to 0.75:
 
 See Description/Usage for *Liquid Constitutive Equation* card.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

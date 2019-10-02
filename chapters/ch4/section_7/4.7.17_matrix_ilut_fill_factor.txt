@@ -47,20 +47,5 @@ then the approximate factorization is first created subject to this card’s res
 then the drop tolerance is applied. This can result in a preconditioner with significantly
 fewer nonzero entries.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

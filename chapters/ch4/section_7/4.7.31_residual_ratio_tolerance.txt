@@ -49,22 +49,7 @@ reached, then **max** appears instead of a number. Although the standard residua
 usually used as the residual norm, the type of matrix residual norm used can be
 changed through the *Matrix residual norm type* card.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - on line 43 the sub script is only working on the rn not the r0.

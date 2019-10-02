@@ -39,17 +39,7 @@ Following is a sample card:
 
 This option only applies to *Mesh Motion* type of *LAGRANGIAN*.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

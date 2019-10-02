@@ -53,23 +53,8 @@ matrix systems, a residual :math:`r` may be computed for any guess of the soluti
 :math:`r(z) = b - Az`. If :math:`z = x`, the actual solution, then the residual is zero; otherwise, it is 
 some vector with a nonzero norm.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. 
 	TODO - Equation/ Table needs to be added with using the math function I believe. This would be in lines 18-20 where the picture lies right now. 

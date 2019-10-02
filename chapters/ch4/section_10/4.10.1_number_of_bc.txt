@@ -41,23 +41,8 @@ with an error.
 Also note, that if more than one BC on the same variable is specified, only the last one
 is applied.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 ________________________________________________________________________________________________
 

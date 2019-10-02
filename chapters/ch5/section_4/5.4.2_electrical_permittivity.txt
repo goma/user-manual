@@ -36,17 +36,7 @@ Following are sample cards:
 
 This card is utilized to set the electrical permittivity for electrostatic problems.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -67,11 +67,6 @@ equations for the shell tension and shell curvature (this card):
 	:align: center
 	:width: 90%
 
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

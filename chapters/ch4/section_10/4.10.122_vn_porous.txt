@@ -81,17 +81,7 @@ porous matrix, in which the vapor flux being driven out of the porous skeleton w
 mass source to drive flow in the surrounding gas. The condition has not been tested
 since 1995.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

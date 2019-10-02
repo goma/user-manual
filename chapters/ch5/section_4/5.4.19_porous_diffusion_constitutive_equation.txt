@@ -51,17 +51,7 @@ be different in the liquid and in the gas. Right now, we do not allow for diffus
 transport (viz. by a chemical potential or concentration gradient) in the liquid phase of
 a porous medium. Please consult references below for theoretical discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

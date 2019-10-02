@@ -89,23 +89,8 @@ function; this process is referred to as renormalization. The criteria for deter
 when renormalization should occur is discussed under *Level Set Renormalization
 Tolerance.*
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. 
 	TODO - Equation needs to be written in on lines 27-29. 

@@ -43,17 +43,7 @@ the interface smoothly into the boundaries to eliminate the cusp in the interfac
 current algorithm, however, can cause errors when employed near corners of the domain. Until this is resolved, this option can only be recommended for domains
 without interior corners.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

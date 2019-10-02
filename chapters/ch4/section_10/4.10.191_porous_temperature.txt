@@ -56,17 +56,7 @@ porous media problems, viz. problems that use the R_POR_ENERGY equation (called
 *EQ = porous_energy*). This energy equation is written in multiphase enthalpy form
 and hence requires a different equatioin that for continuous media.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

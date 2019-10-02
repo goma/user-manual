@@ -148,17 +148,7 @@ parser.
 The viscoelastic tutorial is helpful for usage issues such as extensions from single mode
 to multimodes.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

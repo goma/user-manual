@@ -39,17 +39,7 @@ element mesh files from other preprocessors may be used with *Goma* as long as a
 translator from the preprocessor’s output format to the EXODUS II format is available
 to the analyst.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

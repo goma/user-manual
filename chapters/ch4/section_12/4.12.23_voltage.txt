@@ -64,17 +64,7 @@ The following is a sample card that uses a linear interpolation function for vol
 The voltage equation has no mass term, viz. it is quasistatic. So it won’t matter
 whether that multiplier is 1 or 0.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

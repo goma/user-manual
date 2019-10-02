@@ -44,20 +44,5 @@ go as 2/h, where h is the gap.
 
 No Technical Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

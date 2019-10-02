@@ -121,21 +121,6 @@ when using previous simulation results to generate boundary conditions for more
 complex analysis. We have on occasion used this boundary condition for most of the
 variable types shown.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 

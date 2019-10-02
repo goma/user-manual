@@ -66,23 +66,8 @@ pressure, as dictated by the ideal gas law.
 This boundary condition is not used as often as the *FORCE* or *FORCE_USER*
 counterparts.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 ..
 	 TODO - Where it says "**EQUATION**" in line 46 there is supposed to be an equation that needs to be written.

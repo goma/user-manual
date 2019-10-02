@@ -38,17 +38,7 @@ An example card requesting **FILL** contours be written to the EXODUS II file is
 
 No Discussion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -35,17 +35,7 @@ Following is a sample card:
 
 This card is required when using the **ENTHALPY** option on the *Heat Capacity* card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

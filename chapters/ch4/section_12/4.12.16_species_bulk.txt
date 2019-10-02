@@ -116,17 +116,7 @@ been completely developed for diffusion operators.
 Also, please see EQ=energy input for more detailed description of the Q1_GN,
 Q2_GN, Q1_GP, Q2_GP, Q1_XV and Q2_XV enriched basis functions.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

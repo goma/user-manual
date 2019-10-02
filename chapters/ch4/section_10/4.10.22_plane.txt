@@ -62,17 +62,7 @@ for mesh to slide freely in the tangential direction of the plane surface.
 This boundary condition can be applied regardless of the *Mesh Motion* type, and is
 convenient to use when one desires to move the plane with time normal to itself.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

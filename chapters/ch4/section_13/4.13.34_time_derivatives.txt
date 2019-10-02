@@ -45,17 +45,7 @@ Currently, this routine uses the values in the global vector *xdot* to report th
 During the first time step, all the *xdot* values are zero; by the second time step, these
 data should be realistic.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

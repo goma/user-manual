@@ -40,17 +40,7 @@ specification for the **ENTHALPY** model of heat capacity. It is used to calcula
 standard state heat of formation for the species. A related important card is the *Latent
 Heat Vaporization*.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

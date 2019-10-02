@@ -68,17 +68,7 @@ function and has all the term multipliers on:
 Usage of this equation is discussed extensively in GT-009.3 Output variables in the
 ExodusII database are POR_TEMP
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

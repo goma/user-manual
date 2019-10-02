@@ -56,11 +56,6 @@ where
 
 Note that there is no choice of finite :math:`\theta` that will yield a Forward Euler method. See Gartling (1987) for more information.
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

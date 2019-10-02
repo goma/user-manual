@@ -43,17 +43,7 @@ Following is a sample card:
 This option is useful to activate when help is desired in debugging the startup portion of
 a transient simulation.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

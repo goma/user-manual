@@ -39,17 +39,7 @@ Newton’s method is terminated when the global nonlinear residual falls below t
 the maximum number of iterations specified in the *Number of Newton Iterations* is
 reached.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

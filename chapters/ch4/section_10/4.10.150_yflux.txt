@@ -70,11 +70,6 @@ these boundary conditions and uses an extra variable in the BC data storage to r
 the boundary condition number of the next *YFLUX* condition in a linked list; when the
 extra storage value is -1, there are no more *YFLUX* conditions at this boundary.
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

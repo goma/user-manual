@@ -53,20 +53,5 @@ See discussion for *BC* card *SLOPE*. The only difference in these conditions an
 *SLOPE* conditions, is that the latter invokes rotation of the vector mesh residual
 equations on the boundary.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

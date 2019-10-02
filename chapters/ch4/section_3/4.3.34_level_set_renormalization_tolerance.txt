@@ -47,11 +47,6 @@ determined and compare to unity. Should this difference differ by greater than t
 for Renormalization Tolerance identified on this card, a renormalization procedure will
 presently be initiated.
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

@@ -47,22 +47,7 @@ This condition should be used to account for transmission/reflection conditions 
 where k is the acoustic wavenumber and R is the acoustic impedance. The subscript 1 refers to the material inside the external boundary and is the material which is meshed. Subscript 2 refers to the material outside of the external boundary. If :math:`R_2` is set equal to
 :math:`R_1`, then this condition mimics an infinite boundary condition, i.e. no reflection at the external boundary.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Line 43 has an image that needs to be replaced with the equation. 

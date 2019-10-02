@@ -177,17 +177,7 @@ then available for the *Level Set Initialization Method* command. (Note that the
 Geometry Specifications section usually comes after the *Level Set Initialization
 Method* command; this is OK).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

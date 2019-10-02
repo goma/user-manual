@@ -63,22 +63,7 @@ the deformed state tangential to the surface in question.
 
 This condition is advocated for use with the TALE algorithm (see GT-005.3).
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Line 54 contains a photo that needs to be exchanged for the equation.

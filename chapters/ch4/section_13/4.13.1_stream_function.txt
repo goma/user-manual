@@ -54,17 +54,7 @@ NOTE: THIS FUNCTION IS NOT AVAILABLE IN THREE DIMENSIONS, but
 pathlines, which are equivalent to streamlines for steady flows can be computed in
 many graphics packages, like Mustafa (Glass, 1995).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

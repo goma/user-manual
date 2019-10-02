@@ -53,22 +53,7 @@ coefficient (say :math:`k_i` for *YFLUX*) is that the transfer coefficient here 
 	:align: center
 	:width: 90%
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Line 52 has a photo that needs to be replaces with the proper equation.

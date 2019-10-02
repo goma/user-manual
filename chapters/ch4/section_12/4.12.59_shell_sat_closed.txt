@@ -101,23 +101,8 @@ needs in the thin-shell material inputs in the following section:
 
 Please read the associated material property cards sections for details.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 ..
 	TODO - Line 57 contains a photo that needs to be written as an equation.

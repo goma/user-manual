@@ -45,20 +45,5 @@ The following is a sample card that sets the time constant to 0.2.
 
 See Description/Usage for *Liquid Constitutive Equation* card.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

@@ -48,20 +48,5 @@ This condition applies a film pressure of 100.0 at nodeset 100.
 
 The equation applied at the specified nodeset in place of the film-flow lubrication equation.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

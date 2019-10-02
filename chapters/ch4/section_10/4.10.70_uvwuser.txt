@@ -60,17 +60,7 @@ Implementing the user-defined functions requires knowledge of basic data structu
 *Goma* and their appropriate use. The uninitiated will not be able to do this without
 guidance.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

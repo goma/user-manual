@@ -80,11 +80,6 @@ to a stress value by analogy with Navier’s slip relation,
 	:align: center
 	:width: 90%
 
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

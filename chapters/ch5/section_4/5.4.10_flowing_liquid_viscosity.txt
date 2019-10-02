@@ -44,17 +44,7 @@ hydraulic resistance viscosity of 101.0.
 
 See references below for discussion on use of this card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

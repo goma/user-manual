@@ -54,17 +54,7 @@ entered in the material file although that component is not solved explicitly in
 problem. This is the case for molecular weight, molar volume, and specific volume
 specifications, which are required for calculating Flory-Huggins liquid activity.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

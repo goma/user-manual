@@ -69,11 +69,6 @@ solid-phase momentum residuals. As mentioned above, this condition usually needs
 be supplemented by a statement of mass conservation across the interface, which will
 depend on whether the solid phase is of *CONTINUOUS* or *POROUS* media (see *Media Type* card).
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

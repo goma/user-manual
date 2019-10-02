@@ -38,17 +38,7 @@ The mathematical definition of the third invariant is related to the determinant
 strain tensor, which is defined for the various constitutive equations in the manual entry
 for the *Solid Constitutive Equation* card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

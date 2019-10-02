@@ -148,17 +148,7 @@ The user is also referred to the section on **Boundary Condition Types** at the 
 of the *Boundary Condition Specifications*. In particular, look at the discussion of
 Weakly Integrated Conditions (WIC).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

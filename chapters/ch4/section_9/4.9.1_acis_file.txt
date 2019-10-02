@@ -44,17 +44,7 @@ geometry has been named then those user-defined names are also exported. The
 geometry defined within **satfile** is then available for boundary conditions and further
 geometry constructions within the *Goma* input file.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

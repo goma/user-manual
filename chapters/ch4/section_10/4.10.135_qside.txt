@@ -46,22 +46,7 @@ The mathematical form of the boundary condition.
 	:align: center
 	:width: 90%
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO -Line 45 has a picture that needs to be changed out with the correct equation.

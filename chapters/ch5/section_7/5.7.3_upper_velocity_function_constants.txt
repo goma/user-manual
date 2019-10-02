@@ -81,20 +81,5 @@ For non-curved shell meshes, most of the time they are oriented with the x-, y-,
 This card is aimed at applying a tangential motion to that plane, and so one of
 the three components is usually zero.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

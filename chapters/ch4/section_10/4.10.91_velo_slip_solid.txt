@@ -95,22 +95,7 @@ any superimposed deformation velocity.
 * The reader is referred to the documentation of the variable slip coefficient model to
   apply slip near contact lines under the *VELO_SLIP* boundary condition.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Line 78 contains a photo that needs to be exchanged for the equation.

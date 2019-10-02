@@ -79,17 +79,7 @@ the frequency of renormalization is not too great. To set the criteria for deter
 when to renormalize the phase functions see the *Phase Function Renormalization
 Tolerance* card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

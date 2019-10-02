@@ -80,11 +80,6 @@ parameters :math:`\lambda`, :math:`q_{inner}`, and :math:`q_{outer}` are current
 hard-set to zero. :math:`\lambda` is the ratio of gas viscosity to liquid viscosity whereas :math:`q_{inner}` and
 :math:`q_{outer}` represent influences from the inner and outer flow regions.
 
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

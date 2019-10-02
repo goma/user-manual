@@ -50,22 +50,7 @@ This condition applied at sideset 100.
   residual equations, instead of replacing them and the flux is no longer 
   specified.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Line 44 has an image that needs to be replaced with the equation. 

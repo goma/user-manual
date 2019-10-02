@@ -185,22 +185,7 @@ concentrations of Cu vacancies and electron holes are taken to be equal to each 
 	:align: center
 	:width: 90%
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - Lines 108, 122, 138, 145, 153, 161, 173, and 184 is a photo that needs to be replaced with the correct equation.

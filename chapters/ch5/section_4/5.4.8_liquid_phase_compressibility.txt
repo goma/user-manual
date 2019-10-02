@@ -74,11 +74,6 @@ where βls is the coefficient of compressibility entered on this card, viz. dρl
 defined above, p0liq is the reference liquid pressure (see Liquid phase reference
 pressure* card)
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

@@ -51,17 +51,7 @@ This boundary condition is applied at nodeset 100.
 * The equation applied at the specified nodeset in place of the 
   shell-temperature equation.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

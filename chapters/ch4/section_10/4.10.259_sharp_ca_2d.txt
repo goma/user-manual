@@ -58,17 +58,7 @@ logic use to identify the point of application on the boundary functions only in
 twodimensions. Hence, this boundary condition is stricly limited to two-dimensional
 problems.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

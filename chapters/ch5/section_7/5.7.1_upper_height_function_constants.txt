@@ -117,20 +117,5 @@ is initial 0.001.
 The material function model ROLL_ON prescribes the squeezing/separation motion of
 two non-parallel flate plates about a hinge point, as shown in the figure below.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

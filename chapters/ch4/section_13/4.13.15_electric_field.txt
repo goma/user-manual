@@ -37,17 +37,7 @@ The following is a sample input card to calculate the Electric Field vector comp
 
 See also the *Electric Field Magnitude* post processing option.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

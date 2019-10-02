@@ -111,17 +111,7 @@ order of 1 to 10 times the starting time step size of the simulation. One should
 recognize that this term is not consistent from a physical standpoint and therefore one
 should endeavor to keep :math:`\tau` as small as possible if not in fact equal to zero.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

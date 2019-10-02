@@ -51,11 +51,6 @@ number, and
 
    \lVert \hat{U} \rVert_e = \frac{\int_{e}^{} \delta_{\alpha} \left( \phi \right) \underline{v} \cdot \underline{n} \, d \Omega}{\int_{e}^{} \delta_{\alpha} \left( \phi \right) \, d \Omega}
 
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -81,17 +81,7 @@ boundary. *TOTAL_ALE* mesh motion involves two sets of elasticity equations: mes
 motion equations (*mesh1* and *mesh2*), and real-solid elasticity equations (*mom_solid1*
 and *mom_solid2*).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

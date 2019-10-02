@@ -40,17 +40,7 @@ The following is a sample card that sets the coordinate system to Cartesian:
 
 Note the coordinate ordering for the **CYLINDRICAL** and **SWIRLING** options where the z-direction is first followed by the r-component (which in lay terms means the modeled region/part will appear to be ”lying down.”) If the **SWIRLING** option is activated, *Goma* expects a third momentum equation for the :math:`\theta`-direction, i.e. *EQ = momentum3*, as explained in the equation section. The third component is basically the azimuthal :math:`\theta`-velocity component, and the appropriate boundary conditions must be applied, e.g., on the w-component as described in the *Category 4* boundary conditions for *Fluid Momentum Equations*.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

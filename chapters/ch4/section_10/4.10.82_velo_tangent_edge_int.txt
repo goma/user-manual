@@ -81,22 +81,7 @@ these vectors.
   close proximity. There may also be situations where an integrated constraint
   results in better matrix conditioning that a collocated constraint.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - In line 67, the photo needs to be repalced by the proper equation.

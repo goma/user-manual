@@ -34,17 +34,7 @@ A sample card that sets the maximum time step to 10.0 follows:
 This setting is useful for advection dominated simulations, such as FILL, where a
 Courant-like limit must be set on the value of the time step for optimal performance.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

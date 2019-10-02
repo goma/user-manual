@@ -78,11 +78,6 @@ card is set to *POROUS_SATURATED, POROUS_UNSATURATED*, or
 
 Refer to the citations below where this boundary condition is discussed in more detail.
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

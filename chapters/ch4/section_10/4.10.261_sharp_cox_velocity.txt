@@ -101,11 +101,6 @@ evaluation of the integrals is expected to become inaccurate as either
 :math:`\theta_s` tends toward
 zero or :math:`\theta` tends toward 180 degrees. Note that the integrand becomes singular as :math:`\theta` tends toward 0 or 180 degrees.
 
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

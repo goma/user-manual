@@ -81,17 +81,7 @@ interpolation is discontinuous and flux continuity is maintained by evaluating s
 integrals. For details of the implementation of the DG method in *Goma* please see the
 viscoelastic tutorial memo (Rao, 2000).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

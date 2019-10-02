@@ -43,20 +43,5 @@ displacement field is also set to zero. This file would be used to restart a sub
 analysis where the anneal.exoII is copied to, or becomes, the file used in a
 **read_exoII** option for an *Initial Guess*.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

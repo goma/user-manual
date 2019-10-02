@@ -39,17 +39,7 @@ A description of the input parameters follows:
 
 We discourage use of this experimental boundary condition.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

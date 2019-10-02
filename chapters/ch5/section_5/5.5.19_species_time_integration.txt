@@ -61,17 +61,7 @@ sharp fronts where rigorous mass conservation is important.
   integration methods is that the time step used is governed by the Courant limit and
   must be quite small for stability.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

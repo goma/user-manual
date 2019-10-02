@@ -50,17 +50,7 @@ by determining the distance of a given node to the object’s surface. This slav
 function field is then used in a variety of ways to compute the influence of the
 embedded object on the flow and stresses of the surrounding fluid.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

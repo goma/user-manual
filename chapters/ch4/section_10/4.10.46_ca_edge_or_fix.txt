@@ -132,17 +132,7 @@ lie in the substrate plane.
   once the contact angle it makes with the cylinder top exceeds the mobile contact
   angle by a small amount.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

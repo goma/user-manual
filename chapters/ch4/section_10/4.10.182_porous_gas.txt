@@ -50,17 +50,7 @@ usage.
 This highly specialized boundary condition is best explained in a paper by Cairncross
 (1999).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -45,17 +45,7 @@ effect is modeled through the porous energy equation (see EQ cards; this equatio
 under development and testing as this manual was being assembled) with a source term
 that depends on the evaporation/condensation rate.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

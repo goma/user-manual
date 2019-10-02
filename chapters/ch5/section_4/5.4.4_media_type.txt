@@ -125,17 +125,7 @@ modeled, both porosity and permeability are constant. In *Goma* 4.0, these conce
 were being researched and improved, with much of the usage documentation residing
 in technical memos.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

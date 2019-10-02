@@ -81,17 +81,7 @@ card.
 
 It is best to consult the TALE tutorial (Schunk, 1999) for details of this card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

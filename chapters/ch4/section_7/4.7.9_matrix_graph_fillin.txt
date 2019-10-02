@@ -37,17 +37,7 @@ As the level of graph fill-in increases, the accuracy (usefulness) of the precon
 increases; however, so does memory usage as well as the time required to compute the
 preconditioner.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

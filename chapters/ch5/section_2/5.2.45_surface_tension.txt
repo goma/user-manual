@@ -62,17 +62,7 @@ fluids (or fluid/solids) of the bounding phases. The property controls the impor
 the capillary stress jump on a curved interface on the hydrodynamics of the flow and
 the meniscus position and motion.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

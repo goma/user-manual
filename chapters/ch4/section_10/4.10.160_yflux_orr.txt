@@ -72,17 +72,7 @@ transfer coefficient; *R* is the universal gas constant ( :math:`\equiv` 8.314 *
 temperature in unit of *K*; *V* and :math:`\phi` are, respectively, the electrode and electrolyte
 potentials in unit of *V*; :math:`U_0` and is the open-circuit potential in unit of *V*.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

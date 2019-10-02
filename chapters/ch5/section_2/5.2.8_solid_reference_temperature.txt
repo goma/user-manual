@@ -39,17 +39,7 @@ The following is a sample card:
 See the *Solid Thermal Expansion* card for a discussion of the use of this property in the
 linear thermoelasticity of solids.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

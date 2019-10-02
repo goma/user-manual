@@ -78,17 +78,7 @@ follows for different transfer mechanisms:
   bulk modulus, Kn, this model should be used. Not recently tested; please consult
   with Developers before using this option. PRS (6/13/2002)
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

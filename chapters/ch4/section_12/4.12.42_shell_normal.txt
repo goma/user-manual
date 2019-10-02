@@ -67,17 +67,7 @@ fv->snormal, which are calculated rigorously in surface_determinant_and_normal()
 Consideration is being given to replacing these with a single unknown for shell normal
 angle, which contains the same information in a single scalar unknown.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -96,22 +96,7 @@ elements along the curve.
   should induce velocity in the fluid and vice versa. As a result, mesh motion is left
   out of the preceding relation.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 .. TODO - In line 68, the photo needs to be repalced by the proper equation.

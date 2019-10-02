@@ -76,17 +76,7 @@ are, respetively, the anodic and cathodic transfer coefficients; *V* and :math:`
 respectively, the electrode and electrolyte potentials in unit of *V*; :math:`U_0` and is the opencircuit
 potential in unit of *V*.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

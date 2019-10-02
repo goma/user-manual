@@ -80,17 +80,7 @@ the **Q1_D** or **Q2_D** interpolation functions to “tie” together or constr
 degrees of freedom at the interface in question (see for example boundary condition
 *VL_EQUIL_PSEUDORXN*).
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

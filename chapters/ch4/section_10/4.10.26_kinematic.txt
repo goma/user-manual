@@ -65,11 +65,6 @@ dimensions this equation is applied to the normal component of the vector mesh
 position equation, and hence is considered as a distinguishing condition on the location
 of the mesh relative to the fluid domain.
 
-----------
-**Theory**
-----------
-
-No Theory.
 
 --------
 **FAQs**

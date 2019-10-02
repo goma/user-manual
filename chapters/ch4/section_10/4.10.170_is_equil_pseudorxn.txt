@@ -132,17 +132,7 @@ coefficient of 0.01 at 1 atm and 300 K for a molecule whose molecular weight is 
 :math:`N_2` or
 :math:`H_2 S`.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

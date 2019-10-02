@@ -41,17 +41,7 @@ selected. (See Schunk, et al., 2002 on iterative methods.) When using the front 
 package, another format known as **estifm** is employed internally but not specified by
 this card, which is not used in this case.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

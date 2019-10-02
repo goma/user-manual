@@ -42,20 +42,5 @@ problem, as it allows the user to visualize the pattern of residuals over the
 computational domain during a Newton iteration process. The intermediate solutions of
 a Newton iteration process can be activated with the *Write Intermediate Results* card.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.

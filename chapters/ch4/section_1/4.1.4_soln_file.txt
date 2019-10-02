@@ -43,17 +43,7 @@ primary way to continue or restart a solution from an ASCII file. (See *Write
 Intermediate Solutions* for related information.) When a continuation run is performed,
 this file is copied into the file specified in the *GUESS file* input card.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -283,23 +283,8 @@ species j; these two parameters are set by the Specific Volume cards in the
 material file. The variable N is the total number of bulk species. The variable
 :math:`V_n+1` is the specific volume specified in the density card.
 
-----------
-**Theory**
-----------
 
-No Theory.
 
---------
-**FAQs**
---------
-
-No FAQs.
-
---------------
-**References**
---------------
-
-No References.
 
 ..
 	TODO - In line 7,35 when in says "[M/L3]" the 3 is supposed to be superscript but for some reason it will not allow me to no matter what I try. There are 7 photos of equations that need to be replaced with the real thing.

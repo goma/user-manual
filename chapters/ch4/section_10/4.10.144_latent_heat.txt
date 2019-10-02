@@ -127,17 +127,7 @@ plus, in the corresponding material file:
    Species Volume Expansion = CONSTANT   1   1.
    Reference Concentration = CONSTANT   1   0.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

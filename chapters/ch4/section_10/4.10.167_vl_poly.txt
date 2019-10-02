@@ -95,17 +95,7 @@ to the above model. For a simple binary pair (solvent (1)-polymer (2)) and assum
 	:align: center
 	:width: 90%
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

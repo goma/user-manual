@@ -37,17 +37,7 @@ want the changes of the level set function to affect the timestep size. If this 
 used, the default behavior is to ignore the level set degrees of freedom in controlling
 the timestep size.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

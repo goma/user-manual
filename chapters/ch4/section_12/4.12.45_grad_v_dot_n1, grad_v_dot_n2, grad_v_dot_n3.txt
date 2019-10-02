@@ -57,17 +57,7 @@ weight function:
 
 See discussion for EQ=shell_surf_div_v
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

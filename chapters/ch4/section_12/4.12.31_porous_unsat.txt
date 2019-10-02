@@ -32,17 +32,7 @@ saturated flow, as described by the *Media Type* material property card. The equ
 invokes is one of Darcy flow in a partially saturated medium in which the gas phase
 pressure is taken as constant. The dependent variable here is the liquid phase pressure.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

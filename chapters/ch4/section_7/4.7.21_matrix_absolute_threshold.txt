@@ -42,17 +42,7 @@ Refer to the discussion for card *Matrix Relative Threshold*. The appropriate va
 the threshold can vary over many orders of magnitude depending on the situation.
 Refer to Schunk, et. al., 2002 for information and for further guidance.
 
-----------
-**Theory**
-----------
 
-No Theory.
-
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**

@@ -100,11 +100,6 @@ It should be noted that there is no distinction for this model in the function o
 The two parameters are interchangeable. In non-linear models, (see
 WETTING_SPEED_BLAKE) this is no longer true.
 
---------
-**FAQs**
---------
-
-No FAQs.
 
 --------------
 **References**
