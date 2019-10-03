@@ -18,6 +18,7 @@ github:
 	$(MAKE) clean
 	$(MAKE) html
 	touch docs/.nojekyll
+	echo "<meta http-equiv=\"refresh\" content=\"0; url=./html/index.html\" />" > docs/index.html
 
 
 # Catch-all target: route all unknown targets to Sphinx using the new
