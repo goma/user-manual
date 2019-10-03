@@ -12,6 +12,8 @@
 This required card specifies the name of the EXODUS II finite element mesh file. Any
 EXODUS II file name is permissible, as specified below.
 
+.. tabularcolumns:: |l|L|
+
 ==================   ===============================================================
 <file_name>          A file name of the form *prefix*.exoII. The *prefix* portion is
                      any user-specified alpha-numeric string, which can be used

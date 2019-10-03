@@ -19,6 +19,8 @@ summarized below. The user should exercise caution in using values other than th
 default for problems with large numbers of unknowns as the volume of information
 increases very quickly.
 
+.. tabularcolumns:: |l|L|
+
 ==============  ===============================================================
 Level           Results Output
 ==============  ===============================================================

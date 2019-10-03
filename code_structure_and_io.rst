@@ -69,11 +69,12 @@ arguments. However, command-line arguments offer additional flexibility for redi
 output and for adjusting common run-time parameters. The general command line for running
 *Goma* is:
 
-goma 	[-nd] [-se fn] [-so fn] [-i fn] [-c fn] [-s fn] [-ix fn] [-ox fn] [-d int] 
-		[-n int] [-r dbl] [-a args] [-restart fn] [-h] [-ts dbl] [-te dbl] [-cb dbl] 			
-	 	[-ce dbl] [-cd dbl] [-cn int] [-cmin dbl] [-cmax dbl] [-cm int] [-ct int] [-c_bc int]
+:: 
 
-	 	[-c_df int] [-c_mn int] [-c_mp int] [-bc_list] [-v]
+    $ goma [-nd] [-se fn] [-so fn] [-i fn] [-c fn] [-s fn] [-ix fn] [-ox fn] [-d int] 
+           [-n int] [-r dbl] [-a args] [-restart fn] [-h] [-ts dbl] [-te dbl] [-cb dbl] 			
+           [-ce dbl] [-cd dbl] [-cn int] [-cmin dbl] [-cmax dbl] [-cm int] [-ct int] [-c_bc int]
+           [-c_df int] [-c_mn int] [-c_mp int] [-bc_list] [-v]
 
 Here *fn* denotes “file name”, *int* denotes “integer”, *dbl* denotes “float or double” and *args* denotes
 multiple sub-options or file names. The input line is parsed into options, which are preceded by a
@@ -82,138 +83,141 @@ default, if no options are specified, is the input option (e.g. “goma input.al
 “goma -i input.alt”). The following is a list of the command-line options and their
 descriptions (two ways are shown to specify each option, an abbreviated and a verbose form).
 
-=================== ================================= =========================================
-   **-a** *args*           **-aprepro** *args*        
-   													   |	Preprocess input files through the APREPRO preprocessor [with args as arguments to APREPRO] before reading into *Goma*. With this option, *Goma* performs a UNIX system() call to run APREPRO which will preprocess the input file and the material data files. The APREPRO input file is preprocessed from “input” or the filenamespecified by the -input option and written to “tmp.input”. Likewise, the material data files are preprocessed from “[material name].mat” to “tmp.[material name].mat”. After the “-a” on the command line, options for APREPRO are preceded by two hyphens (--). For example, the command line “goma -i *input.pre* -a CONSTANT1=0.2 --vd” will preprocess “input.pre” and the material data files specified in *input.pre* using APREPRO, and will pass the argument -*vd* (which prints version number and values of all variables to the screen) and CONSTANT1=0.2 (which sets the variable CONSTANT1 equal to 0.2 for preprocessing) to APREPRO; the preprocessed files will be “*tmp.input*” and “*tmp*.[material name].*mat*”.)
-=================== ================================= =========================================
+-a args, -aprepro args    
+                          Preprocess input files through the APREPRO preprocessor 
+                          [with args as arguments to APREPRO] before reading into 
+                          *Goma*. With this option, *Goma* performs a UNIX
+                          system() call to run APREPRO which will preprocess
+                          the input file and the material data files. The
+                          APREPRO input file is preprocessed from “input” or
+                          the filenamespecified by the -input option and
+                          written to “tmp.input”. Likewise, the material
+                          data files are preprocessed from “[material
+                          name].mat” to “tmp.[material name].mat”. After the
+                          “-a” on the command line, options for APREPRO are
+                          preceded by two hyphens (--). For example, the
+                          command line “goma -i *input.pre* -a CONSTANT1=0.2
+                          --vd” will preprocess “input.pre” and the material
+                          data files specified in *input.pre* using APREPRO,
+                          and will pass the argument -*vd* (which prints
+                          version number and values of all variables to the
+                          screen) and CONSTANT1=0.2 (which sets the variable
+                          CONSTANT1 equal to 0.2 for preprocessing) to
+                          APREPRO; the preprocessed files will be
+                          “*tmp.input*” and “*tmp*.[material name].*mat*”.)
 
-|
+-c fn -contin fn          
+                          Change the name of the ASCII continuation/restart input 
+                          file (specified in Problem-Description File) to *fn*,
+                          (e.g. “goma -c *old.soln.dat*” uses the file
+                          “*old.soln.dat*” as the ASCII input file). Note that
+                          this option has no effect if the initial guess is not
+                          read from the ASCII file, i.e. unless “*Initial Guess
+                          = read*” is specified in the input file.
 
-+------------------+--------------------------------+
-|  **-a** *args*   |       **-aprepro** *args*      |
-+------------------+--------------------------------+
+-d int -debug int         
+                          Change the debug flag to *int*. This option is convenient 
+                          when debugging and the user wants to see more output
+                          from *Goma*. (e.g. “goma - d -2” will run *Goma* with
+                          the Debug_Flag set to -2). Higher values generally
+                          produce more output.
 
-**-a** *args*  **-aprepro** *args* 
+-h -help                  
+                          Prints a helpful message with brief descriptions of 
+                          these command line options.
 
-Preprocess input files through the APREPRO preprocessor [with args
-as arguments to APREPRO] before reading into *Goma*. With this
-option, *Goma* performs a UNIX system() call to run APREPRO
-which will preprocess the input file and the material data files. The
-APREPRO input file is preprocessed from “input” or the filename
-specified by the -input option and written to “tmp.input”. Likewise,
-the material data files are preprocessed from “[material name].mat”
-to “tmp.[material name].mat”. After the “-a” on the command line,
-options for APREPRO are preceded by two hyphens (--). For example,
-the command line “goma -i *input.pre* -a CONSTANT1=0.2 --vd”
-will preprocess “input.pre” and the material data files specified in
-*input.pre* using APREPRO, and will pass the argument -*vd* (which
-prints version number and values of all variables to the screen) and
-CONSTANT1=0.2 (which sets the variable CONSTANT1 equal to
-0.2 for preprocessing) to APREPRO; the preprocessed files will be
-“*tmp.input*” and “*tmp*.[material name].*mat*”.)
+-i fn -input fn           
+                          Redirect *Goma* to read the problem description file from 
+                          *fn*. The normal default option is to read from
+                          a file named “*input*”.
 
-**-c** *fn* **-contin** *fn*
+-ix fn -inexoII fn        
+                          Redirect *Goma* to read the input EXODUS II database
+                          file (often called “*in.exoII*”) from *fn*.
 
-Change the name of the ASCII continuation/restart input file (specified
-in Problem-Description File) to *fn*, (e.g. “goma -c *old.soln.dat*”
-uses the file “*old.soln.dat*” as the ASCII input file). Note that this
-option has no effect if the initial guess is not read from the ASCII file,
-i.e. unless “*Initial Guess = read*” is specified in the input file.
+-n int                    
+                          Change the maximum number of Newton iterations to *int*. This is
+                          especially convenient for setting the number of
+                          iterations to zero so that *Goma* just runs the
+                          post-processor on the set of input data.
 
-**-d** *int* **-debug** *int*
+-nd -nodisplay            
+                          Do not display the run-time information on the
+                          screen. With this option, *Goma* sends the stdout and
+                          stderr output to temporary files that are removed at
+                          the end of the run. This command takes no arguments.
 
-Change the debug flag to *int*. This option is convenient when debugging
-and the user wants to see more output from *Goma*. (e.g. “goma -
-d -2” will run *Goma* with the Debug_Flag set to -2). Higher values
-generally produce more output.
+-ox fn -outexoII fn       
+                          Redirect *Goma* to write the output EXODUS II file
+                          (often called “*out.exoII*”) to *fn*.
 
-**-h** **-help**
+-r dbl relax dbl          
+                          Change the value of the Newton relaxation parameter
+                          to *dbl*. This is convenient if a few Newton steps
+                          with relaxation are desired before using full Newton.
+                          (e.g. “goma -r 0.1” will use Newton’s method with
+                          updates one-tenth of the normal value.
 
-Prints a helpful message with brief descriptions of these command line options.
+-s fn -soln fn            
+                          Redirect Goma to write the output ASCII file
+                          (normally called “*soln.dat*”) to *fn*.
 
-**-i** *fn* **-input** *fn*
+-se fn -stderr fn         
+                          Redirect the standard error from *Goma* to *fn*. This
+                          output is comprised of more urgent diagnostic error
+                          and timing messages.
 
-Redirect *Goma* to read the problem description file from *fn*. The normal
-default option is to read from a file named “*input*”.
+-so fn -stdout fn         
+                          Redirect the standard output from *Goma* to *fn*.
+                          This output is comprised of less urgent informational
+                          messages.
 
-**-ix** *fn* **-inexoII** *fn*
+-ts dbl                   
+                          Start time of simulation.
 
-Redirect *Goma* to read the input EXODUS II database file (often
-called “*in.exoII*”) from *fn*.
+-te dbl                   
+                          End time of simulation
 
-**-n** *int*
+-cb dbl                   
+                          Continuation: Start value (see Gates et al., SAND2000-2465)
 
-Change the maximum number of Newton iterations to *int*. This is
-especially convenient for setting the number of iterations to zero so
-that *Goma* just runs the post-processor on the set of input data.
+-ce dbl                   
+                          Continuation: Final value (see Gates et al., SAND2000-2465)
 
-**-nd -nodisplay**
+-cd dbl                   
+                          Continuation: Path step, ds (see Gates et al., SAND2000-2465)
 
-Do not display the run-time information on the screen. With this
-option, *Goma* sends the stdout and stderr output to temporary files
-that are removed at the end of the run. This command takes no arguments.
+-cn dbl                   
+                          Continuation: Max number of path steps (see Gates et al., 2000)
 
-**-ox** *fn* **-outexoII** *fn*
+-cm int                   
+                          Continuation: Method (see Gates et al., 2000)
 
-Redirect *Goma* to write the output EXODUS II file (often called
-“*out.exoII*”) to *fn*.
+-ct int                   
+                          Continuation: Type (see Gates et al., 2000)
 
-**-r** *dbl* **relax** *dbl*
+-c_bc int                 
+                          Continuation: Boundary condition ID (see Gates et al., 2000)
 
-Change the value of the Newton relaxation parameter to *dbl*. This is
-convenient if a few Newton steps with relaxation are desired before
-using full Newton. (e.g. “goma -r 0.1” will use Newton’s method with
-updates one-tenth of the normal value.
+-c_df int                 
+                          Continuation: BC Data Float ID (see Gates et al., 2000)
 
-**-s** *fn* **-soln** *fn*
+-c_mn int                 
+                          Continuation: Material ID (see Gates et al., 2000)
 
-Redirect Goma to write the output ASCII file (normally called
-“*soln.dat*”) to *fn*.
+-c_mp int                 
+                          Continuation: Method property ID (see Gates et al, 2000)
 
-**-se** *fn* -stderr *fn*
+-bc_list                  
+                          Continuation: Method property ID (see Gates et al, 2000)
 
-Redirect the standard error from *Goma* to *fn*. This output is comprised
-of more urgent diagnostic error and timing messages.
+-v -version               
+                          Output goma version
 
-**-so** *fn* **-stdout** *fn*
-
-Redirect the standard output from *Goma* to *fn*. This output is comprised
-of less urgent informational messages.
-
-============  ===========  ===============================================================
-**-ts**         dbl        Start time of simulation.
-
-
-**-te**         dbl        End time of simulation
-
-**-cb**         dbl        Continuation: Start value (see Gates et al., SAND2000-2465)
-
-**-ce**         dbl        Continuation: Final value (see Gates et al., SAND2000-2465)
-
-**-cd**         dbl        Continuation: Path step, ds (see Gates et al., SAND2000-2465)
-
-**-cn**         dbl        Continuation: Max number of path steps (see Gates et al., 2000)
-
-**-cm**         int        Continuation: Method (see Gates et al., 2000)
-
-**-ct**         int        Continuation: Type (see Gates et al., 2000)
-
-**-c_bc**       int        Continuation: Boundary condition ID (see Gates et al., 2000)
-
-**-c_df**       int        Continuatio n: BC Data Float ID (see Gates et al., 2000)
-  
-**-c_mn**       int        Continuation: Material ID (see Gates et al., 2000)
-
-**-c_mp**       int        Continuation: Method property ID (see Gates et al, 2000)
- 
-**-bc_list**               Continuation: Method property ID (see Gates et al, 2000)
-
-**-v**        -version     Continuation: Method property ID (see Gates et al, 2000)
-============  ===========  ===============================================================
-
-*NOTE: To get the most up-to-date list, simple issue the* “goma -h” *command at the command
-line. Also note that the continuation input parameters are explained in the Advanced
-Capabilities Manual (Gates et al. 2000 or newer version).*
+.. NOTE:: To get the most up-to-date list, simple issue the* “goma -h” *command
+   at the command line. Also note that the continuation input parameters are
+   explained in the Advanced Capabilities Manual (Gates et al. 2000 or newer
+   version).*
 
 The primary purpose of the command-line options is to allow the user an easy way to redirect the
 input and output of Goma or to quickly change problem specifications. Most of the options are
