@@ -1,5 +1,5 @@
 ===============================
-Data Input-- Material Files
+Material Files
 ===============================
 
 The material (“mat”) file for *Goma* contains a description or specification of all the properties

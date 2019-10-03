@@ -1,5 +1,5 @@
 =====================================
-Problem Description (Goma Input File)
+Problem Description (Input File)
 =====================================
 
 The **input file** for *Goma* contains the overall description of the problem to be solved together with
