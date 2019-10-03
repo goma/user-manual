@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Level Set Subelement Integration</strong></li>
+      <li>Level Set Subelement Integration</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,42 +160,34 @@
            <div itemprop="articleBody">
             
   <div class="section" id="level-set-subelement-integration">
-<h1><strong>Level Set Subelement Integration</strong><a class="headerlink" href="#level-set-subelement-integration" title="Permalink to this headline">¶</a></h1>
+<h1>Level Set Subelement Integration<a class="headerlink" href="#level-set-subelement-integration" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Subelement</span> <span class="n">Integration</span> <span class="o">=</span> <span class="p">{</span><span class="n">ON</span> <span class="o">|</span> <span class="n">YES</span> <span class="o">|</span> <span class="n">OFF</span> <span class="o">|</span> <span class="n">NO</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>Subelement integration is used to improve integration accuracy for all functions which
 invoke a sharp level-set interface. Note here that the Level Set Length Scale
 option must be zero. This is possible because the subelement integration scheme
 actually produces a geometric representation of the zero level set surface on which
 exact line integrals of the surface tension source term term can be peformed. Please
 see usage nodes below.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>{ON | YES}</p></td>
-<td><p>Use subelement integration on surface level set capillary term.</p></td>
-</tr>
-<tr class="row-even"><td><p>{OFF | NO}</p></td>
-<td><p>Don’t use subelement integration.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>{ON | YES}</dt><dd><p>Use subelement integration on surface level set capillary term.</p>
+</dd>
+<dt>{OFF | NO}</dt><dd><p>Don’t use subelement integration.</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>This example invokes the subelement integration</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Subelement</span> <span class="n">Integration</span> <span class="o">=</span> <span class="n">ON</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><strong>NOTE</strong>: Level Set Length Scale must be set to zero.</p></li>
 <li><p>Because of the construction of an in-element interface meshing to find this
@@ -209,7 +201,7 @@ for surface tension dominated problems.</p></li>
 </ul>
 </div>
 <div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <p>GT-020.1: Tutorial on Level Set Interface Tracking in GOMA, February 27, 2001, T.A.
 Baer</p>
 </div>

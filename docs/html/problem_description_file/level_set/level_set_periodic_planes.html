@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Level Set Periodic Planes</strong></li>
+      <li>Level Set Periodic Planes</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,58 +160,42 @@
            <div itemprop="articleBody">
             
   <div class="section" id="level-set-periodic-planes">
-<h1><strong>Level Set Periodic Planes</strong><a class="headerlink" href="#level-set-periodic-planes" title="Permalink to this headline">¶</a></h1>
+<h1>Level Set Periodic Planes<a class="headerlink" href="#level-set-periodic-planes" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Periodic</span> <span class="n">Planes</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">float1</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float2</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float3</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float4</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float5</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float6</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This card directs the level-set renormalization to accommodate peroidic boundary
 conditions (see Advanced Capabilities Manual AC_Periodic capability). The periodic
 boundary conditions on the level set field are not compatible with renormalization
 unless this capability is specified.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;float1&gt;</p></td>
-<td><p>x-coordinate value of first periodic boundary.</p></td>
-</tr>
-<tr class="row-even"><td><p>&lt;float2&gt;</p></td>
-<td><p>x-coordinate value of second periodic boundary. If
-equivalent to float1 than this direction is not periodic.</p></td>
-</tr>
-<tr class="row-odd"><td><p>&lt;float3&gt;</p></td>
-<td><p>y-coordinate value of first periodic boundary.</p></td>
-</tr>
-<tr class="row-even"><td><p>&lt;float4&gt;</p></td>
-<td><p>y-coordinate value of second periodic boundary. If
-equivalent to float3 than this direction is not periodic.</p></td>
-</tr>
-<tr class="row-odd"><td><p>&lt;float5&gt;</p></td>
-<td><p>y-coordinate value of first periodic boundary.</p></td>
-</tr>
-<tr class="row-even"><td><p>&lt;float6&gt;</p></td>
-<td><p>y-coordinate value of second periodic boundary. If
-equivalent to float5 than this direction is not periodic.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>&lt;float1&gt;</dt><dd><p>x-coordinate value of first periodic boundary.</p>
+</dd>
+<dt>&lt;float2&gt;</dt><dd><p>x-coordinate value of second periodic boundary. If equivalent to float1
+than this direction is not periodic.</p>
+</dd>
+<dt>&lt;float3&gt;</dt><dd><p>y-coordinate value of first periodic boundary.</p>
+</dd>
+<dt>&lt;float4&gt;</dt><dd><p>y-coordinate value of second periodic boundary. If equivalent to float3
+than this direction is not periodic.</p>
+</dd>
+<dt>&lt;float5&gt;</dt><dd><p>y-coordinate value of first periodic boundary.</p>
+</dd>
+<dt>&lt;float6&gt;</dt><dd><p>y-coordinate value of second periodic boundary. If equivalent to float5
+than this direction is not periodic.</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Two examples of initialization methods are provide below:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Periodic</span> <span class="n">Boundary</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.5</span> <span class="mf">0.5</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span>
 </pre></div>
 </div>
 <p>This card instructs renormalization to accommodate the x-directed-boundaries to be
 considered as periodic relative to the level-set field.</p>
-</div>
-<div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
-<p>No Discussion.</p>
 </div>
 <div class="section" id="references">
 <h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>

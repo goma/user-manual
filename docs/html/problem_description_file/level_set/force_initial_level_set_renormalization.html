@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Force Initial Level Set Renormalization</strong></li>
+      <li>Force Initial Level Set Renormalization</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,38 +160,31 @@
            <div itemprop="articleBody">
             
   <div class="section" id="force-initial-level-set-renormalization">
-<h1><strong>Force Initial Level Set Renormalization</strong><a class="headerlink" href="#force-initial-level-set-renormalization" title="Permalink to this headline">¶</a></h1>
+<h1>Force Initial Level Set Renormalization<a class="headerlink" href="#force-initial-level-set-renormalization" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Force</span> <span class="n">Initial</span> <span class="n">Level</span> <span class="n">Set</span> <span class="n">Renormalization</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">char_string</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This card is used to invoke a renormalization step prior to the first time step of any
 transient computation.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 26%" />
-<col style="width: 74%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;char_string&gt;</p></td>
-<td><p>YES|ON (not case sensitive) will cause the renormalization
-procedure to occur on the first step. If this card is not
-included or some other string is used here a renormalization
-will automatically occur on the first time step.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>&lt;char_string&gt;</dt><dd><p><code class="docutils literal notranslate"><span class="pre">YES|ON</span></code> (not case sensitive) will cause the renormalization procedure to
+occur on the first step. If this card is not included or some other string
+is used here a renormalization will automatically occur on the first time
+step.</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>A typical length scale input card looks like:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Force</span> <span class="n">Initial</span> <span class="n">Level</span> <span class="n">Set</span> <span class="n">Renormalization</span> <span class="o">=</span> <span class="n">yes</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>Restarts occur fairly frequently during level set computations. It has been discovered
 that the robustness of the subsequent computation can be improved by quite a bit if the
 level set field is renormalized at the start of the restart, regardless of the current average
@@ -201,10 +194,6 @@ time step if this card is present in the input deck. It has become standard oper
 procedure that when a level set computation runs into computational difficulty the first
 step in recovery should be to restart with a forced initial renormalization using this
 card.</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No Reference.</p>
 </div>
 </div>
 

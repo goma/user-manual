@@ -1,5 +1,5 @@
 ***************************
-**Level Set Slave Surface**
+Level Set Slave Surface
 ***************************
 
 ::
@@ -7,23 +7,23 @@
 	Level Set Slave Surface = {yes|no}
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This card specifies whether the level set distance function is constrained during the
 calculation or evolves with the typical advection equation. Permissible values for this
 option are:
 
-=======================  ========================================================================
-yes|on                   The surface is constrained to remain on the initial surfaces
-                         throughout the calculation (moving with these surfaces if
-                         they are moving).
-no|off                   The surface evolves normally according to the local
-                         velocity field; this is the default.
-=======================  ========================================================================
+yes|on
+    The surface is constrained to remain on the initial surfaces throughout the
+    calculation (moving with these surfaces if they are moving).
+
+no|off
+    The surface evolves normally according to the local velocity field; this is
+    the default.
 
 ------------
-**Examples**
+Examples
 ------------
 
 This is a sample card:
@@ -32,7 +32,7 @@ This is a sample card:
 	Level Set Slave Surface = on
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 In a typical level set simulation, the surface is first initialized with the *Level Set
@@ -43,9 +43,8 @@ the level set function is reinitialized at each Newton iteration to match the mo
 surface.
 
 
-
 --------------
-**References**
+References
 --------------
 
 GT-020.1: Tutorial on Level Set Interface Tracking in GOMA, February 27, 2001, T.A.

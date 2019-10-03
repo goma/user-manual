@@ -1,5 +1,5 @@
 **************************
-**Level Set Length Scale**
+Level Set Length Scale
 **************************
 
 ::
@@ -7,23 +7,22 @@
 	Level Set Length Scale = <float>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 On this card, the user specifies a single char_string.
 
-=======================  ========================================================================
-<float>                  This value represents the size of the region around the zero
-                         level set function contour in which interfacial physical
-                         quantities, for example, surface tension, will be present.
-=======================  ========================================================================
+<float>
+    This value represents the size of the region around the zero level set
+    function contour in which interfacial physical quantities, for example,
+    surface tension, will be present.
 
 Stability and conservation of phase volume are dependent upon this value to a
 significant degree. Experimentation has revealed that this float value should be
 between two and three times the average linear dimension of the elements in the mesh.
 
 ------------
-**Examples**
+Examples
 ------------
 
 A typical length scale input card looks like:
@@ -32,7 +31,7 @@ A typical length scale input card looks like:
 	Level Set Length Scale = 0.3
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 The level set method is an *embedded* interface method. That is, the location of the
@@ -63,7 +62,7 @@ value specified on this card.
 
 
 --------
-**FAQs**
+FAQs
 --------
 
 How should the Length Scale value be chosen? Trial and error is often the best method
@@ -72,7 +71,7 @@ that values for Level Set Length Scale that are between two and three times the 
 element linear dimension seem to work best.
 
 --------------
-**References**
+References
 --------------
 
 GT-020.1: Tutorial on Level Set Interface Tracking in GOMA, February 27, 2001, T.A.

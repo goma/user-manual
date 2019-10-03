@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Fill Weight Function</strong></li>
+      <li>Fill Weight Function</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,47 +160,37 @@
            <div itemprop="articleBody">
             
   <div class="section" id="fill-weight-function">
-<h1><strong>Fill Weight Function</strong><a class="headerlink" href="#fill-weight-function" title="Permalink to this headline">¶</a></h1>
+<h1>Fill Weight Function<a class="headerlink" href="#fill-weight-function" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Fill</span> <span class="n">Weight</span> <span class="n">Function</span> <span class="o">=</span> <span class="p">{</span><span class="n">Galerkin</span> <span class="o">|</span> <span class="n">Taylor</span><span class="o">-</span><span class="n">Galerkin</span> <span class="o">|</span> <span class="n">SUPG</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>Sets the weight function used for the <em>FILL</em> equation for either the VOF or Level Set
 methods. The options for this card are as follows:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>Galerkin</strong></p></td>
-<td><p>Name of the weight function formulation. This option
-requests a standard Galerkin finite element weighted
-residual treatment. A floating point parameter is not
-used for this option.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Taylor-Galerkin</strong></p></td>
-<td><p>Name of the weight function formulation</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>SUPG</strong></p></td>
-<td><p>Name of the weight function formulation. This option
-requests a Streamwise Upwinding Petrov Galerkin
-formulation. No floating point parameter is required.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>Galerkin</dt><dd><p>Name of the weight function formulation. This option requests a standard
+Galerkin finite element weighted residual treatment. A floating point
+parameter is not used for this option.</p>
+</dd>
+<dt>Taylor-Galerkin</dt><dd><p>Name of the weight function formulation</p>
+</dd>
+<dt>SUPG</dt><dd><p>Name of the weight function formulation. This option requests a Streamwise
+Upwinding Petrov Galerkin formulation. No floating point parameter is
+required.</p>
+</dd>
+</dl>
 <p>The default value for the <em>Fill Weight Function</em> is Taylor-Galerkin.</p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>This is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Fill</span> <span class="n">Weight</span> <span class="n">Function</span> <span class="o">=</span> <span class="n">Galerkin</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>This card selects the integration/weight function used in solving for the VOF color
 function or the level set distance function (i.e., the <em>FILL</em> unknown). The user should
 refer to the tutorial on Level Set Computations for a detailed description of level set

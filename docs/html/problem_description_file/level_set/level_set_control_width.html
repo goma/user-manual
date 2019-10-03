@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Level Set Control Width</strong></li>
+      <li>Level Set Control Width</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,25 +160,25 @@
            <div itemprop="articleBody">
             
   <div class="section" id="level-set-control-width">
-<h1><strong>Level Set Control Width</strong><a class="headerlink" href="#level-set-control-width" title="Permalink to this headline">¶</a></h1>
+<h1>Level Set Control Width<a class="headerlink" href="#level-set-control-width" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Control</span> <span class="n">Width</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This card is a multiplier on the <em>Level Set Length Scale</em> to determine the size of the
 region around the zero level set contour over which the level set gradient is averaged.
 The value of this parameter defaults to 1.0 if this card is not included.</p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>This sample card sets the control width to be equivalent to the length scale:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Control</span> <span class="n">Width</span> <span class="o">=</span> <span class="mf">0.5</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>As noted in the description of the <em>Level Set Renormalization Tolerance</em> card,
 renormalization is triggered when the average of the level set gradient magnitude has
 departed sufficiently from unity. The region over which this average is obtained is
@@ -187,13 +187,9 @@ The width of this strip is twice the <em>Level Set Length Scale</em> multiplied 
 supplied on this card.</p>
 </div>
 <div class="section" id="faqs">
-<h2><strong>FAQs</strong><a class="headerlink" href="#faqs" title="Permalink to this headline">¶</a></h2>
+<h2>FAQs<a class="headerlink" href="#faqs" title="Permalink to this headline">¶</a></h2>
 <p>Usually it is best practice to leave this parameter at its default setting and control the
 frequency of renormalization with the renormalization tolerance.</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No References.</p>
 </div>
 </div>
 

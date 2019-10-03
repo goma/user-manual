@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Level Set Contact Extension</strong></li>
+      <li>Level Set Contact Extension</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,41 +160,33 @@
            <div itemprop="articleBody">
             
   <div class="section" id="level-set-contact-extension">
-<h1><strong>Level Set Contact Extension</strong><a class="headerlink" href="#level-set-contact-extension" title="Permalink to this headline">¶</a></h1>
+<h1>Level Set Contact Extension<a class="headerlink" href="#level-set-contact-extension" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Contact</span> <span class="n">Extension</span> <span class="o">=</span> <span class="p">{</span><span class="n">yes</span><span class="o">|</span><span class="n">no</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This card specifies whether the level set surface is considered to extend into boundaries
 when performing renormalization of the level set distance function. This card applies
 only if <em>Level Set Renormalization Method</em> = <strong>Huygens_Constrained.</strong> Permissible
 values for this option are:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>yes|on</p></td>
-<td><p>The level set interface is considered to extend smoothly into
-the boundaries.</p></td>
-</tr>
-<tr class="row-even"><td><p>no|off</p></td>
-<td><p>The level set interface ends at the boundaries; this is the default.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>yes|on</dt><dd><p>The level set interface is considered to extend smoothly into the
+boundaries.</p>
+</dd>
+<dt>no|off</dt><dd><p>The level set interface ends at the boundaries; this is the default.</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>This is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Contact</span> <span class="n">Extension</span> <span class="o">=</span> <span class="n">no</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>When renormalizing the level set distance function, the behavior of the interface near
 boundaries is important. When the interface is considered to end at the boundary, a
 large number of grid points may be closest to this boundary point. This appears as a
@@ -203,10 +195,6 @@ of the very large capillary force that results. One method to alleviate this is 
 the interface smoothly into the boundaries to eliminate the cusp in the interface. The
 current algorithm, however, can cause errors when employed near corners of the domain. Until this is resolved, this option can only be recommended for domains
 without interior corners.</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No References.</p>
 </div>
 </div>
 

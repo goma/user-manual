@@ -1,5 +1,5 @@
 ***************************************
-**Level Set Renormalization Tolerance**
+Level Set Renormalization Tolerance
 ***************************************
 
 ::
@@ -7,7 +7,7 @@
 	Level Set Renormalization Tolerance = <float>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This parameter provides a means for controlling how often renormalization
@@ -16,16 +16,15 @@ the size of the deviation allowed between the average absolute magnitude of the 
 set function gradient near the level set interface and unity, the theoretical value
 observed for a pure distance function.
 
-=======================  ========================================================================
-<float>                  Value of the tolerance, the allowable deviation.
-=======================  ========================================================================
+<float>
+    Value of the tolerance, the allowable deviation.
 
 The range of this parameter is any positive real number, however, it is rare to use values
 smaller than 0.1 or larger than 5.0. The value of the tolerance defaults to 0.5 if this card
 is not specified.
 
 ------------
-**Examples**
+Examples
 ------------
 
 This is a sample renormalization card:
@@ -34,7 +33,7 @@ This is a sample renormalization card:
 	Level Set Renormalization Tolerance = 0.05
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 One of the key properties of the level set function is that it is a smooth function near to
@@ -49,7 +48,7 @@ presently be initiated.
 
 
 --------
-**FAQs**
+FAQs
 --------
 
 What is a proper value for this parameter? Values on the order of unity should work
@@ -63,8 +62,3 @@ interface contour. Renormalizing too often, therefore, can result in errors bein
 introduced. The renormalization procedure, Huygens_Constrained, attempts to
 mitigate this effect.
 
---------------
-**References**
---------------
-
-No References.

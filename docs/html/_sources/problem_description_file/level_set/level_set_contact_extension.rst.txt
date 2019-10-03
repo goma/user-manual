@@ -1,5 +1,5 @@
 *******************************
-**Level Set Contact Extension**
+Level Set Contact Extension
 *******************************
 
 ::
@@ -7,7 +7,7 @@
 	Level Set Contact Extension = {yes|no}
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This card specifies whether the level set surface is considered to extend into boundaries
@@ -15,14 +15,15 @@ when performing renormalization of the level set distance function. This card ap
 only if *Level Set Renormalization Method* = **Huygens_Constrained.** Permissible
 values for this option are:
 
-=======================  ========================================================================
-yes|on                   The level set interface is considered to extend smoothly into
-                         the boundaries.
-no|off                   The level set interface ends at the boundaries; this is the default.
-=======================  ========================================================================
+yes|on
+    The level set interface is considered to extend smoothly into the
+    boundaries.
+
+no|off
+    The level set interface ends at the boundaries; this is the default.
 
 ------------
-**Examples**
+Examples
 ------------
 
 This is a sample input card:
@@ -31,7 +32,7 @@ This is a sample input card:
 	Level Set Contact Extension = no
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 When renormalizing the level set distance function, the behavior of the interface near
@@ -43,10 +44,3 @@ the interface smoothly into the boundaries to eliminate the cusp in the interfac
 current algorithm, however, can cause errors when employed near corners of the domain. Until this is resolved, this option can only be recommended for domains
 without interior corners.
 
-
-
---------------
-**References**
---------------
-
-No References.

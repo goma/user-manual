@@ -1,5 +1,5 @@
 ************************************
-**Level Set Subelement Integration**
+Level Set Subelement Integration
 ************************************
 
 ::
@@ -7,7 +7,7 @@
 	Level Set Subelement Integration = {ON | YES | OFF | NO}
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 Subelement integration is used to improve integration accuracy for all functions which
@@ -17,13 +17,14 @@ actually produces a geometric representation of the zero level set surface on wh
 exact line integrals of the surface tension source term term can be peformed. Please
 see usage nodes below.
 
-=======================  ========================================================================
-{ON | YES}               Use subelement integration on surface level set capillary term.
-{OFF | NO}               Don’t use subelement integration.
-=======================  ========================================================================
+{ON | YES}
+    Use subelement integration on surface level set capillary term.
+
+{OFF | NO}
+    Don’t use subelement integration.
 
 ------------
-**Examples**
+Examples
 ------------
 
 This example invokes the subelement integration
@@ -32,7 +33,7 @@ This example invokes the subelement integration
 	Level Set Subelement Integration = ON
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 * **NOTE**: Level Set Length Scale must be set to zero.
@@ -49,10 +50,8 @@ This example invokes the subelement integration
 
 * **NOTE** that the Level Set Renormalization method must be set to Huygens.
 
-
-
 --------------
-**References**
+References
 --------------
 
 GT-020.1: Tutorial on Level Set Interface Tracking in GOMA, February 27, 2001, T.A.

@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Level Set Renormalization Frequency</strong></li>
+      <li>Level Set Renormalization Frequency</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,38 +160,44 @@
            <div itemprop="articleBody">
             
   <div class="section" id="level-set-renormalization-frequency">
-<h1><strong>Level Set Renormalization Frequency</strong><a class="headerlink" href="#level-set-renormalization-frequency" title="Permalink to this headline">¶</a></h1>
+<h1>Level Set Renormalization Frequency<a class="headerlink" href="#level-set-renormalization-frequency" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Renormalization</span> <span class="n">Frequency</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">integer</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This card sets an upper limit to the number of time steps which are allowed to pass
 between renormalization procedures. Possible values for &lt;integer&gt; are listed below:</p>
-<table class="docutils align-default">
+<p>&lt;integer&gt;</p>
+<blockquote>
+<div><table class="docutils align-default">
 <colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
+<col style="width: 6%" />
+<col style="width: 94%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p>&lt;integer&gt;</p></td>
-<td><p>-1, never renormalize (default)</p>
-<p>0, renormalize every step</p>
-<p><em>n</em>, a positive integer &gt;1, renormalize every n<sup>th</sup> time step</p>
-</td>
+<tr class="row-odd"><td><p>-1</p></td>
+<td><p>never renormalize (default)</p></td>
+</tr>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>renormalize every step</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>n</em></p></td>
+<td><p>a positive integer &gt;1, renormalize every n<sup>th</sup> time step</p></td>
 </tr>
 </tbody>
 </table>
+</div></blockquote>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>This is a sample input:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Renormalization</span> <span class="n">Frequency</span> <span class="o">=</span> <span class="mi">50</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>Renormalization procedures are normally triggered by the average gradient exceeding
 one by a specified amount (<em>see Level Set Renormalization Tolerance</em>). However, at
 times it might be advantageous to trigger a renormalization independent of the size of

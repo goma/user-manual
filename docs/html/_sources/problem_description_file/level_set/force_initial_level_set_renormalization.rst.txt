@@ -1,5 +1,5 @@
 *******************************************
-**Force Initial Level Set Renormalization**
+Force Initial Level Set Renormalization
 *******************************************
 
 ::
@@ -7,21 +7,20 @@
 	Force Initial Level Set Renormalization = <char_string>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This card is used to invoke a renormalization step prior to the first time step of any
 transient computation.
 
-====================== ===============================================================
-<char_string>          YES|ON (not case sensitive) will cause the renormalization
-                       procedure to occur on the first step. If this card is not
-                       included or some other string is used here a renormalization
-                       will automatically occur on the first time step.
-====================== ===============================================================
+<char_string>
+    ``YES|ON`` (not case sensitive) will cause the renormalization procedure to
+    occur on the first step. If this card is not included or some other string
+    is used here a renormalization will automatically occur on the first time
+    step.
 
 ------------
-**Examples**
+Examples
 ------------
 
 A typical length scale input card looks like:
@@ -30,7 +29,7 @@ A typical length scale input card looks like:
 	Force Initial Level Set Renormalization = yes
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 Restarts occur fairly frequently during level set computations. It has been discovered
@@ -43,10 +42,3 @@ procedure that when a level set computation runs into computational difficulty t
 step in recovery should be to restart with a forced initial renormalization using this
 card.
 
-
-
---------------
-**References**
---------------
-
-No Reference.

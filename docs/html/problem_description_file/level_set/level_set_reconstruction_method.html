@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Level Set Reconstruction Method</strong></li>
+      <li>Level Set Reconstruction Method</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,44 +160,36 @@
            <div itemprop="articleBody">
             
   <div class="section" id="level-set-reconstruction-method">
-<h1><strong>Level Set Reconstruction Method</strong><a class="headerlink" href="#level-set-reconstruction-method" title="Permalink to this headline">¶</a></h1>
+<h1>Level Set Reconstruction Method<a class="headerlink" href="#level-set-reconstruction-method" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Reconstruction</span> <span class="n">Method</span> <span class="o">=</span> <span class="p">{</span><span class="n">char_string</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This card indicates the method used to perform the Huygens renormalization of the
 level set function. This card applies only if <em>Level Set Renormalization Method</em> is set to
 <strong>Huygens</strong> or <strong>Huygens_Constrained.</strong> Permissible values of {char_string} are:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>POINTS</strong></p></td>
-<td><p>A list of points on the interface is formed and the
-renormalized distance is computed as the distance to the
-nearest point in this list; this is the default method.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>FACETS</strong></p></td>
-<td><p>A list of connected facets on the interface is formed and the
-renormalized distance is computed as the distance to the
-nearest point on the nearest facet in this list. Currently this
-option is not supported for 3-dimensional calculations.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>POINTS</dt><dd><p>A list of points on the interface is formed and the renormalized distance
+is computed as the distance to the nearest point in this list; this is the
+default method.</p>
+</dd>
+<dt>FACETS</dt><dd><p>A list of connected facets on the interface is formed and the renormalized
+distance is computed as the distance to the nearest point on the nearest
+facet in this list. Currently this option is not supported for
+3-dimensional calculations.</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>This is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Reconstruction</span> <span class="n">Method</span> <span class="o">=</span> <span class="n">FACETS</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>As described for the <em>Level Set Renormalization Method</em> card, Huygens based
 renormalization is performed by reconstructing the level set surface and computing the
 distance to the nearest point on this surface. Here, the method of reconstructing the
@@ -206,10 +198,6 @@ connected set of facets is formed. The advantage to using connected facets is th
 interface is better described between the points on the interface. However, the
 calculation of the faceted geometry is slightly more expensive computationally. Also,
 the current implementation is limited to 2-dimensional simulations.</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No References.</p>
 </div>
 </div>
 

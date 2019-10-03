@@ -1,5 +1,5 @@
 ************************
-**Fill Weight Function**
+Fill Weight Function
 ************************
 
 ::
@@ -7,27 +7,29 @@
 	Fill Weight Function = {Galerkin | Taylor-Galerkin | SUPG}
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 Sets the weight function used for the *FILL* equation for either the VOF or Level Set
 methods. The options for this card are as follows:
 
-=======================  ========================================================================
-**Galerkin**             Name of the weight function formulation. This option
-                         requests a standard Galerkin finite element weighted
-                         residual treatment. A floating point parameter is not
-                         used for this option.
-**Taylor-Galerkin**      Name of the weight function formulation
-**SUPG**                 Name of the weight function formulation. This option
-                         requests a Streamwise Upwinding Petrov Galerkin
-                         formulation. No floating point parameter is required.
-=======================  ========================================================================
+Galerkin
+    Name of the weight function formulation. This option requests a standard
+    Galerkin finite element weighted residual treatment. A floating point
+    parameter is not used for this option.
+
+Taylor-Galerkin
+    Name of the weight function formulation
+
+SUPG
+    Name of the weight function formulation. This option requests a Streamwise
+    Upwinding Petrov Galerkin formulation. No floating point parameter is
+    required.
 
 The default value for the *Fill Weight Function* is Taylor-Galerkin.
 
 ------------
-**Examples**
+Examples
 ------------
 
 This is a sample card:
@@ -36,15 +38,13 @@ This is a sample card:
 	Fill Weight Function = Galerkin
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 This card selects the integration/weight function used in solving for the VOF color
 function or the level set distance function (i.e., the *FILL* unknown). The user should
 refer to the tutorial on Level Set Computations for a detailed description of level set
 interface tracking. (See References.)
-
-
 
 --------------
 **References**

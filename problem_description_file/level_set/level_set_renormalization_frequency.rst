@@ -1,5 +1,5 @@
 ***************************************
-**Level Set Renormalization Frequency**
+Level Set Renormalization Frequency
 ***************************************
 
 ::
@@ -7,22 +7,24 @@
 	Level Set Renormalization Frequency = <integer>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This card sets an upper limit to the number of time steps which are allowed to pass
 between renormalization procedures. Possible values for <integer> are listed below:
 
-=======================  ========================================================================
-<integer>                -1, never renormalize (default)
+<integer>
 
-                         0, renormalize every step
+    .. tabularcolumns:: |l|L|
 
-                         *n*, a positive integer >1, renormalize every n\ :sup:`th` time step
-=======================  ========================================================================
+    ==== ====
+    -1   never renormalize (default)
+    0    renormalize every step
+    *n*  a positive integer >1, renormalize every n\ :sup:`th` time step
+    ==== ====
 
 ------------
-**Examples**
+Examples
 ------------
 
 This is a sample input:
@@ -31,7 +33,7 @@ This is a sample input:
 	Level Set Renormalization Frequency = 50
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 Renormalization procedures are normally triggered by the average gradient exceeding

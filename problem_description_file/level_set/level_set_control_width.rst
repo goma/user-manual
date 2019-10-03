@@ -1,5 +1,5 @@
 ***************************
-**Level Set Control Width**
+Level Set Control Width
 ***************************
 
 ::
@@ -7,7 +7,7 @@
 	Level Set Control Width = <float>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This card is a multiplier on the *Level Set Length Scale* to determine the size of the
@@ -15,7 +15,7 @@ region around the zero level set contour over which the level set gradient is av
 The value of this parameter defaults to 1.0 if this card is not included.
 
 ------------
-**Examples**
+Examples
 ------------
 
 This sample card sets the control width to be equivalent to the length scale:
@@ -24,7 +24,7 @@ This sample card sets the control width to be equivalent to the length scale:
 	Level Set Control Width = 0.5
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 As noted in the description of the *Level Set Renormalization Tolerance* card,
@@ -36,14 +36,9 @@ supplied on this card.
 
 
 --------
-**FAQs**
+FAQs
 --------
 
 Usually it is best practice to leave this parameter at its default setting and control the
 frequency of renormalization with the renormalization tolerance.
 
---------------
-**References**
---------------
-
-No References.

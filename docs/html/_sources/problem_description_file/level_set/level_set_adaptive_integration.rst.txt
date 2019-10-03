@@ -1,5 +1,5 @@
 **********************************
-**Level Set Adaptive Integration**
+Level Set Adaptive Integration
 **********************************
 
 ::
@@ -7,20 +7,18 @@
 	Level Set Adaptive Integration = {ON | YES | OFF | NO}
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 To be used with Subelement integration to improve integration accuracy. Does not
 work with subgrid integration or basic level-set. Requires a sharp interface, viz. levelset
 length scale of zero. Please see usage nodes below.
 
-=======================  ========================================================================
-{ON | YES}               Use adaptive integration on surface level set capillary term.
-{OFF | NO}               Don’t use adaptive integration.
-=======================  ========================================================================
-
-
-
+{ON | YES}
+    Use adaptive integration on surface level set capillary term.
+    
+{OFF | NO}
+    Don’t use adaptive integration.
 
 --------------
 **References**

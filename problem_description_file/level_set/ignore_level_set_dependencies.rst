@@ -1,5 +1,5 @@
 *********************************
-**Ignore Level Set Dependencies**
+Ignore Level Set Dependencies
 *********************************
 
 ::
@@ -7,7 +7,7 @@
 	Ignore Level Set Dependencies = {yes | no}
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 Including this card in your input deck with the string parameter set to “yes” instructs
@@ -18,7 +18,7 @@ Note also that use of this card is consistent only with **Fill Weight Function =
 Any other choice will result in an error.
 
 ------------
-**Examples**
+Examples
 ------------
 
 A sample input card is:
@@ -26,16 +26,3 @@ A sample input card is:
 
 	Ignore Level Set Dependencies = yes
 
--------------------------
-**Technical Discussion**
--------------------------
-
-No Discussion.
-
-
-
---------------
-**References**
---------------
-
-No Reference.

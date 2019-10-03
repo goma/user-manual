@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Level Set Slave Surface</strong></li>
+      <li>Level Set Slave Surface</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,42 +160,33 @@
            <div itemprop="articleBody">
             
   <div class="section" id="level-set-slave-surface">
-<h1><strong>Level Set Slave Surface</strong><a class="headerlink" href="#level-set-slave-surface" title="Permalink to this headline">¶</a></h1>
+<h1>Level Set Slave Surface<a class="headerlink" href="#level-set-slave-surface" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Slave</span> <span class="n">Surface</span> <span class="o">=</span> <span class="p">{</span><span class="n">yes</span><span class="o">|</span><span class="n">no</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This card specifies whether the level set distance function is constrained during the
 calculation or evolves with the typical advection equation. Permissible values for this
 option are:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>yes|on</p></td>
-<td><p>The surface is constrained to remain on the initial surfaces
-throughout the calculation (moving with these surfaces if
-they are moving).</p></td>
-</tr>
-<tr class="row-even"><td><p>no|off</p></td>
-<td><p>The surface evolves normally according to the local
-velocity field; this is the default.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>yes|on</dt><dd><p>The surface is constrained to remain on the initial surfaces throughout the
+calculation (moving with these surfaces if they are moving).</p>
+</dd>
+<dt>no|off</dt><dd><p>The surface evolves normally according to the local velocity field; this is
+the default.</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>This is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Slave</span> <span class="n">Surface</span> <span class="o">=</span> <span class="n">on</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>In a typical level set simulation, the surface is first initialized with the <em>Level Set
 Initialization Method</em> card, and then the surface evolves in time according to the local
 velocity field. Using this card, however, the surface is constrained to remain on the
@@ -204,7 +195,7 @@ the level set function is reinitialized at each Newton iteration to match the mo
 surface.</p>
 </div>
 <div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <p>GT-020.1: Tutorial on Level Set Interface Tracking in GOMA, February 27, 2001, T.A.
 Baer</p>
 </div>

@@ -1,5 +1,5 @@
 ******************************
-**Level Set Timestep Control**
+Level Set Timestep Control
 ******************************
 
 ::
@@ -7,17 +7,16 @@
 	Level Set Timestep Control = <YES | NO>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 On this card, the user specifies a single char_string.
 
-=======================  ========================================================================
-<YES | ON>               This string turns on level set timestep control if it is “yes” or “on”.
-=======================  ========================================================================
+<YES | ON>
+    This string turns on level set timestep control if it is “yes” or “on”.
 
 ------------
-**Examples**
+Examples
 ------------
 
 A typical length scale input card looks like:
@@ -26,7 +25,7 @@ A typical length scale input card looks like:
 	Level Set Timestep Control = yes
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 In normal operations, the error norm of the level set function is not included in
@@ -37,10 +36,3 @@ want the changes of the level set function to affect the timestep size. If this 
 used, the default behavior is to ignore the level set degrees of freedom in controlling
 the timestep size.
 
-
-
---------------
-**References**
---------------
-
-No References.

@@ -1,5 +1,5 @@
 ***************************************
-**Level Set Subgrid Integration Depth**
+Level Set Subgrid Integration Depth
 ***************************************
 
 ::
@@ -7,7 +7,7 @@
 	Level Set Subgrid Integration Depth = <integer1>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 Subgrid integration is used to improve integration accuracy for all functions which
@@ -17,12 +17,11 @@ crosses are subdivided in a geometric way to achieve more accurate integration. 
 1 depths implies the smallest grid size is 1/4 of the original, and a level-2 is 1/8th, and
 so on. Please see usage nodes below.
 
-=======================  ========================================================================
-<integer1>               Level of integration depth. Default is zero. See usage notes.
-=======================  ========================================================================
+<integer1>
+    Level of integration depth. Default is zero. See usage notes.
 
 ------------
-**Examples**
+Examples
 ------------
 
 This example sets the subgrid integration depth to two:
@@ -31,14 +30,12 @@ This example sets the subgrid integration depth to two:
 	Level Set Subgrid Integration Depth = 2
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 Each level of subgrid integration leads to precipitous growth in computational
 load, especially in 3D. Level-2 seems to optimize accuracy and efficiency.
 Levels higher than 2 is not recommended.
-
-
 
 --------------
 **References**

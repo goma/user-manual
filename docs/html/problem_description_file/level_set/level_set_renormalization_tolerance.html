@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Level Set Renormalization Tolerance</strong></li>
+      <li>Level Set Renormalization Tolerance</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,41 +160,34 @@
            <div itemprop="articleBody">
             
   <div class="section" id="level-set-renormalization-tolerance">
-<h1><strong>Level Set Renormalization Tolerance</strong><a class="headerlink" href="#level-set-renormalization-tolerance" title="Permalink to this headline">¶</a></h1>
+<h1>Level Set Renormalization Tolerance<a class="headerlink" href="#level-set-renormalization-tolerance" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Renormalization</span> <span class="n">Tolerance</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This parameter provides a means for controlling how often renormalization
 (redistancing) operations are performed on the level set function as it evolves by fixing
 the size of the deviation allowed between the average absolute magnitude of the level
 set function gradient near the level set interface and unity, the theoretical value
 observed for a pure distance function.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;float&gt;</p></td>
-<td><p>Value of the tolerance, the allowable deviation.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>&lt;float&gt;</dt><dd><p>Value of the tolerance, the allowable deviation.</p>
+</dd>
+</dl>
 <p>The range of this parameter is any positive real number, however, it is rare to use values
 smaller than 0.1 or larger than 5.0. The value of the tolerance defaults to 0.5 if this card
 is not specified.</p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>This is a sample renormalization card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Renormalization</span> <span class="n">Tolerance</span> <span class="o">=</span> <span class="mf">0.05</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>One of the key properties of the level set function is that it is a smooth function near to
 the interface. In particular, if the level set function is a distance function then the
 magnitude of its gradient on the zero level contour should always be unity. This fact is
@@ -206,7 +199,7 @@ for Renormalization Tolerance identified on this card, a renormalization procedu
 presently be initiated.</p>
 </div>
 <div class="section" id="faqs">
-<h2><strong>FAQs</strong><a class="headerlink" href="#faqs" title="Permalink to this headline">¶</a></h2>
+<h2>FAQs<a class="headerlink" href="#faqs" title="Permalink to this headline">¶</a></h2>
 <p>What is a proper value for this parameter? Values on the order of unity should work
 well. Renormalization based on gradient can be disabled completely by choosing a very large value for this parameter. Conversely, a very small value will always result in
 a renormalization step.</p>
@@ -216,10 +209,6 @@ tracker. As such, it can add or subtract volume to or from the phases represente
 interface contour. Renormalizing too often, therefore, can result in errors being
 introduced. The renormalization procedure, Huygens_Constrained, attempts to
 mitigate this effect.</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No References.</p>
 </div>
 </div>
 

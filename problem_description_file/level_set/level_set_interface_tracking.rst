@@ -1,5 +1,5 @@
 ********************************
-**Level Set Interface Tracking**
+Level Set Interface Tracking
 ********************************
 
 ::
@@ -7,7 +7,7 @@
 	Level Set Interface Tracking = {yes | no}
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 Activates (or deactivates) embedded interface tracking by the level set method. When
@@ -17,21 +17,13 @@ equation type should be included in the list of equations identified in the equa
 section.
 
 ------------
-**Examples**
+Examples
 ------------
 
 A sample input card is:
 ::
 
 	Level Set Interface Tracking = yes
-
--------------------------
-**Technical Discussion**
--------------------------
-
-No Discussion.
-
-
 
 --------------
 **References**

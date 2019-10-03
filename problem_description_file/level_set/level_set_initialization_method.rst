@@ -1,5 +1,5 @@
 ***********************************
-**Level Set Initialization Method**
+Level Set Initialization Method
 ***********************************
 
 ::
@@ -7,24 +7,26 @@
 	Level Set Initialization Method = {method_name} {parameter list}
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This card specifies the means by which the level set function is initialized. That is, it
 constructs from a representation of the starting interface shape, a value for the distance
 function at every node in the mesh. The syntax of the card is as follows:
 
-=======================  ========================================================================
-{method_name}            A character string which identifies the initialization option
-                         desired. Choices for this string are: **Projection, Exodus,
-                         Nodeset, Surfaces, SM_object.**
-{parameter list}         This is a variable parameter list specific to each option. The
-                         nature of it for each method is detailed in the syntax
-                         descriptions below.
-=======================  ========================================================================
+{method_name}
+    A character string which identifies the initialization option desired.
+    Choices for this string are: **Projection, Exodus, Nodeset, Surfaces,
+    SM_object.**
+
+{parameter list}
+    This is a variable parameter list specific to each option. The nature of it
+    for each method is detailed in the syntax descriptions below.
 
 Below are the exact syntax used for each initialization method, a brief description of
 the method and a specification of any additional required parameters.
+
+.. tabularcolumns:: |l|L|
  
 ========================================  ============================================================
 **Projection**                             This method computes the initial level set field by
@@ -65,6 +67,8 @@ the method and a specification of any additional required parameters.
 The following is the syntax and description for each geometric
 object option, i.e., the “{object_name} {float list}” part of **SURF**
 
+.. tabularcolumns:: |l|L|
+
 ========================================= ============================================================
 **PLANE** <nx. <ny> <nz> <d>               This card constructs a planar interface surface. The float
                                            values <nx>, <ny>, <nz> define a vector normal to this
@@ -74,7 +78,8 @@ object option, i.e., the “{object_name} {float list}” part of **SURF**
                                            value <d> effectively represents the distance of the
                                            plane from the origin. Its value must be set, however, so
                                            that the dot product of any position vector to a point on
-                                           the desired plane and the vector (nx,ny,nz) must be equal to <d> (it is a property of planes that this number
+                                           the desired plane and the vector (nx,ny,nz) must be equal to 
+                                           <d> (it is a property of planes that this number
                                            is independent of the point on the plane that is chosen).
 **CIRCLE** <cx> <cy> <radius>              This card constructs a circular interface surface in a
                                            two-dimensional domain. The float values <cx> <cy>
@@ -107,7 +112,7 @@ SS {ss_id}                                 This card uses an existing sideset in
 ========================================= ============================================================
 
 ------------
-**Examples**
+Examples
 ------------
 
 Two examples of initialization methods are provide below:
@@ -127,7 +132,7 @@ Two examples of initialization methods are provide below:
 	Level Set Initialization Method = SM_object BODY my_blob
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 The **Projection** initialization method was developed early in the level set
@@ -176,8 +181,6 @@ file* command in the Geometry Specifications section. The solid model geometry i
 then available for the *Level Set Initialization Method* command. (Note that the
 Geometry Specifications section usually comes after the *Level Set Initialization
 Method* command; this is OK).
-
-
 
 --------------
 **References**

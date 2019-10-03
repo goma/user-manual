@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Level Set Renormalization Method</strong></li>
+      <li>Level Set Renormalization Method</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,36 +160,22 @@
            <div itemprop="articleBody">
             
   <div class="section" id="level-set-renormalization-method">
-<h1><strong>Level Set Renormalization Method</strong><a class="headerlink" href="#level-set-renormalization-method" title="Permalink to this headline">¶</a></h1>
+<h1>Level Set Renormalization Method<a class="headerlink" href="#level-set-renormalization-method" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Renormalization</span> <span class="n">Method</span> <span class="o">=</span> <span class="p">{</span><span class="n">char_string</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This card indicates the method to be used to renormalize the level set function during
 the course of the computation. The syntax of this card is as follows:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>{char_string}</p></td>
-<td><p>A character string which specifies the type of method for
-renormalization. Choices for this string are: <strong>Huygens,
-Huygens_Constrained, Correction.</strong></p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>{char_string}</dt><dd><p>A character string which specifies the type of method for renormalization.
+Choices for this string are: <strong>Huygens, Huygens_Constrained, Correction.</strong></p>
+</dd>
+</dl>
 <p>Each method is described below; see also the Technical Discussion.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>Huygens</strong></p></td>
-<td><p>In this method a set of m points P is constructed:</p>
+<dl>
+<dt>Huygens</dt><dd><p>In this method a set of m points P is constructed:</p>
 <blockquote>
 <div><p><span class="math notranslate nohighlight">\(\mathbf{P} = \left\{ \left( x_i, y_i, z_i \right), \,
 i = 1,2, \ldots m | \quad \phi_j \left( x_i, y_i, z_i \right)
@@ -209,35 +195,26 @@ reasonably accurate given sufficiently refined
 meshes using high order level set interpolation.
 However, this method is prone to losing material if
 low order level set interpolation is employed.</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>Huygens_Constrained</strong></p></td>
-<td><p>This method renormalizes the function in much the
-same way as the <strong>Huygens</strong> method, except it
-employs a Lagrange multiplier to enforce a global
-integrated constraint that requires the volume
-occupied by the “negative” phase to remain
-unchanged before and after renormalization. This
-requirement makes this method better at conserving
-mass. However, since it enforces a global constraint,
-it is possible that material might be moved nonphysically
-around the computational domain.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Correction</strong></p></td>
-<td><p>Don’t use this method.</p></td>
-</tr>
-</tbody>
-</table>
+</dd>
+<dt>Huygens_Constrained</dt><dd><p>This method renormalizes the function in much the same way as the
+<strong>Huygens</strong> method, except it employs a Lagrange multiplier to enforce
+a global integrated constraint that requires the volume occupied by the
+“negative” phase to remain unchanged before and after renormalization. This
+requirement makes this method better at conserving mass. However, since it
+enforces a global constraint, it is possible that material might be moved
+nonphysically around the computational domain.</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>This is a sample renormalization method input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Renormalization</span> <span class="n">Method</span> <span class="o">=</span> <span class="n">Huygens_Constrained</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>Renormalization is an operation particular to level set embedded interface tracking.
 The level set function <span class="math notranslate nohighlight">\(\phi\)</span> is usually specified in terms of a signed distance to the
 interface. This type of function has very nice properties in terms of smoothness and a

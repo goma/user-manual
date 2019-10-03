@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Restart Time Integration After Renormalization</strong></li>
+      <li>Restart Time Integration After Renormalization</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,46 +160,31 @@
            <div itemprop="articleBody">
             
   <div class="section" id="restart-time-integration-after-renormalization">
-<h1><strong>Restart Time Integration After Renormalization</strong><a class="headerlink" href="#restart-time-integration-after-renormalization" title="Permalink to this headline">¶</a></h1>
+<h1>Restart Time Integration After Renormalization<a class="headerlink" href="#restart-time-integration-after-renormalization" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Restart</span> <span class="n">Time</span> <span class="n">Integration</span> <span class="n">After</span> <span class="n">Renormalization</span> <span class="o">=</span> <span class="p">{</span><span class="n">yes</span> <span class="o">|</span> <span class="n">no</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This card is used to specify whether or not to restart time integration each time Goma
 renormalizes the level set function during the course of the computation. When time
 integration is restarted, the time step is reset to its initial size and held at this step size
 for the following 3 time steps. If this card is not present, the default is yes (time
 integration will be restarted after each renormalization). The syntax of this card is as
 follows:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>{yes | no}</p></td>
-<td><p>Indicates the specified choice. {yes | on | true}can all be
-used to specify restarting of time integration. {no | off |
-false} can all be used to specify no restart.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>{yes | no}</dt><dd><p>Indicates the specified choice. {yes | on | true}can all be used to specify
+restarting of time integration. {no | off | false} can all be used to
+specify no restart.</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>This is a sample renormalization method input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Restart</span> <span class="n">Time</span> <span class="n">Integration</span> <span class="n">After</span> <span class="n">Renormalization</span> <span class="o">=</span> <span class="n">no</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
-<p>No Discussion.</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No References.</p>
 </div>
 </div>
 

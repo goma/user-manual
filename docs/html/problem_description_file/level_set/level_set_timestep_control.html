@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Level Set Timestep Control</strong></li>
+      <li>Level Set Timestep Control</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,34 +160,27 @@
            <div itemprop="articleBody">
             
   <div class="section" id="level-set-timestep-control">
-<h1><strong>Level Set Timestep Control</strong><a class="headerlink" href="#level-set-timestep-control" title="Permalink to this headline">¶</a></h1>
+<h1>Level Set Timestep Control<a class="headerlink" href="#level-set-timestep-control" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Timestep</span> <span class="n">Control</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">YES</span> <span class="o">|</span> <span class="n">NO</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>On this card, the user specifies a single char_string.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;YES | ON&gt;</p></td>
-<td><p>This string turns on level set timestep control if it is “yes” or “on”.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>&lt;YES | ON&gt;</dt><dd><p>This string turns on level set timestep control if it is “yes” or “on”.</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>A typical length scale input card looks like:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Timestep</span> <span class="n">Control</span> <span class="o">=</span> <span class="n">yes</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>In normal operations, the error norm of the level set function is not included in
 controlling the size of the time step decided upon by the variable timestep size
 integrator. Inclusion of this card will add the level set unknown to the list of update
@@ -195,10 +188,6 @@ error norms used to decide the time step size. In other words, use this card whe
 want the changes of the level set function to affect the timestep size. If this card is not
 used, the default behavior is to ignore the level set degrees of freedom in controlling
 the timestep size.</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No References.</p>
 </div>
 </div>
 

@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Level Set Adaptive Integration</strong></li>
+      <li>Level Set Adaptive Integration</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,29 +160,21 @@
            <div itemprop="articleBody">
             
   <div class="section" id="level-set-adaptive-integration">
-<h1><strong>Level Set Adaptive Integration</strong><a class="headerlink" href="#level-set-adaptive-integration" title="Permalink to this headline">¶</a></h1>
+<h1>Level Set Adaptive Integration<a class="headerlink" href="#level-set-adaptive-integration" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Adaptive</span> <span class="n">Integration</span> <span class="o">=</span> <span class="p">{</span><span class="n">ON</span> <span class="o">|</span> <span class="n">YES</span> <span class="o">|</span> <span class="n">OFF</span> <span class="o">|</span> <span class="n">NO</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>To be used with Subelement integration to improve integration accuracy. Does not
 work with subgrid integration or basic level-set. Requires a sharp interface, viz. levelset
 length scale of zero. Please see usage nodes below.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>{ON | YES}</p></td>
-<td><p>Use adaptive integration on surface level set capillary term.</p></td>
-</tr>
-<tr class="row-even"><td><p>{OFF | NO}</p></td>
-<td><p>Don’t use adaptive integration.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>{ON | YES}</dt><dd><p>Use adaptive integration on surface level set capillary term.</p>
+</dd>
+<dt>{OFF | NO}</dt><dd><p>Don’t use adaptive integration.</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="references">
 <h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>

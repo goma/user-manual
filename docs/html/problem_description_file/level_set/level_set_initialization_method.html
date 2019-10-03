@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Level Set Initialization Method</strong></li>
+      <li>Level Set Initialization Method</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,33 +160,24 @@
            <div itemprop="articleBody">
             
   <div class="section" id="level-set-initialization-method">
-<h1><strong>Level Set Initialization Method</strong><a class="headerlink" href="#level-set-initialization-method" title="Permalink to this headline">¶</a></h1>
+<h1>Level Set Initialization Method<a class="headerlink" href="#level-set-initialization-method" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Initialization</span> <span class="n">Method</span> <span class="o">=</span> <span class="p">{</span><span class="n">method_name</span><span class="p">}</span> <span class="p">{</span><span class="n">parameter</span> <span class="nb">list</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This card specifies the means by which the level set function is initialized. That is, it
 constructs from a representation of the starting interface shape, a value for the distance
 function at every node in the mesh. The syntax of the card is as follows:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>{method_name}</p></td>
-<td><p>A character string which identifies the initialization option
-desired. Choices for this string are: <strong>Projection, Exodus,
-Nodeset, Surfaces, SM_object.</strong></p></td>
-</tr>
-<tr class="row-even"><td><p>{parameter list}</p></td>
-<td><p>This is a variable parameter list specific to each option. The
-nature of it for each method is detailed in the syntax
-descriptions below.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>{method_name}</dt><dd><p>A character string which identifies the initialization option desired.
+Choices for this string are: <strong>Projection, Exodus, Nodeset, Surfaces,
+SM_object.</strong></p>
+</dd>
+<dt>{parameter list}</dt><dd><p>This is a variable parameter list specific to each option. The nature of it
+for each method is detailed in the syntax descriptions below.</p>
+</dd>
+</dl>
 <p>Below are the exact syntax used for each initialization method, a brief description of
 the method and a specification of any additional required parameters.</p>
 <table class="docutils align-default">
@@ -240,8 +231,8 @@ each object as float values</p>
 object option, i.e., the “{object_name} {float list}” part of <strong>SURF</strong></p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 27%" />
-<col style="width: 73%" />
+<col style="width: 40%" />
+<col style="width: 60%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><strong>PLANE</strong> &lt;nx. &lt;ny&gt; &lt;nz&gt; &lt;d&gt;</p></td>
@@ -253,7 +244,8 @@ interface to the positive side of the interface. The float
 value &lt;d&gt; effectively represents the distance of the
 plane from the origin. Its value must be set, however, so
 that the dot product of any position vector to a point on
-the desired plane and the vector (nx,ny,nz) must be equal to &lt;d&gt; (it is a property of planes that this number
+the desired plane and the vector (nx,ny,nz) must be equal to
+&lt;d&gt; (it is a property of planes that this number
 is independent of the point on the plane that is chosen).</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>CIRCLE</strong> &lt;cx&gt; &lt;cy&gt; &lt;radius&gt;</p></td>
@@ -298,7 +290,7 @@ as the 0 level set.</p></td>
 </table>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Two examples of initialization methods are provide below:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="n">Set</span> <span class="n">Initialization</span> <span class="n">Method</span> <span class="o">=</span> <span class="n">Nodeset</span> <span class="mi">20</span> <span class="n">EB</span> <span class="mi">1</span>
 </pre></div>
@@ -314,7 +306,7 @@ as the 0 level set.</p></td>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>The <strong>Projection</strong> initialization method was developed early in the level set
 development process. It has since been superseded by other more easily used
 methods. It is still supported primarily for the use of developers. Users wanting a
