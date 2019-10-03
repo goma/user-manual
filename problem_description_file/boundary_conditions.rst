@@ -642,6 +642,8 @@ highly specialized equations are also available, such as a heat flux model for a
 
 .. include:: boundary_conditions/t_contact_resis_t_contact_resis_2.rst
 
+.. include:: boundary_conditions/qnobc.rst
+
 .. include:: boundary_conditions/quser.rst
 
 .. include:: boundary_conditions/q_velo_slip.rst
