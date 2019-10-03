@@ -16,16 +16,18 @@ This boundary condition card applies the plane wave transmission conditions to t
 APR_PLANE_TRAN concerns the real component. This condition is used to set
 reflection/transmission conditions for a surrounded material that is not being meshed. Definitions of the input parameters are as follows:
 
-================== ====================================================
-**API_PLANE_TRAN** Name of the boundary condition (<bc_name>).
-**SS**             Type of boundary condition (<bc_type>), where **SS** 
-                   denotes side set in the EXODUS II database.
-<bc_id>            The boundary flag identifier, an integer associated with
-                   <bc_type> that identifies the boundary location
-                   (side set in EXODUS II) in the problem domain.
-<float1>           :math:`R_2`, the acoustic impedance (i.e. product of 
-                   density and wave speed) in the surrounded material.
-================== ====================================================
+API_PLANE_TRAN
+    Name of the boundary condition (<bc_name>).
+SS
+    Type of boundary condition (<bc_type>), where **SS** denotes side set in
+    the EXODUS II database.
+<bc_id>
+    The boundary flag identifier, an integer associated with <bc_type> that
+    identifies the boundary location (side set in EXODUS II) in the problem
+    domain.
+<float1>
+    :math:`R_2`, the acoustic impedance (i.e. product of density and wave
+    speed) in the surrounded material.
 
 ------------
 **Examples**
