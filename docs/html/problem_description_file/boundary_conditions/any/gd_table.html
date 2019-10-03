@@ -1,0 +1,587 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>GD_TABLE &mdash; Goma User Manual 6.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Goma User Manual
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                6.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../background.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../code_structure_and_io.html">Code Structure and I/O</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../problem_description_file.html">Problem Description (Input File)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../material_files.html">Material Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation_lists.html">Appendix 1: Goma Documentation Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../library_mode.html">Appendix 2: Using Goma in Library Mode</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Goma User Manual</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li><strong>GD_TABLE</strong></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/problem_description_file/boundary_conditions/any/gd_table.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="gd-table">
+<h1><strong>GD_TABLE</strong><a class="headerlink" href="#gd-table" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_TABLE</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">equation_name</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">integer1</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">variable_name</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">integer2</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">scale</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">interpolation</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">FILE</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">fname</span><span class="o">&gt;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="section" id="description-usage">
+<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<p><strong>(PCC/VARIED)</strong></p>
+<p>This card is used to specify arbitrary, univariate (one abscissa and one ordinate: x1 - x2)
+data for boundary conditions on two-dimensional boundaries, e.g., the inlet velocity
+profile of a non-Newtonian fluid in a two-dimensional channel. The <em>GD_TABLE</em>
+specification differs slightly from the other cards in this category: the data are scalable
+and the data can be read from a file. Like the other <em>GD_*</em> cards, this card can be used as
+an additive building block for more complicated conditions. The examples below and
+at the end of the <em>GD_*</em> section will provide more detailed guidance.</p>
+<p>Definitions of the input parameters are described next. Differences between this card
+and other <em>GD_*</em> cards are pointed out.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 78%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>GD_TIME</strong></p></td>
+<td><p>Name of the boundary condition (&lt;bc_name&gt;).</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>SS</strong></p></td>
+<td><p>Type of boundary condition (&lt;bc_type&gt;), where <strong>SS</strong>
+denotes side set in the EXODUS II database.</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;bc_id&gt;</p></td>
+<td><p>The boundary flag identifier, an integer associated with
+&lt;bc_type&gt; that identifies the boundary location (side set
+in EXODUS II) in the problem domain.</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;equation_name&gt;</p></td>
+<td><p>A character string indicating the equation to which this
+boundary condition is applied. See the list of
+permissible values in the discussion above for <em>Category
+1</em>. In contrast to other <em>GD_*</em> cards, this parameter also
+serves to identify the equation that is being supplanted.</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;integer1&gt;</p></td>
+<td><p>Species number of the mass transport equation. The
+value should be 0 unless the &lt;equation_name&gt; is of type <em>R_MASS</em>.</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;variable_name&gt;</p></td>
+<td><p>A character string indicating the variable that should be
+used in the function. See the list of permissible values in
+the discussion above for <em>Category 1</em>. For this card, in
+contrast to other <em>GD_*</em> cards, this parameter also
+identifies what value is to serve as abscissa when
+interpolating the table.</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;integer2&gt;</p></td>
+<td><p>Species number of the concentration variable.The value
+should be 0 unless the &lt;variable_name&gt; is of type <em>MASS_FRACTION</em>.</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;scale&gt;</p></td>
+<td><p>A floating point value by which to multiply the ordinate
+list after interpolation. It can be used to scale the table
+values or change their sign, <em>e.g</em>. C<sub>0</sub>, scale factor in
+f(x<sub>1</sub>) = C<sub>0</sub> * x<sub>2</sub></p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;interpolation&gt;</p></td>
+<td><p>Specifies the method to use in interpolating between
+supplied data points. Currently the only choice available
+is <em>LINEAR</em>, which invokes a simple linear interpolation
+method. Alternative methods will/can be added latter as
+required or requested.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The table data will be read from within the input deck itself (following the GD_TABLE
+BC card). The end of the table is signaled by the keywords “END TABLE.” (See the
+second example below.) An alternative to this method is to read a file with table data.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>[FILE = &lt;fname&gt;]</p></td>
+<td><p>The optional keyword ‘<em>FILE</em> =’ indicates that the table
+data is to be read from a separate file identified by
+&lt;fname&gt;.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Note that this boundary condition card functions as every other GD condition, be it
+<em>LINEAR, QUADRATIC, POLYNOMIAL</em>, or in this case <em>TABULAR</em>. It is used simple as
+a piece of a residual on the appropriate equation. Hence, it usually requires more than
+one GD card to completely specify the boundary condition.</p>
+</div>
+<div class="section" id="examples">
+<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>Following is a sample card set in which the table data is to be read from an external file
+called upstream_land.dat:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_LINEAR</span> <span class="n">SS</span> <span class="mi">1</span> <span class="n">R_MESH_NORMAL</span> <span class="mi">0</span> <span class="n">MESH_POSITION2</span> <span class="mi">0</span> <span class="mf">0.</span> <span class="o">-</span><span class="mf">1.</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_TABLE</span> <span class="n">SS</span> <span class="mi">1</span> <span class="n">R_MESH_NORMAL</span> <span class="mi">0</span> <span class="n">MESH_POSITION1</span> <span class="mi">0</span> <span class="mf">1.0</span> <span class="n">LINEAR</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">FILE</span><span class="o">=</span><span class="n">upstream_land</span><span class="o">.</span><span class="n">dat</span>
+</pre></div>
+</div>
+<p>This card set first creates a linear term in <em>MESH_POSITION2</em>, which is the y-coordinate
+of the mesh points along side set 1. The second, <em>GD_TABLE</em> card then creates a table of
+y-coordinate values based on x-mesh position. This boundary condition describes a
+land/filet composite geometry with x-y data points.</p>
+<p>Following is a sample card, where the table data is to be read directly from the input
+deck:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_TABLE</span> <span class="n">SS</span> <span class="mi">1</span> <span class="n">R_MOMENTUM1</span> <span class="mi">0</span> <span class="n">MESH_POSITION2</span> <span class="mi">0</span> <span class="mf">1.0</span> <span class="n">LINEAR</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 52%" />
+<col style="width: 48%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>$ r/R</p></td>
+<td><p>Uz</p></td>
+</tr>
+<tr class="row-even"><td><p>0.000000</p></td>
+<td><p>1.666667</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.050000</p></td>
+<td><p>1.666458</p></td>
+</tr>
+<tr class="row-even"><td><p>0.100000</p></td>
+<td><p>1.665000</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.150000</p></td>
+<td><p>1.661042</p></td>
+</tr>
+<tr class="row-even"><td><p>0.200000</p></td>
+<td><p>1.653333</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.250000</p></td>
+<td><p>1.640625</p></td>
+</tr>
+<tr class="row-even"><td><p>0.300000</p></td>
+<td><p>1.621667</p></td>
+</tr>
+<tr class="row-odd"><td><p>.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>0.900000</p></td>
+<td><p>0.451667</p></td>
+</tr>
+<tr class="row-even"><td><p>0.950000</p></td>
+<td><p>0.237708</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.000000</p></td>
+<td><p>0.000000</p></td>
+</tr>
+<tr class="row-even"><td><p>END TABLE</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>This table is used to specify the radial dependence of an axial velocity profile along the
+specified side set.</p>
+</div>
+<div class="section" id="technical-discussion">
+<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<p>This capability is widely used for geometry and velocity profile boundary conditions
+that do not have a convenient closed form. Note that for geometry specifications you
+cannot specify multi-valued functions, like for a cutback angle.</p>
+</div>
+<div class="section" id="references">
+<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p>GTM-021.0: Multiparameter continuation and linear stability analysis on highly
+deformable meshes in Goma, M. M. Hopkins, June 22, 2000</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="usage-notes-on-the-gd-cards">
+<h2><strong>Usage Notes on the GD Cards</strong><a class="headerlink" href="#usage-notes-on-the-gd-cards" title="Permalink to this headline">¶</a></h2>
+<p>Following are several examples of uses of the Generalized Dirichlet conditions:</p>
+<ul class="simple">
+<li><p>For a circular boundary ( with radius 1, center at (0,0), <span class="math notranslate nohighlight">\(x^2 + y^2 = 1\)</span> ):</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_PARAB</span> <span class="n">SS</span>   <span class="mi">1</span>   <span class="n">R_MESH2</span> <span class="mi">0</span> <span class="n">MESH_POSITION2</span>     <span class="mi">0</span>   <span class="o">-</span><span class="mf">1.</span>   <span class="mf">0.</span>   <span class="mf">1.</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_PARAB</span> <span class="n">SS</span>   <span class="mi">1</span>   <span class="n">R_MESH2</span> <span class="mi">0</span> <span class="n">MESH_POSITION1</span>     <span class="mi">0</span>   <span class="o">-</span><span class="mf">0.</span>   <span class="mf">0.</span>   <span class="mf">1.</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>For a planar boundary ( <span class="math notranslate nohighlight">\(2x + y = 1\)</span> )</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_LINEAR</span> <span class="n">SS</span>   <span class="mi">1</span>   <span class="n">R_MESH1</span> <span class="mi">0</span> <span class="n">MESH_POSITION1</span>     <span class="mi">0</span>   <span class="o">-</span><span class="mf">1.</span>   <span class="mf">2.</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_LINEAR</span> <span class="n">SS</span>   <span class="mi">1</span>   <span class="n">R_MESH1</span> <span class="mi">0</span> <span class="n">MESH_POSITION2</span>     <span class="mi">0</span>   <span class="mf">0.</span>   <span class="mf">1.</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>For a parabolic inflow velocity profile ( <span class="math notranslate nohighlight">\(u = 1 – 2y – 3y^2\)</span> ):</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_LINEAR</span> <span class="n">SS</span>   <span class="mi">4</span>   <span class="n">R_MOMENTUM1</span> <span class="mi">0</span> <span class="n">VELOCITY1</span>     <span class="mi">0</span>   <span class="mf">0.</span>   <span class="o">-</span><span class="mf">1.</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_PARAB</span> <span class="n">SS</span>   <span class="mi">4</span>   <span class="n">R_MOMENTUM1</span> <span class="mi">0</span> <span class="n">MESH_POSITION2</span>     <span class="mi">0</span>   <span class="mf">1.</span>   <span class="o">-</span><span class="mf">2.</span>   <span class="o">-</span><span class="mf">3.</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>For a distinguishing condition where the mesh is an iso-concentration surface (<span class="math notranslate nohighlight">\(C = 0.2\)</span> with
+mesh equations rotated):</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_CONST</span> <span class="n">SS</span>   <span class="mi">2</span>   <span class="n">R_MESH_NORMAL</span> <span class="mi">0</span> <span class="n">MASS_FRACTION</span>     <span class="mi">0</span>   <span class="mf">0.</span>  <span class="mi">2</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>For a temperature boundary condition with APREPRO constants <span class="math notranslate nohighlight">\(C_i\)</span> of the form</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[T = C_1 + C_2x + C_3x^2 + C_4x^3 + C_5x^4 + C_6x^5 + C_7x^6\]</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_LINEAR</span> <span class="n">SS</span>   <span class="mi">2</span>   <span class="n">R_ENERGY</span> <span class="mi">0</span> <span class="n">TEMPERATURE</span>     <span class="mi">0</span>   <span class="o">-</span><span class="mi">1</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_POLYN</span> <span class="n">SS</span>   <span class="mi">2</span>   <span class="n">R_ENERGY</span> <span class="mi">0</span> <span class="n">MESH_POSITION1</span>     <span class="mi">0</span>   <span class="p">{</span><span class="n">c1</span> <span class="n">c2</span> <span class="n">c3</span> <span class="n">c4</span> <span class="n">c5</span> <span class="n">c6</span> <span class="n">c7</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Note, in the first three examples, two cards are combined to create a single boundary
+condition that is a function of two variables. Thus, with a little creativity, the Generalized
+Dirichlet conditions can replace many of the other boundary condition types.</p>
+<p>To help generalize the Dirichlet conditions even more, GD_TIME can be used to modulate
+any combination of spatial GD conditions (the CONST, LINEAR, PARAB,
+POLYN, CIRC and TABLE options above) which appears prior to the set. Some examples
+here are warranted:</p>
+<ul class="simple">
+<li><p>For a parabolic inflow velocity profile which is ramped from zero to a linearly growing multiplier times ( <span class="math notranslate nohighlight">\(u = 1 – 2y – 3y^2\)</span> ):</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_PARAB</span> <span class="n">SS</span>   <span class="mi">4</span>   <span class="n">R_MOMENTUM1</span> <span class="mi">0</span> <span class="n">MESH_POSITION2</span>     <span class="mi">0</span>   <span class="mf">1.</span>   <span class="o">-</span><span class="mf">2.</span>   <span class="o">-</span><span class="mf">3.</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_TIME</span> <span class="n">SS</span>   <span class="mi">4</span>   <span class="n">R_MOMENTUM1</span>   <span class="mi">0</span>   <span class="n">LINEAR</span>     <span class="mi">0</span>   <span class="mf">0.</span>   <span class="mf">1.</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_LINEAR</span> <span class="n">SS</span>   <span class="mi">4</span>   <span class="n">R_MOMENTUM1</span>   <span class="mi">0</span>   <span class="n">VELOCITY1</span>      <span class="mi">0</span>   <span class="mf">0.</span>   <span class="o">-</span><span class="mf">1.</span>
+</pre></div>
+</div>
+<p>(This set of 3 conditions actually applies <span class="math notranslate nohighlight">\(f(x, y, z, t, u) = 1t \left(1 – 2y – 3y^2 \right) – u = 0\)</span> in place of the x-momentum equation. )</p>
+<ul class="simple">
+<li><p>For a sinusoidally time-varying roller surface with equation <span class="math notranslate nohighlight">\((x – x_0)^2 + (y – y_0)^2 = {R_0}^2\)</span> with a frequency of 2. and a phase lag of 10:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_PARAB</span> <span class="n">SS</span>   <span class="mi">1</span>   <span class="n">R_MESH_NORMAL</span>   <span class="mi">0</span>   <span class="n">MESH_POSITION2</span> <span class="mi">0</span> <span class="p">{</span><span class="n">x0</span><span class="o">*</span><span class="n">x0</span> <span class="o">+</span> <span class="n">y0</span><span class="o">*</span><span class="n">y0</span> <span class="o">-</span> <span class="n">R0</span><span class="o">*</span><span class="n">R0</span><span class="p">}</span> <span class="p">{</span><span class="o">-</span><span class="mf">2.</span><span class="o">*</span><span class="n">y0</span><span class="p">}</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_PARAB</span> <span class="n">SS</span>   <span class="mi">1</span>   <span class="n">R_MESH_NORMAL</span>   <span class="mi">0</span>   <span class="n">MESH_POSITION1</span>     <span class="mi">0</span> <span class="p">{</span><span class="mf">0.</span><span class="p">}</span>   <span class="p">{</span><span class="o">-</span><span class="mf">2.</span><span class="o">*</span><span class="n">x0</span><span class="p">}</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_TIME</span> <span class="n">SS</span>   <span class="mi">1</span>   <span class="n">R_MESH_NORMAL</span>   <span class="mi">0</span>   <span class="n">SINUSOIDAL</span>     <span class="mi">0</span>   <span class="mf">10.</span>   <span class="mf">2.</span>
+</pre></div>
+</div>
+<p>This set of cards applies <span class="math notranslate nohighlight">\(f(x, y, z, t) (x – x_0)^2 + (y – y_0)^2 - \sin(2t + 10)
+{R_0}^2 = 0\)</span> to the normal component of the mesh equations along side set 1.</p>
+<ul class="simple">
+<li><p>For a sinusoidally varying gap on a slot coater, the substrate has been made to oscillate according to <span class="math notranslate nohighlight">\(f(x, y, t) = y – 3 \sin(t/4 + 5) = 0\)</span> :</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_LINEAR</span> <span class="n">SS</span>   <span class="mi">9</span>   <span class="n">R_MESH2</span>   <span class="mi">0</span>   <span class="n">MESH_POSITION1</span>     <span class="mi">0</span>   <span class="o">-</span><span class="mf">3.</span>  <span class="mi">0</span>   <span class="mf">0.</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_TIME</span> <span class="n">SS</span>   <span class="mi">9</span>   <span class="n">R_MESH2</span>   <span class="mi">0</span>   <span class="n">SINUSOIDAL</span>     <span class="mi">0</span>   <span class="mf">5.</span>   <span class="mf">0.25</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_LINEAR</span> <span class="n">SS</span>   <span class="mi">9</span>   <span class="n">R_MESH2</span>   <span class="mi">0</span>   <span class="n">MESH_POSITION2</span>     <span class="mi">0</span>   <span class="mf">0.</span>   <span class="mf">1.0</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Setting the u-velocity on an inlet boundary for a power law fluid:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_LINEAR</span> <span class="n">SS</span>   <span class="mi">1</span>   <span class="n">R_MOMENTUM1</span>   <span class="mi">0</span>   <span class="n">VELOCITY1</span>     <span class="mi">0</span>   <span class="mf">0.</span>   <span class="o">-</span><span class="mf">1.</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_TABLE</span> <span class="n">SS</span>   <span class="mi">1</span>   <span class="n">R_MOMENTUM1</span>   <span class="mi">0</span>   <span class="n">MESH_POSITION2</span> <span class="mi">0</span> <span class="mf">1.0</span> <span class="n">LINEAR</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 52%" />
+<col style="width: 48%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>$ r/R</p></td>
+<td><p>Uz</p></td>
+</tr>
+<tr class="row-even"><td><p>0.000000</p></td>
+<td><p>1.666667</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.050000</p></td>
+<td><p>1.666458</p></td>
+</tr>
+<tr class="row-even"><td><p>0.100000</p></td>
+<td><p>1.665000</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.150000</p></td>
+<td><p>1.661042</p></td>
+</tr>
+<tr class="row-even"><td><p>0.200000</p></td>
+<td><p>1.653333</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.250000</p></td>
+<td><p>1.640625</p></td>
+</tr>
+<tr class="row-even"><td><p>0.300000</p></td>
+<td><p>1.621667</p></td>
+</tr>
+<tr class="row-odd"><td><p>.</p></td>
+<td><p>.</p></td>
+</tr>
+<tr class="row-even"><td><p>.</p></td>
+<td><p>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>.</p></td>
+<td><p>.</p></td>
+</tr>
+<tr class="row-even"><td><p>0.900000</p></td>
+<td><p>0.451667</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.950000</p></td>
+<td><p>0.237708</p></td>
+</tr>
+<tr class="row-even"><td><p>1.000000</p></td>
+<td><p>0.000000</p></td>
+</tr>
+<tr class="row-odd"><td><p>END TABLE</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Setting the inlet concentration profile for species 0 from data in y0.table</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_LINEAR</span> <span class="n">SS</span>   <span class="mi">1</span>   <span class="n">R_MASS</span>   <span class="mi">0</span>   <span class="n">MASS_FRACTION</span>     <span class="mi">0</span>   <span class="mf">0.0</span>   <span class="o">-</span><span class="mf">1.0</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_TABLE</span> <span class="n">SS</span>   <span class="mi">1</span>   <span class="n">R_MASS</span>   <span class="mi">0</span>   <span class="n">MESH_POSITION2</span> <span class="mi">0</span> <span class="mf">1.0</span> <span class="n">LINEAR</span> <span class="n">FILE</span> <span class="o">=</span> <span class="n">y0</span><span class="o">.</span><span class="n">table</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Setting the inlet concentration profile for species 0 from an implicit relation.</p></li>
+</ul>
+<p>Occasionally, we have analytic representations that are in the wrong form. For example, in particulate
+suspension modelling, a relation exists that gives the radial coordinate as a function of the concentration,
+i.e. <span class="math notranslate nohighlight">\(r = F(C)\)</span>, where <span class="math notranslate nohighlight">\(F\)</span> is a non-linear relation. We would prefer it the other way around.
+We can use GD_TABLE to solve this dilemma. First, a file is prepared with the two columns,
+eqn.table for example:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 64%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>C_0</p></td>
+<td><p>F(C_0)</p></td>
+</tr>
+<tr class="row-even"><td><p>C_1</p></td>
+<td><p>F(C_1)</p></td>
+</tr>
+<tr class="row-odd"><td><p>.</p></td>
+<td><p>.</p></td>
+</tr>
+<tr class="row-even"><td><p>.</p></td>
+<td><p>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>C_N</p></td>
+<td><p>F(C_N)</p></td>
+</tr>
+</tbody>
+</table>
+<p>This just requires function evaluation. In the input deck, we then use the following cards</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_LINEAR</span> <span class="n">SS</span>   <span class="mi">1</span>   <span class="n">R_MASS</span>   <span class="mi">0</span>   <span class="n">MESH_POSITION2</span>     <span class="mi">0</span>   <span class="mf">0.0</span>   <span class="o">-</span><span class="mf">1.0</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">GD_TABLE</span> <span class="n">SS</span>   <span class="mi">1</span>   <span class="n">R_MASS</span>   <span class="mi">0</span>   <span class="n">MASS_FRACTION</span> <span class="mi">0</span> <span class="mf">1.0</span> <span class="n">LINEAR</span> <span class="n">FILE</span> <span class="o">=</span> <span class="n">eqn</span><span class="o">.</span><span class="n">table</span>
+</pre></div>
+</div>
+<p>and the right inlet concentration profile results.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

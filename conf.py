@@ -211,7 +211,9 @@ html_theme = 'sphinx_rtd_theme'
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Tutorialdoc'
+htmlhelp_basename = 'gomadoc'
+
+latex_engine = 'xelatex'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -223,6 +225,7 @@ latex_elements = {
 #'pointsize': '10pt',
 
 # Additional stuff for the LaTeX preamble.
+"babel": "",
 'preamble': """
 """,
 
