@@ -692,11 +692,8 @@ card takes place after reading the initial guess (see function <em>init_vec</em>
 capability is provided within each material block. Please check in the Material Files
 section of this manual.</p>
 <p>Note, the SPECIES_UNK variables are <strong>NOT</strong> used to initialize any of the species
-variables. Rather, the special definitions called <strong>SPECIES_MASS_FRACTION,
-SPECIES_MOLE_FRACTION, SPECIES_VOL_FRACTION, SPECIES_DENSITY,
-SPECIES_CONCENTRATION, SPECIES_CAP_PRESSURE</strong> and
-<strong>SPECIES_UNDEFINED_FORM</strong>, having integer representations of 2170 to 2176, and
-representing the various Species Types, are the variables used in Goma input or mat
+variables. Rather, the special definition called <strong>MASS_FRACTION</strong>
+representing the various Species Types, is the variables used in Goma input or mat
 files for this input record. Multiple species are initialized by combining one of these
 variable types with the second parameter (&lt;integer&gt;) on this card.</p>
 <p>The comprehensive list of keyword variable names can be found in <em>mm_input_util.c</em>, if

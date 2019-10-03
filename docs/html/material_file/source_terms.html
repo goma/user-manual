@@ -1608,13 +1608,10 @@ can be used to override the value in the initial guess file.</p>
 section of the <em>Goma</em> input file. Please check in the Problem Description section of this
 manual.</p>
 <p>Note, the <strong>SPECIES_UNK</strong> variables are <strong>NOT</strong> used to initialize any of the species
-variables. Rather, the special definitions called <strong>SPECIES_MASS_FRACTION,
-SPECIES_MOLE_FRACTION, SPECIES_VOL_FRACTION, SPECIES_DENSITY,
-SPECIES_CONCENTRATION, SPECIES_CAP_PRESSURE</strong> and
-<strong>SPECIES_UNDEFINED_FORM</strong>, having integer representations of 2170 to 2176, and
-representing the various Species Types, are the variables used in Goma input or mat
-files for this input record. Multiple species are initialized by combining one of these
-variable types with the second parameter (&lt;integer&gt;) on this card. These cards are
+variables. Rather, the special definition called <strong>MASS_FRACTION</strong>
+is the variables used in Goma input or mat
+files for this input record. Multiple species are initialized by combining
+<strong>MASS_FRACTION</strong> with the second parameter (&lt;integer&gt;) on this card. These cards are
 particularly handy for mass transfer problems, where the initial conditions need to
 specify different concentrations of the same species in different materials.</p>
 <p>Note: for a comprehensive list of initializable variables, consult Volume 1 “Initialize”

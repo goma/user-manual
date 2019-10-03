@@ -63,13 +63,10 @@ section of the *Goma* input file. Please check in the Problem Description sectio
 manual.
 
 Note, the **SPECIES_UNK** variables are **NOT** used to initialize any of the species
-variables. Rather, the special definitions called **SPECIES_MASS_FRACTION,
-SPECIES_MOLE_FRACTION, SPECIES_VOL_FRACTION, SPECIES_DENSITY,
-SPECIES_CONCENTRATION, SPECIES_CAP_PRESSURE** and
-**SPECIES_UNDEFINED_FORM**, having integer representations of 2170 to 2176, and
-representing the various Species Types, are the variables used in Goma input or mat
-files for this input record. Multiple species are initialized by combining one of these
-variable types with the second parameter (<integer>) on this card. These cards are
+variables. Rather, the special definition called **MASS_FRACTION**
+is the variables used in Goma input or mat
+files for this input record. Multiple species are initialized by combining 
+**MASS_FRACTION** with the second parameter (<integer>) on this card. These cards are
 particularly handy for mass transfer problems, where the initial conditions need to
 specify different concentrations of the same species in different materials.
 
