@@ -13,9 +13,8 @@
 This required card identifies the input file that provides the initial guess for the solution
 vector for continuation or time integration, where
 
-============  ===============================================================
-<file_name>    Specifies the exact name of the file and can be any file name.
-============  ===============================================================
+<file_name>    
+    Specifies the exact name of the file and can be any file name.
 
 The file <file_name> is read by *Goma* only if the value of the *Initial Guess* (next
 section on *General Specifications*) card is set to read. The current format of this ASCII
@@ -44,10 +43,3 @@ solution could also be used; the user is cautioned about the potential difficult
 restarting from non-converged solution. (See *Initial Guess* card about (re-)starting from
 a binary file.)
 
-
-
---------------
-**References**
---------------
-
-No References.

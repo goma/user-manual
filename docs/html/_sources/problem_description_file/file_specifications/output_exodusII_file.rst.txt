@@ -13,11 +13,10 @@
 This required card specifies the name of the output EXODUS II file. Any EXODUS II
 file name is permissible, as specified below.
 
-==================   ==================================================================
-<file_name> 		 |	A file name of the form *prefix*.exoII. The *prefix* portion is
-					 any user-specified alpha-numeric string, which can be used
-					 as an output file descriptor.
-==================   ==================================================================
+<file_name> 	
+    A file name of the form ``*prefix*.exoII``. The *prefix* portion is any
+    user-specified alpha-numeric string, which can be used as an output file
+    descriptor.
 
 This EXODUS II file contains a replica of the input mesh and boundary condition
 information exactly as it was provided in the *FEM file*, but has appended to it the
@@ -41,7 +40,6 @@ Following is a sample card:
 
 Although allowed, it is not advisable to make this file name the same as the file name
 input on the *FEM file* card.
-
 
 
 --------------

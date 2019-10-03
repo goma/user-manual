@@ -460,11 +460,7 @@ array to the appropriate C function.</p></td>
 </table>
 </div>
 <div class="section" id="id10">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
-<p>No Technical Discussion.</p>
-</div>
-<div class="section" id="id11">
-<h3><strong>Examples</strong><a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<h3><strong>Examples</strong><a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
 <p>The following is an example of card syntax:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VUSER</span> <span class="n">SS</span> <span class="mi">10</span> <span class="mf">1.0</span>
 </pre></div>
@@ -473,8 +469,8 @@ array to the appropriate C function.</p></td>
 <em>Goma</em> and their appropriate use. The uninitiated will not be able to do this without
 guidance.</p>
 </div>
-<div class="section" id="id12">
-<h3><strong>References</strong><a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id11">
+<h3><strong>References</strong><a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
 <p>No References.</p>
 </div>
 </div>
@@ -483,8 +479,8 @@ guidance.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="p">{</span><span class="n">NO_SLIP</span> <span class="o">|</span> <span class="n">NO_SLIP_RS</span><span class="p">}</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">integer1</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">integer2</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id13">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id12">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SIC/ VECTOR MOMENTUM)</strong></p>
 <p>This card invokes a special boundary condition that applies a no-slip condition to the
 fluid velocity at an interface between a liquid phase and a solid phase so that the fluid
@@ -540,8 +536,8 @@ element blocks.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id14">
-<h3><strong>Examples</strong><a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id13">
+<h3><strong>Examples</strong><a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span><span class="o">=</span> <span class="n">NO_SLIP</span> <span class="n">SS</span> <span class="mi">10</span>   <span class="mi">2</span> <span class="mi">1</span>
 </pre></div>
@@ -550,8 +546,8 @@ element blocks.</p></td>
 with the fluid phase in element block 1. Side set 10 should be in common with both
 element blocks.</p>
 </div>
-<div class="section" id="id15">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id14">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>This boundary condition is a vector condition meaning that all three components
 of the fluid momentum equation are affected by use of a single boundary
@@ -593,8 +589,8 @@ not a problem, but in three dimensions it can impose a considerable hardship on
 the analyst.</p></li>
 </ul>
 </div>
-<div class="section" id="id16">
-<h3><strong>References</strong><a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id15">
+<h3><strong>References</strong><a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
 <p>No References.</p>
 </div>
 </div>
@@ -603,8 +599,8 @@ the analyst.</p></li>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_NORMAL</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">integer</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="section" id="id17">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id16">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SIC/ROTATED MOMENTUM)</strong></p>
 <p>This boundary condition allows the user to set the outward velocity component normal
 to a surface.</p>
@@ -646,8 +642,8 @@ Please see GTM-004.0 for details.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id18">
-<h3><strong>Examples</strong><a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id17">
+<h3><strong>Examples</strong><a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_NORMAL</span> <span class="n">SS</span> <span class="mi">10</span>   <span class="mf">0.0</span>
 </pre></div>
@@ -656,8 +652,8 @@ Please see GTM-004.0 for details.</p></td>
 excludes normal velocity of the fluid relative to the mesh. This is by far the most
 common context for this boundary condition.</p>
 </div>
-<div class="section" id="id19">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id18">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>The actual weighted residual equation that is applied to a node, <em>j</em>, on the surface in
 question is as follows:</p></li>
@@ -687,8 +683,8 @@ element block ID of the liquid in this case. This also applies to the <em>KINEMA
 and <em>KINEMATIC_PETROV</em> boundary conditions.</p></li>
 </ul>
 </div>
-<div class="section" id="id20">
-<h3><strong>References</strong><a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id19">
+<h3><strong>References</strong><a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
 <p>GT-001.4: GOMA and SEAMS tutorial for new users, February 18, 2002, P. R. Schunk
 and D. A. Labreche</p>
 <p>GTM-004.1: Corners and Outflow Boundary Conditions in Goma, April 24, 2001, P. R.
@@ -700,8 +696,8 @@ Schunk</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_NORMAL_LS</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="mf">0.0</span> <span class="o">&lt;</span><span class="n">blk_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float1</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float2</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id21">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id20">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SIC/ROTATED MOMENTUM)</strong></p>
 <p>This boundary condition relaxes the VELO_NORMAL condition in the light phase of a
 level-set simulation, thereby allowing gas to escape from a confined space.</p>
@@ -750,19 +746,19 @@ inteface reaches the wall.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id22">
-<h3><strong>Examples</strong><a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id21">
+<h3><strong>Examples</strong><a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_NORMAL_LS</span> <span class="n">SS</span> <span class="mi">10</span>   <span class="mf">0.0</span> <span class="p">{</span><span class="n">blk_id</span><span class="o">=</span><span class="mi">1</span><span class="p">}</span> <span class="mf">0.05</span> <span class="mf">0.4</span><span class="o">.</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id23">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id22">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
 <p>The technical discussion under VELO_NORMAL largely applies here as well.</p>
 </div>
-<div class="section" id="id24">
-<h3><strong>References</strong><a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id23">
+<h3><strong>References</strong><a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
 <p>GT-001.4: GOMA and SEAMS tutorial for new users, February 18, 2002, P. R. Schunk
 and D. A. Labreche</p>
 <p>GTM-004.1: Corners and Outflow Boundary Conditions in Goma, April 24, 2001, P. R.
@@ -774,8 +770,8 @@ Schunk</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_NORM_COLLOC</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id25">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id24">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
 <p><strong>(PCC/ROTATED MOMENTUM)</strong></p>
 <p>This boundary condition allows the user to set the outward velocity component normal
 to a surface. It is identical in function to the <em>VELO_NORMAL</em> boundary condition, but
@@ -807,8 +803,8 @@ underlying mesh.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id26">
-<h3><strong>Examples</strong><a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id25">
+<h3><strong>Examples</strong><a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_NORM_COLLOC</span> <span class="n">SS</span> <span class="mi">20</span> <span class="mf">0.0</span>
 </pre></div>
@@ -818,8 +814,8 @@ as it
 excludes normal velocity of the fluid relative to the mesh. This is by far the most
 common context for this boundary condition.</p>
 </div>
-<div class="section" id="id27">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id26">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>The actual equation that is applied to a node, <em>j</em>, on the surface in question is
 as follows:</p></li>
@@ -850,8 +846,8 @@ mesh.</p></li>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_NORMAL_DISC</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id28">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id27">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SIC/ROTATED MOMENTUM)</strong></p>
 <p>This boundary condition card balances mass loss from one phase to the gain from an
 adjacent phase. It is the same as the <em>KINEMATIC_DISC</em> card but is applied to the
@@ -891,8 +887,8 @@ for external boundaries.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id29">
-<h3><strong>Examples</strong><a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id28">
+<h3><strong>Examples</strong><a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h3>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_NORMAL_DISC</span> <span class="n">SS</span> <span class="mi">66</span> <span class="mf">0.0</span>
 </pre></div>
@@ -901,8 +897,8 @@ for external boundaries.</p></td>
 elements
 from both abutting materials) to enforce the overall conservation of mass exchange.</p>
 </div>
-<div class="section" id="id30">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id29">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>This boundary condition card applies the following constraint to nodes on the side
 set:</p></li>
@@ -923,8 +919,8 @@ velocity at the interface, and to thermal contact resistance type problems. The 
 example of this is rapid evaporation of a liquid component into a gas.</p></li>
 </ul>
 </div>
-<div class="section" id="id31">
-<h3><strong>References</strong><a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id30">
+<h3><strong>References</strong><a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h3>
 <p>No References.</p>
 </div>
 </div>
@@ -933,8 +929,8 @@ example of this is rapid evaporation of a liquid component into a gas.</p></li>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_NORMAL_EDGE</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id1</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">bc_id2</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id32">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id31">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h3>
 <p><strong>(PCC-EDGE/ROTATED MOMENTUM)</strong></p>
 <p>This boundary condition card is used to specify the normal velocity component on a
 dynamic contact line in three-dimensions. The velocity component is normal to the
@@ -985,8 +981,8 @@ detailed description.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id33">
-<h3><strong>Examples</strong><a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id32">
+<h3><strong>Examples</strong><a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_NORMAL_EDGE</span> <span class="n">SS</span> <span class="mi">5</span> <span class="mi">4</span> <span class="mf">0.0</span>
 </pre></div>
@@ -994,8 +990,8 @@ detailed description.</p></td>
 <p>This card sets the normal-to-contact line component of the velocity to zero along the
 curve defined by the intersections of side set 5 and 4.</p>
 </div>
-<div class="section" id="id34">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id33">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>This boundary condition imposes a point
 collocated constraint of the form:</p></li>
@@ -1072,8 +1068,8 @@ deviate appropriately from the substrate velocity.</p>
 </li>
 </ul>
 </div>
-<div class="section" id="id35">
-<h3><strong>References</strong><a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id34">
+<h3><strong>References</strong><a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h3>
 <p>Baer, T.A., R.A. Cairncross, P.R.Schunk, R.R. Rao, and P.A. Sackinger, “A finite
 element method for free surface flows of incompressible fluids in three dimensions.
 Part II. Dynamic wetting lines.” IJNMF, 33, 405-427, (2000).</p>
@@ -1084,8 +1080,8 @@ Part II. Dynamic wetting lines.” IJNMF, 33, 405-427, (2000).</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_NORMAL_EDGE_INT</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id1</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">bc_id2</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id36">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id35">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SIC-EDGE/ROTATED MOMENTUM)</strong></p>
 <p>This boundary condition card is used to specify the normal velocity component on a
 dynamic contact line in three-dimensions. The velocity component is normal to the
@@ -1136,8 +1132,8 @@ more detailed description.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id37">
-<h3><strong>Examples</strong><a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id36">
+<h3><strong>Examples</strong><a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_NORMAL_EDGE_INT</span> <span class="n">SS</span> <span class="mi">5</span> <span class="mi">4</span>   <span class="mf">0.0</span>
 </pre></div>
@@ -1145,8 +1141,8 @@ more detailed description.</p></td>
 <p>This card sets the normal-to-contact line component of the velocity to zero along the
 curve defined by the intersections of side set 5 and 4.</p>
 </div>
-<div class="section" id="id38">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id37">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>This boundary condition imposes a strongly
 integrated constraint of the form:</p></li>
@@ -1169,8 +1165,8 @@ latter vector.</p>
 boundary condition.</p></li>
 </ul>
 </div>
-<div class="section" id="id39">
-<h3><strong>References</strong><a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id38">
+<h3><strong>References</strong><a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h3>
 <p>No References.</p>
 </div>
 </div>
@@ -1179,8 +1175,8 @@ boundary condition.</p></li>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_TANGENT</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">integer</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id40">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id40" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id39">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SIC/ROTATED MOMENTUM)</strong></p>
 <p>This boundary condition is used to specify strongly the component of velocity
 tangential to the side set. An added feature is the ability to relax the condition near a
@@ -1236,15 +1232,15 @@ position dependent slip (see model below); setting
 </tbody>
 </table>
 </div>
-<div class="section" id="id41">
-<h3><strong>Examples</strong><a class="headerlink" href="#id41" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id40">
+<h3><strong>Examples</strong><a class="headerlink" href="#id40" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_TANGENT</span> <span class="n">SS</span> <span class="mi">10</span> <span class="mi">100</span> <span class="mf">0.0</span> <span class="mf">1.0</span> <span class="mf">0.1</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id42">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id42" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id41">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id41" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Most often this boundary condition is used only to set the tangential speed on a
 side set because simpler Dirichlet conditions are not appropriate. An example is a
@@ -1341,8 +1337,8 @@ is not needed so we added this special control. If the following card is issued:
 </div>
 <p>which is desired in the case for which a contact angle and liquid slip is applied.</p>
 </div>
-<div class="section" id="id43">
-<h3><strong>References</strong><a class="headerlink" href="#id43" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id42">
+<h3><strong>References</strong><a class="headerlink" href="#id42" title="Permalink to this headline">¶</a></h3>
 <p>Kistler, S. F. and Scriven, L. E. 1983. Coating Flows. In Computational Analysis of
 Polymer Processing. Eds. J. A. Pearson and S. M. Richardson, Applied Science
 Publishers, London.</p>
@@ -1353,8 +1349,8 @@ Publishers, London.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_TANGENT_EDGE</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id1</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">bc_id2</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id44">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id44" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id43">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id43" title="Permalink to this headline">¶</a></h3>
 <p><strong>(PCC-EDGE/ROTATED MOMENTUM)</strong></p>
 <p>This boundary condition card is used to make the velocity component tangent to the
 contact line in the plane of the web equal to the component of web velocity
@@ -1406,8 +1402,8 @@ should correspond to the substrate.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id45">
-<h3><strong>Examples</strong><a class="headerlink" href="#id45" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id44">
+<h3><strong>Examples</strong><a class="headerlink" href="#id44" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_TANGENT_EDGE</span> <span class="n">SS</span> <span class="mi">5</span> <span class="mi">4</span> <span class="o">-</span><span class="mf">1.0</span> <span class="mf">0.0</span> <span class="mf">0.0</span>
 </pre></div>
@@ -1417,8 +1413,8 @@ intersection of sidesets 5 and 4. The value of the component is the projection o
 substrate velocity (-1.0, 0. ,0.) into the tangent direction. The tangent direction is along
 the curve itself.</p>
 </div>
-<div class="section" id="id46">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id46" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id45">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id45" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>This equation imposes the following constraint as a point collocated condition at
 the integration points of the elements along the curve:</p></li>
@@ -1459,8 +1455,8 @@ out of the preceding relation.</p></li>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_TANGENT_EDGE_INT</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id1</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">bc_id2</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id47">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id47" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id46">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id46" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SIC-EDGE/ROTATED MOMENTUM)</strong></p>
 <p>This boundary condition card is used to make the velocity component tangent to the
 contact line in the plane of the web equal to the component of web velocity
@@ -1511,8 +1507,8 @@ should correspond to the substrate.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id48">
-<h3><strong>Examples</strong><a class="headerlink" href="#id48" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id47">
+<h3><strong>Examples</strong><a class="headerlink" href="#id47" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_TANGENT_EDGE_INT</span> <span class="n">SS</span> <span class="mi">5</span> <span class="mi">4</span>   <span class="o">-</span><span class="mf">1.0</span> <span class="mf">0.0</span> <span class="mf">0.0</span>
 </pre></div>
@@ -1522,8 +1518,8 @@ intersection of sidesets 5 and 4. The value of the component is the projection o
 substrate velocity (-1.0, 0. ,0.) into the tangent direction. The tangent direction is along
 the curve itself.</p>
 </div>
-<div class="section" id="id49">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id49" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id48">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id48" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>This equation imposes the following constraint as a point collocated condition at
 the integration points of the elements along the curve:</p></li>
@@ -1551,8 +1547,8 @@ results in better matrix conditioning that a collocated constraint.</p></li>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_TANGENT_3D</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id50">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id50" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id49">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id49" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SIC/ROTATED MOMENTUM)</strong></p>
 <p>This boundary condition is the three dimensional analog of the <em>VELO_TANGENT</em>
 condition. It is used to strongly set the tangential velocity component along a side set in
@@ -1606,8 +1602,8 @@ normal.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id51">
-<h3><strong>Examples</strong><a class="headerlink" href="#id51" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id50">
+<h3><strong>Examples</strong><a class="headerlink" href="#id50" title="Permalink to this headline">¶</a></h3>
 <p>The following is an example of the card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_TANGENT_3D</span> <span class="n">SS</span> <span class="mi">10</span>   <span class="mf">1.0</span>   <span class="mf">0.0</span> <span class="mf">0.0</span> <span class="mf">1.0</span>
 </pre></div>
@@ -1616,8 +1612,8 @@ normal.</p></td>
 10 provided that the cylinders axis was parallel to the z-axis. In this fashion, the
 tangential velocity component perpendicular to the z-axis is set to 1.0.</p>
 </div>
-<div class="section" id="id52">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id52" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id51">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id51" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>The constraint applied to the velocity vector by this condition on the side set is:</p></li>
 </ul>
@@ -1644,8 +1640,8 @@ coaters are supplied on the card.</p></li>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_SLIP</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">integer1</span><span class="p">]</span> <span class="p">[</span><span class="n">float5</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="section" id="id53">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id53" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id52">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id52" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition allows for slip between the fluid and a boundary using an
 implementation of the Navier slip relation. This relation fixes the amount of slip as a
@@ -1715,15 +1711,15 @@ activate the variable slip model.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id54">
-<h3><strong>Examples</strong><a class="headerlink" href="#id54" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id53">
+<h3><strong>Examples</strong><a class="headerlink" href="#id53" title="Permalink to this headline">¶</a></h3>
 <p>Following is a sample card without the optional parameters:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_SLIP</span> <span class="n">SS</span> <span class="mi">10</span> <span class="mf">0.1</span> <span class="mf">0.0</span> <span class="mf">0.0</span> <span class="mf">0.0</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id55">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id55" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id54">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id54" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>The general form of this boundary condition is</p></li>
 </ul>
@@ -1758,8 +1754,8 @@ node set, but at points further removed, a no slip boundary (<span class="math n
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_SLIP_ROT</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">integer</span><span class="p">]</span> <span class="p">[</span><span class="n">float5</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="section" id="id56">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id56" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id55">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id55" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition is a variant of the <em>VELO_SLIP</em> boundary condition and serves
 much the same function: to allow the fluid to slip relative to a solid substrate boundary.
@@ -1827,8 +1823,8 @@ activate the variable slip model.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id57">
-<h3><strong>Examples</strong><a class="headerlink" href="#id57" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id56">
+<h3><strong>Examples</strong><a class="headerlink" href="#id56" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample card without the optional parameters:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_SLIP_ROT</span> <span class="n">SS</span> <span class="mi">10</span> <span class="mf">0.1</span> <span class="mf">3.14</span> <span class="mf">0.0</span> <span class="mf">1.0</span>
 </pre></div>
@@ -1836,16 +1832,16 @@ activate the variable slip model.</p></td>
 <p>This condition specifies a moderate amount of slip (0.1) on a cylindrical surface
 rotating at 3.14 rad/sec around the point (0.0,1.0).</p>
 </div>
-<div class="section" id="id58">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id58" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id57">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id57" title="Permalink to this headline">¶</a></h3>
 <p>The comments that appear in the Technical Discussion section of the <em>VELO_SLIP</em> card
 apply equally well here. In particular, the discussion of the variable slip coefficient
 model applies here as well. The only significant difference is that the velocity of the
 substrate is not a fixed vector; instead, it is tangent to the cylindrical substrate with a
 magnitude consistent with the radius of the cylinder and the rotation rate.</p>
 </div>
-<div class="section" id="id59">
-<h3><strong>References</strong><a class="headerlink" href="#id59" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id58">
+<h3><strong>References</strong><a class="headerlink" href="#id58" title="Permalink to this headline">¶</a></h3>
 <p>No References.</p>
 </div>
 </div>
@@ -1854,8 +1850,8 @@ magnitude consistent with the radius of the cylinder and the rotation rate.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_SLIP_FILL</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id60">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id60" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id59">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id59" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition is applied only in problems involving embedded interface
 tracking, that is, level set or volume of fluid. As in the case of the <em>VELO_SLIP</em> card, it
@@ -1918,8 +1914,8 @@ if a noslip condition were applied.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id61">
-<h3><strong>Examples</strong><a class="headerlink" href="#id61" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id60">
+<h3><strong>Examples</strong><a class="headerlink" href="#id60" title="Permalink to this headline">¶</a></h3>
 <p>Following is a sample card without the optional parameters:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_SLIP</span> <span class="n">SS</span> <span class="mi">10</span> <span class="mf">100000.0</span> <span class="mf">0.0</span> <span class="mf">0.0</span> <span class="mf">0.0</span>
 </pre></div>
@@ -1927,8 +1923,8 @@ if a noslip condition were applied.</p></td>
 <p>The large value of slip coefficient ensures nearly perfect slip in the region around the
 interface.</p>
 </div>
-<div class="section" id="id62">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id62" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id61">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id61" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>See the documentation under <em>VELO_SLIP</em> boundary condition for a description of
 the nature of this boundary condition.</p></li>
@@ -1940,8 +1936,8 @@ impenetrability condition, <em>VELO_NORMAL</em> for example, in conjunction with
 boundary condition for appropriate results.</p></li>
 </ul>
 </div>
-<div class="section" id="id63">
-<h3><strong>References</strong><a class="headerlink" href="#id63" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id62">
+<h3><strong>References</strong><a class="headerlink" href="#id62" title="Permalink to this headline">¶</a></h3>
 <p>No References.</p>
 </div>
 </div>
@@ -1950,8 +1946,8 @@ boundary condition for appropriate results.</p></li>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_SLIP_ELECTROKINETIC</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float1</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float2</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id64">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id64" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id63">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id63" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SIC/ROTATED MOMENTUM)</strong></p>
 <p>This boundary condition allows for slip between the fluid and a solid boundary due to
 electrokinetic effects on the charged solid wall. The user provides the following
@@ -1984,15 +1980,15 @@ It is referred to as the zeta potential.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id65">
-<h3><strong>Examples</strong><a class="headerlink" href="#id65" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id64">
+<h3><strong>Examples</strong><a class="headerlink" href="#id64" title="Permalink to this headline">¶</a></h3>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_SLIP_ELECTROKINETIC</span> <span class="n">SS</span> <span class="mi">10</span> <span class="mf">1.e-5</span> <span class="mf">1.e-2</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id66">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id66" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id65">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id65" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>The general form of this boundary condition is</p></li>
 </ul>
@@ -2008,8 +2004,8 @@ electric field tangent to the solid surface, and <span class="math notranslate n
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_SLIP_ELECTROKINETIC3D</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">floatlist</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="section" id="id67">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id67" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id66">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id66" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SIC/ROTATED MOMENTUM)</strong></p>
 <p>This is a 3D generalization of the VELO_SLIP_ELECTROKINETIC boundary
 condition. It is similar to VELO_TANGENT_3D except the slip velocity is calculated
@@ -2067,15 +2063,15 @@ normal.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id68">
-<h3><strong>Examples</strong><a class="headerlink" href="#id68" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id67">
+<h3><strong>Examples</strong><a class="headerlink" href="#id67" title="Permalink to this headline">¶</a></h3>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_SLIP_ELECTROKINETIC3D</span> <span class="n">SS</span> <span class="mi">10</span> <span class="mf">1.e-5</span> <span class="mf">1.e-2</span> <span class="mf">0.</span> <span class="mf">0.</span> <span class="mf">1.</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id69">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id69" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id68">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id68" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>The general form of this boundary condition is</p></li>
 </ul>
@@ -2091,8 +2087,8 @@ electric field tangent to the solid surface, and <span class="math notranslate n
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_TANGENT_SOLID</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">integer1</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">integer2</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id70">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id70" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id69">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id69" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SIC/ROTATED MOMENTUM)</strong></p>
 <p>This boundary condition sets the tangential fluid velocity component at a fluid/solid
 interface to the tangential velocity component of the solid material. The latter includes
@@ -2129,8 +2125,8 @@ to &lt;bc_id&gt;.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id71">
-<h3><strong>Examples</strong><a class="headerlink" href="#id71" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id70">
+<h3><strong>Examples</strong><a class="headerlink" href="#id70" title="Permalink to this headline">¶</a></h3>
 <p>The following is an example of this card</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_TANGENT_SOLID</span> <span class="n">SS</span> <span class="mi">10</span>   <span class="mi">2</span> <span class="mi">1</span>
 </pre></div>
@@ -2138,8 +2134,8 @@ to &lt;bc_id&gt;.</p></td>
 <p>In this case, sideset 10 is an internal sideset between two separate materials, the solid
 material in element block 2 and the liquid material in element block 1.</p>
 </div>
-<div class="section" id="id72">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id72" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id71">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id71" title="Permalink to this headline">¶</a></h3>
 <p>The boundary condition being applied is the strong integrated condition:</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/092_goma_physics.png"><img alt="../../_images/092_goma_physics.png" src="../../_images/092_goma_physics.png" style="width: 90%;" /></a>
@@ -2157,8 +2153,8 @@ the deformed state tangential to the surface in question.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_SLIP_SOLID</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">integer_list</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float1</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">integer3</span><span class="p">,</span> <span class="n">float2</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="section" id="id73">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id73" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id72">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id72" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/ROTATED MOMENTUM)</strong></p>
 <p>This boundary condition is similar in function to the <em>VELO_SLIP</em> condition in that it
 permits a tangential velocity in a fluid phase to be proportional to the shear stress at the
@@ -2224,8 +2220,8 @@ activate the variable slip model.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id74">
-<h3><strong>Examples</strong><a class="headerlink" href="#id74" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id73">
+<h3><strong>Examples</strong><a class="headerlink" href="#id73" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_SLIP_SOLID</span> <span class="n">SS</span> <span class="mi">20</span>    <span class="mi">2</span> <span class="mi">1</span> <span class="mf">0.001</span> <span class="mf">0.0</span> <span class="mi">4</span> <span class="mf">0.01</span>
 </pre></div>
@@ -2234,8 +2230,8 @@ activate the variable slip model.</p></td>
 material 1 to be 0.001 except in the vicinity of the nodeset 4 (a single node) where the
 variable model is used.</p>
 </div>
-<div class="section" id="id75">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id75" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id74">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id74" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>The general form of this boundary condition is</p></li>
 </ul>
@@ -2264,8 +2260,8 @@ apply slip near contact lines under the <em>VELO_SLIP</em> boundary condition.</
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">DISCONTINUOUS_VELO</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">char_string</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">integer1</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">integer2</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id76">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id76" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id75">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id75" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SIC/MOMENTUM)</strong></p>
 <p>This boundary condition card, used to set the normal component of mass averaged
 velocity at an interface, specifies that the net flux of the last component in a nondilute
@@ -2315,16 +2311,16 @@ applied on the liquid phase relative to the gas phase.</p>
 </tbody>
 </table>
 </div>
-<div class="section" id="id77">
-<h3><strong>Examples</strong><a class="headerlink" href="#id77" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id76">
+<h3><strong>Examples</strong><a class="headerlink" href="#id76" title="Permalink to this headline">¶</a></h3>
 <p>Following is a sample input card that applies this BC on the block 1 side of side set 7,
 the liquid side; the block 2 side is the gas side.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">DISCONTINUOUS_VELO</span> <span class="n">SS</span> <span class="mi">7</span> <span class="n">EVAPORATION</span> <span class="mi">1</span> <span class="mi">2</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id78">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id78" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id77">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id77" title="Permalink to this headline">¶</a></h3>
 <p>The <em>DISCONTINUOUS_VELO</em> boundary condition applies the following equation:</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/094_goma_physics.png"><img alt="../../_images/094_goma_physics.png" src="../../_images/094_goma_physics.png" style="width: 90%;" /></a>
@@ -2349,21 +2345,21 @@ in some places, the <em>YFLUX_SPECIES</em> boundary condition, but used in the
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">HYDROSTATIC_SYMM</span>
 </pre></div>
 </div>
-<div class="section" id="id79">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id79" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id78">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id78" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p><em>No longer supported in GOMA. Do not use.</em></p>
 </div>
-<div class="section" id="id80">
-<h3><strong>Examples</strong><a class="headerlink" href="#id80" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id79">
+<h3><strong>Examples</strong><a class="headerlink" href="#id79" title="Permalink to this headline">¶</a></h3>
 <p>No Example.</p>
 </div>
-<div class="section" id="id81">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id81" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id80">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id80" title="Permalink to this headline">¶</a></h3>
 <p>No Discussion.</p>
 </div>
-<div class="section" id="id82">
-<h3><strong>References</strong><a class="headerlink" href="#id82" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id81">
+<h3><strong>References</strong><a class="headerlink" href="#id81" title="Permalink to this headline">¶</a></h3>
 <p>No References.</p>
 </div>
 </div>
@@ -2372,8 +2368,8 @@ in some places, the <em>YFLUX_SPECIES</em> boundary condition, but used in the
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">FLOW_PRESSURE</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id83">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id83" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id82">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id82" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition card is used to set a constant value of pressure on a boundary.
 Most often this condition is used to set an upstream or downstream pressure over a
@@ -2405,16 +2401,16 @@ tensile forces.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id84">
-<h3><strong>Examples</strong><a class="headerlink" href="#id84" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id83">
+<h3><strong>Examples</strong><a class="headerlink" href="#id83" title="Permalink to this headline">¶</a></h3>
 <p>The following sample input card will impose a constant compressive pressure force on
 the boundary defined by sideset 23:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">FLOW_PRESSURE</span> <span class="n">SS</span> <span class="mi">23</span>   <span class="mf">5.0</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id85">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id85" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id84">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id84" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>The actual boundary condition that is applied to the fluid is given as follows:</p></li>
 </ul>
@@ -2457,8 +2453,8 @@ boundary for an even more advanced capability.</p></li>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">FLOW_STRESSNOBC</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">integer</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="section" id="id86">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id86" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id85">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id85" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition card applies the <em>free</em> outflow boundary condition developed
 by Papanastasiou, et.al. (1992) on the fluid momentum with the option of setting the
@@ -2502,8 +2498,8 @@ retained in the normal stress.</p></li>
 </tbody>
 </table>
 </div>
-<div class="section" id="id87">
-<h3><strong>Examples</strong><a class="headerlink" href="#id87" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id86">
+<h3><strong>Examples</strong><a class="headerlink" href="#id86" title="Permalink to this headline">¶</a></h3>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">FLOW_STRESSNOBC</span> <span class="n">SS</span> <span class="mi">10</span>   <span class="mf">1.0</span> <span class="o">-</span><span class="mi">1</span>
 </pre></div>
@@ -2511,8 +2507,8 @@ retained in the normal stress.</p></li>
 <p>Here the boundary condition is applied to sideset 10 with a constant pressure of 1.0
 required.</p>
 </div>
-<div class="section" id="id88">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id88" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id87">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id87" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>The finite element formulation of the fluid momentum equations generates
 boundary integrals of the form:</p></li>
@@ -2555,8 +2551,8 @@ component using <em>FLOW_PRESSURE</em>.</p></li>
 generalized Newtonian fluid models. Polymeric fluid models will not work with it.</p></li>
 </ul>
 </div>
-<div class="section" id="id89">
-<h3><strong>References</strong><a class="headerlink" href="#id89" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id88">
+<h3><strong>References</strong><a class="headerlink" href="#id88" title="Permalink to this headline">¶</a></h3>
 <p>Griffiths, D.F., “The ‘no boundary condition’ outflow boundary condition,” IJNMF, 24,
 393-411, (1997)</p>
 <p>Papanastasiou, T. C., N. Malamataris, and K. Ellwood, “A New Outflow Boundary
@@ -2572,8 +2568,8 @@ minisymposium,” IJNMF, 18, 983-1008, (1994).</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">FLOW_GRADV</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">integer</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="section" id="id90">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id90" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id89">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id89" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition card stipulates a vanishing normal velocity gradient on a
 boundary with the option of setting the pressure level.</p>
@@ -2619,8 +2615,8 @@ by <span class="math notranslate nohighlight">\(P_{applied}\)</span>.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id91">
-<h3><strong>Examples</strong><a class="headerlink" href="#id91" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id90">
+<h3><strong>Examples</strong><a class="headerlink" href="#id90" title="Permalink to this headline">¶</a></h3>
 <p>The sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">FLOW_GRADV</span> <span class="n">SS</span> <span class="mi">15</span>   <span class="mf">0.0</span>
 </pre></div>
@@ -2632,8 +2628,8 @@ used in the boundary condition.</p>
 </div>
 <p>In the preceding example, the pressure value used is obtained from the solution itself.</p>
 </div>
-<div class="section" id="id92">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id92" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id91">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id91" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>This boundary condition is related in form and formulation to the
 <em>FLOW_STRESSNOBC</em> boundary condition in that it includes terms for the
@@ -2659,22 +2655,22 @@ imposed value in <span class="math notranslate nohighlight">\(P_{applied}\)</spa
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">FLOW_PRESS_USER</span>
 </pre></div>
 </div>
-<div class="section" id="id93">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id93" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id92">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id92" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition has been deprecated in favor of the <em>PRESSURE_USER</em>
 boundary condition; use the latter instead.</p>
 </div>
-<div class="section" id="id94">
-<h3><strong>Examples</strong><a class="headerlink" href="#id94" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id93">
+<h3><strong>Examples</strong><a class="headerlink" href="#id93" title="Permalink to this headline">¶</a></h3>
 <p>No Examples.</p>
 </div>
-<div class="section" id="id95">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id95" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id94">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id94" title="Permalink to this headline">¶</a></h3>
 <p>No Discussion.</p>
 </div>
-<div class="section" id="id96">
-<h3><strong>References</strong><a class="headerlink" href="#id96" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id95">
+<h3><strong>References</strong><a class="headerlink" href="#id95" title="Permalink to this headline">¶</a></h3>
 <p>No References.</p>
 </div>
 </div>
@@ -2683,8 +2679,8 @@ boundary condition; use the latter instead.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">FLOW_HYDROSTATIC</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id97">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id97" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id96">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id96" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition allows the user to impose a pressure force that varies linearly
 with position over the boundary. It functions in much the same manner as the
@@ -2729,8 +2725,8 @@ not required that (0,0,0) lie on the sideset.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id98">
-<h3><strong>Examples</strong><a class="headerlink" href="#id98" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id97">
+<h3><strong>Examples</strong><a class="headerlink" href="#id97" title="Permalink to this headline">¶</a></h3>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">FLOW_HYDROSTATIC</span> <span class="n">SS</span> <span class="mi">15</span>   <span class="mf">0.0</span> <span class="mf">0.0</span> <span class="o">-</span><span class="mf">1.5</span> <span class="mf">10.0</span>
 </pre></div>
@@ -2739,8 +2735,8 @@ not required that (0,0,0) lie on the sideset.</p></td>
 1.5 as the z coordinate increases by one unit. At the point, (0,0,0) the pressure imposed
 is 10.0. Note that (0,0,0) does not necessarily have to be on side set 15.</p>
 </div>
-<div class="section" id="id99">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id99" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id98">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id98" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>The mathematical form of the boundary condition imposed by this card is as
 follows:</p></li>
@@ -2772,8 +2768,8 @@ In theory, it is the pressure value that would be computed at the point (0,0,0),
 in reality it is chosen to impose a known pressure at some point in the domain.</p></li>
 </ul>
 </div>
-<div class="section" id="id100">
-<h3><strong>References</strong><a class="headerlink" href="#id100" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id99">
+<h3><strong>References</strong><a class="headerlink" href="#id99" title="Permalink to this headline">¶</a></h3>
 <p>No References.</p>
 </div>
 </div>
@@ -2782,8 +2778,8 @@ in reality it is chosen to impose a known pressure at some point in the domain.<
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">FLOWRATE</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nb">float</span> <span class="o">|</span> <span class="n">char_string</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id101">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id101" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id100">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id100" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition allows the user to specify a single value for the volumetric
 flowrate of material across an inflow (or outflow) boundary. The pressure and velocity
@@ -2835,8 +2831,8 @@ from the ASCII file identified on the
 </tbody>
 </table>
 </div>
-<div class="section" id="id102">
-<h3><strong>Examples</strong><a class="headerlink" href="#id102" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id101">
+<h3><strong>Examples</strong><a class="headerlink" href="#id101" title="Permalink to this headline">¶</a></h3>
 <p>Specifying the average velocity on the inlet to a tube of radius 1.0:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">FLOWRATE</span> <span class="n">SS</span> <span class="mi">10</span> <span class="mf">3.1415</span> <span class="mf">10.0</span>
 </pre></div>
@@ -2850,8 +2846,8 @@ than specified here.</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id103">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id103" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id102">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id102" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>The requirement that is imposed by this boundary condition is the following
 integral:</p></li>
@@ -2883,8 +2879,8 @@ be read from the ASCII <em>GUESS file</em> by specifying <em>read</em> on the <e
 and on the <em>Augmenting Conditions Initial Guess</em> card.</p></li>
 </ul>
 </div>
-<div class="section" id="id104">
-<h3><strong>References</strong><a class="headerlink" href="#id104" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id103">
+<h3><strong>References</strong><a class="headerlink" href="#id103" title="Permalink to this headline">¶</a></h3>
 <p>No References.</p>
 </div>
 </div>
@@ -2893,8 +2889,8 @@ and on the <em>Augmenting Conditions Initial Guess</em> card.</p></li>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">PRESSURE_USER</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id105">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id105" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id104">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id104" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition allows the user to specify an arbitrary functional form for the
 pressure field on a boundary via a user-defined subroutine. The boundary condition is
@@ -2931,15 +2927,15 @@ array to the appropriate C function.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id106">
-<h3><strong>Examples</strong><a class="headerlink" href="#id106" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id105">
+<h3><strong>Examples</strong><a class="headerlink" href="#id105" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">PRESSURE_USER</span> <span class="n">SS</span> <span class="mi">10</span> <span class="mf">0.0</span> <span class="mf">3.0</span> <span class="mf">0.5</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id107">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id107" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id106">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id106" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Frequently, it is desired to be able to set a pressure on a boundary that is more
 complicated than constant or linear; this boundary condition is used for this
@@ -2964,8 +2960,8 @@ but is superseded by strong conditions or Dirichlet conditions.</p></li>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">CONT_TANG_VEL</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id108">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id108" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id107">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id107" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SIC/MOMENTUM)</strong></p>
 <p>This boundary condition card enforces continuity of tangential velocity between two
 phases with discontinuous velocity treatment. The condition only applies to interphase
@@ -2995,15 +2991,15 @@ in EXODUS II) in the problem domain.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id109">
-<h3><strong>Examples</strong><a class="headerlink" href="#id109" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id108">
+<h3><strong>Examples</strong><a class="headerlink" href="#id108" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">CONT_TANG_VEL</span> <span class="n">SS</span> <span class="mi">10</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id110">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id110" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id109">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id109" title="Permalink to this headline">¶</a></h3>
 <p>No Discussion.</p>
 </div>
 </div>
@@ -3012,8 +3008,8 @@ in EXODUS II) in the problem domain.</p></td>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">CONT_NORM_VEL</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id111">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id111" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id110">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id110" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SIC/MOMENTUM)</strong></p>
 <p>This boundary condition card is similar to the <em>VELO_NORM_DISC</em> card except that it
 enforces a continuous normal velocity component in a discontinuous boundary field.
@@ -3047,19 +3043,19 @@ have rapid mass exchange between phases, rapid enough to induce a diffusion velo
 at the interface, and to thermal contact resistance type problems. The best example of
 this is rapid evaporation of a liquid component into a gas.</p>
 </div>
-<div class="section" id="id112">
-<h3><strong>Examples</strong><a class="headerlink" href="#id112" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id111">
+<h3><strong>Examples</strong><a class="headerlink" href="#id111" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">CONT_NORM_VEL</span> <span class="n">SS</span> <span class="mi">10</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id113">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id113" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id112">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id112" title="Permalink to this headline">¶</a></h3>
 <p>No Discussion.</p>
 </div>
-<div class="section" id="id114">
-<h3><strong>References</strong><a class="headerlink" href="#id114" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id113">
+<h3><strong>References</strong><a class="headerlink" href="#id113" title="Permalink to this headline">¶</a></h3>
 <p>No References.</p>
 </div>
 </div>
@@ -3068,8 +3064,8 @@ this is rapid evaporation of a liquid component into a gas.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VNORM_LEAK</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float1</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float2</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id115">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id115" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id114">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id114" title="Permalink to this headline">¶</a></h3>
 <p>This boundary condition card is used to specify a normal velocity boundary condition
 with mass transfer on momentum equations. The flux quantity is specified on a per
 mass basis so the heat and mass transfer coefficients are in units of L/t.</p>
@@ -3105,15 +3101,15 @@ in EXODUS II) in the problem domain.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id116">
-<h3><strong>Examples</strong><a class="headerlink" href="#id116" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id115">
+<h3><strong>Examples</strong><a class="headerlink" href="#id115" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VNORM_LEAK</span> <span class="n">SS</span> <span class="mi">1</span>   <span class="mf">1.</span> <span class="mf">0.</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id117">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id117" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id116">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id116" title="Permalink to this headline">¶</a></h3>
 <p>This card is the equivalent of <em>KIN_LEAK</em> except it is solved for the normal component
 of the momentum equation. Similar to <em>KIN_LEAK</em>, this flux provides an overall mass
 transfer balance at an interface. Please refer to the technical discussion of <em>KIN_LEAK</em>
@@ -3125,8 +3121,8 @@ boundary card.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">CAPILLARY</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">integer</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="section" id="id118">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id118" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id117">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id117" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition card is used to apply capillary forces (surface tension) to the
 momentum equation on a free-surface.</p>
@@ -3175,8 +3171,8 @@ where the momentum equations are defined.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id119">
-<h3><strong>Examples</strong><a class="headerlink" href="#id119" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id118">
+<h3><strong>Examples</strong><a class="headerlink" href="#id118" title="Permalink to this headline">¶</a></h3>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">CAPILLARY</span> <span class="n">SS</span> <span class="mi">12</span>   <span class="mf">1.0</span> <span class="mf">10.0</span> <span class="mf">0.0</span>
 </pre></div>
@@ -3186,8 +3182,8 @@ surface tension material parameter value or model is supplied, this is the surfa
 tension value used. If not, the surface tension value used is 1.0. An external isotropic
 pressure of 10.0 is applied from the surrounding environment.</p>
 </div>
-<div class="section" id="id120">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id120" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id119">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id119" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>One of the primary characteristics of a free-surface is the presence of surface
 tension-related forces. This boundary condition permits application of such forces.
@@ -3224,8 +3220,8 @@ in the <em>Problem Description</em> section of the input file.</p></li>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">CAP_REPULSE</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">mat_id</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="section" id="id121">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id121" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id120">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id120" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p>This card functions much in the same way as the <em>CAPILLARY</em> card. It imposes surface
 tension forces on free-surfaces. The addition to this card, however, is that in the vicinity
@@ -3299,8 +3295,8 @@ in. This is rarely used.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id122">
-<h3><strong>Examples</strong><a class="headerlink" href="#id122" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id121">
+<h3><strong>Examples</strong><a class="headerlink" href="#id121" title="Permalink to this headline">¶</a></h3>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">CAP_REPULSE</span> <span class="n">SS</span> <span class="mi">24</span> <span class="mf">1.0</span> <span class="mf">0.0</span> <span class="mf">0.1</span> <span class="mf">1.</span> <span class="mf">1.</span> <span class="mf">0.</span> <span class="mf">2.</span>
 </pre></div>
@@ -3309,8 +3305,8 @@ in. This is rarely used.</p></td>
 except as the free surface approaches the plane surface defined by a solution to the
 equation <em>x + y = -2.0</em>.</p>
 </div>
-<div class="section" id="id123">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id123" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id122">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id122" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>This boundary condition applies the following force term to the fluid momentum
 equation:</p></li>
@@ -3332,8 +3328,8 @@ equation:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">CAP_RECOIL_PRESS</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id124">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id124" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id123">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id123" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition calculates the surface recoil from an evaporating metal alloy
 component or water.</p>
@@ -3381,21 +3377,21 @@ set in EXODUS II) in the problem domain.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id125">
-<h3><strong>Examples</strong><a class="headerlink" href="#id125" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id124">
+<h3><strong>Examples</strong><a class="headerlink" href="#id124" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">CAP_RECOIL_PRESS</span> <span class="n">SS</span> <span class="mi">1</span>   <span class="mf">0.0</span> <span class="mf">0.0</span> <span class="mf">3000.0</span> <span class="mf">1623.0</span> <span class="mf">0.0</span> <span class="mf">1.0</span> <span class="mf">1.0</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id126">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id126" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id125">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id125" title="Permalink to this headline">¶</a></h3>
 <p>Currently this boundary condition has coefficients for only iron and water. Several
 required pieces of information to use this boundary condition are not in final form, and the user can expect future changes and improvements. This boundary condition is
 designed for use with <em>Q_LASER_WELD</em>.</p>
 </div>
-<div class="section" id="id127">
-<h3><strong>References</strong><a class="headerlink" href="#id127" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id126">
+<h3><strong>References</strong><a class="headerlink" href="#id126" title="Permalink to this headline">¶</a></h3>
 <p>No References.</p>
 </div>
 </div>
@@ -3404,8 +3400,8 @@ designed for use with <em>Q_LASER_WELD</em>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">ELEC_TRACTION</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">integer</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id128">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id128" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id127">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id127" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition card is used to add to the momentum equation the electric, or
 Maxwell, stress at a free-surface. Definitions of the input parameters are as follows:</p>
@@ -3440,8 +3436,8 @@ which to apply the boundary condition.</p></td>
 one of the <em>CAPILLARY, CAP_RECOIL_PRESS</em> or <em>CAP_REPULSE</em> boundary
 conditions, viz. the capillary stress must be added separately.</p>
 </div>
-<div class="section" id="id129">
-<h3><strong>Examples</strong><a class="headerlink" href="#id129" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id128">
+<h3><strong>Examples</strong><a class="headerlink" href="#id128" title="Permalink to this headline">¶</a></h3>
 <p>For a system consisting of an insulating liquid (element block ID 1) and an insulating,
 passive gas (element block ID 2) with a free-surface designated by side set 12, the
 following is a sample usage:</p>
@@ -3461,8 +3457,8 @@ CAPILLARY card is used to make sure that the capillary stress is added from with
 phase where the momentum equations are defined. The same holds for the KINEMATIC
 boundary condition</strong>.</p>
 </div>
-<div class="section" id="id130">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id130" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id129">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id129" title="Permalink to this headline">¶</a></h3>
 <p>This boundary condition adds the electric, or Maxwell, stress contribution to the
 traction condition. To use this boundary condition there must be a <em>VOLTAGE</em> equation
 present in one or both of the materials neighboring the interface, i.e., one or both of the
@@ -3507,8 +3503,8 @@ momentum equations defined (or properly set).</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">CAP_ENDFORCE</span> <span class="n">NS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id131">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id131" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id130">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id130" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SPECIAL/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition card adds surface tangent forces to the momentum equations
 at the endpoint of a free-surface. There are four values to be input for the &lt;
@@ -3550,15 +3546,15 @@ Discussion.)</p></td>
 and the free-surface. The sign on the tangent vector depends on whether the computed
 tangent vector is facing inward or outward. This can be figured by t = n × k.</p>
 </div>
-<div class="section" id="id132">
-<h3><strong>Examples</strong><a class="headerlink" href="#id132" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id131">
+<h3><strong>Examples</strong><a class="headerlink" href="#id131" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample input card using several APREPRO variables:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">CAP_ENDFORCE</span> <span class="n">NS</span> <span class="mi">100</span>   <span class="p">{</span><span class="n">sind</span><span class="p">(</span><span class="n">th2</span><span class="p">)}</span> <span class="p">{</span><span class="o">-</span><span class="n">cosd</span><span class="p">(</span><span class="n">th2</span><span class="p">)}</span> <span class="mf">0.0</span> <span class="p">{</span><span class="n">surf_tens</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id133">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id133" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id132">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id132" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>The need for this boundary condition appears out of the formulation used to apply
 capillary forces to surfaces. The surface divergence theorem is used to simplify the
@@ -3595,8 +3591,8 @@ of the boundary condition without changing the parameters.</p></li>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">SURFTANG_EDGE</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id1</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">bc_id2</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id134">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id134" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id133">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id133" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition card is used to insert surface tension forces on an edge
 boundary defined by the primary and secondary sidesets. The direction of application
@@ -3654,15 +3650,15 @@ imposed by this boundary condition.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id135">
-<h3><strong>Examples</strong><a class="headerlink" href="#id135" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id134">
+<h3><strong>Examples</strong><a class="headerlink" href="#id134" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">SURFTANG_EDGE</span> <span class="n">SS</span> <span class="mi">80</span> <span class="mi">60</span>   <span class="mf">0.</span> <span class="o">-</span><span class="mf">1.</span> <span class="mf">0.</span> <span class="mf">1.</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id136">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id136" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id135">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id135" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>The need for this boundary condition appears out of the formulation used to apply
 capillary forces to surfaces in three-dimensions. The surface divergence theorem is
@@ -3696,8 +3692,8 @@ this are somewhat obscure but important to the practitioners of this art.</p></l
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">CAP_ENDFORCE_SCALAR</span> <span class="n">NS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id137">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id137" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id136">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id136" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SPECIAL/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition card is very similar to the <em>CAP_ENDFORCE</em> card. It adds
 surface tangent forces to the momentum equations at the endpoint of a free-surface, but
@@ -3731,15 +3727,15 @@ Discussion.)</p></td>
 <p>This condition need only be applied at the intersection of outflow or inflow surfaces
 and the free-surface.</p>
 </div>
-<div class="section" id="id138">
-<h3><strong>Examples</strong><a class="headerlink" href="#id138" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id137">
+<h3><strong>Examples</strong><a class="headerlink" href="#id137" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">CAP_ENDFORCE_SCALAR</span> <span class="n">NS</span> <span class="mi">100</span>   <span class="mf">60.0</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id139">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id139" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id138">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id138" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>The need for this boundary condition appears out of the formulation used to apply
 capillary forces to surfaces. The surface divergence theorem is used to simplify the
@@ -3775,8 +3771,8 @@ changing the name of the boundary condition without changing the parameters.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">SURFTANG_SCALAR_EDGE</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id1</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">bc_id2</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id140">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id140" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id139">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id139" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p>Like the <em>SURFTANG_EDGE</em> card, this boundary condition card is used to insert
 surface tension forces on an outflow edge boundary defined by the primary and
@@ -3826,8 +3822,8 @@ imposed by this boundary condition.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id141">
-<h3><strong>Examples</strong><a class="headerlink" href="#id141" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id140">
+<h3><strong>Examples</strong><a class="headerlink" href="#id140" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">SURFTANG_EDGE_SCALAR</span> <span class="n">SS</span> <span class="mi">5</span> <span class="mi">10</span> <span class="mf">1.0</span>
 </pre></div>
@@ -3836,8 +3832,8 @@ imposed by this boundary condition.</p></td>
 by the intersection of side sets 5 and 10. The value for surface tension in the material
 file is used unmodified since the multiplying factor is 1.0.</p>
 </div>
-<div class="section" id="id142">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id142" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id141">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id141" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>The need for this boundary condition appears out of the formulation used to apply
 capillary forces to surfaces in three-dimensions. The surface divergence theorem is
@@ -3869,8 +3865,8 @@ this are somewhat obscure but important to the practitioners of this art.</p></l
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">FILL_CA</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id143">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id143" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id142">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id142" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition is used to impose a contact angle on a boundary when using
 <em>Level Set Interface Tracking</em>.</p>
@@ -3899,15 +3895,15 @@ EXODUS II) in the problem domain.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id144">
-<h3><strong>Examples</strong><a class="headerlink" href="#id144" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id143">
+<h3><strong>Examples</strong><a class="headerlink" href="#id143" title="Permalink to this headline">¶</a></h3>
 <p>An example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">FILL_CA</span> <span class="n">SS</span> <span class="mi">10</span> <span class="mf">30.0</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id145">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id145" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id144">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id144" title="Permalink to this headline">¶</a></h3>
 <p>This boundary condition must be used in conjunction with the <em>VELO_SLIP_FILL</em>
 boundary condition. This latter condition permits the fluid to slip in the vicinity of the
 contact line. The <em>FILL_CA</em> acts by imposing a force on the momentum equation. The
@@ -3916,8 +3912,8 @@ boundary and the value specified on the card. This force is applied as a weakly
 integrated condition and if the <em>VELO_SLIP_FILL</em> condition is not present, the
 <em>FILL_CA</em> will be overwritten and <em>ipso facto</em> absent.</p>
 </div>
-<div class="section" id="id146">
-<h3><strong>References</strong><a class="headerlink" href="#id146" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id145">
+<h3><strong>References</strong><a class="headerlink" href="#id145" title="Permalink to this headline">¶</a></h3>
 <p>No References.</p>
 </div>
 </div>
@@ -3926,8 +3922,8 @@ integrated condition and if the <em>VELO_SLIP_FILL</em> condition is not present
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">MOVING_CA</span> <span class="n">NS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id147">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id147" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id146">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id146" title="Permalink to this headline">¶</a></h3>
 <p><strong>(PCC/ROTATED MOMENTUM)</strong></p>
 <p>The intent of this boundary condition is to apply a contact angle at wetting in a twodimensional
 flow that is a function of the rate of advance or recession of the contact
@@ -3987,15 +3983,15 @@ surface must terminate at this single-node node set.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id148">
-<h3><strong>Examples</strong><a class="headerlink" href="#id148" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id147">
+<h3><strong>Examples</strong><a class="headerlink" href="#id147" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">MOVING_CA</span> <span class="n">NS</span> <span class="mi">100</span> <span class="mf">90.0</span> <span class="mf">0.</span> <span class="mf">1.</span> <span class="mf">0.</span> <span class="mf">135.0</span> <span class="mf">45.0</span> <span class="mf">1.0</span> <span class="o">-</span><span class="mf">1.</span> <span class="mf">0.</span> <span class="mf">0.</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id149">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id149" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id148">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id148" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>This boundary condition applies a point collocated constraint on the angle between
 the solid surface vector and the free-surface normal of the form:</p></li>
@@ -4031,8 +4027,8 @@ inconsistent. It may not work.</p></li>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">SDC_STEFANFLOW</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">integer</span><span class="o">&gt;</span> <span class="p">{</span><span class="n">char_string</span><span class="p">}</span>
 </pre></div>
 </div>
-<div class="section" id="id150">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id150" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id149">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id149" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SIC/MOMENTUM)</strong></p>
 <p>This boundary condition represents the specification of the normal component of the
 interfacial velocity on one side of the interface. These are <em>DVI_SIDTIE_VD</em> boundary
@@ -4100,8 +4096,8 @@ implemented, so <strong>SDC_SURFRXN</strong> currently does nothing.</p>
 </tbody>
 </table>
 </div>
-<div class="section" id="id151">
-<h3><strong>Examples</strong><a class="headerlink" href="#id151" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id150">
+<h3><strong>Examples</strong><a class="headerlink" href="#id150" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">SDC_STEFANFLOW</span> <span class="n">SS</span> <span class="mi">1</span>   <span class="mi">0</span> <span class="n">VL_EQUIL_PSEUDORXN</span>
 </pre></div>
@@ -4111,8 +4107,8 @@ normal component of the velocity on side set 1 on the element block 0 side of th
 interface. The source term to be used will be taken from multiple previously specified
 <em>VL_EQUIL_PSEUDORXN</em> cards.</p>
 </div>
-<div class="section" id="id152">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id152" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id151">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id151" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Currently, this card has only been tested on internal interfaces containing
 discontinuous interfaces using the <em>VL_EQUIL_PSEUDORXN</em> source term. The
@@ -4125,8 +4121,8 @@ variables on either side of an interface (<strong>TIE</strong> boundary conditio
 referred to Moffat (2001) for detailed presentation on discontinuous variables.</p></li>
 </ul>
 </div>
-<div class="section" id="id153">
-<h3><strong>References</strong><a class="headerlink" href="#id153" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id152">
+<h3><strong>References</strong><a class="headerlink" href="#id152" title="Permalink to this headline">¶</a></h3>
 <p>GTM-015.1: Implementation Plan for Upgrading Boundary Conditions at
 Discontinuous-Variable Interfaces, January 8, 2001, H. K. Moffat</p>
 </div>
@@ -4136,8 +4132,8 @@ Discontinuous-Variable Interfaces, January 8, 2001, H. K. Moffat</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">FLUID_SOLID</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">integer1</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">integer2</span><span class="o">&gt;</span> <span class="p">[</span><span class="nb">float</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="section" id="id154">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id154" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id153">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id153" title="Permalink to this headline">¶</a></h3>
 <p><strong>(PCC/VECTOR MOMENTUM)</strong></p>
 <p>Used for fluid-structure interaction problems, the <em>FLUID_SOLID</em> condition equates the
 normal traction (the tangential and normal force components, per unit area) between
@@ -4187,8 +4183,8 @@ contribution, is optional; the default is 1.0.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id155">
-<h3><strong>Examples</strong><a class="headerlink" href="#id155" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id154">
+<h3><strong>Examples</strong><a class="headerlink" href="#id154" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">FLUID_SOLID</span> <span class="n">SS</span> <span class="mi">5</span>   <span class="mi">2</span>   <span class="mi">1</span>
 </pre></div>
@@ -4201,8 +4197,8 @@ condition of the form</p>
 </div>
 <p>should also be applied.</p>
 </div>
-<div class="section" id="id156">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id156" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id155">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id155" title="Permalink to this headline">¶</a></h3>
 <p>The functional form of the boundary condition is:</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/114_goma_physics.png"><img alt="../../_images/114_goma_physics.png" src="../../_images/114_goma_physics.png" style="width: 90%;" /></a>
@@ -4220,8 +4216,8 @@ be supplemented by a statement of mass conservation across the interface, which 
 depend on whether the solid phase is of <em>CONTINUOUS</em> or <em>POROUS</em> media (see <em>Media
 Type</em> card).</p>
 </div>
-<div class="section" id="id157">
-<h3><strong>FAQs</strong><a class="headerlink" href="#id157" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id156">
+<h3><strong>FAQs</strong><a class="headerlink" href="#id156" title="Permalink to this headline">¶</a></h3>
 <p><strong>Troubleshooting 1</strong>: This boundary condition requires that the side set contain elements
 from both the fluid and the solid side of the interface. For the FASTQ tool, this is the
 default case; for CUBIT and possibly other related tools, this can be forced on the side
@@ -4236,8 +4232,8 @@ necessary to force its application, especially after remeshes. To be sure that t
 set of conditions is being applied, look at the BC_dup.txt file for nodes along the
 interface.</p>
 </div>
-<div class="section" id="id158">
-<h3><strong>References</strong><a class="headerlink" href="#id158" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id157">
+<h3><strong>References</strong><a class="headerlink" href="#id157" title="Permalink to this headline">¶</a></h3>
 <p>GT-003.1: Roll coating templates and tutorial for GOMA and SEAMS, February 29,
 2000, P. R. Schunk and Matt Stay</p>
 <p>GT-006.3: Slot and Roll coating with remeshing templates and tutorial for GOMA and
@@ -4249,21 +4245,21 @@ CUBIT/MAPVAR, August 3, 1999, R. R. Lober and P. R. Schunk</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">FLUID_SOLID_RS</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">integer1</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">integer2</span><span class="o">&gt;</span> <span class="p">[</span><span class="nb">float</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="section" id="id159">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id159" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id158">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id158" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p>Please see <em>SOLID_FLUID_RS</em>. This boundary condition has not yet been implemented.</p>
 </div>
-<div class="section" id="id160">
-<h3><strong>Examples</strong><a class="headerlink" href="#id160" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id159">
+<h3><strong>Examples</strong><a class="headerlink" href="#id159" title="Permalink to this headline">¶</a></h3>
 <p>No Examples.</p>
 </div>
-<div class="section" id="id161">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id161" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id160">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id160" title="Permalink to this headline">¶</a></h3>
 <p>No Discussion.</p>
 </div>
-<div class="section" id="id162">
-<h3><strong>References</strong><a class="headerlink" href="#id162" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id161">
+<h3><strong>References</strong><a class="headerlink" href="#id161" title="Permalink to this headline">¶</a></h3>
 <p>No References.</p>
 </div>
 </div>
@@ -4272,8 +4268,8 @@ CUBIT/MAPVAR, August 3, 1999, R. R. Lober and P. R. Schunk</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">DARCY_CONTINOUS</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">integer1</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">integer2</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">float1</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="section" id="id163">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id163" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id162">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id162" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SIC/ROTATED MOMENTUM)</strong></p>
 <p>This condition enforces continuity of mass flux at an interface between a continuous
 medium and a saturated or partially saturated porous medium. In other words,
@@ -4321,8 +4317,8 @@ not required for diffuse interface representations.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id164">
-<h3><strong>Examples</strong><a class="headerlink" href="#id164" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id163">
+<h3><strong>Examples</strong><a class="headerlink" href="#id163" title="Permalink to this headline">¶</a></h3>
 <p>The boundary condition</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">DARCY_CONTINUOUS</span> <span class="n">SS</span> <span class="mi">5</span> <span class="mi">2</span> <span class="mi">1</span>
 </pre></div>
@@ -4330,8 +4326,8 @@ not required for diffuse interface representations.</p></td>
 <p>applies to the interface defined by side set 5 which joins EXODUS II block 2 (porous
 phase) and block 1 (continuous phase).</p>
 </div>
-<div class="section" id="id165">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id165" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id164">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id164" title="Permalink to this headline">¶</a></h3>
 <p>The <em>DARCY_CONTINUOUS</em> boundary condition imposes the following requirement at
 the interface between a continuous medium and a saturated or partially saturated
 porous medium:</p>
@@ -4349,14 +4345,14 @@ card is set to <em>POROUS_SATURATED, POROUS_UNSATURATED</em>, or
 <em>POROUS_TWO_PHASE</em>. The other block is of type <em>CONTINOUS</em>.</p>
 <p>Refer to the citations below where this boundary condition is discussed in more detail.</p>
 </div>
-<div class="section" id="id166">
-<h3><strong>FAQs</strong><a class="headerlink" href="#id166" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id165">
+<h3><strong>FAQs</strong><a class="headerlink" href="#id165" title="Permalink to this headline">¶</a></h3>
 <p><strong>Important troubleshooting note</strong>: Density, as specified in the material files for the
 continuous and porous phase, MUST be the same for this boundary condition to make
 sense.</p>
 </div>
-<div class="section" id="id167">
-<h3><strong>References</strong><a class="headerlink" href="#id167" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id166">
+<h3><strong>References</strong><a class="headerlink" href="#id166" title="Permalink to this headline">¶</a></h3>
 <p>GT-008.2: Porous Media Capabilities/Tutorial for GOMA. User Guidance for Saturated
 Porous Penetration Problems, August 11, 1999, P. R. Schunk</p>
 <p>GT-009.3: GOMA’s Capabilities for Partially Saturated Flow in Porous Media,
@@ -4370,8 +4366,8 @@ September 1, 2002, P. R. Schunk</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VN_POROUS</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">integer_list</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id168">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id168" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id167">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id167" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SIC/ROTATED MOMENTUM)</strong></p>
 <p>This boundary condition is used to calculate the normal component of gas phase
 velocity at the interface between a continuous gas phase and porous phase. The
@@ -4424,8 +4420,8 @@ be generalized to include all vapor components.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id169">
-<h3><strong>Examples</strong><a class="headerlink" href="#id169" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id168">
+<h3><strong>Examples</strong><a class="headerlink" href="#id168" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VN_POROUS</span> <span class="n">SS</span> <span class="mi">5</span>   <span class="mi">1</span> <span class="mi">2</span> <span class="mi">0</span> <span class="mf">1.e-3</span>
 </pre></div>
@@ -4438,8 +4434,8 @@ in the porous phase (denoted by the integer 0), the vapor form of which has a de
 1.e-3. The condition results in a blowing or sucking velocity at the interface in the fluid
 (gas) continuous phase.</p>
 </div>
-<div class="section" id="id170">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id170" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id169">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id169" title="Permalink to this headline">¶</a></h3>
 <p>The functional form of this boundary condition is</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/116_goma_physics.png"><img alt="../../_images/116_goma_physics.png" src="../../_images/116_goma_physics.png" style="width: 90%;" /></a>
@@ -4452,8 +4448,8 @@ porous matrix, in which the vapor flux being driven out of the porous skeleton w
 mass source to drive flow in the surrounding gas. The condition has not been tested
 since 1995.</p>
 </div>
-<div class="section" id="id171">
-<h3><strong>References</strong><a class="headerlink" href="#id171" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id170">
+<h3><strong>References</strong><a class="headerlink" href="#id170" title="Permalink to this headline">¶</a></h3>
 <p>GTM-028.0: Modeling Drying of Dip-Coated Films with Strongly-Coupled Gas Phase
 Natural Convection, R. A. Cairncross, 1999.</p>
 </div>
@@ -4463,8 +4459,8 @@ Natural Convection, R. A. Cairncross, 1999.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">CAPILLARY_SHEAR_VISC</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">integer</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="section" id="id172">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id172" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id171">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id171" title="Permalink to this headline">¶</a></h3>
 <p><strong>(WIC/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition card is used to apply additional capillary forces beyond
 surface tension and surface tension gradients (as applied with use of the CAPILLARY
@@ -4508,8 +4504,8 @@ where the momentum equations are defined.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id173">
-<h3><strong>Examples</strong><a class="headerlink" href="#id173" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id172">
+<h3><strong>Examples</strong><a class="headerlink" href="#id172" title="Permalink to this headline">¶</a></h3>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">CAPILLARY</span> <span class="n">SS</span> <span class="mi">12</span>   <span class="mf">1.0</span> <span class="mf">10.0</span> <span class="mf">0.0</span>
 </pre></div>
@@ -4524,8 +4520,8 @@ pressure of 10.0 is applied from the surrounding environment. The second card ad
 surface viscosity effect. Note that you must solve the shell equation
 <em>EQ = n_dot_curl_v</em> to pick up this term.</p>
 </div>
-<div class="section" id="id174">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id174" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id173">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id173" title="Permalink to this headline">¶</a></h3>
 <p>The functional form of this boundary condition is</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/117_goma_physics.png"><img alt="../../_images/117_goma_physics.png" src="../../_images/117_goma_physics.png" style="width: 90%;" /></a>
@@ -4563,8 +4559,8 @@ Butterworth-Heinemann, Boston).</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_THETA_COX</span> <span class="n">NS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">integer</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="section" id="id175">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id175" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id174">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id174" title="Permalink to this headline">¶</a></h3>
 <p><strong>(PCC/R_MOM_TANG1)</strong></p>
 <p>This boundary condition card applies a dynamic contact angle dependent velocity
 condition in a similiar fashion to VELO_THETA_TPL, but the functional form of the
@@ -4639,8 +4635,8 @@ element block in solid/liquid conjugate problems).</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id176">
-<h3><strong>Examples</strong><a class="headerlink" href="#id176" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id175">
+<h3><strong>Examples</strong><a class="headerlink" href="#id175" title="Permalink to this headline">¶</a></h3>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_THETA_COX</span> <span class="n">NS</span>   <span class="mi">100</span>   <span class="p">{</span><span class="mi">45</span><span class="p">}</span>   <span class="mf">0.</span>   <span class="mf">1.</span>   <span class="mf">0.</span> <span class="mf">0.1</span>   <span class="mf">72.0</span>   <span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">2</span>
 </pre></div>
@@ -4651,8 +4647,8 @@ slip coefficient is 0.1, and the dynamic contact angle is taken from element blo
 Normally, this latter vector is the normal to the solid surface in contact with the free
 surface at this point.</p>
 </div>
-<div class="section" id="id177">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id177" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id176">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id176" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>The constraint that is imposed at the nodeset node is as follows:</p></li>
 </ul>
@@ -4699,8 +4695,8 @@ Berg, 1993 ).</p></li>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_THETA_HOFFMAN</span> <span class="n">NS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">integer</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="section" id="id178">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id178" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id177">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id177" title="Permalink to this headline">¶</a></h3>
 <p><strong>(PCC/R_MOM_TANG1)</strong></p>
 <p>This boundary condition card applies a dynamic contact angle dependent velocity
 condition in a similiar fashion to VELO_THETA_TPL, but the functional form of the
@@ -4773,8 +4769,8 @@ liquid element block in solid/liquid conjugate problems).</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id179">
-<h3><strong>Examples</strong><a class="headerlink" href="#id179" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id178">
+<h3><strong>Examples</strong><a class="headerlink" href="#id178" title="Permalink to this headline">¶</a></h3>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_THETA_HOFFMAN</span> <span class="n">NS</span>   <span class="mi">100</span>   <span class="p">{</span><span class="mi">45</span><span class="p">}</span>   <span class="mf">0.</span>   <span class="mf">1.</span>   <span class="mf">0.</span>   <span class="mf">0.</span>   <span class="mf">72.0</span>   <span class="mi">0</span>   <span class="mi">0</span>   <span class="mi">2</span>
 </pre></div>
@@ -4784,8 +4780,8 @@ the 100 nodeset and the vector (0,1,0). The surface tension is 72 and the dynami
 contact angle is taken from element block 2. Normally, this latter vector is the normal
 to the solid surface in contact with the free surface at this point.</p>
 </div>
-<div class="section" id="id180">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id180" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id179">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id179" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>The constraint that is imposed at the nodeset node is as follows:</p></li>
 </ul>
@@ -4827,8 +4823,8 @@ Kistler, “Hydrodynamics of Wetting,” in Wettability edited by John Berg, 199
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_THETA_TPL</span> <span class="n">NS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">integer</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="section" id="id181">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id181" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id180">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id180" title="Permalink to this headline">¶</a></h3>
 <p><strong>(PCC/R_MOM_TANG1)</strong></p>
 <p>This boundary condition card applies a dynamic contact angle dependent velocity
 condition in place of one component of the fluid momentum equation (unlike CA_BC
@@ -4909,8 +4905,8 @@ with TALE problems.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id182">
-<h3><strong>Examples</strong><a class="headerlink" href="#id182" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id181">
+<h3><strong>Examples</strong><a class="headerlink" href="#id181" title="Permalink to this headline">¶</a></h3>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">VELO_THETA_TPL</span> <span class="n">NS</span>   <span class="mi">100</span>   <span class="p">{</span><span class="mi">45</span><span class="p">}</span>   <span class="mf">0.</span>   <span class="mf">1.</span>  <span class="mf">0.</span>  <span class="mf">1000.0</span>   <span class="mf">5.e-4</span>   <span class="mi">0</span>   <span class="mi">0</span>
 </pre></div>
@@ -4920,8 +4916,8 @@ the 100 nodeset and the vector (0,1,0). The velocity scale is 1000 and the sensi
 scale is 5.e-4. Normally, this latter vector is the normal to the solid surface in contact
 with the free surface at this point.</p>
 </div>
-<div class="section" id="id183">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id183" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id182">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id182" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>The constraint that is imposed at the nodeset node is as follows:</p></li>
 </ul>
@@ -4975,8 +4971,8 @@ angle. Recall that the angle is specified in radians on this card.</p></li>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">SHEET_ENDSLOPE</span> <span class="n">NS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float_list</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id184">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id184" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id183">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id183" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SPECIAL/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition card is used to enforce a slope of a membrane surface (cf. to
 be used in conjuction with <em>BC = TENSION_SHEET</em>) at its enpoints. . There are two
@@ -5010,8 +5006,8 @@ below)</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id185">
-<h3><strong>Examples</strong><a class="headerlink" href="#id185" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id184">
+<h3><strong>Examples</strong><a class="headerlink" href="#id184" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample input card using several APREPRO variables:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">SHEET_ENDSLOPE</span> <span class="n">NS</span> <span class="mi">100</span>   <span class="p">{</span><span class="n">sind</span><span class="p">(</span><span class="n">th2</span><span class="p">)}</span>   <span class="p">{</span><span class="o">-</span><span class="n">cosd</span><span class="p">(</span><span class="n">th2</span><span class="p">)</span>
 </pre></div>
@@ -5019,8 +5015,8 @@ below)</p></td>
 <p>This condition would enforce a slope equivalent to that defined between the
 coordinates of the node at NS 100 with the point [sind(th2), -cosd(th2)].</p>
 </div>
-<div class="section" id="id186">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id186" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id185">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id185" title="Permalink to this headline">¶</a></h3>
 <p>Only two dimensional applications, viz. the nodeset is a single-node nodeset.</p>
 <p>This is a single point nodeset boundary condition. Its function is to set the slope of the
 web at the single point nodeset N. It does this by enforcing continuity of the slope of
@@ -5042,8 +5038,8 @@ web sideset should at each point be less than or equal to the y component.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">TENSION_SHEET</span> <span class="n">SS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id187">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id187" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id186">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id186" title="Permalink to this headline">¶</a></h3>
 <p><strong>(SIC/VECTOR MOMENTUM)</strong></p>
 <p>This boundary condition card is used to apply a membrane force to the fluid
 momentum equation in order to model a membrane-like structure, viz. one with no
@@ -5077,15 +5073,15 @@ EXODUS II) in the problem domain.</p></td>
 </tbody>
 </table>
 </div>
-<div class="section" id="id188">
-<h3><strong>Examples</strong><a class="headerlink" href="#id188" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id187">
+<h3><strong>Examples</strong><a class="headerlink" href="#id187" title="Permalink to this headline">¶</a></h3>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">TENSION_SHEET</span> <span class="n">SS</span> <span class="mi">12</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id189">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id189" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id188">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id188" title="Permalink to this headline">¶</a></h3>
 <p>Usage notes:</p>
 <ul class="simple">
 <li><p>Can only be applied in two dimensions.</p></li>
@@ -5110,8 +5106,8 @@ applications without having to resort to the shell equations. It is a strongly i
 rotated boundary condition on the mesh equations. It can only be used in twodimensional
 applications.</p>
 </div>
-<div class="section" id="id190">
-<h3><strong>References</strong><a class="headerlink" href="#id190" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id189">
+<h3><strong>References</strong><a class="headerlink" href="#id189" title="Permalink to this headline">¶</a></h3>
 <p>GT-033.0 and GT-027.0.</p>
 </div>
 </div>

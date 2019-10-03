@@ -168,17 +168,10 @@
 <h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This required card identifies the input file that provides the initial guess for the solution
 vector for continuation or time integration, where</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 84%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;file_name&gt;</p></td>
-<td><p>Specifies the exact name of the file and can be any file name.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>&lt;file_name&gt;</dt><dd><p>Specifies the exact name of the file and can be any file name.</p>
+</dd>
+</dl>
 <p>The file &lt;file_name&gt; is read by <em>Goma</em> only if the value of the <em>Initial Guess</em> (next
 section on <em>General Specifications</em>) card is set to read. The current format of this ASCII
 file is a list of unformatted floating point numbers (the solution variable followed by
@@ -201,10 +194,6 @@ continuation proceeds from a converged solution but the result from an intermedi
 solution could also be used; the user is cautioned about the potential difficulties of
 restarting from non-converged solution. (See <em>Initial Guess</em> card about (re-)starting from
 a binary file.)</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No References.</p>
 </div>
 </div>
 

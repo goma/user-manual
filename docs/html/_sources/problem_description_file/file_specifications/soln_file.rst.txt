@@ -13,10 +13,9 @@
 This required card identifies the ASCII output file that will provide the initial guess for
 continuation or time integration, where
 
-============  =================================================================
-<file_name>    Specifies the name of the output file, or if no file is desired,
-               a value of **no** or **none** should be entered.
-============  =================================================================
+<file_name>    
+    Specifies the name of the output file, or if no file is desired, a value of
+    **no** or **none** should be entered.
 
 The current format of this ASCII file is a list of unformatted floating point numbers that
 includes every degree of freedom in the problem in the order specified in the unknown
@@ -43,10 +42,3 @@ primary way to continue or restart a solution from an ASCII file. (See *Write
 Intermediate Solutions* for related information.) When a continuation run is performed,
 this file is copied into the file specified in the *GUESS file* input card.
 
-
-
---------------
-**References**
---------------
-
-No References.

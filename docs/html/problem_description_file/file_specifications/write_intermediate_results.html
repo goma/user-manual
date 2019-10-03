@@ -168,40 +168,19 @@
 <h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This optional card controls the output of intermediate results. The permissible values
 for this card are</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 83%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>yes</strong></p></td>
-<td><p>The code will output the latest Newton iteration to a file
-named ‘tmp.i.d’, where i is the Newton iteration number.
-The format of tmp.i.d will be similar to the ASCII results
-data described for the <em>GUESS file</em> and <em>SOLN file</em> cards.
-Also, the output EXODUS II database (see the <em>Output
-EXODUS II file</em> card) will accumulate the intermediate
-iterations as time planes of the solution.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 84%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>no</strong></p></td>
-<td><p>No intermediate results are written; only the last Newton
-iteration is written to the file named in the <em>SOLN file</em> card,
-and only the final converged iteration is output to the
-EXODUS II file.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>yes</dt><dd><p>The code will output the latest Newton iteration to a file named ‘tmp.i.d’,
+where i is the Newton iteration number. The format of tmp.i.d will be
+similar to the ASCII results data described for the <em>GUESS file</em> and <em>SOLN
+file</em> cards. Also, the output EXODUS II database (see the <em>Output EXODUS II
+file</em> card) will accumulate the intermediate iterations as time planes of
+the solution.</p>
+</dd>
+<dt>no</dt><dd><p>No intermediate results are written; only the last Newton iteration is
+written to the file named in the <em>SOLN file</em> card, and only the final
+converged iteration is output to the EXODUS II file.</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="examples">
 <h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
@@ -217,10 +196,6 @@ for very large problems, as it can be used to restart a simulation (by using thi
 <em>Guess file</em>). The intermediate results in the output EXODUS II database can be a useful
 debugging tool, giving the analyst the ability to use highly relaxed Newton iterations to
 see how a free boundary problem diverges.</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No References.</p>
 </div>
 </div>
 

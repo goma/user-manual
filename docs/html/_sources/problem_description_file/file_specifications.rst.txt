@@ -8,12 +8,22 @@ required and optional input records are as follows:
  
 .. include:: file_specifications/fem_file.rst
 
+-------------------------------------------------------------------------------
+
 .. include:: file_specifications/output_exodusII_file.rst
+
+-------------------------------------------------------------------------------
 
 .. include:: file_specifications/guess_file.rst
 
+-------------------------------------------------------------------------------
+
 .. include:: file_specifications/soln_file.rst
 
+-------------------------------------------------------------------------------
+
 .. include:: file_specifications/write_intermediate_results.rst
+
+-------------------------------------------------------------------------------
 
 .. include:: file_specifications/write_initial_solution.rst

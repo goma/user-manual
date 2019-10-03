@@ -168,22 +168,12 @@
 <h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This required card specifies the name of the output EXODUS II file. Any EXODUS II
 file name is permissible, as specified below.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 19%" />
-<col style="width: 81%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;file_name&gt;</p></td>
-<td><div class="line-block">
-<div class="line">A file name of the form <em>prefix</em>.exoII. The <em>prefix</em> portion is
-any user-specified alpha-numeric string, which can be used
-as an output file descriptor.</div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>&lt;file_name&gt;</dt><dd><p>A file name of the form <code class="docutils literal notranslate"><span class="pre">*prefix*.exoII</span></code>. The <em>prefix</em> portion is any
+user-specified alpha-numeric string, which can be used as an output file
+descriptor.</p>
+</dd>
+</dl>
 <p>This EXODUS II file contains a replica of the input mesh and boundary condition
 information exactly as it was provided in the <em>FEM file</em>, but has appended to it the
 solution field information appropriate to the problem type. If the name of this output
