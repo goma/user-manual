@@ -269,10 +269,11 @@ value, called <em>conf</em>, is only a qualitative measure of the confidence. A 
 means that the deviation between the numerical jacobian and the analytical values is
 100 times larger than the expected deviation based on roundoff error.</p>
 <p>Here is a sample of output from a convective heat transfer problem, using the -2 option</p>
-<p>Eqdof=92 T_0 n=31 Vardof=95 T_0 n=32 x=0
-dx=0.0001 aj=-0.008188 nj=-0.008126 aj_1=-0.008188 d_aj=0
-conf=1.889e+06</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">QCONV</span> <span class="n">on</span> <span class="n">SSID</span><span class="o">=</span><span class="mi">1</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Eqdof</span><span class="o">=</span><span class="mi">92</span> <span class="n">T_0</span> <span class="n">n</span><span class="o">=</span><span class="mi">31</span> <span class="n">Vardof</span><span class="o">=</span><span class="mi">95</span> <span class="n">T_0</span> <span class="n">n</span><span class="o">=</span><span class="mi">32</span> <span class="n">x</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">dx</span><span class="o">=</span><span class="mf">0.0001</span> <span class="n">aj</span><span class="o">=-</span><span class="mf">0.008188</span> <span class="n">nj</span><span class="o">=-</span><span class="mf">0.008126</span> <span class="n">aj_1</span><span class="o">=-</span><span class="mf">0.008188</span> <span class="n">d_aj</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">conf</span><span class="o">=</span><span class="mf">1.889e+06</span>
+
+  <span class="o">&gt;&gt;&gt;</span> <span class="n">QCONV</span> <span class="n">on</span> <span class="n">SSID</span><span class="o">=</span><span class="mi">1</span>
 </pre></div>
 </div>
 <p>This entry can be read as follows: The sensitivity of global equation number 92, which

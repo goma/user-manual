@@ -168,21 +168,13 @@
 <h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This optional card enables the user to specify that the mesh displacements should be set
 to zero for the next continuation step. Valid options for this input card are</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>yes</p></td>
-<td><p>Set the mesh displacements to zero for the next continuation step.</p></td>
-</tr>
-<tr class="row-even"><td><p>no</p></td>
-<td><p>Do not set the mesh displacements to zero for the next
-continuation step. This is the default.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>yes</dt><dd><p>Set the mesh displacements to zero for the next continuation step.</p>
+</dd>
+<dt>no</dt><dd><p>Do not set the mesh displacements to zero for the next continuation step.
+This is the default.</p>
+</dd>
+</dl>
 <p>There are two important restrictions: 1) annealing the mesh will not work for the
 TOTAL_ALE mesh motion types, and 2) only the last time step will be annealed for
 transient problems.</p>
@@ -196,12 +188,12 @@ transient problems.</p>
 </div>
 <div class="section" id="technical-discussion">
 <h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
-<p>Annealing a mesh is accomplished by adding the displacements (from the solution) to
-the base positions (from the FEM file) and writing the resulting nodal positions to a
-new EXODUS II file, currently anneal.exoII. During the annealing process, the
-displacement field is also set to zero. This file would be used to restart a subsequent
-analysis where the anneal.exoII is copied to, or becomes, the file used in a
-<strong>read_exoII</strong> option for an <em>Initial Guess</em>.</p>
+<p>Annealing a mesh is accomplished by adding the displacements (from the
+solution) to the base positions (from the FEM file) and writing the resulting
+nodal positions to a new EXODUS II file, currently anneal.exoII. During the
+annealing process, the displacement field is also set to zero. This file would
+be used to restart a subsequent analysis where the anneal.exoII is copied to,
+or becomes, the file used in a <strong>read_exoII</strong> option for an <em>Initial Guess</em>.</p>
 </div>
 </div>
 

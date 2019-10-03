@@ -170,21 +170,13 @@
 the Jacobian. The file is meant to be used by the auxiliary program, <strong>checkGomaJac</strong>, to compare two versions of the Jacobian. Ancillary data meant to enhance the printouts in
 <strong>checkGomaJac</strong> are also output to the file. The card takes one mandatory integer
 variable.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 18%" />
-<col style="width: 82%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;integer&gt;</p></td>
-<td><p>If the integer is a positive number, n, then <em>Goma</em> will dump
-the first n Jacobians created (for any reason) to the current
-directory. If the integer is a negative value, -n, then <em>Goma</em>
-will dump a single Jacobian, the n’th Jacobian created, to
-the current directory.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>&lt;integer&gt;</dt><dd><p>If the integer is a positive number, n, then <em>Goma</em> will dump the first
+n Jacobians created (for any reason) to the current directory. If the
+integer is a negative value, -n, then <em>Goma</em> will dump a single Jacobian,
+the n’th Jacobian created, to the current directory.</p>
+</dd>
+</dl>
 <p>The dumped files are named matrix.000, matrix.001, etc. Overwrites of files are
 allowed to occur. The files themselves are written out using the XDR protocol layer
 (easy, quick, and machine portable). The VBR format is used to write files out, even if

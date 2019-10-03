@@ -99,11 +99,13 @@ means that the deviation between the numerical jacobian and the analytical value
 
 Here is a sample of output from a convective heat transfer problem, using the -2 option
 
-Eqdof=92 T_0 n=31 Vardof=95 T_0 n=32 x=0
-dx=0.0001 aj=-0.008188 nj=-0.008126 aj_1=-0.008188 d_aj=0
-conf=1.889e+06
+:: 
 
->>> QCONV on SSID=1
+    Eqdof=92 T_0 n=31 Vardof=95 T_0 n=32 x=0
+    dx=0.0001 aj=-0.008188 nj=-0.008126 aj_1=-0.008188 d_aj=0
+    conf=1.889e+06
+    
+      >>> QCONV on SSID=1
 
 This entry can be read as follows: The sensitivity of global equation number 92, which
 happens to be the T_0 energy equation at node 31, with respect to the temperature
@@ -137,12 +139,4 @@ Jacobian, a few things should be tried:
   errors and report them to you.
 
 * Check the settings in *mm_numjac.h*.
-
-
-
-
-..
-	TODO - Lines 100-102 need to be formatted in a different way that makes more sense for this problem. I am unsure what is the best way for this. 
-
-
 

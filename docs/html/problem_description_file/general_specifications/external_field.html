@@ -169,20 +169,13 @@
 <p>This optional card format provides a mechanism for reading-in nodal field variables
 stored in an EXODUS II file. Each field variable is specified on a separate input card,
 with the following input parameters:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 78%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;char_string1&gt;</p></td>
-<td><p>Name of the nodal field to be read; it should correspond
-to a nodal variable name in the EXODUS II file.</p></td>
-</tr>
-<tr class="row-even"><td><p>{char_string2}</p></td>
-<td><p>Two- to eight-character value that identifies the type of
-interpolation to be applied to the external variable field.
-Possible values are as follows:</p>
+<blockquote>
+<div><dl class="simple">
+<dt>&lt;char_string1&gt;</dt><dd><p>Name of the nodal field to be read; it should correspond to a nodal
+variable name in the EXODUS II file.</p>
+</dd>
+<dt>{char_string2}</dt><dd><p>Two- to eight-character value that identifies the type of interpolation to
+be applied to the external variable field. Possible values are as follows:</p>
 <ul class="simple">
 <li><p><strong>Q1</strong>       - Linear</p></li>
 <li><p><strong>Q2</strong>       - Quadratic</p></li>
@@ -204,30 +197,25 @@ Possible values are as follows:</p>
 </dl>
 </li>
 </ul>
-</td>
-</tr>
-<tr class="row-odd"><td><p>&lt;file_name&gt;</p></td>
-<td><p>Name of the EXODUS II file from which the nodal field
-is to be read. When Goma is compiled with
-LIBRARY_MODE defined (see Appendix 2) and the
-external field will be passed into Goma from a driver
-code, this entry will be either IMPORT (for nodal
-variables) or IMPORT_EV (for element variables),
-instead of a file name.</p></td>
-</tr>
-<tr class="row-even"><td><p>[char_string3]</p></td>
-<td><p>Optional character string. Only optional available is
-<strong>“timedependent”</strong> which enables nodal variables to be
-interpolated to the current time step. This option is
-useful for transient coupling, viz. a case in which a
-transient field variable is used to drive a time-dependent
-simulation. A good example of this is a transient current
-density field from a electromagnetics calculation being
-used to drive a transient thermal calculation with Joule
-heating.</p></td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="simple">
+<dt>&lt;file_name&gt;</dt><dd><p>Name of the EXODUS II file from which the nodal field is to be read. When
+Goma is compiled with LIBRARY_MODE defined (see Appendix 2) and the
+external field will be passed into Goma from a driver code, this entry will
+be either IMPORT (for nodal variables) or IMPORT_EV (for element
+variables), instead of a file name.</p>
+</dd>
+<dt>[char_string3]</dt><dd><p>Optional character string. Only optional available is <strong>“timedependent”</strong>
+which enables nodal variables to be interpolated to the current time step.
+This option is useful for transient coupling, viz. a case in which
+a transient field variable is used to drive a time-dependent simulation.
+A good example of this is a transient current density field from
+a electromagnetics calculation being used to drive a transient thermal
+calculation with Joule heating.</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="examples">
 <h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>

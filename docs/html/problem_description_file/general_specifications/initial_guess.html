@@ -170,46 +170,32 @@
 are provided to set the entire solution field to numerical values determined by
 {char_string}. Three additional options are available for reading initial values of the
 solution vector from data files. The permissible values of {char_string} are:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 31%" />
-<col style="width: 69%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>zero</p></td>
-<td><p>For an initial guess of zero (0.) for each degree of freedom
-in the unknown vector.</p></td>
-</tr>
-<tr class="row-even"><td><p>one</p></td>
-<td><p>For an initial guess of one (1.) for each degree of freedom in
-the unknown vector.</p></td>
-</tr>
-<tr class="row-odd"><td><p>random</p></td>
-<td><p>For a random initial guess (between 0. and 1.) for each
-degree of freedom in the unknown vector.</p></td>
-</tr>
-<tr class="row-even"><td><p>read</p></td>
-<td><p>To obtain the initial guess by reading the ASCII data file
-identified as the <em>GUESS file</em>, which must have initially been
-a <em>SOLN</em> file or a tmp_i.d (<em>Write Intermediate Results</em>) file.</p></td>
-</tr>
-<tr class="row-odd"><td><p>read_exoII</p></td>
-<td><p>To obtain the initial guess from the EXODUS II file
-specified by the <em>FEM file</em> card that is also used to supply
-mesh data. Any extraneous variables in the EXODUS II file
-that are not in the list of active variables for the current
-problem description are simply ignored.</p></td>
-</tr>
-<tr class="row-even"><td><p>read_exoII_file <em>file name</em></p></td>
-<td><p>To read the initial guess for the field variables from an
-EXODUS II database file different from the initial mesh
-database file. The <em>file_name</em> is specified as a single string
-following the read_exoII_file keyword. As with the
-read_exoII option, any extraneous variables not specified
-as active variables for the simulation will be simply ignored.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>zero</dt><dd><p>For an initial guess of zero (0.) for each degree of freedom in the unknown
+vector.</p>
+</dd>
+<dt>one</dt><dd><p>For an initial guess of one (1.) for each degree of freedom in the unknown
+vector.</p>
+</dd>
+<dt>random</dt><dd><p>For a random initial guess (between 0. and 1.) for each degree of freedom
+in the unknown vector.</p>
+</dd>
+<dt>read</dt><dd><p>To obtain the initial guess by reading the ASCII data file identified as
+the <em>GUESS file</em>, which must have initially been a <em>SOLN</em> file or a tmp_i.d
+(<em>Write Intermediate Results</em>) file.</p>
+</dd>
+<dt>read_exoII</dt><dd><p>To obtain the initial guess from the EXODUS II file specified by the <em>FEM
+file</em> card that is also used to supply mesh data. Any extraneous variables
+in the EXODUS II file that are not in the list of active variables for the
+current problem description are simply ignored.</p>
+</dd>
+<dt>read_exoII_file <em>file name</em></dt><dd><p>To read the initial guess for the field variables from an EXODUS II
+database file different from the initial mesh database file. The
+<em>file_name</em> is specified as a single string following the read_exoII_file
+keyword. As with the read_exoII option, any extraneous variables not
+specified as active variables for the simulation will be simply ignored.</p>
+</dd>
+</dl>
 <p>If this card is omitted, then the default behavior is to assume that a value of zero has
 been specified for {char_string}.</p>
 </div>

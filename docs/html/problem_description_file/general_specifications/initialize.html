@@ -168,43 +168,30 @@
 <h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This optional card provides a mechanism to set one of the field variables to a constant
 value across the <em>whole</em> domain. Definitions of the input parameters are as follows:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 30%" />
-<col style="width: 70%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>{char_string}</p></td>
-<td><p>Permissible values for this input string are any variable
-names identified in source file rf_fem_const.h
-beginning at the section labeled Variable Names of
-unknowns. Examples include, but are not limited to, the
-following (note the shorthand notation for components):</p>
-<p><strong>VELOCITY1, VELOCITY2, VELOCITY3 (V123),
-MESH_DISPLACEMENT (MD123),
-SOLID_DISPLACEMENT (SD123),
-MASS_FRACTION, TEMPERATURE, PRESSURE,
-VOLTAGE, FILL, LS, POLYMER_STRESS (6
-components, 8 modes), VELOCITY_GRADIENT (9
-components), SHEAR_RATE, VOLF_PHASE (6
-phases), POR_LIQ_PRES, POR_GAS_PRES,
-POR_POROSITY, POR_SATURATION, POR_LAST,
-LAGR_MULT (LM123), SURF_CHARGE,
-EXT_VELOCITY, EFIELD(123), SHELL (4 variables),
-SPECIES (7 variables).</strong></p>
+<dl>
+<dt>{char_string}</dt><dd><p>Permissible values for this input string are any variable names identified
+in source file rf_fem_const.h beginning at the section labeled Variable
+Names of unknowns. Examples include, but are not limited to, the following
+(note the shorthand notation for components):</p>
+<p><code class="docutils literal notranslate"><span class="pre">VELOCITY1,</span> <span class="pre">VELOCITY2,</span> <span class="pre">VELOCITY3</span> <span class="pre">(V123),</span></code>
+<code class="docutils literal notranslate"><span class="pre">MESH_DISPLACEMENT</span> <span class="pre">(MD123),</span> <span class="pre">SOLID_DISPLACEMENT</span></code>
+<code class="docutils literal notranslate"><span class="pre">(SD123),</span> <span class="pre">MASS_FRACTION,</span> <span class="pre">TEMPERATURE,</span> <span class="pre">PRESSURE,</span></code>
+<code class="docutils literal notranslate"><span class="pre">VOLTAGE,</span> <span class="pre">FILL,</span> <span class="pre">LS,</span> <span class="pre">POLYMER_STRESS</span> <span class="pre">(6</span> <span class="pre">components,</span></code>
+<code class="docutils literal notranslate"><span class="pre">8</span> <span class="pre">modes),</span> <span class="pre">VELOCITY_GRADIENT</span> <span class="pre">(9</span> <span class="pre">components),</span></code>
+<code class="docutils literal notranslate"><span class="pre">SHEAR_RATE,</span> <span class="pre">VOLF_PHASE</span> <span class="pre">(6</span> <span class="pre">phases),</span> <span class="pre">POR_LIQ_PRES,</span></code>
+<code class="docutils literal notranslate"><span class="pre">POR_GAS_PRES,</span> <span class="pre">POR_POROSITY,</span> <span class="pre">POR_SATURATION,</span></code>
+<code class="docutils literal notranslate"><span class="pre">POR_LAST,</span> <span class="pre">LAGR_MULT</span> <span class="pre">(LM123),</span> <span class="pre">SURF_CHARGE,</span></code>
+<code class="docutils literal notranslate"><span class="pre">EXT_VELOCITY,</span> <span class="pre">EFIELD(123),</span> <span class="pre">SHELL</span> <span class="pre">(4</span> <span class="pre">variables),</span></code>
+<code class="docutils literal notranslate"><span class="pre">SPECIES</span> <span class="pre">(7</span> <span class="pre">variables).</span></code></p>
 <p><em>For a more comprehensive list, see Technical discussion below.</em></p>
-</td>
-</tr>
-<tr class="row-even"><td><p>&lt;integer&gt;</p></td>
-<td><p>Species number to be initialized if the value of
-{char_string} is one of the SPECIES variables (see
-Technical Discussion); otherwise, set &lt;integer&gt; to zero.</p></td>
-</tr>
-<tr class="row-odd"><td><p>&lt;float&gt;</p></td>
-<td><p>Value to which the variable should be initialized.</p></td>
-</tr>
-</tbody>
-</table>
+</dd>
+<dt>&lt;integer&gt;</dt><dd><p>Species number to be initialized if the value of {char_string} is one of
+the SPECIES variables (see Technical Discussion); otherwise, set &lt;integer&gt;
+to zero.</p>
+</dd>
+<dt>&lt;float&gt;</dt><dd><p>Value to which the variable should be initialized.</p>
+</dd>
+</dl>
 <p>Multiple applications of this card are valid; <em>Goma</em> automatically counts the number of
 <em>Initialize</em> cards.</p>
 </div>
@@ -231,192 +218,379 @@ variable types with the second parameter (&lt;integer&gt;) on this card.</p>
 <p>The comprehensive list of keyword variable names can be found in <em>mm_input_util.c</em>, if
 you have access to GOMA source code. Search for the function <em>variable_string_to_int</em>.
 A snapshot of the initialize-able variables in that routine is shown here:</p>
-<p>var = VELOCITY1;</p>
-<p>var = VELOCITY2;</p>
-<p>var = VELOCITY3;</p>
-<p>var = TEMPERATURE;</p>
-<p>var = MASS_FRACTION;</p>
-<p>var = MESH_DISPLACEMENT1;</p>
-<p>var = MESH_DISPLACEMENT2;</p>
-<p>var = MESH_DISPLACEMENT3;</p>
-<p>var = PRESSURE;</p>
-<p>var = POLYMER_STRESS11;</p>
-<p>var = POLYMER_STRESS12;</p>
-<p>var = POLYMER_STRESS13;</p>
-<p>var = POLYMER_STRESS22;</p>
-<p>var = POLYMER_STRESS23;</p>
-<p>var = POLYMER_STRESS33;</p>
-<p>var = SOLID_DISPLACEMENT1;</p>
-<p>var = SOLID_DISPLACEMENT2;</p>
-<p>var = SOLID_DISPLACEMENT3;</p>
-<p>var = VELOCITY_GRADIENT11;</p>
-<p>var = VELOCITY_GRADIENT12;</p>
-<p>var = VELOCITY_GRADIENT13;</p>
-<p>var = VELOCITY_GRADIENT21;</p>
-<p>var = VELOCITY_GRADIENT22;</p>
-<p>var = VELOCITY_GRADIENT23;</p>
-<p>var = VELOCITY_GRADIENT31;</p>
-<p>var = VELOCITY_GRADIENT32;</p>
-<p>var = VELOCITY_GRADIENT33;</p>
-<p>var = VOLTAGE;</p>
-<p>var = FILL;</p>
-<p>var = SHEAR_RATE;</p>
-<p>var = PVELOCITY1;</p>
-<p>var = PVELOCITY2;</p>
-<p>var = PVELOCITY3;</p>
-<p>var = POLYMER_STRESS11_1;</p>
-<p>var = POLYMER_STRESS12_1;</p>
-<p>var = POLYMER_STRESS22_1;</p>
-<p>var = POLYMER_STRESS13_1;</p>
-<p>var = POLYMER_STRESS23_1;</p>
-<p>var = POLYMER_STRESS33_1;</p>
-<p>var = POLYMER_STRESS11_2;</p>
-<p>var = POLYMER_STRESS12_2;</p>
-<p>var = POLYMER_STRESS22_2;</p>
-<p>var = POLYMER_STRESS13_2;</p>
-<p>var = POLYMER_STRESS23_2;</p>
-<p>var = POLYMER_STRESS33_2;</p>
-<p>var = POLYMER_STRESS11_3;</p>
-<p>var = POLYMER_STRESS12_3;</p>
-<p>var = POLYMER_STRESS22_3;</p>
-<p>var = POLYMER_STRESS13_3;</p>
-<p>var = POLYMER_STRESS23_3;</p>
-<p>var = POLYMER_STRESS33_3;</p>
-<p>var = POLYMER_STRESS11_4;</p>
-<p>var = POLYMER_STRESS12_4;</p>
-<p>var = POLYMER_STRESS22_4;</p>
-<p>var = POLYMER_STRESS13_4;</p>
-<p>var = POLYMER_STRESS23_4;</p>
-<p>var = POLYMER_STRESS33_4;</p>
-<p>var = POLYMER_STRESS11_5;</p>
-<p>var = POLYMER_STRESS12_5;</p>
-<p>var = POLYMER_STRESS22_5;</p>
-<p>var = POLYMER_STRESS13_5;</p>
-<p>var = POLYMER_STRESS23_5;</p>
-<p>var = POLYMER_STRESS33_5;</p>
-<p>var = POLYMER_STRESS11_6;</p>
-<p>var = POLYMER_STRESS12_6;</p>
-<p>var = POLYMER_STRESS22_6;</p>
-<p>var = POLYMER_STRESS13_6;</p>
-<p>var = POLYMER_STRESS23_6;</p>
-<p>var = POLYMER_STRESS33_6;</p>
-<p>var = POLYMER_STRESS11_7;</p>
-<p>var = POLYMER_STRESS12_7;</p>
-<p>var = POLYMER_STRESS22_7;</p>
-<p>var = POLYMER_STRESS13_7;</p>
-<p>var = POLYMER_STRESS23_7;</p>
-<p>var = POLYMER_STRESS33_7;</p>
-<p>var = SPECIES_MASS_FRACTION;</p>
-<p>var = SPECIES_MOLE_FRACTION;</p>
-<p>var = SPECIES_VOL_FRACTION;</p>
-<p>var = SPECIES_DENSITY;</p>
-<p>var = SPECIES_CONCENTRATION;</p>
-<p>var = SPECIES_CAP_PRESSURE;</p>
-<p>var = SPECIES_UNDEFINED_FORM;</p>
-<p>var = POR_LIQ_PRES;</p>
-<p>var = POR_GAS_PRES;</p>
-<p>var = POR_POROSITY;</p>
-<p>var = POR_TEMP;</p>
-<p>var = POR_SATURATION;</p>
-<p>var = VORT_DIR1;</p>
-<p>var = VORT_DIR2;</p>
-<p>var = VORT_DIR3;</p>
-<p>var = CURVATURE;</p>
-<p>var = BOND_EVOLUTION;</p>
-<p>var = SURF_CHARGE;</p>
-<p>var = EXT_VELOCITY;</p>
-<p>var = EFIELD1;</p>
-<p>var = EFIELD2;</p>
-<p>var = EFIELD3;</p>
-<p>var = ENORM;</p>
-<p>var = NORMAL1;</p>
-<p>var = NORMAL2;</p>
-<p>var = NORMAL3;</p>
-<p>var = SHELL_CURVATURE;</p>
-<p>var = SHELL_TENSION;</p>
-<p>var = SHELL_X;</p>
-<p>var = SHELL_Y;</p>
-<p>var = SHELL_USER;</p>
-<p>var = PHASE1;</p>
-<p>var = PHASE2;</p>
-<p>var = PHASE3;</p>
-<p>var = PHASE4;</p>
-<p>var = PHASE5;</p>
-<p>var = SHELL_ANGLE1;</p>
-<p>var = SHELL_ANGLE2;</p>
-<p>var = SHELL_SURF_DIV_V;</p>
-<p>var = SHELL_SURF_CURV;</p>
-<p>var = N_DOT_CURL_V;</p>
-<p>var = GRAD_V_DOT_N1;</p>
-<p>var = GRAD_V_DOT_N2;</p>
-<p>var = GRAD_V_DOT_N3;</p>
-<p>var = ACOUS_PREAL;</p>
-<p>var = ACOUS_PIMAG;</p>
-<p>var = ACOUS_ENERGY;</p>
-<p>var = POR_SINK_MASS;</p>
-<p>var = VORT_DIR1</p>
-<p>var = VORT_DIR2</p>
-<p>var = VORT_DIR3</p>
-<p>var = VORT_LAMBDA</p>
-<p>var = CURVATURE</p>
-<p>var = LAGR_MULT1</p>
-<p>var = LAGR_MULT2</p>
-<p>var = LAGR_MULT3</p>
-<p>var = BOND_EVOLUTION</p>
-<p>var = SURF_CHARGE</p>
-<p>var = EXT_VELOCITY</p>
-<p>var = EFIELD1</p>
-<p>var = EFIELD2</p>
-<p>var = EFIELD3</p>
-<p>var = ENORM</p>
-<p>var = NORMAL1</p>
-<p>var = NORMAL2</p>
-<p>var = NORMAL3</p>
-<p>var = SHELL_CURVATURE</p>
-<p>var = SHELL_TENSION</p>
-<p>var = SHELL_X</p>
-<p>var = SHELL_Y</p>
-<p>var = SHELL_USER</p>
-<p>var = PHASE1</p>
-<p>var = PHASE2</p>
-<p>var = PHASE3</p>
-<p>var = PHASE4</p>
-<p>var = PHASE5</p>
-<p>var = SHELL_ANGLE1</p>
-<p>var = SHELL_ANGLE2</p>
-<p>var = SHELL_SURF_DIV_V</p>
-<p>var = SHELL_SURF_CURV</p>
-<p>var = N_DOT_CURL_V</p>
-<p>var = GRAD_S_V_DOT_N1</p>
-<p>var = GRAD_S_V_DOT_N2</p>
-<p>var = GRAD_S_V_DOT_N3</p>
-<p>var = ACOUS_PREAL</p>
-<p>var = ACOUS_PIMAG</p>
-<p>var = SHELL_DIFF_FLUX</p>
-<p>var = SHELL_DIFF_CURVATURE</p>
-<p>var = SHELL_NORMAL1</p>
-<p>var = SHELL_NORMAL2</p>
-<p>var = ACOUS_REYN_STRESS</p>
-<p>var = SHELL_BDYVELO</p>
-<p>var = SHELL_LUBP</p>
-<p>var = LUBP</p>
-<p>var = SHELL_FILMP</p>
-<p>var = SHELL_FILMH</p>
-<p>var = SHELL_PARTC</p>
-<p>var = SHELL_SAT_CLOSED</p>
-<p>var = SHELL_PRESS_OPEN</p>
-<p>var = SHELL_TEMPERATURE</p>
-<p>var = SHELL_DELTAH</p>
-<p>var = SHELL_LUB_CURV</p>
-<p>var = SHELL_SAT_GASN</p>
-<p>var = SHELL_SHEAR_TOP</p>
-<p>var = SHELL_SHEAR_BOT</p>
-<p>var = SHELL_CROSS_SHEAR</p>
-<p>var = MAX_STRAIN</p>
-<p>var = CUR_STRAIN</p>
-<p>var = LUBP_2</p>
-<p>var = SHELL_PRESS_OPEN_2</p>
-<p>var = SHELL_LUB_CURV_2</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="n">VELOCITY1</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">VELOCITY2</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">VELOCITY3</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">TEMPERATURE</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">MASS_FRACTION</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">MESH_DISPLACEMENT1</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">MESH_DISPLACEMENT2</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">MESH_DISPLACEMENT3</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">PRESSURE</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS11</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS12</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS13</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS22</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS23</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS33</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SOLID_DISPLACEMENT1</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SOLID_DISPLACEMENT2</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SOLID_DISPLACEMENT3</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">VELOCITY_GRADIENT11</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">VELOCITY_GRADIENT12</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">VELOCITY_GRADIENT13</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">VELOCITY_GRADIENT21</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">VELOCITY_GRADIENT22</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">VELOCITY_GRADIENT23</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">VELOCITY_GRADIENT31</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">VELOCITY_GRADIENT32</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">VELOCITY_GRADIENT33</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">VOLTAGE</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">FILL</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHEAR_RATE</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">PVELOCITY1</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">PVELOCITY2</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">PVELOCITY3</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS11_1</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS12_1</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS22_1</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS13_1</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS23_1</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS33_1</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS11_2</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS12_2</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS22_2</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS13_2</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS23_2</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS33_2</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS11_3</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS12_3</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS22_3</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS13_3</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS23_3</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS33_3</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS11_4</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS12_4</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS22_4</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS13_4</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS23_4</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS33_4</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS11_5</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS12_5</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS22_5</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS13_5</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS23_5</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS33_5</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS11_6</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS12_6</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS22_6</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS13_6</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS23_6</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS33_6</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS11_7</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS12_7</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS22_7</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS13_7</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS23_7</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POLYMER_STRESS33_7</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SPECIES_MASS_FRACTION</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SPECIES_MOLE_FRACTION</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SPECIES_VOL_FRACTION</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SPECIES_DENSITY</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SPECIES_CONCENTRATION</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SPECIES_CAP_PRESSURE</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SPECIES_UNDEFINED_FORM</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POR_LIQ_PRES</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POR_GAS_PRES</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POR_POROSITY</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POR_TEMP</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POR_SATURATION</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">VORT_DIR1</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">VORT_DIR2</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">VORT_DIR3</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">CURVATURE</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">BOND_EVOLUTION</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SURF_CHARGE</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">EXT_VELOCITY</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">EFIELD1</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">EFIELD2</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">EFIELD3</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">ENORM</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">NORMAL1</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">NORMAL2</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">NORMAL3</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_CURVATURE</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_TENSION</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_X</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_Y</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_USER</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">PHASE1</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">PHASE2</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">PHASE3</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">PHASE4</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">PHASE5</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_ANGLE1</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_ANGLE2</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_SURF_DIV_V</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_SURF_CURV</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">N_DOT_CURL_V</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">GRAD_V_DOT_N1</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">GRAD_V_DOT_N2</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">GRAD_V_DOT_N3</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">ACOUS_PREAL</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">ACOUS_PIMAG</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">ACOUS_ENERGY</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">POR_SINK_MASS</span><span class="p">;</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">VORT_DIR1</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">VORT_DIR2</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">VORT_DIR3</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">VORT_LAMBDA</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">CURVATURE</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">LAGR_MULT1</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">LAGR_MULT2</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">LAGR_MULT3</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">BOND_EVOLUTION</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SURF_CHARGE</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">EXT_VELOCITY</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">EFIELD1</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">EFIELD2</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">EFIELD3</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">ENORM</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">NORMAL1</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">NORMAL2</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">NORMAL3</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_CURVATURE</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_TENSION</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_X</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_Y</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_USER</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">PHASE1</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">PHASE2</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">PHASE3</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">PHASE4</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">PHASE5</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_ANGLE1</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_ANGLE2</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_SURF_DIV_V</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_SURF_CURV</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">N_DOT_CURL_V</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">GRAD_S_V_DOT_N1</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">GRAD_S_V_DOT_N2</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">GRAD_S_V_DOT_N3</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">ACOUS_PREAL</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">ACOUS_PIMAG</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_DIFF_FLUX</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_DIFF_CURVATURE</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_NORMAL1</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_NORMAL2</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">ACOUS_REYN_STRESS</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_BDYVELO</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_LUBP</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">LUBP</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_FILMP</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_FILMH</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_PARTC</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_SAT_CLOSED</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_PRESS_OPEN</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_TEMPERATURE</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_DELTAH</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_LUB_CURV</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_SAT_GASN</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_SHEAR_TOP</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_SHEAR_BOT</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_CROSS_SHEAR</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">MAX_STRAIN</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">CUR_STRAIN</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">LUBP_2</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_PRESS_OPEN_2</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">SHELL_LUB_CURV_2</span>
+</pre></div>
+</div>
 </div>
 </div>
 

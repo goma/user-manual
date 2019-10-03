@@ -171,20 +171,12 @@ problems that calculate equations of state requiring a true value for the total 
 The total pressure is then defined as the sum of a constant base thermodynamic
 pressure, specified by this card, and a variable hydrodynamic pressure calculated via
 the pressure unknown. Definitions of the input parameters are as follows:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 29%" />
-<col style="width: 71%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;float&gt;</p></td>
-<td><p>Value of the thermodynamic pressure datum.</p></td>
-</tr>
-<tr class="row-even"><td><p>{ atm | torr | cgs }</p></td>
-<td><p>Units of the float specified above.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>&lt;float&gt;</dt><dd><p>Value of the thermodynamic pressure datum.</p>
+</dd>
+<dt>{ atm | torr | cgs }</dt><dd><p>Units of the float specified above.</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="examples">
 <h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
@@ -198,10 +190,6 @@ the pressure unknown. Definitions of the input parameters are as follows:</p>
 <p>The value of this variable is stored in the unified problem description structure in cgs
 units. It is then used in consistency checks and as input into some equation of state
 routines, such as the ideal gas equation of state routine.</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No References.</p>
 </div>
 </div>
 

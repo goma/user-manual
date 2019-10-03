@@ -16,6 +16,8 @@ of informational (debugging) output desired; higher values of the output level w
 produce more diagnostic information on the stdout and stderr output channels.
 The default output level is **0**. Specific output is summarized below.
 
+.. tabularcolumns:: |l|L|
+
 ==============  ===============================================================
 Level           Results Output
 ==============  ===============================================================
@@ -43,10 +45,3 @@ This specification allows the developer a means to output specific information t
 would be helpful in diagnosing problems in the software. Currently, the output options
 are limited.
 
-
-
---------------
-**References**
---------------
-
-No References.

@@ -15,13 +15,11 @@ the Jacobian. The file is meant to be used by the auxiliary program, **checkGoma
 **checkGomaJac** are also output to the file. The card takes one mandatory integer
 variable.
 
-==============  ===============================================================
-<integer>       If the integer is a positive number, n, then *Goma* will dump
-                the first n Jacobians created (for any reason) to the current
-                directory. If the integer is a negative value, -n, then *Goma*
-                will dump a single Jacobian, the n’th Jacobian created, to
-                the current directory.
-==============  ===============================================================
+<integer>       
+    If the integer is a positive number, n, then *Goma* will dump the first
+    n Jacobians created (for any reason) to the current directory. If the
+    integer is a negative value, -n, then *Goma* will dump a single Jacobian,
+    the n’th Jacobian created, to the current directory.
 
 The dumped files are named matrix.000, matrix.001, etc. Overwrites of files are
 allowed to occur. The files themselves are written out using the XDR protocol layer
