@@ -34,11 +34,6 @@ Following is a sample card:
 
    Porous Shell Height = CONSTANT 0.00001
 
--------------------------
-**Technical Discussion**
--------------------------
-
-No Technical Discussion.
 
 
 

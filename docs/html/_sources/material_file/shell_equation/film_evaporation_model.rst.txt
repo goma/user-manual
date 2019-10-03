@@ -47,11 +47,6 @@ Following is a sample card:
 This results in film evaporation with the pure liquid evaporation rate of 1.0e-3, exponent
 of 0.5, and maximum packing volume fraction of 0.64.
 
--------------------------
-**Technical Discussion**
--------------------------
-
-No Technical Discussion.
 
 
 

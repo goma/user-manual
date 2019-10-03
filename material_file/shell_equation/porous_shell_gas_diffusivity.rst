@@ -34,11 +34,6 @@ available for this property:
 
 Porous Shell Gas Diffusivity = CONSTANT 1.e-5
 
--------------------------
-**Technical Discussion**
--------------------------
-
-No Technical Discussion.
 
 
 

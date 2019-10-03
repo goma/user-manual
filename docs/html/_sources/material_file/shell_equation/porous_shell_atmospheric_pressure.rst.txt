@@ -19,11 +19,6 @@ equation (for partially saturated flow). As of 11/27/2012 this card is NOT used.
 
 No Examples.
 
--------------------------
-**Technical Discussion**
--------------------------
-
-No Technical Discussion.
 
 
 

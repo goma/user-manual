@@ -30,11 +30,6 @@ Following is a sample card:
 
    Porous Shell Closed Gas Pressure = CONSTANT 0.5
 
--------------------------
-**Technical Discussion**
--------------------------
-
-No Technical Discussion.
 
 
 

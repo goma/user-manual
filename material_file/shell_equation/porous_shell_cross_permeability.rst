@@ -36,11 +36,6 @@ references for the equation form. The property can take on one of two models:
 
 No Examples.
 
--------------------------
-**Technical Discussion**
--------------------------
-
-No Technical Discussion.
 
 
 

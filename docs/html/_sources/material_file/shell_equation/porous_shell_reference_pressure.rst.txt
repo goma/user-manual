@@ -22,11 +22,6 @@ for shell formulations.
 
 No Examples.
 
--------------------------
-**Technical Discussion**
--------------------------
-
-No Technical Discussion.
 
 
 

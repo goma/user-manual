@@ -71,11 +71,6 @@ This set of cards can be used to prescribe a mesh distinguishing condition for a
 surface with a quadratic dependence on x and y, a circle center at [1., 1.], and a radius
 of 1.0 (note the radius only appears on one card).
 
--------------------------
-**Technical Discussion**
--------------------------
-
-No Technical Discussion.
 
 
 

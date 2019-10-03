@@ -19,11 +19,6 @@ length scale of zero. Please see usage nodes below.
 {OFF | NO}               Don’t use adaptive integration.
 =======================  ========================================================================
 
--------------------------
-**Technical Discussion**
--------------------------
-
-No Technical Discussion.
 
 
 

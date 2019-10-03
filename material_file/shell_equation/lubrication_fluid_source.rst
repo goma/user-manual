@@ -40,11 +40,6 @@ Following is a sample card:
 
    Lubrication Fluid Source = CONSTANT 180.
 
--------------------------
-**Technical Discussion**
--------------------------
-
-No Technical Discussion.
 
 
 

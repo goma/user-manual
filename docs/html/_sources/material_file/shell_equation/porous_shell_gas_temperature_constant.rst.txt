@@ -30,11 +30,6 @@ this property:
 
 Porous Shell Gas Temperature Constant= CONSTANT 1.e10
 
--------------------------
-**Technical Discussion**
--------------------------
-
-No Technical Discussion.
 
 
 

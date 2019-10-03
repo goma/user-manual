@@ -54,11 +54,6 @@ unknowns and hence result in immediate mesh displacement from the initial state.
 
 Please consult the user-definition subroutines for examples. 
 
--------------------------
-**Technical Discussion**
--------------------------
-
-No Technical Discussion.
 
 
 

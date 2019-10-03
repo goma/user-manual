@@ -38,11 +38,6 @@ Following is a sample card:
 
    Shell Energy Source Viscous Dissipation= LUBRICATION_FRICTION {load=5e8} {coeff=0.9}
 
--------------------------
-**Technical Discussion**
--------------------------
-
-No Technical Discussion.
 
 
 

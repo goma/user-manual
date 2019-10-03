@@ -38,11 +38,6 @@ This card results in an lower wall contact able to 180 degrees, which is perfect
 wetting. If the lower wall is given the same angle, then the capillary pressure jump will
 go as 2/h, where h is the gap.
 
--------------------------
-**Technical Discussion**
--------------------------
-
-No Technical Discussion.
 
 
 

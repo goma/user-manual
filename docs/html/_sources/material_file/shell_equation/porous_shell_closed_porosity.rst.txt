@@ -41,11 +41,6 @@ Following is a sample card:
 
    Porous Shell Closed Porosity= CONSTANT 0.5
 
--------------------------
-**Technical Discussion**
--------------------------
-
-No Technical Discussion.
 
 
 

@@ -41,11 +41,6 @@ A description of the syntax of this card follows:
 |                            | array to the appropriate C function.                        |
 +----------------------------+-------------------------------------------------------------+
 
--------------------------
-**Technical Discussion**
--------------------------
-
-No Technical Discussion.
 
 ------------
 **Examples**
