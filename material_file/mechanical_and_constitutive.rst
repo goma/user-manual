@@ -79,9 +79,9 @@ momentum conservation equations.
 
 .. include:: mechanical_and_constitutive/polymer_shift_function.rst
 
-.. include:: mechanical_and_constitutive/discontinuous_jacobian_formulation.rst
-
 .. include:: mechanical_and_constitutive/polymer_weighting.rst
+
+.. include:: mechanical_and_constitutive/discontinuous_jacobian_formulation.rst
 
 .. include:: mechanical_and_constitutive/adaptive_viscosity_scaling.rst
 

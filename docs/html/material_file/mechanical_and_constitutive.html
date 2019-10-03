@@ -331,14 +331,14 @@
 <li class="toctree-l4"><a class="reference internal" href="#id127"><strong>References</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#discontinuous-jacobian-formulation"><strong>Discontinuous Jacobian Formulation</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#polymer-weighting"><strong>Polymer Weighting</strong></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id128"><strong>Description / Usage</strong></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id129"><strong>Examples</strong></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id130"><strong>Technical Discussion</strong></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id131"><strong>References</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#polymer-weighting"><strong>Polymer Weighting</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#discontinuous-jacobian-formulation"><strong>Discontinuous Jacobian Formulation</strong></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id132"><strong>Description / Usage</strong></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id133"><strong>Examples</strong></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id134"><strong>Technical Discussion</strong></a></li>
@@ -3590,13 +3590,47 @@ based on the exponential function whereas the WLF model is based on 10x.</p>
 Volume 1. John Wiley &amp; Sons, Inc. 1987.</p>
 </div>
 </div>
+<div class="section" id="polymer-weighting">
+<h2><strong>Polymer Weighting</strong><a class="headerlink" href="#polymer-weighting" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Polymer</span> <span class="n">Weighting</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">t</span><span class="o">/</span><span class="n">L</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="section" id="id128">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id128" title="Permalink to this headline">¶</a></h3>
+<p>This card is only used if the value of the <em>Polymer Weight Function</em> card is <strong>SUPG</strong>. The
+single input parameter is defined as</p>
+<p>&lt;float&gt; - scale factor for the upwind term in the Petrov-Galerkin
+formulation. If this is set to zero, a Galerkin weight
+function is used. The correct scaling for this term is
+the inverse of the average inflow velocity.</p>
+</div>
+<div class="section" id="id129">
+<h3><strong>Examples</strong><a class="headerlink" href="#id129" title="Permalink to this headline">¶</a></h3>
+<p>The following is a companion pair of sample input cards that includes setting the
+polymer weighting to 0.1:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Polymer</span> <span class="n">Weight</span> <span class="n">Function</span> <span class="o">=</span> <span class="n">SUPG</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Polymer</span> <span class="n">Weighting</span> <span class="o">=</span> <span class="mf">0.1</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id130">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id130" title="Permalink to this headline">¶</a></h3>
+<p>No Discussion.</p>
+</div>
+<div class="section" id="id131">
+<h3><strong>References</strong><a class="headerlink" href="#id131" title="Permalink to this headline">¶</a></h3>
+<p>No References.</p>
+</div>
+</div>
 <div class="section" id="discontinuous-jacobian-formulation">
 <h2><strong>Discontinuous Jacobian Formulation</strong><a class="headerlink" href="#discontinuous-jacobian-formulation" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Discontinuous</span> <span class="n">Jacobian</span> <span class="n">Formulation</span> <span class="o">=</span> <span class="p">{</span><span class="n">model_name</span><span class="p">}</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id128">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id128" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id132">
+<h3><strong>Description / Usage</strong><a class="headerlink" href="#id132" title="Permalink to this headline">¶</a></h3>
 <p>This optional card is used to specify the off element Jacobian contributions for the
 discontinuous Galerkin (DG) discretization of the polymer stress equation. These terms
 are important because the DG method uses stress information from upstream elements
@@ -3638,8 +3672,8 @@ the current iteration.</p>
 </tbody>
 </table>
 </div>
-<div class="section" id="id129">
-<h3><strong>Examples</strong><a class="headerlink" href="#id129" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id133">
+<h3><strong>Examples</strong><a class="headerlink" href="#id133" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample card that set the discontinuous Jacobian formulation to full.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Discontinuous</span> <span class="n">Jacobian</span> <span class="n">Formulation</span> <span class="o">=</span> <span class="n">FULL</span>
 </pre></div>
@@ -3657,14 +3691,14 @@ of scaling requires tuning for each problem.</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id130">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id130" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id134">
+<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id134" title="Permalink to this headline">¶</a></h3>
 <p>For a discussion of the discontinuous Galerkin method see Fortin and Fortin (1989),
 Baaijens (1994) or Baaijens (1998). Internal (Sandia) users may find T. A. Baer’s
 Gordon Conference presentation (1997) helpful.</p>
 </div>
-<div class="section" id="id131">
-<h3><strong>References</strong><a class="headerlink" href="#id131" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id135">
+<h3><strong>References</strong><a class="headerlink" href="#id135" title="Permalink to this headline">¶</a></h3>
 <p>Baaijens, F. P. T. , “Application of Low-Order Discontinuous Galerkin Method to the
 Analysis of Viscoelastic Flows,” J. Non-Newtonian Fluid Mech., 52, 37-57 (1994).</p>
 <p>Baaijens, F. P. T., “An Iterative Solver for the DEVSS/DG Method with Application to
@@ -3672,40 +3706,6 @@ Smooth and Non-smooth Flows of the Upper Convected Maxwell Fluid,” J. Non-
 Newtonian Fluid Mech., 75, 119-138 (1998).</p>
 <p>Fortin, M. and A. Fortin, “A New Approach for the FEM Simulations of Viscoelastic
 Flow, J. Non-Newtonian Fluid Mech., 32, 295-310 (1989).</p>
-</div>
-</div>
-<div class="section" id="polymer-weighting">
-<h2><strong>Polymer Weighting</strong><a class="headerlink" href="#polymer-weighting" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Polymer</span> <span class="n">Weighting</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">t</span><span class="o">/</span><span class="n">L</span><span class="p">]</span>
-</pre></div>
-</div>
-<div class="section" id="id132">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id132" title="Permalink to this headline">¶</a></h3>
-<p>This card is only used if the value of the <em>Polymer Weight Function</em> card is <strong>SUPG</strong>. The
-single input parameter is defined as</p>
-<p>&lt;float&gt; - scale factor for the upwind term in the Petrov-Galerkin
-formulation. If this is set to zero, a Galerkin weight
-function is used. The correct scaling for this term is
-the inverse of the average inflow velocity.</p>
-</div>
-<div class="section" id="id133">
-<h3><strong>Examples</strong><a class="headerlink" href="#id133" title="Permalink to this headline">¶</a></h3>
-<p>The following is a companion pair of sample input cards that includes setting the
-polymer weighting to 0.1:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Polymer</span> <span class="n">Weight</span> <span class="n">Function</span> <span class="o">=</span> <span class="n">SUPG</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Polymer</span> <span class="n">Weighting</span> <span class="o">=</span> <span class="mf">0.1</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="id134">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id134" title="Permalink to this headline">¶</a></h3>
-<p>No Discussion.</p>
-</div>
-<div class="section" id="id135">
-<h3><strong>References</strong><a class="headerlink" href="#id135" title="Permalink to this headline">¶</a></h3>
-<p>No References.</p>
 </div>
 </div>
 <div class="section" id="adaptive-viscosity-scaling">
