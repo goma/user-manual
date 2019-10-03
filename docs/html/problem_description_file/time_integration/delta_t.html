@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>delta_t</strong></li>
+      <li>delta_t</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,26 +160,19 @@
            <div itemprop="articleBody">
             
   <div class="section" id="delta-t">
-<h1><strong>delta_t</strong><a class="headerlink" href="#delta-t" title="Permalink to this headline">¶</a></h1>
+<h1>delta_t<a class="headerlink" href="#delta-t" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">delta_t</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This card is required for <strong>transient</strong> simulations to set the value of the initial time step.
 The input parameter is defined as:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;float&gt;</p></td>
-<td><p>Any floating point number that indicates the time step in the
-appropriate units for your problem.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>&lt;float&gt;</dt><dd><p>Any floating point number that indicates the time step in the appropriate
+units for your problem.</p>
+</dd>
+</dl>
 <p>To specify a fixed time step size for an analysis, set &lt;float&gt; to be a negative number,
 e.g. -1.0e-6; the code will use a constant (positive) time step. Should convergence
 problems occur when a fixed step size is specified, the size of the time increment
@@ -187,7 +180,7 @@ entered for the <em>delta_t</em> card will be reduced by half until convergence 
 a constant time step is reduced, it will not be increased.</p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Following is a sample card for an initial time step:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">delta_t</span> <span class="o">=</span> <span class="mf">6.e-03</span>
 </pre></div>
@@ -196,14 +189,6 @@ a constant time step is reduced, it will not be increased.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">delta_t</span> <span class="o">=</span> <span class="o">-</span><span class="mf">6.e-03</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
-<p>No Discussion.</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No References.</p>
 </div>
 </div>
 

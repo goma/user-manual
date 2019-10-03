@@ -1,5 +1,5 @@
 ***********************
-**Time Step Parameter**
+Time Step Parameter
 ***********************
 
 ::
@@ -7,10 +7,12 @@
 	Time step parameter = <float>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This card allows the user to vary the time integration scheme. The usual settings are:
+
+.. tabularcolumns:: |l|L|
 
 =======================  ========================================================================
 0.0                      Backward Euler method (1st order in time)
@@ -18,7 +20,7 @@ This card allows the user to vary the time integration scheme. The usual setting
 =======================  ========================================================================
 
 ------------
-**Examples**
+Examples
 ------------
 
 This is a sample card that sets the time integration scheme to Trapezoidal rule:
@@ -27,7 +29,7 @@ This is a sample card that sets the time integration scheme to Trapezoidal rule:
 	Time step parameter = 0.5
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 One should usually use the Trapezoid rule. When a large time step :math:`\Delta t` is used the
@@ -58,18 +60,16 @@ Note that there is no choice of finite :math:`\theta` that will yield a Forward 
 
 
 --------
-**FAQs**
+FAQs
 --------
 
 For porous flow problems with mass lumping, you should always choose backward
 Euler method.
 
 --------------
-**References**
+References
 --------------
 
 SAND86-1816: NACHOS 2: A Finite Element Computer Program for Incompressible
 Flow Problems - Part 2 - User’s Manual, Gartling, David K. (September, 1987).
 
-.. 
-	TODO - In the "technical discussion" section the information needs to be added in once I have the math software avialabit to do equations. 

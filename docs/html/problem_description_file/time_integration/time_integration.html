@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Time Integration</strong></li>
+      <li>Time Integration</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,33 +160,25 @@
            <div itemprop="articleBody">
             
   <div class="section" id="time-integration">
-<h1><strong>Time Integration</strong><a class="headerlink" href="#time-integration" title="Permalink to this headline">¶</a></h1>
+<h1>Time Integration<a class="headerlink" href="#time-integration" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Time</span> <span class="n">integration</span> <span class="o">=</span> <span class="p">{</span><span class="n">steady</span> <span class="o">|</span> <span class="n">transient</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This required card is used to specify transient or steady-state calculation. Valid options
 are:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>steady</strong></p></td>
-<td><p>For a solution to the steady (time-derivative free) equations.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>transient</strong></p></td>
-<td><p>For transient simulations.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>steady</dt><dd><p>For a solution to the steady (time-derivative free) equations.</p>
+</dd>
+<dt>transient</dt><dd><p>For transient simulations.</p>
+</dd>
+</dl>
 <p>If option <strong>steady</strong> is chosen, then none of the other Time Integration Specification cards
 in this section are needed.</p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>This is a sample card for a steady state simulation:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Time</span> <span class="n">integration</span> <span class="o">=</span> <span class="n">steady</span>
 </pre></div>
@@ -195,10 +187,6 @@ in this section are needed.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Time</span> <span class="n">integration</span> <span class="o">=</span> <span class="n">transient</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
-<p>No Discussion.</p>
 </div>
 </div>
 

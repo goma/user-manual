@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Time Step Parameter</strong></li>
+      <li>Time Step Parameter</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,12 +160,12 @@
            <div itemprop="articleBody">
             
   <div class="section" id="time-step-parameter">
-<h1><strong>Time Step Parameter</strong><a class="headerlink" href="#time-step-parameter" title="Permalink to this headline">¶</a></h1>
+<h1>Time Step Parameter<a class="headerlink" href="#time-step-parameter" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Time</span> <span class="n">step</span> <span class="n">parameter</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This card allows the user to vary the time integration scheme. The usual settings are:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -183,14 +183,14 @@
 </table>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>This is a sample card that sets the time integration scheme to Trapezoidal rule:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Time</span> <span class="n">step</span> <span class="n">parameter</span> <span class="o">=</span> <span class="mf">0.5</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>One should usually use the Trapezoid rule. When a large time step <span class="math notranslate nohighlight">\(\Delta t\)</span> is used the
 Trapezoid rule can exhibit oscillations. If such a large <span class="math notranslate nohighlight">\(\Delta t\)</span> is required then the Backward
 Euler method can be used (it will damp oscillations), albeit at a cost of accuracy.</p>
@@ -207,12 +207,12 @@ PDE to be solved as</p>
 <p>Note that there is no choice of finite <span class="math notranslate nohighlight">\(\theta\)</span> that will yield a Forward Euler method. See Gartling (1987) for more information.</p>
 </div>
 <div class="section" id="faqs">
-<h2><strong>FAQs</strong><a class="headerlink" href="#faqs" title="Permalink to this headline">¶</a></h2>
+<h2>FAQs<a class="headerlink" href="#faqs" title="Permalink to this headline">¶</a></h2>
 <p>For porous flow problems with mass lumping, you should always choose backward
 Euler method.</p>
 </div>
 <div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <p>SAND86-1816: NACHOS 2: A Finite Element Computer Program for Incompressible
 Flow Problems - Part 2 - User’s Manual, Gartling, David K. (September, 1987).</p>
 </div>

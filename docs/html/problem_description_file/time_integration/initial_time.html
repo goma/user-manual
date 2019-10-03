@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Initial Time</strong></li>
+      <li>Initial Time</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,35 +160,27 @@
            <div itemprop="articleBody">
             
   <div class="section" id="initial-time">
-<h1><strong>Initial Time</strong><a class="headerlink" href="#initial-time" title="Permalink to this headline">¶</a></h1>
+<h1>Initial Time<a class="headerlink" href="#initial-time" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Initial</span> <span class="n">Time</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This card sets the time at which the calculation starts. The input parameter is defined as</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;float&gt;</p></td>
-<td><p>Any number indicating the initial solution time (in the same
-units as specified in the <em>delta_t</em> card). An additional feature
-can be triggered if this float is specified to be negative,
-which triggers GOMA to look for the nearest restart time in
-the restart ExodusII database to use as the start time. Note
-that this option can only be used with Initial Guess
-options of read_exoII_file or read_exoII.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>&lt;float&gt;</dt><dd><p>Any number indicating the initial solution time (in the same units as
+specified in the <em>delta_t</em> card). An additional feature can be triggered if
+this float is specified to be negative, which triggers GOMA to look for the
+nearest restart time in the restart ExodusII database to use as the start
+time. Note that this option can only be used with Initial Guess options of
+read_exoII_file or read_exoII.</p>
+</dd>
+</dl>
 <p>Normally, the value of &lt;float&gt; will be set to zero unless the problem is a continuation
 of a previous transient problem.</p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>The following is a sample card that shows a restart at 45 time units:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Initial</span> <span class="n">Time</span> <span class="o">=</span> <span class="mf">45.0</span>
 </pre></div>
@@ -198,14 +190,6 @@ units, or the closest time value to 10 time units, to start from:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Initial</span> <span class="n">Time</span> <span class="o">=</span> <span class="o">-</span><span class="mf">10.0</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
-<p>No Discussion.</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No References.</p>
 </div>
 </div>
 

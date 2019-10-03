@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Printing Frequency</strong></li>
+      <li>Printing Frequency</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,43 +160,42 @@
            <div itemprop="articleBody">
             
   <div class="section" id="printing-frequency">
-<h1><strong>Printing Frequency</strong><a class="headerlink" href="#printing-frequency" title="Permalink to this headline">¶</a></h1>
+<h1>Printing Frequency<a class="headerlink" href="#printing-frequency" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Printing</span> <span class="n">Frequency</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">integer</span><span class="o">&gt;</span> <span class="p">[</span><span class="nb">float</span><span class="p">]</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This card sets the printing frequency, the step or time interval, at which <em>Goma</em> will print
 the solution variables to the <em>Output EXODUS II file</em> and the <em>SOLN file</em>. Definitions of
 the &lt;integer&gt; options, and the dependent [float] option when &lt;integer&gt; is set to 0, are:</p>
+<dl>
+<dt>&lt;integer&gt;</dt><dd><p>Specifies how often the solution will be printed.</p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
+<col style="width: 5%" />
+<col style="width: 95%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p>&lt;integer&gt;</p></td>
-<td><p>Specifies how often the solution will be printed.</p></td>
+<tr class="row-odd"><td><p>&gt; 0</p></td>
+<td><p>Interval in time steps between successive printings of the solution,
+any positive integer value.</p></td>
 </tr>
-<tr class="row-even"><td><p>&gt; 0</p></td>
-<td><p>Interval in time steps between successive printings of the
-solution, any positive integer value.</p></td>
-</tr>
-<tr class="row-odd"><td><p>0</p></td>
-<td><p>Controls printing of the solution at regularly spaced
-(uniform) intervals of time (every [float]), regardless of the
-number of time steps over that time interval</p></td>
-</tr>
-<tr class="row-even"><td><p>[float]</p></td>
-<td><p>Elapsed time (in the same units as specified in
-the <em>delta_t</em> card) between successive printings of
-the solution (any positive number).</p></td>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>Controls printing of the solution at regularly spaced (uniform) intervals
+of time (every [float]), regardless of the number of time steps over that
+time interval</p></td>
 </tr>
 </tbody>
 </table>
+</dd>
+<dt>[float]</dt><dd><p>Elapsed time (in the same units as specified in the <em>delta_t</em> card) between
+successive printings of the solution (any positive number).</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p><em>Goma</em> will print the solution every five time steps given the following sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Printing</span> <span class="n">Frequency</span> <span class="o">=</span> <span class="mi">5</span>
 </pre></div>
@@ -205,14 +204,6 @@ the solution (any positive number).</p></td>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Printing</span> <span class="n">Frequency</span> <span class="o">=</span> <span class="mi">0</span> <span class="mf">10.</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
-<p>No Discussion.</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No References.</p>
 </div>
 </div>
 

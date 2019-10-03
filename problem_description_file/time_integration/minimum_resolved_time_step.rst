@@ -1,5 +1,5 @@
 ******************************
-**Minimum Resolved Time Step**
+Minimum Resolved Time Step
 ******************************
 
 ::
@@ -7,7 +7,7 @@
 	Minimum Resolved Time Step = <float>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 Its role is to set a lower bound for the time step with respect to the **Time step error**
@@ -19,13 +19,12 @@ Resolved Time Step** size. In this case the step is accepted, even if this error
 not achieved. This provides a mechanism for the modeler to control what phenomena is
 resolved and what phenomena is ignored.
 
-=======================  ========================================================================
-<float>                  Any floating point number in the same units as specified in
-                         the *delta_t* card.
-=======================  ========================================================================
+<float>
+    Any floating point number in the same units as specified in the *delta_t*
+    card.
 
 ------------
-**Examples**
+Examples
 ------------
 
 A sample card that sets the maximum time step to 10.0 follows:
@@ -34,15 +33,13 @@ A sample card that sets the maximum time step to 10.0 follows:
 	Maximum Resolved Time Step = 10.0
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 See GT-034 for a thorough discussion.
 
-
-
 --------------
-**References**
+References
 --------------
 
 GT-034: Tutorial on time step parameter selection for level-set problems in GOMA.

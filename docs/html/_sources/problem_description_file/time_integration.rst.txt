@@ -16,27 +16,51 @@ interfaces in an Eulerian fashion, making the problem inherently transient.
 
 .. include:: time_integration/time_integration.rst
 
+-------------------------------------------------------------------------------
+
 .. include:: time_integration/delta_t.rst
+
+-------------------------------------------------------------------------------
 
 .. include:: time_integration/maximum_number_of_time_steps.rst
 
+-------------------------------------------------------------------------------
+
 .. include:: time_integration/maximum_time.rst
+
+-------------------------------------------------------------------------------
 
 .. include:: time_integration/minimum_time_step.rst
 
+-------------------------------------------------------------------------------
+
 .. include:: time_integration/maximum_time_step.rst
+
+-------------------------------------------------------------------------------
 
 .. include:: time_integration/minimum_resolved_time_step.rst
 
+-------------------------------------------------------------------------------
+
 .. include:: time_integration/courant_number_limit.rst
+
+-------------------------------------------------------------------------------
 
 .. include:: time_integration/time_step_parameter.rst
 
+-------------------------------------------------------------------------------
+
 .. include:: time_integration/time_step_error.rst
+
+-------------------------------------------------------------------------------
 
 .. include:: time_integration/printing_frequency.rst
 
+-------------------------------------------------------------------------------
+
 .. include:: time_integration/second_frequency_time.rst
+
+-------------------------------------------------------------------------------
 
 .. include:: time_integration/initial_time.rst
 
