@@ -1,6 +1,0 @@
-________________________________________________________________________________
-
-Category 9: Boundary Conditions for the Stress Equations
-
-The following conditions provide a means to set boundary conditions for the hyperbolic
-viscoelastic stress equations; all are of the Dirichlet type.

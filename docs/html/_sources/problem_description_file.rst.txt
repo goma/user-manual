@@ -91,23 +91,23 @@ them again.
 .. toctree::
    :maxdepth: 1
 
-   problem_description_file_sections/file_specifications
-   problem_description_file_sections/general_specifications
-   problem_description_file_sections/time_integration
-   problem_description_file_sections/level_set
-   problem_description_file_sections/phase_field
-   problem_description_file_sections/continuation
-   problem_description_file_sections/hunting
-   problem_description_file_sections/augmenting_conditions
-   problem_description_file_sections/solver_specifications
-   problem_description_file_sections/eigensolver
-   problem_description_file_sections/boundary_conditions
-   problem_description_file_sections/rotation
-   problem_description_file_sections/problem_description
-   problem_description_file_sections/post_processing
-   problem_description_file_sections/post_processing_fluxes
-   problem_description_file_sections/post_processing_particle
-   problem_description_file_sections/post_processing_volume
+   problem_description_file/file_specifications
+   problem_description_file/general_specifications
+   problem_description_file/time_integration
+   problem_description_file/level_set
+   problem_description_file/phase_field
+   problem_description_file/continuation
+   problem_description_file/hunting
+   problem_description_file/augmenting_conditions
+   problem_description_file/solver_specifications
+   problem_description_file/eigensolver
+   problem_description_file/boundary_conditions
+   problem_description_file/rotation
+   problem_description_file/problem_description
+   problem_description_file/post_processing
+   problem_description_file/post_processing_fluxes
+   problem_description_file/post_processing_particle
+   problem_description_file/post_processing_volume
 
 .. 
 	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. Line 1146 contains a phtot that needs to be changed into an equation.

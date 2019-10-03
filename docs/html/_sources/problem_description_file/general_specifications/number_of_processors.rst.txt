@@ -1,0 +1,34 @@
+************************
+**Number of Processors**
+************************
+
+::
+
+    Number of processors = <integer>
+
+-----------------------
+**Description / Usage**
+-----------------------
+
+This card is no longer used in *Goma*; it is defunct. Input decks can safely remove this
+card without adverse effects as the input parser no longer looks for this as an input
+string.
+
+------------
+**Examples**
+------------
+
+No Examples.
+
+-------------------------
+**Technical Discussion**
+-------------------------
+
+As the full implementation of parallel *Goma* has been achieved, this card is no longer
+required. The number of processors is designated on the command line, when **brking**
+the mesh during domain decomposition, on the **mpirun** command line when executing
+Goma and on the **fix** command line when reassembling solution files calculated on
+decomposed meshes.
+
+
+

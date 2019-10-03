@@ -1,6 +1,0 @@
-______________________________________________________________________________
-
-Category 16: Boundary Conditions on Shell Equations
-
-These boundary conditions are applied to shell equations, a special category of equations 
-applied on 1D boundaries of 2D surfaces in Goma.

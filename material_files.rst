@@ -126,12 +126,12 @@ case when the Default Database is set to GOMA_MAT.
 .. toctree::
    :maxdepth: 1
 
-   material_file_sections/physical_properties
-   material_file_sections/mechanical_and_constitutive
-   material_file_sections/thermal_properties
-   material_file_sections/electrical
-   material_file_sections/species
-   material_file_sections/source_terms
-   material_file_sections/shell_equation
+   material_file/physical_properties
+   material_file/mechanical_and_constitutive
+   material_file/thermal_properties
+   material_file/electrical
+   material_file/species
+   material_file/source_terms
+   material_file/shell_equation
 
 

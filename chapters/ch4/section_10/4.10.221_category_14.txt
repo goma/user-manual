@@ -1,8 +1,0 @@
-__________________________________________________________________________________________
-
-Category 14: Fluid-Solid Interaction Boundary Conditions
-
-This is a special group of boundary conditions for problems in which there are two distinct
-material phases (fluid and solid) with relative motion between them. These BC’s provide a means
-to apply conditions to a moving boundary with sensitivities to variables in both phases. These
-problems are formulated in Goma as overset-grid or phase function problems.

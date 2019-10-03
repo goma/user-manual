@@ -1,0 +1,278 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Pressure Stabilization &mdash; Goma User Manual 6.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Goma User Manual
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                6.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../background.html">Background Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../code_structure_and_io.html">Code Structure and I/O</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../problem_description_file.html">Problem Description (Goma Input File)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../material_files.html">Data Input– Material Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../documentation_lists.html">Appendix 1: Goma Documentation Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../library_mode.html">Appendix 2: Using Goma in Library Mode</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Goma User Manual</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li><strong>Pressure Stabilization</strong></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/problem_description_file/solver_specifications/pressure_stabilization.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pressure-stabilization">
+<h1><strong>Pressure Stabilization</strong><a class="headerlink" href="#pressure-stabilization" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Pressure</span> <span class="n">Stabilization</span> <span class="o">=</span> <span class="p">{</span><span class="n">yes</span> <span class="o">|</span> <span class="n">no</span> <span class="o">|</span> <span class="n">local</span> <span class="o">|</span> <span class="n">pspp</span> <span class="o">|</span> <span class="n">pspp_e</span><span class="p">}</span>
+</pre></div>
+</div>
+<div class="section" id="description-usage">
+<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<p>This optional card indicates whether or not pressure stabilization should be used. Valid
+options are</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 76%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>yes</strong></p></td>
+<td><p>Use the Galerkin Least square pressure stabilization method
+developed by Hughes, et. al. (1986).</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>local</strong></p></td>
+<td><p>Use the Galerkin Least square pressure stabilization method
+with local scaling.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>pspp</strong></p></td>
+<td><p>Use polynomial stabilized pressure projection stabilization
+method developed by Dohrmann and Bochev (2004). Please
+see Level Set PSPP filtering card if using with
+the level-set front tracking technique.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>pspp_e</strong></p></td>
+<td><p>Use polynomial stabilized pressure projection method with
+upgrade for nonuniform/graded meshes (recommended)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>no</strong></p></td>
+<td><p>Do not use any pressure stabilization.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The amount of pressure stabilization to use is specified with the <em>Pressure Stabilization
+Scaling</em> card.</p>
+<p>The default is <strong>no</strong>, to not use pressure stabilization.</p>
+</div>
+<div class="section" id="examples">
+<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>Following is a sample card:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Pressure</span> <span class="n">Stabilization</span> <span class="o">=</span> <span class="n">yes</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="technical-discussion">
+<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<p>If input for this card is <strong>yes</strong>, the Hughes, et al. (1986) method adds the residual of the
+momentum equation weighted by the gradient of the Galerkin weight function to the
+Galerkin continuity equation. The result is that the continuity equation now has a
+diagonal term to stabilize it and improve the condition of the matrix, allowing for the
+use of iterative solvers. When pressure stabilization is used, equal-order interpolation
+can (and should) be used for velocity and pressure, e.g., velocity and pressure both Q2
+or both Q1. If input for this card is <strong>no</strong>, then the standard Galerkin finite-element weight
+functions are used and velocity and pressure interpolations should be chosen to satisfy
+the Babuska-Brezzi condition, e.g., velocity Q2 and pressure Q1 or P1, or velocity Q1
+and pressure P0.</p>
+<p>An improvement on the Hughes approach was developed by Bochev and Dohrmann
+(2004) called the polynomial stabilized pressure projection. In its fundamental form, it
+is like PSPG just an additional term on the continuity equation residual that helps
+stabilize the pressure, and it is predicated on the fact that the pressure field is governed
+by an elliptical equation known as the pressure Poisson equation. Please consult this
+paper for details. An additional improvement to that technique was developed
+internally to Sandia which better accommodates graded meshes. This technique is
+invoked with the pspp_e option, which we recommend.</p>
+</div>
+<div class="section" id="references">
+<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p>Hughes, T. J. R., L. P. Franca and M. Balestra, “A New Finite Element Formulation for
+Computational Fluid Dynamics: V. Circumventing the Babuska-Brezzi Condition: A
+Stable Petrov-Galerkin Formulation of the Stokes Problem Accommodating Equal-
+Order Interpolations,” <em>Comput. Methods Appl. Mech. Engrg.</em>, 59 (1986) 85-99.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
