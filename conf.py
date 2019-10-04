@@ -56,10 +56,10 @@ master_doc = 'index'
 
 # General information about the project.
 project = """Goma User Manual"""
-copyright = ''
+copyright = '2019 Goma Developers'
 author = """P. Randall Schunk, Rekha R. Rao, Ken S. Chen, Duane A. Labreche, Amy C. Sun,
 Matthew M. Hopkins, Harry K. Moffat, R. Allen Roach, Polly L. Hopkins and Patrick K.
-Notz, S. A. Roberts"""
+Notz, S. A. Roberts, Kristianto Tjiptowidojo, Andrew Cochrane, Weston Ortiz"""
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -221,14 +221,15 @@ latex_engine = 'xelatex'
 
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+'papersize': 'letterpaper',
 
 # The font size ('10pt', '11pt' or '12pt').
-#'pointsize': '10pt',
+'pointsize': '10pt',
 
 # Additional stuff for the LaTeX preamble.
 "babel": "",
 'preamble': """
+\setcounter{tocdepth}{3}
 """,
 
 # Latex figure (float) alignment
