@@ -4,7 +4,7 @@
 
 ::
 
-	Number of phas functions = {integer}
+	Number of phase functions = {integer}
 
 -----------------------
 **Description / Usage**
@@ -32,7 +32,6 @@ Various uses of the phase function approach have been explored. To track multipl
 interface types from multiple fluids requires more than one level-set field. This
 capability can also be deployed for tracking imprinted solid surfaces (moving) together
 with capillary free surfaces. Consult the tutorials.
-
 
 
 --------------

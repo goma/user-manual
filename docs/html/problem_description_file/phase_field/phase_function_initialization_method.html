@@ -171,24 +171,15 @@ initial instance, subsequent instances of {model_name} {parameter_list} are used
 describe initializations of phase fields 2 through 5. This card constructs from a
 representation of the starting interface shape, a value for the distance function at every
 node in the mesh. The syntax of the card is as follows:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 28%" />
-<col style="width: 72%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>{method_name}</p></td>
-<td><p>A character string which identifies the initialization option
-desired. Choices for this string are: <strong>Projection, Exodus,
-Nodeset, Surfaces, SM_object.</strong></p></td>
-</tr>
-<tr class="row-even"><td><p>{parameter list}</p></td>
-<td><p>This is a variable parameter list specific to each option. The
-nature of it for each method is detailed in the syntax
-descriptions below.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>{method_name}</dt><dd><p>A character string which identifies the initialization option desired.
+Choices for this string are: <strong>Projection, Exodus, Nodeset, Surfaces,
+SM_object.</strong></p>
+</dd>
+<dt>{parameter list}</dt><dd><p>This is a variable parameter list specific to each option. The nature of it
+for each method is detailed in the syntax descriptions below.</p>
+</dd>
+</dl>
 <p>Below are the exact syntax used for each initialization method, a brief description of
 the method and a specification of any additional required parameters.</p>
 <table class="docutils align-default">

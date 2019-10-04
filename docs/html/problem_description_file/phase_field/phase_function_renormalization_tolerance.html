@@ -170,17 +170,10 @@
 (redistancing) operations are performed on the phase function fields as they evolve by
 fixing the size of the deviation allowed between the average absolute magnitude of the phase function gradient near each respecitve interface and unity, the theoretical value
 observed for a pure distance function.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 26%" />
-<col style="width: 74%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;float&gt;</p></td>
-<td><p>Value of the tolerance, the allowable deviation.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>&lt;float&gt;</dt><dd><p>Value of the tolerance, the allowable deviation.</p>
+</dd>
+</dl>
 <p>The range of this parameter is any positive real number, however, it is rare to use values
 smaller than 0.1 or larger than 5.0. The value of the tolerance defaults to 0.5 if this card
 is not specified. Note that a global parameter value is applied to all phase function
@@ -217,10 +210,6 @@ procedure designed solely to improve the numerical performance of the interface
 tracker. As such, it can add or subtract volume to or from the phases represented by the
 interface contour. Renormalizing too often, therefore, can result in errors being introduced. The renormalization procedure, Huygens_Constrained, attempts to
 mitigate this effect.</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No Reference.</p>
 </div>
 </div>
 

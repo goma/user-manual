@@ -168,51 +168,43 @@
 <h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This card indicates the method to be used to renormalize the phase function fields
 during the course of the computation.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 26%" />
-<col style="width: 74%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;char_string&gt;</p></td>
-<td><p>A character string which specifies the type of method for
-renormalization. Choices for this string are: <strong>Huygens,
-Huygens_Constrained.</strong></p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Huygens</strong></p></td>
-<td><p>In this renormalization method a set <span class="math notranslate nohighlight">\(\mathbf{P}\)</span> of
-<span class="math notranslate nohighlight">\(m\)</span> discrete points is constructed that lie on the zero
-contour of the <span class="math notranslate nohighlight">\(j\)</span> -th phase function field:</p>
-<blockquote>
-<div><dl class="simple">
-<dt>:math:<a href="#id1"><span class="problematic" id="id2">`</span></a>mathbf{P} = left{ left( x_i, y_i, z_i right), ,</dt><dd><p>i = 1,2, ldots m | quad phi_j left( x_i, y_i, z_i right)
-= 0 right}`</p>
+<dl class="simple">
+<dt>{char_string}</dt><dd><p>A character string which specifies the type of method for renormalization.
+Choices for this string are: <strong>Huygens, Huygens_Constrained, Correction.</strong></p>
 </dd>
 </dl>
+<p>Each method is described below; see also the Technical Discussion.</p>
+<dl>
+<dt>Huygens</dt><dd><p>In this method a set of m points P is constructed:</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(\mathbf{P} = \left\{ \left( x_i, y_i, z_i \right), \,
+i = 1,2, \ldots m | \quad \phi_j \left( x_i, y_i, z_i \right)
+= 0 \right\}\)</span></p>
 </div></blockquote>
-<p>The finite element interpolating functions make this an easy task
-for <em>Goma</em>. For each mesh node <span class="math notranslate nohighlight">\(k\)</span>, a minimum distance
-<span class="math notranslate nohighlight">\(D_k\)</span> to this  set of points is determined, and the value of
-phase function at that node is replaced by <span class="math notranslate nohighlight">\(D_k\)</span> multiplied by
-the original phase function sign  at that node. This method is fast
-and robust and, given sufficiently refined meshes and high order (Q2)
-interpolation of the phase function fields, reasonably accurate.
-However, for lower order interpolation this method is prone to lose
-mass over time.</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>Huygens_Constrained</strong></p></td>
-<td><p>This method of renormalization functions in much the same
-way as the previous method, except it employs Lagrange multiplier
-to enforce a global constraint that requires that
-the volume of “negative” phase function remain unchanged
-before and after the renormalization. This requirement
-makes the method significantly better at conserving mass.
-However, it also does introduce an extraphysical movement
-of material within the domain.</p></td>
-</tr>
-</tbody>
-</table>
+<p>which in a sense represent a discretization of the
+interface location. The finite element interpolation
+functions are used to find exact locations for these
+points. For each mesh node <span class="math notranslate nohighlight">\(j\)</span>, a minimum distance
+<span class="math notranslate nohighlight">\(D_j\)</span>, can be found to this set of points.
+Renormalization is accomplished by replacing the
+phase field value at this node <span class="math notranslate nohighlight">\(\phi_j\)</span>
+with <span class="math notranslate nohighlight">\(D_j\)</span> multiplied by
+the sign of the previous value for the phase field
+function. This method is fast and robust and
+reasonably accurate given sufficiently refined
+meshes using high order phase field interpolation.
+However, this method is prone to losing material if
+low order phase field interpolation is employed.</p>
+</dd>
+<dt>Huygens_Constrained</dt><dd><p>This method renormalizes the function in much the same way as the
+<strong>Huygens</strong> method, except it employs a Lagrange multiplier to enforce
+a global integrated constraint that requires the volume occupied by the
+“negative” phase to remain unchanged before and after renormalization. This
+requirement makes this method better at conserving mass. However, since it
+enforces a global constraint, it is possible that material might be moved
+nonphysically around the computational domain.</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="examples">
 <h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
@@ -241,10 +233,6 @@ being distance functions from the interface. In general, this is a satisfactory 
 the frequency of renormalization is not too great. To set the criteria for determining
 when to renormalize the phase functions see the <em>Phase Function Renormalization
 Tolerance</em> card.</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No Reference.</p>
 </div>
 </div>
 
