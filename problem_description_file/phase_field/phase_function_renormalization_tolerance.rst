@@ -15,9 +15,8 @@ This parameter provides a means for controlling how often renormalization
 fixing the size of the deviation allowed between the average absolute magnitude of the phase function gradient near each respecitve interface and unity, the theoretical value
 observed for a pure distance function.
 
-=======================  ==================================================================
-<float>                  Value of the tolerance, the allowable deviation.
-=======================  ==================================================================
+<float>
+    Value of the tolerance, the allowable deviation.
 
 The range of this parameter is any positive real number, however, it is rare to use values
 smaller than 0.1 or larger than 5.0. The value of the tolerance defaults to 0.5 if this card
@@ -65,8 +64,3 @@ tracker. As such, it can add or subtract volume to or from the phases represente
 interface contour. Renormalizing too often, therefore, can result in errors being introduced. The renormalization procedure, Huygens_Constrained, attempts to
 mitigate this effect.
 
---------------
-**References**
---------------
-
-No Reference.
