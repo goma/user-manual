@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Linear Stability</strong></li>
+      <li>Linear Stability</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,58 +160,45 @@
            <div itemprop="articleBody">
             
   <div class="section" id="linear-stability">
-<h1><strong>Linear Stability</strong><a class="headerlink" href="#linear-stability" title="Permalink to this headline">¶</a></h1>
+<h1>Linear Stability<a class="headerlink" href="#linear-stability" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Linear</span> <span class="n">Stability</span> <span class="o">=</span> <span class="p">{</span><span class="n">char_list</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This optional card indicates whether or not linear stability analysis should be
 performed, as well as what kind.</p>
 <p>The valid options for {char_list} are:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>no</strong></p></td>
-<td><p>Do not perform any kind of linear stability analysis.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>yes</strong></p></td>
-<td><p>Perform regular linear stability analysis. If your problem
-was 2D, then 2D analysis is performed. If your problem was
-3D, then 3D analysis is performed.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>inline</strong></p></td>
-<td><p>Same as yes, perform regular linear stability analysis.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>3D</strong></p></td>
-<td><p>Subject the 2D flow to 3D linear stability analysis by
-normal mode expansion for the modes specified with the
-<em>Eigen Wave Numbers</em> card.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>file</strong></p></td>
-<td><p>Set up the problem as in <strong>yes</strong> or <strong>inline,</strong> but output the
-matrices involved instead of determining stability.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>3Dfile</strong></p></td>
-<td><p>Set up the problem as in <strong>3D,</strong> but output the matrices
-involved instead of determining stability.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>no</dt><dd><p>Do not perform any kind of linear stability analysis.</p>
+</dd>
+<dt>yes</dt><dd><p>Perform regular linear stability analysis. If your problem was 2D, then 2D
+analysis is performed. If your problem was 3D, then 3D analysis is
+performed.</p>
+</dd>
+<dt>inline</dt><dd><p>Same as yes, perform regular linear stability analysis.</p>
+</dd>
+<dt>3D</dt><dd><p>Subject the 2D flow to 3D linear stability analysis by normal mode
+expansion for the modes specified with the <em>Eigen Wave Numbers</em> card.</p>
+</dd>
+<dt>file</dt><dd><p>Set up the problem as in <strong>yes</strong> or <strong>inline,</strong> but output the matrices
+involved instead of determining stability.</p>
+</dd>
+<dt>3Dfile</dt><dd><p>Set up the problem as in <strong>3D,</strong> but output the matrices involved instead
+of determining stability.</p>
+</dd>
+</dl>
 <p>The default value is <strong>no.</strong></p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Here is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Linear</span> <span class="n">Stability</span> <span class="o">=</span> <span class="n">yes</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>When linear stability analysis is performed, a steady-state solution is first acquired, and
 then the eigenvalue/eigenvector spectrum is computed subject to the choices made in
 the <em>Eigensolver Specifications</em> section. In the case of <strong>file</strong> or <strong>3Dfile,</strong> the steady-state
@@ -239,7 +226,7 @@ made (see the 3D stability of 2D flow memo).</p>
 (Labreche, et. al., 2002).</p>
 </div>
 <div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <p>SAND2000-2465: Advanced Capabilities in Goma 3.0 - Augmenting Conditions,
 Automatic Continuation, and Linear Stability Analysis, I. D. Gates, D. A. Labreche and
 M. M. Hopkins (January 2001)</p>

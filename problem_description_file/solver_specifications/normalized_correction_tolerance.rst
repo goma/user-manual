@@ -1,5 +1,5 @@
 ***********************************
-**Normalized Correction Tolerance**
+Normalized Correction Tolerance
 ***********************************
 
 ::
@@ -7,24 +7,23 @@
 	Normalized Correction Tolerance = <float>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This optional card sets the tolerance for a mixed measure of the size of the update
 vector which must be satisfied for the solution to be considered converged. The input
 parameter is defined as
 
-=================== ======================================================================
-<float>             **rel,** a floating point value ( rel ≥ 0.0 ) used as the
-                    convergence tolerance for the mixed measure of the update
-                    vector (defined in the Technical Discussion).
-=================== ======================================================================
+<float>
+    **rel,** a floating point value ( rel ≥ 0.0 ) used as the convergence
+    tolerance for the mixed measure of the update vector (defined in the
+    Technical Discussion).
 
 When the *Normalized Correction Tolerance* card is omitted, the default value of **rel** is
 1.0e+10.
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -33,7 +32,7 @@ Following is a sample card:
 	Normalized Correction Tolerance = 1.0e-4
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 The mixed measure used here is:
@@ -53,10 +52,3 @@ Tolerance* card for a solution to be considered converged.
 If rel < 1.0 (larger values are not really imposing any restrictions), mixed measure
 values are output instead of the update vector norms.
 
-
-
---------------
-**References**
---------------
-
-No References.

@@ -1,5 +1,5 @@
 ********************
-**Linear Stability**
+Linear Stability
 ********************
 
 ::
@@ -7,7 +7,7 @@
 	Linear Stability = {char_list}
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This optional card indicates whether or not linear stability analysis should be
@@ -15,25 +15,28 @@ performed, as well as what kind.
 
 The valid options for {char_list} are:
 
-=======================  =======================================================================
-**no**                   Do not perform any kind of linear stability analysis.
-**yes**                  Perform regular linear stability analysis. If your problem
-                         was 2D, then 2D analysis is performed. If your problem was
-                         3D, then 3D analysis is performed.
-**inline**               Same as yes, perform regular linear stability analysis.
-**3D**                   Subject the 2D flow to 3D linear stability analysis by
-                         normal mode expansion for the modes specified with the
-                         *Eigen Wave Numbers* card.
-**file**                 Set up the problem as in **yes** or **inline,** but output the
-                         matrices involved instead of determining stability.
-**3Dfile**               Set up the problem as in **3D,** but output the matrices
-                         involved instead of determining stability.
-=======================  =======================================================================
+no
+    Do not perform any kind of linear stability analysis.
+yes
+    Perform regular linear stability analysis. If your problem was 2D, then 2D
+    analysis is performed. If your problem was 3D, then 3D analysis is
+    performed.
+inline
+    Same as yes, perform regular linear stability analysis.
+3D
+    Subject the 2D flow to 3D linear stability analysis by normal mode
+    expansion for the modes specified with the *Eigen Wave Numbers* card.
+file
+    Set up the problem as in **yes** or **inline,** but output the matrices
+    involved instead of determining stability.
+3Dfile
+    Set up the problem as in **3D,** but output the matrices involved instead
+    of determining stability.
 
 The default value is **no.**
 
 ------------
-**Examples**
+Examples
 ------------
 
 Here is a sample card:
@@ -42,7 +45,7 @@ Here is a sample card:
 	Linear Stability = yes
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 When linear stability analysis is performed, a steady-state solution is first acquired, and
@@ -74,10 +77,8 @@ made (see the 3D stability of 2D flow memo).
 See the Advanced Capabilities document (Gates, et. al., 2001), or it’s replacement
 (Labreche, et. al., 2002).
 
-
-
 --------------
-**References**
+References
 --------------
 
 SAND2000-2465: Advanced Capabilities in Goma 3.0 - Augmenting Conditions,

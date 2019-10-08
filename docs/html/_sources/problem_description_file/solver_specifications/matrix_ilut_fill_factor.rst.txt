@@ -1,5 +1,5 @@
 ***************************
-**Matrix ILUT Fill Factor**
+Matrix ILUT Fill Factor
 ***************************
 
 ::
@@ -7,23 +7,21 @@
 	Matrix ILUT fill factor = <float>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This optional card provides a second criterion to Aztec to be used in conjunction with
 preconditioners based on ILUT approximate factorization, where
 
-==================== =====================================================================
-<float>              **fac,** a floating point value ( fac ≥ 0 ) that specifies, very
-                     crudely, how many nonzero entries the approximate
-                     factorization will contain relative to the number of nonzero
-                     entries in the original matrix.
-==================== =====================================================================
+<float>
+    **fac,** a floating point value ( fac ≥ 0 ) that specifies, very crudely,
+    how many nonzero entries the approximate factorization will contain
+    relative to the number of nonzero entries in the original matrix.
 
 If the *Matrix ILUT fill factor* card is omitted, the default is **1.**
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -32,7 +30,7 @@ Following is a sample card:
 	Matrix ILUT fill factor = 2.0
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 By increasing this factor, the preconditioner becomes more accurate because more

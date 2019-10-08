@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Disable Viscosity Sensitivities</strong></li>
+      <li>Disable Viscosity Sensitivities</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,51 +160,40 @@
            <div itemprop="articleBody">
             
   <div class="section" id="disable-viscosity-sensitivities">
-<h1><strong>Disable Viscosity Sensitivities</strong><a class="headerlink" href="#disable-viscosity-sensitivities" title="Permalink to this headline">¶</a></h1>
+<h1>Disable Viscosity Sensitivities<a class="headerlink" href="#disable-viscosity-sensitivities" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Disable</span> <span class="n">Viscosity</span> <span class="n">Sensitivities</span> <span class="o">=</span> <span class="p">{</span><span class="n">yes</span> <span class="o">|</span> <span class="n">no</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This optional card permits the analyst to omit the sensitivities of a shear-thinning
 viscosity model with respect to shear rate from the Jacobian.Valid options for this card
 are</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>yes</strong></p></td>
-<td><p>Omit the sensitivities of a shear-thinning viscosity model
-with respect to shear rate from the Jacobian</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>no</strong></p></td>
-<td><p>Form the complete Jacobian.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>yes</dt><dd><p>Omit the sensitivities of a shear-thinning viscosity model with respect to
+shear rate from the Jacobian</p>
+</dd>
+<dt>no</dt><dd><p>Form the complete Jacobian.</p>
+</dd>
+</dl>
 <p>Currently, this card will have an effect only when using the following viscosity models:
 <strong>POWER_LAW, CARREAU, BINGHAM</strong> (see the <em>Liquid Constitutive Equation</em>
 card).</p>
-<p>The default value is <strong>no.</strong></p>
+<p>The default value is <strong>no</strong>.</p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>The following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Disable</span> <span class="n">Viscosity</span> <span class="n">Sensitivities</span> <span class="o">=</span> <span class="n">yes</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
-<p>It has been observed that when these terms are included for very highly shear-thinning
-models the result can be non-convergence. In such situations, disabling these terms can often result in a convergent answer but at a convergence rate far less than the usual
-quadratic.</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No References.</p>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<p>It has been observed that when these terms are included for very highly
+shear-thinning models the result can be non-convergence. In such situations,
+disabling these terms can often result in a convergent answer but at
+a convergence rate far less than the usual quadratic.</p>
 </div>
 </div>
 

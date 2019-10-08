@@ -1,5 +1,5 @@
 ******************
-**Matrix Reorder**
+Matrix Reorder
 ******************
 
 ::
@@ -7,21 +7,21 @@
 	Matrix reorder = {none | rcm}
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This optional card determines whether RCM (Reverse Cuthill-McKee) reordering of
 the linear system is to be performed. Valid options are:
 
-==================== =====================================================================
-**none**             the equations are not reordered.
-**rcm**              the equations are reordered using an RCM scheme.
-==================== =====================================================================
+none
+    the equations are not reordered.
+rcm
+    the equations are reordered using an RCM scheme.
 
 If the *Matrix reorder* card is omitted, then the default selection is **none.**
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -30,7 +30,7 @@ Following is a sample card:
 	Matrix reorder = rcm
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 Note that reordering frequently is helpful in achieving convergence for iterative

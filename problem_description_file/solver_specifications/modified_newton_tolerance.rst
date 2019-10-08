@@ -1,5 +1,5 @@
 *****************************
-**Modified Newton Tolerance**
+Modified Newton Tolerance
 *****************************
 
 ::
@@ -7,20 +7,19 @@
 	Modified Newton Tolerance = <float1> <float2>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This optional card allows the user to exert finer control over Jacobian formation than a
 stride specification (as with the *Number of Newton Iterations* card’s second parameter
 or the *Jacobian Reform Time Stride* card). Input parameters are defined as:
 
-=================== ==================================================================
-<float1>            **r,** if the convergence rate is below this level ( r > 0.0 ), a
-                    Jacobian reformation will be forced.
-<float2>            **t,** if the residual norm is above this level ( t ≥ 0.0 ), a 
-                    Jacobian
-                    reformation will be forced.
-=================== ==================================================================
+<float1>
+    **r,** if the convergence rate is below this level ( r > 0.0 ), a Jacobian
+    reformation will be forced.
+<float2>
+    **t,** if the residual norm is above this level ( t ≥ 0.0 ), a Jacobian
+    reformation will be forced.
 
 If the *Modified Newton Tolerance* card is omitted, then reformations are always
 computed, subject to the *Number of Newton Iterations’* second parameter and the
@@ -30,7 +29,7 @@ See the *Jacobian Reform Time Stride* card for some detailed examples of the int
 amongst various cards that influence when a Jacobian reformation occurs.
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -39,7 +38,7 @@ Following is a sample card:
 	Modified Newton Tolerance = 1.5 1.0e-8
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 The convergence rate is defined as:
@@ -59,9 +58,3 @@ conservative. If either test condition for reformation is satisfied, a reformati
 Often, this card will allow you to speed up your runs by foregoing a fresh Jacobian reformation, but still maintain strong convergence. Moreover, without a Jacobian
 reformation, the **lu** solver (see the *Solution Algorithm* card) can use a previously
 factored matrix and simply do a resolve.
-
-
-
-
-.. 
-	TODO - An equation needs to be written to replace the photo on lines 47-49. Also, in in line 53 there is a equation that needs to take the space of "1 + 5) ⁄ 2" loctaed before it says "(the golden ratio!)".

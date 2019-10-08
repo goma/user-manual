@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Pressure Stabilization Scaling</strong></li>
+      <li>Pressure Stabilization Scaling</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,38 +160,30 @@
            <div itemprop="articleBody">
             
   <div class="section" id="pressure-stabilization-scaling">
-<h1><strong>Pressure Stabilization Scaling</strong><a class="headerlink" href="#pressure-stabilization-scaling" title="Permalink to this headline">¶</a></h1>
+<h1>Pressure Stabilization Scaling<a class="headerlink" href="#pressure-stabilization-scaling" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Pressure</span> <span class="n">Stabilization</span> <span class="n">Scaling</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This optional card is only used if the Pressure Stabilization card is set to <strong>yes,</strong> where</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;float&gt;</p></td>
-<td><p><strong>tau,</strong> a positive real value ( tau &gt; 0.0 ) that scales the
-momentum residual being added to the continuity equation
-for pressure stabilization.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>&lt;float&gt;</dt><dd><p><strong>tau,</strong> a positive real value ( tau &gt; 0.0 ) that scales the momentum
+residual being added to the continuity equation for pressure stabilization.</p>
+</dd>
+</dl>
 <p>The default value of <strong>tau</strong> is 0.1. If the <em>Pressure Stabilization</em> card is omitted, or set to
 <strong>no,</strong> then <strong>tau</strong> is ignored.</p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Pressure</span> <span class="n">Stabilization</span> <span class="n">Scaling</span> <span class="o">=</span> <span class="mf">0.01</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>Generally, if <strong>tau</strong> is small, then more accurate solutions may be obtained at the cost of a
 more ill-conditioned matrix system that may not be easily amenable to iterative solvers
 (but stay tuned!). Conversely, larger values of this parameter result in equation systems

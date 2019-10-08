@@ -1,5 +1,5 @@
 *****************************
-**Matrix Relative Threshold**
+Matrix Relative Threshold
 *****************************
 
 ::
@@ -7,22 +7,21 @@
 	Matrix Relative Threshold = <float>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This card is only available with the Trilinos library. The effect of this card is to impose
 a relative lower bound to either a diagonal value or a singular value. The legal values
 for <float> are:
 
-==================== ========================================================================
-<float>              **r**, a floating point number ( r ≥ 0.0 ) that specifies a relative 
-                     threshold.
-==================== ========================================================================
+<float>
+    **r**, a floating point number ( r ≥ 0.0 ) that specifies a relative
+    threshold.
 
 If this card is omitted, the default is 0.0.
 
 ------------
-**Examples**
+Examples
 ------------
 
 A sample input card follows:
@@ -31,7 +30,7 @@ A sample input card follows:
 	Matrix Relative Threshold = 1.e-4
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 This card, along with the *Matrix Absolute Threshold* card, allow the user to modify the
@@ -61,15 +60,11 @@ The appropriate values for the threshold can vary over many orders of magnitude
 depending on the situation. Refer to Schunk, et. al., 2002 for information and for
 further guidance.
 
-
-
 --------------
-**References**
+References
 --------------
 
 SAND2001-3512J: Iterative Solvers and Preconditioners for Fully-coupled Finite
 Element Formulations of Incompressible Fluid Mechanics and Related Transport
 Problems, P. R. Schunk, M. A. Heroux, R. R. Rao, T. A. Baer, S. R. Subia and A. C.
 Sun, March 2002.
-
-.. TODO - Equations need to be written in on lines 46-48 as well as 53-55.

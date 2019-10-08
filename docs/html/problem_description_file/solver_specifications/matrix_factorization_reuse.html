@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Matrix Factorization Reuse</strong></li>
+      <li>Matrix Factorization Reuse</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,42 +160,33 @@
            <div itemprop="articleBody">
             
   <div class="section" id="matrix-factorization-reuse">
-<h1><strong>Matrix Factorization Reuse</strong><a class="headerlink" href="#matrix-factorization-reuse" title="Permalink to this headline">¶</a></h1>
+<h1>Matrix Factorization Reuse<a class="headerlink" href="#matrix-factorization-reuse" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">factorization</span> <span class="n">reuse</span> <span class="o">=</span> <span class="p">{</span><span class="n">char_string</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This optional card directs the approximate factorization solvers used in preconditioner
 construction to reuse matrix information that may have been obtained during previous
 linear solution stages. This card only has an effect when using an Aztec solver. Valid
 options for {char_string} are:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 78%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>calc</strong></p></td>
-<td><p>Use no information from previous linear solutions.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>recalc</strong></p></td>
-<td><p>Use information from previous linear solutions but
-recalculate the preconditioning factors, with the implication
-that the symbolic factorization will be similar.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>reuse</strong></p></td>
-<td><p>Use information from previous linear solution; do not
-recalculate preconditioner factorizations. However, use
-scaling factors from previous linear solutions to scale righthand
-sides, initial guesses, and final solutions.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>calc</dt><dd><p>Use no information from previous linear solutions.</p>
+</dd>
+<dt>recalc</dt><dd><p>Use information from previous linear solutions but recalculate the
+preconditioning factors, with the implication that the symbolic
+factorization will be similar.</p>
+</dd>
+<dt>reuse</dt><dd><p>Use information from previous linear solution; do not recalculate
+preconditioner factorizations. However, use scaling factors from previous
+linear solutions to scale righthand sides, initial guesses, and final
+solutions.</p>
+</dd>
+</dl>
 <p>If the <em>Matrix factorization</em> reuse card is omitted, the default is <strong>recalc.</strong></p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">factorization</span> <span class="n">reuse</span> <span class="o">=</span> <span class="n">recalc</span>
 </pre></div>
@@ -203,11 +194,7 @@ sides, initial guesses, and final solutions.</p></td>
 </div>
 <div class="section" id="technical-discussion">
 <h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
-<p>No Discussion. See related discussions for <em>Matrix factorization save</em>.</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No References.</p>
+<p>See related discussions for <em>Matrix factorization save</em>.</p>
 </div>
 </div>
 

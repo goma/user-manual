@@ -1,5 +1,5 @@
 *************************
-**Matrix Storage Format**
+Matrix Storage Format
 *************************
 
 ::
@@ -7,23 +7,23 @@
 	Matrix storage format = {msr | vbr}
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This optional card can be used to choose between two formats accepted by the Aztec
 2.1 solver package. Valid options are:
 
-====================  ===========================================================================
-**msr**               modified sparse row format (see Schunk and Shadid, 1992).
-                      This option is the default option and is automatically used
-                      for all direct solver options.
-**vbr**               variable block row format (see Heroux, 1992). This option
-                      should only be selected when an Aztec iterative solver is
-                      chosen.
-====================  ===========================================================================
+msr
+    modified sparse row format (see Schunk and Shadid, 1992). This option is
+    the default option and is automatically used for all direct solver options.
+vbr
+    variable block row format (see Heroux, 1992). This option should only be
+    selected when an Aztec iterative solver is chosen.
+epetra
+    Compressed Sparse Row format using the Epetra library from Trilinos
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -32,7 +32,7 @@ Following is a sample card:
 	Matrix storage format = msr
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 *Goma* supports two global matrix formats for its linear solvers. The advantage of
@@ -41,10 +41,8 @@ selected. (See Schunk, et al., 2002 on iterative methods.) When using the front 
 package, another format known as **estifm** is employed internally but not specified by
 this card, which is not used in this case.
 
-
-
 --------------
-**References**
+References
 --------------
 
 SAND92-1158: Iterative Solvers in Implicit Finite Element Codes, Sandia Technical

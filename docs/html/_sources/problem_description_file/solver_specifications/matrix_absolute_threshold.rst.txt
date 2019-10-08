@@ -1,5 +1,5 @@
 *****************************
-**Matrix Absolute Threshold**
+Matrix Absolute Threshold
 *****************************
 
 ::
@@ -7,17 +7,16 @@
 	Matrix Absolute Threshold = <float>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This card is only available with the Trilinos library. It allows the user to specify a lower
 bound for either a diagonal entry or a singular value. The exact meaning depends on the
 kind of preconditioner used (scalar-based or block-based). The legal values are:
 
-==================== ========================================================================
-<float>              **t,** a floating point number ( t ≥ 0.0 ) that specifies a minimum
-                     threshold value for diagonal or singular value.
-==================== ========================================================================
+<float>
+    **t,** a floating point number ( t ≥ 0.0 ) that specifies a minimum
+    threshold value for diagonal or singular value.
 
 Along with the *Matrix Relative Threshold* card, this card gives the user the ability to
 modify what matrix the preconditioner operates on. See the *Matrix Relative Threshold*
@@ -26,7 +25,7 @@ card for a full description.
 If this card is omitted, the default is 0.0.
 
 ------------
-**Examples**
+Examples
 ------------
 
 A sample input card follows:
@@ -45,7 +44,7 @@ Refer to Schunk, et. al., 2002 for information and for further guidance.
 
 
 --------------
-**References**
+References
 --------------
 
 SAND2001-3512J: Iterative Solvers and Preconditioners for Fully-coupled Finite

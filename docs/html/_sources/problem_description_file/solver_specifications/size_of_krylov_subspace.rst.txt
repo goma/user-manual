@@ -1,5 +1,5 @@
 ***************************
-**Size of Krylov Subspace**
+Size of Krylov Subspace
 ***************************
 
 ::
@@ -7,22 +7,20 @@
 	Size of Krylov subspace = <integer>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This optional card allows the user to specify the dimension (size) of the Krylov
 subspace for the **gmres** option of the *Solution Algorithm* card, where
 
-==================== ========================================================================
-<integer>            **m,** specifies the number of orthogonalization directions and
-                     can be any positive integer less than or equal to the order of
-                     the matrix.
-==================== ========================================================================
+<integer>
+    **m,** specifies the number of orthogonalization directions and can be any
+    positive integer less than or equal to the order of the matrix.
 
 If the *Size of Krylov subspace* card is omitted, then the default dimension is **m** = 30.
 
 ------------
-**Examples**
+Examples
 ------------
 
 The following is a sample input card:
@@ -31,7 +29,7 @@ The following is a sample input card:
 	Size of Krylov subspace = 128
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 If the size of the subspace is at least as large as the maximum number of iterations
@@ -49,10 +47,3 @@ iterations increases nonlinearly with **m** (but see the *Orthogonalization* car
 doubling of **m** will result in more than a doubling of space and time requirements. So
 simply choosing a very large dimension is generally not recommended.
 
-
-
---------------
-**References**
---------------
-
-No References.

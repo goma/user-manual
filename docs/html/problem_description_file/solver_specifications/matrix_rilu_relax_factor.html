@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Matrix RILU Relax Factor</strong></li>
+      <li>Matrix RILU Relax Factor</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,38 +160,31 @@
            <div itemprop="articleBody">
             
   <div class="section" id="matrix-rilu-relax-factor">
-<h1><strong>Matrix RILU Relax Factor</strong><a class="headerlink" href="#matrix-rilu-relax-factor" title="Permalink to this headline">¶</a></h1>
+<h1>Matrix RILU Relax Factor<a class="headerlink" href="#matrix-rilu-relax-factor" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">RILU</span> <span class="n">relax</span> <span class="n">factor</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This optional card provides a relaxation factor to Aztec to be used in conjunction with
 preconditioners based on RILU(k,ω) approximate factorization. The input parameter
 &lt;float&gt; is defined as</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 78%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;float&gt;</p></td>
-<td><p><strong>fac,</strong> a floating point number ( fac ≥ 0 ) that specifies a
-relaxation factor.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>&lt;float&gt;</dt><dd><p><strong>fac,</strong> a floating point number ( fac ≥ 0 ) that specifies a relaxation
+factor.</p>
+</dd>
+</dl>
 <p>If the <em>Matrix RILU relax factor</em> card is omitted, the default is <strong>1.</strong></p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">RILU</span> <span class="n">relax</span> <span class="n">factor</span> <span class="o">=</span> <span class="mf">0.5</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>Some limiting values for fac provide specific behavior:</p>
 <ul class="simple">
 <li><p>for a value of zero, the ILU(k) is obtained</p></li>

@@ -1,5 +1,5 @@
 **************************
-**Pressure Stabilization**
+Pressure Stabilization
 **************************
 
 ::
@@ -7,26 +7,28 @@
 	Pressure Stabilization = {yes | no | local | pspp | pspp_e}
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This optional card indicates whether or not pressure stabilization should be used. Valid
 options are
 
 
-=======================  =======================================================================
-**yes**                  Use the Galerkin Least square pressure stabilization method
-                         developed by Hughes, et. al. (1986).
-**local**                Use the Galerkin Least square pressure stabilization method
-                         with local scaling.
-**pspp**                 Use polynomial stabilized pressure projection stabilization
-                         method developed by Dohrmann and Bochev (2004). Please
-                         see Level Set PSPP filtering card if using with
-                         the level-set front tracking technique.
-**pspp_e**               Use polynomial stabilized pressure projection method with
-                         upgrade for nonuniform/graded meshes (recommended)
-**no**                   Do not use any pressure stabilization.
-=======================  =======================================================================
+yes
+    Use the Galerkin Least square pressure stabilization method developed by
+    Hughes, et. al. (1986).
+local
+    Use the Galerkin Least square pressure stabilization method with local
+    scaling.
+pspp
+    Use polynomial stabilized pressure projection stabilization method
+    developed by Dohrmann and Bochev (2004). Please see Level Set PSPP
+    filtering card if using with the level-set front tracking technique.
+pspp_e
+    Use polynomial stabilized pressure projection method with upgrade for
+    nonuniform/graded meshes (recommended)
+no
+    Do not use any pressure stabilization.
 
 
 The amount of pressure stabilization to use is specified with the *Pressure Stabilization
@@ -35,7 +37,7 @@ Scaling* card.
 The default is **no**, to not use pressure stabilization.
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -44,7 +46,7 @@ Following is a sample card:
 	Pressure Stabilization = yes
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 If input for this card is **yes**, the Hughes, et al. (1986) method adds the residual of the
@@ -67,10 +69,8 @@ paper for details. An additional improvement to that technique was developed
 internally to Sandia which better accommodates graded meshes. This technique is
 invoked with the pspp_e option, which we recommend.
 
-
-
 --------------
-**References**
+References
 --------------
 
 Hughes, T. J. R., L. P. Franca and M. Balestra, “A New Finite Element Formulation for

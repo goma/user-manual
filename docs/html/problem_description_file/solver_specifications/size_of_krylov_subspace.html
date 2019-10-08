@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Size of Krylov Subspace</strong></li>
+      <li>Size of Krylov Subspace</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,38 +160,30 @@
            <div itemprop="articleBody">
             
   <div class="section" id="size-of-krylov-subspace">
-<h1><strong>Size of Krylov Subspace</strong><a class="headerlink" href="#size-of-krylov-subspace" title="Permalink to this headline">¶</a></h1>
+<h1>Size of Krylov Subspace<a class="headerlink" href="#size-of-krylov-subspace" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Size</span> <span class="n">of</span> <span class="n">Krylov</span> <span class="n">subspace</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">integer</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This optional card allows the user to specify the dimension (size) of the Krylov
 subspace for the <strong>gmres</strong> option of the <em>Solution Algorithm</em> card, where</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 78%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;integer&gt;</p></td>
-<td><p><strong>m,</strong> specifies the number of orthogonalization directions and
-can be any positive integer less than or equal to the order of
-the matrix.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>&lt;integer&gt;</dt><dd><p><strong>m,</strong> specifies the number of orthogonalization directions and can be any
+positive integer less than or equal to the order of the matrix.</p>
+</dd>
+</dl>
 <p>If the <em>Size of Krylov subspace</em> card is omitted, then the default dimension is <strong>m</strong> = 30.</p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>The following is a sample input card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Size</span> <span class="n">of</span> <span class="n">Krylov</span> <span class="n">subspace</span> <span class="o">=</span> <span class="mi">128</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>If the size of the subspace is at least as large as the maximum number of iterations
 permitted by the solver then the <strong>gmres</strong> iteration will not include any restarts.
 Depending on the problem, restarts may be beneficial, and then again they may not.
@@ -205,10 +197,6 @@ circumstances, such as convergence). The time and space required by the internal
 iterations increases nonlinearly with <strong>m</strong> (but see the <em>Orthogonalization</em> card) - a
 doubling of <strong>m</strong> will result in more than a doubling of space and time requirements. So
 simply choosing a very large dimension is generally not recommended.</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No References.</p>
 </div>
 </div>
 

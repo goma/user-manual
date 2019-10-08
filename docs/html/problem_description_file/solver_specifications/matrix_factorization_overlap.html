@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Matrix Factorization Overlap</strong></li>
+      <li>Matrix Factorization Overlap</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,53 +160,42 @@
            <div itemprop="articleBody">
             
   <div class="section" id="matrix-factorization-overlap">
-<h1><strong>Matrix Factorization Overlap</strong><a class="headerlink" href="#matrix-factorization-overlap" title="Permalink to this headline">¶</a></h1>
+<h1>Matrix Factorization Overlap<a class="headerlink" href="#matrix-factorization-overlap" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">factorization</span> <span class="n">overlap</span> <span class="o">=</span> <span class="p">{</span><span class="n">char_string</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This optional card determines how much matrix factorization overlap occurs with other
 processors. This specification is only relevant for parallel computations. The valid
 options for {char_string} are:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 78%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>none</strong></p></td>
-<td><p>No augmentation is performed, equivalent to a setting of
-k=0. This is the default.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>diag</strong></p></td>
-<td><p>Augment the processor’s local matrix to include the
-diagonal (MSR) or diagonal blocks (VBR) for external
-rows.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>k</strong></p></td>
-<td><p>Augment the processor’s local matrix to include external
-rows. The rows are selected by examining non-zero
-columns from the current local system that refer to offprocessor
-unknowns, and including the rows associated
-with those off-processor unknowns. This process is repeated
-<em>k</em> times, where k &gt; 0. When complete, all non-zero columns
-whose associated rows have not been included are
-discarded. A value of 0 is equivalent to a setting of none.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>none</dt><dd><p>No augmentation is performed, equivalent to a setting of k=0. This is the
+default.</p>
+</dd>
+<dt>diag</dt><dd><p>Augment the processor’s local matrix to include the diagonal (MSR) or
+diagonal blocks (VBR) for external rows.</p>
+</dd>
+<dt>k</dt><dd><p>Augment the processor’s local matrix to include external rows. The rows are
+selected by examining non-zero columns from the current local system that
+refer to offprocessor unknowns, and including the rows associated with
+those off-processor unknowns. This process is repeated <em>k</em> times, where
+k &gt; 0. When complete, all non-zero columns whose associated rows have not
+been included are discarded. A value of 0 is equivalent to a setting of
+none.</p>
+</dd>
+</dl>
 <p>If the <em>Matrix factorization overlap</em> card is omitted, the default is <strong>none.</strong></p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">factorization</span> <span class="n">overlap</span> <span class="o">=</span> <span class="mi">1</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>This optional card determines how much a processor’s local matrix is to be augmented
 with information from adjacent processors during the approximate factorizations used
 to build preconditioners. This card should be omitted or given a value of <strong>none</strong> for serial

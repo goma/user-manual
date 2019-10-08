@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Orthogonalization</strong></li>
+      <li>Orthogonalization</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,48 +160,36 @@
            <div itemprop="articleBody">
             
   <div class="section" id="orthogonalization">
-<h1><strong>Orthogonalization</strong><a class="headerlink" href="#orthogonalization" title="Permalink to this headline">¶</a></h1>
+<h1>Orthogonalization<a class="headerlink" href="#orthogonalization" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Orthogonalization</span> <span class="o">=</span> <span class="p">{</span><span class="n">classic</span> <span class="o">|</span> <span class="n">modified</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This optional card selects the orthogonalization scheme used internally for the gmres
 solution algorithm (see the <em>Solution Algorithm</em> card). Valid options are</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 75%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>classic | classical</strong></p></td>
-<td><p>Two steps of classical Gram-Schmidt orthogonalization.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>modified</strong></p></td>
-<td><p>A modified Gram-Schmidt orthogonalization.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>classic | classical</dt><dd><p>Two steps of classical Gram-Schmidt orthogonalization.</p>
+</dd>
+<dt>modified</dt><dd><p>A modified Gram-Schmidt orthogonalization.</p>
+</dd>
+</dl>
 <p>If the <em>Orthogonalization</em> card is omitted, then the default selection is <strong>classic.</strong> Goma’s
 parser will accept <strong>classical</strong> as equivalent to <strong>classic.</strong></p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Orthogonalization</span> <span class="o">=</span> <span class="n">modified</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>By specifying <strong>modified,</strong> the user is greatly speeding up the <strong>gmres</strong> algorithm at the
 expense of possibly losing convergence. A good indication that you should not have
 used the <strong>modified</strong> setting is a premature “leveling off” of the sequence of residuals
 produced internally within <strong>gmres.</strong></p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No References.</p>
 </div>
 </div>
 

@@ -1,5 +1,5 @@
 ***************************
-**Matrix Polynomial Order**
+Matrix Polynomial Order
 ***************************
 
 ::
@@ -7,23 +7,21 @@
 	Matrix polynomial order = <integer>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This optional card allows selection of polynomial order when a polynomial
 preconditioning option is selected (see the *Preconditioner* card). The input parameter is
 defined as:
 
-==================== =====================================================================
-<integer>            Number of steps, **k** ( ≥ 0 ), to take when using matrix
-                     polynomial based preconditioners (Jacobi and symmetric
-                     Gauss-Seidel, for example).
-==================== =====================================================================
+<integer>
+    Number of steps, **k** ( ≥ 0 ), to take when using matrix polynomial based
+    preconditioners (Jacobi and symmetric Gauss-Seidel, for example).
 
 If the Matrix polynomial order card is omitted, then the default selection is **k=3.**
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -32,7 +30,7 @@ Following is a sample card:
 	Matrix polynomial order = 4
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 When used, the value of this parameter should be greater than 0, and probably no more

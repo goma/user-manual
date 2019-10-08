@@ -1,5 +1,5 @@
 *******************************
-**Jacobian Reform Time Stride**
+Jacobian Reform Time Stride
 *******************************
 
 ::
@@ -7,19 +7,18 @@
 	Jacobian Reform Time Stride = <integer>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This optional card has a single input parameter:
 
-=================== ======================================================================
-<integer>           **k,** the stride length for Jacobian reformations ( k ≥ 1 ).
-=================== ======================================================================
+<integer>
+    **k,** the stride length for Jacobian reformations ( :math:`k \geq 1` ).
 
 The *Jacobian Reform Time Stride* card is optional; there is no default.
 
 ------------
-**Examples**
+Examples
 ------------
 
 Three examples are provided to illustrate how to use this card.
@@ -29,15 +28,9 @@ Example #1:
 
 	Number of Newton Iterations = 12 1
 
-::
-
 	Modified Newton Tolerance = 1.9 0.1
 
-::
-
 	Jacobian Reform Time Stride = 2
-
-::
 
 	Newton correction factor = 1
 
@@ -52,15 +45,9 @@ Example #2:
 
 	Number of Newton Iterations = 12 1
 
-::
-
 	# Modified Newton Tolerance = 1.9 0.1
 
-::
-
 	Jacobian Reform Time Stride = 2
-
-::
 
 	Newton correction factor = 1
 
@@ -72,15 +59,9 @@ Example #3:
 
 	Number of Newton Iterations = 12 2
 
-::
-
 	# Modified Newton Tolerance = 1.9 0.1
 
-::
-
 	Jacobian Reform Time Stride = 1
-
-::
 
 	Newton correction factor = 1
 
@@ -89,7 +70,7 @@ parameter of the *Number of Newton Iterations* card from 1 to 2. This will cause
 Jacobian to be reformed every other step.
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 If the second parameter on the *Number of Newton Iterations* card is present and greater
@@ -99,10 +80,3 @@ to speed up your runs by foregoing a fresh Jacobian formation, but still maintai
 convergence. Moreover, without a Jacobian formation, the **lu** solver (see the *Solution
 Algorithm* card) can use a previously factored matrix and simply do a resolve.
 
-
-
---------------
-**References**
---------------
-
-No References.

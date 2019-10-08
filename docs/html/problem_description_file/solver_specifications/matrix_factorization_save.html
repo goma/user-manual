@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Matrix Factorization Save</strong></li>
+      <li>Matrix Factorization Save</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,39 +160,31 @@
            <div itemprop="articleBody">
             
   <div class="section" id="matrix-factorization-save">
-<h1><strong>Matrix Factorization Save</strong><a class="headerlink" href="#matrix-factorization-save" title="Permalink to this headline">¶</a></h1>
+<h1>Matrix Factorization Save<a class="headerlink" href="#matrix-factorization-save" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">factorization</span> <span class="n">save</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span> <span class="o">|</span> <span class="mi">1</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This optional card is a boolean specification that determines whether the preconditioner
 factorization information should be kept after a solve. Valid options are</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 78%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>0</strong></p></td>
-<td><p>Factorization information is discarded.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>1</strong></p></td>
-<td><p>Factorization information is kept for that step.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>0</dt><dd><p>Factorization information is discarded.</p>
+</dd>
+<dt>1</dt><dd><p>Factorization information is kept for that step.</p>
+</dd>
+</dl>
 <p>If the <em>Matrix factorization save</em> card is omitted, then the default selection is <strong>0.</strong></p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">factorization</span> <span class="n">save</span> <span class="o">=</span> <span class="mi">1</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>This option is most useful for iterative solution techniques where the computed
 preconditioning matrix found from an incomplete factorization requires significant
 computational resources. Such a preconditioner may be useful in later matrix solves

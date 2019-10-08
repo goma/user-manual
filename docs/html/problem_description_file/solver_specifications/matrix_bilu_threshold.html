@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Matrix BILU Threshold</strong></li>
+      <li>Matrix BILU Threshold</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,39 +160,31 @@
            <div itemprop="articleBody">
             
   <div class="section" id="matrix-bilu-threshold">
-<h1><strong>Matrix BILU Threshold</strong><a class="headerlink" href="#matrix-bilu-threshold" title="Permalink to this headline">¶</a></h1>
+<h1>Matrix BILU Threshold<a class="headerlink" href="#matrix-bilu-threshold" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">BILU</span> <span class="n">threshold</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This capability is only present within the Trilinos library. This optional card provides a
 means to modify the way the block ILU preconditioner (<em>Matrix subdomain solver</em> =
 <strong>bilu</strong>) is constructed. The input parameter is defined as:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 78%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;float&gt;</p></td>
-<td><p><strong>t,</strong> a floating point number ( t ≥ 0.0 ) that sets the <em>Matrix
-Relative Threshold</em> and <em>Matrix Absolute Threshold</em>
-thresholds.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>&lt;float&gt;</dt><dd><p><strong>t,</strong> a floating point number ( t ≥ 0.0 ) that sets the <em>Matrix Relative
+Threshold</em> and <em>Matrix Absolute Threshold</em> thresholds.</p>
+</dd>
+</dl>
 <p>When the <em>Matrix BILU threshold</em> card is omitted, the default value is 0.0.</p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">BILU</span> <span class="n">Threshold</span> <span class="o">=</span> <span class="mf">1.0e-14</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>Using this card is equivalent to supplying both the <em>Matrix Relative Threshold</em> and
 <em>Matrix Absolute Threshold</em> with the value specified with this card.</p>
 <p>The value of <strong>t</strong> defaults to zero, and if given a small value, say 1.0e-14, the condition

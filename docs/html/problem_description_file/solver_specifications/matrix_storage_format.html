@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Matrix Storage Format</strong></li>
+      <li>Matrix Storage Format</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,42 +160,34 @@
            <div itemprop="articleBody">
             
   <div class="section" id="matrix-storage-format">
-<h1><strong>Matrix Storage Format</strong><a class="headerlink" href="#matrix-storage-format" title="Permalink to this headline">¶</a></h1>
+<h1>Matrix Storage Format<a class="headerlink" href="#matrix-storage-format" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">storage</span> <span class="nb">format</span> <span class="o">=</span> <span class="p">{</span><span class="n">msr</span> <span class="o">|</span> <span class="n">vbr</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This optional card can be used to choose between two formats accepted by the Aztec
 2.1 solver package. Valid options are:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 21%" />
-<col style="width: 79%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>msr</strong></p></td>
-<td><p>modified sparse row format (see Schunk and Shadid, 1992).
-This option is the default option and is automatically used
-for all direct solver options.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>vbr</strong></p></td>
-<td><p>variable block row format (see Heroux, 1992). This option
-should only be selected when an Aztec iterative solver is
-chosen.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>msr</dt><dd><p>modified sparse row format (see Schunk and Shadid, 1992). This option is
+the default option and is automatically used for all direct solver options.</p>
+</dd>
+<dt>vbr</dt><dd><p>variable block row format (see Heroux, 1992). This option should only be
+selected when an Aztec iterative solver is chosen.</p>
+</dd>
+<dt>epetra</dt><dd><p>Compressed Sparse Row format using the Epetra library from Trilinos</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">storage</span> <span class="nb">format</span> <span class="o">=</span> <span class="n">msr</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p><em>Goma</em> supports two global matrix formats for its linear solvers. The advantage of
 choosing <strong>vbr</strong> over the default <strong>msr</strong> format is a matter of which preconditioner option is
 selected. (See Schunk, et al., 2002 on iterative methods.) When using the front solver
@@ -203,7 +195,7 @@ package, another format known as <strong>estifm</strong> is employed internally 
 this card, which is not used in this case.</p>
 </div>
 <div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <p>SAND92-1158: Iterative Solvers in Implicit Finite Element Codes, Sandia Technical
 Report, Schunk, P. R. and Shadid, J. N. (1992)</p>
 <p>SAND2001-3512J: Iterative Solvers and Preconditioners for Fully-coupled Finite

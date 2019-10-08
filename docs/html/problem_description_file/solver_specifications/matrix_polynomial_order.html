@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Matrix Polynomial Order</strong></li>
+      <li>Matrix Polynomial Order</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,39 +160,31 @@
            <div itemprop="articleBody">
             
   <div class="section" id="matrix-polynomial-order">
-<h1><strong>Matrix Polynomial Order</strong><a class="headerlink" href="#matrix-polynomial-order" title="Permalink to this headline">¶</a></h1>
+<h1>Matrix Polynomial Order<a class="headerlink" href="#matrix-polynomial-order" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">polynomial</span> <span class="n">order</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">integer</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This optional card allows selection of polynomial order when a polynomial
 preconditioning option is selected (see the <em>Preconditioner</em> card). The input parameter is
 defined as:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 78%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;integer&gt;</p></td>
-<td><p>Number of steps, <strong>k</strong> ( ≥ 0 ), to take when using matrix
-polynomial based preconditioners (Jacobi and symmetric
-Gauss-Seidel, for example).</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>&lt;integer&gt;</dt><dd><p>Number of steps, <strong>k</strong> ( ≥ 0 ), to take when using matrix polynomial based
+preconditioners (Jacobi and symmetric Gauss-Seidel, for example).</p>
+</dd>
+</dl>
 <p>If the Matrix polynomial order card is omitted, then the default selection is <strong>k=3.</strong></p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">polynomial</span> <span class="n">order</span> <span class="o">=</span> <span class="mi">4</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>When used, the value of this parameter should be greater than 0, and probably no more
 than 10. In some, if not all, cases, a value of 0 is meaningless.</p>
 <p>This card is not used if the preconditioner does not use matrix polynomials.</p>

@@ -1,5 +1,5 @@
 ***************************
-**Matrix Subdomain Solver**
+Matrix Subdomain Solver
 ***************************
 
 ::
@@ -7,7 +7,7 @@
 	Matrix subdomain solver = {char_string}
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This optional card selects a solver to use in constructing a preconditioner. It is used in
@@ -20,39 +20,38 @@ conjunction with a *Preconditioner* setting.
 All of these preconditioners are available through the Aztec library. Valid options for
 {char_string} are listed below.
 
-====================  ==========================================================================
-**lu**                Approximately solve the processor’s local matrix via direct
-                      factorization using Sparse 1.3 in conjunction with a userspecified
-                      *Matrix drop tolerance.*
-**ilut**              Approximately solve the processor’s local matrix via ILUT
-                      (Saad, 1994.) The factorization is affected by user-specified
-                      options for *Matrix drop tolerance* as well as *Matrix ILUT
-                      fill factor.*
+lu
+    Approximately solve the processor’s local matrix via direct factorization
+    using Sparse 1.3 in conjunction with a userspecified *Matrix drop
+    tolerance.*
+ilut
+    Approximately solve the processor’s local matrix via ILUT (Saad, 1994.) The
+    factorization is affected by user-specified options for *Matrix drop
+    tolerance* as well as *Matrix ILUT fill factor.*
 
-                      This subdomain solver is among the more robust to
-                      recommend as a first attempt; thus it has been chosen as the
-                      default if no subdomain solver is specified.
-**ilu**               Approximately factor the processor’s local matrix using
-                      ILU(k), where k is specified by the user in the argument to
-                      *Matrix graph fillin.*
-**rilu**              Approximately factor the processor’s local matrix using
-                      RILU(k,ω), where k is specified by the user in the argument
-                      to *Matrix graph fillin* and ω is specified by the user in the
-                      argument to *Matrix RILU relax factor.* (This option applies
-                      only to Trilinos.)
-**bilu**              Approximately factor the processor’s local matrix using
-                      block ILU(k) for a VBR format matrix, where k is specified
-                      by the user in the argument to *Matrix graph fillin.* While not
-                      the most efficient preconditioner, **bilu** is very robust. (This
-                      option applies only to Trilinos.)
-**icc**               Incomplete Cholesky factorization. See the Aztec manual
-                      for a reference.
-====================  ==========================================================================
+    This subdomain solver is among the more robust to recommend as a first
+    attempt; thus it has been chosen as the default if no subdomain solver is
+    specified.
+ilu
+    Approximately factor the processor’s local matrix using ILU(k), where k is
+    specified by the user in the argument to *Matrix graph fillin.*
+rilu
+    Approximately factor the processor’s local matrix using RILU(k,ω), where
+    k is specified by the user in the argument to *Matrix graph fillin* and
+    ω is specified by the user in the argument to *Matrix RILU relax factor.*
+    (This option applies only to Trilinos.)
+bilu
+    Approximately factor the processor’s local matrix using block ILU(k) for
+    a VBR format matrix, where k is specified by the user in the argument to
+    *Matrix graph fillin.* While not the most efficient preconditioner,
+    **bilu** is very robust. (This option applies only to Trilinos.)
+icc
+    Incomplete Cholesky factorization. See the Aztec manual for a reference.
 
 If this *Matrix subdomain solver* card is omitted, then the default selection is **ilut.**
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -61,7 +60,7 @@ Following is a sample card:
 	Matrix subdomain solver = ilut
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 There is no real recipe to follow when choosing a preconditioner. In general, the
@@ -76,10 +75,8 @@ Trilinos library (as AztecOO), which is actively being developed and maintained 
 Sandia National Laboratories. Note that some features can only be accessed through
 Trilinos, as indicated above.
 
-
-
 --------------
-**References**
+References
 --------------
 
 SAND2001-3512J: Iterative Solvers and Preconditioners for Fully-coupled Finite

@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Matrix Absolute Threshold</strong></li>
+      <li>Matrix Absolute Threshold</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,34 +160,27 @@
            <div itemprop="articleBody">
             
   <div class="section" id="matrix-absolute-threshold">
-<h1><strong>Matrix Absolute Threshold</strong><a class="headerlink" href="#matrix-absolute-threshold" title="Permalink to this headline">¶</a></h1>
+<h1>Matrix Absolute Threshold<a class="headerlink" href="#matrix-absolute-threshold" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">Absolute</span> <span class="n">Threshold</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This card is only available with the Trilinos library. It allows the user to specify a lower
 bound for either a diagonal entry or a singular value. The exact meaning depends on the
 kind of preconditioner used (scalar-based or block-based). The legal values are:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 78%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;float&gt;</p></td>
-<td><p><strong>t,</strong> a floating point number ( t ≥ 0.0 ) that specifies a minimum
-threshold value for diagonal or singular value.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>&lt;float&gt;</dt><dd><p><strong>t,</strong> a floating point number ( t ≥ 0.0 ) that specifies a minimum
+threshold value for diagonal or singular value.</p>
+</dd>
+</dl>
 <p>Along with the <em>Matrix Relative Threshold</em> card, this card gives the user the ability to
 modify what matrix the preconditioner operates on. See the <em>Matrix Relative Threshold</em>
 card for a full description.</p>
 <p>If this card is omitted, the default is 0.0.</p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>A sample input card follows:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">Absolute</span> <span class="n">Threshold</span> <span class="o">=</span> <span class="mf">1.e-4</span>
 </pre></div>
@@ -200,7 +193,7 @@ the threshold can vary over many orders of magnitude depending on the situation.
 Refer to Schunk, et. al., 2002 for information and for further guidance.</p>
 </div>
 <div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <p>SAND2001-3512J: Iterative Solvers and Preconditioners for Fully-coupled Finite
 Element Formulations of Incompressible Fluid Mechanics and Related Transport
 Problems, P. R. Schunk, M. A. Heroux, R. R. Rao, T. A. Baer, S. R. Subia and A. C.

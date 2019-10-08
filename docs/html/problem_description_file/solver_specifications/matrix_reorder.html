@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Matrix Reorder</strong></li>
+      <li>Matrix Reorder</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,39 +160,31 @@
            <div itemprop="articleBody">
             
   <div class="section" id="matrix-reorder">
-<h1><strong>Matrix Reorder</strong><a class="headerlink" href="#matrix-reorder" title="Permalink to this headline">¶</a></h1>
+<h1>Matrix Reorder<a class="headerlink" href="#matrix-reorder" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">reorder</span> <span class="o">=</span> <span class="p">{</span><span class="n">none</span> <span class="o">|</span> <span class="n">rcm</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This optional card determines whether RCM (Reverse Cuthill-McKee) reordering of
 the linear system is to be performed. Valid options are:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 78%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>none</strong></p></td>
-<td><p>the equations are not reordered.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>rcm</strong></p></td>
-<td><p>the equations are reordered using an RCM scheme.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>none</dt><dd><p>the equations are not reordered.</p>
+</dd>
+<dt>rcm</dt><dd><p>the equations are reordered using an RCM scheme.</p>
+</dd>
+</dl>
 <p>If the <em>Matrix reorder</em> card is omitted, then the default selection is <strong>none.</strong></p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">reorder</span> <span class="o">=</span> <span class="n">rcm</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>Note that reordering frequently is helpful in achieving convergence for iterative
 solution of linear systems. In a few instances, however, <em>Goma</em> users have noted that
 RCM reordering hinders convergence for selected problems. The default for <em>Goma</em> is to

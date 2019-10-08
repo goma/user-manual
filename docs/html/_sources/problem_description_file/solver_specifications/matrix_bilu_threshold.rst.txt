@@ -1,5 +1,5 @@
 *************************
-**Matrix BILU Threshold**
+Matrix BILU Threshold
 *************************
 
 ::
@@ -7,23 +7,21 @@
 	Matrix BILU threshold = <float>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This capability is only present within the Trilinos library. This optional card provides a
 means to modify the way the block ILU preconditioner (*Matrix subdomain solver* =
 **bilu**) is constructed. The input parameter is defined as:
 
-==================== =====================================================================
-<float>              **t,** a floating point number ( t ≥ 0.0 ) that sets the *Matrix
-                     Relative Threshold* and *Matrix Absolute Threshold*
-                     thresholds.
-==================== =====================================================================
+<float>
+    **t,** a floating point number ( t ≥ 0.0 ) that sets the *Matrix Relative
+    Threshold* and *Matrix Absolute Threshold* thresholds.
 
 When the *Matrix BILU threshold* card is omitted, the default value is 0.0.
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -32,7 +30,7 @@ Following is a sample card:
 	Matrix BILU Threshold = 1.0e-14
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 Using this card is equivalent to supplying both the *Matrix Relative Threshold* and

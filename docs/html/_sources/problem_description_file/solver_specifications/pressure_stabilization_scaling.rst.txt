@@ -1,5 +1,5 @@
 **********************************
-**Pressure Stabilization Scaling**
+Pressure Stabilization Scaling
 **********************************
 
 ::
@@ -7,22 +7,20 @@
 	Pressure Stabilization Scaling = <float>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This optional card is only used if the Pressure Stabilization card is set to **yes,** where
 
-=======================  ========================================================================
-<float>                  **tau,** a positive real value ( tau > 0.0 ) that scales the
-                         momentum residual being added to the continuity equation
-                         for pressure stabilization.
-=======================  ========================================================================
+<float>
+    **tau,** a positive real value ( tau > 0.0 ) that scales the momentum
+    residual being added to the continuity equation for pressure stabilization.
 
 The default value of **tau** is 0.1. If the *Pressure Stabilization* card is omitted, or set to
 **no,** then **tau** is ignored.
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -31,7 +29,7 @@ Following is a sample card:
 	Pressure Stabilization Scaling = 0.01
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 Generally, if **tau** is small, then more accurate solutions may be obtained at the cost of a
@@ -61,9 +59,3 @@ the continuity equation:
 .. math::
 
    \frac{ \mathrm{tau} {\langle h \rangle} }{2 \rho \lVert U \rVert}   
-
-
-
-
-.. 
-	TODO - Equations need to be inserted in the place in which the photos take place right now.

@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Matrix Scaling</strong></li>
+      <li>Matrix Scaling</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,64 +160,46 @@
            <div itemprop="articleBody">
             
   <div class="section" id="matrix-scaling">
-<h1><strong>Matrix Scaling</strong><a class="headerlink" href="#matrix-scaling" title="Permalink to this headline">¶</a></h1>
+<h1>Matrix Scaling<a class="headerlink" href="#matrix-scaling" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">scaling</span> <span class="o">=</span> <span class="p">{</span><span class="n">char_string</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This optional card selects a scaling for the linear matrix system solution step.Valid
 options for {char_string} are listed below.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 21%" />
-<col style="width: 79%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>none</strong></p></td>
-<td><p>No scaling is performed. This is the default if no <em>Matrix
-Scaling</em> card is present.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Jacobi</strong></p></td>
-<td><p>Point Jacobi scaling is performed.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>BJacobi</strong></p></td>
-<td><p>Block Jacobi scaling is performed if the underlying matrix
-format is VBR. If the MSR matrix format is used, the
-scaling reverts to point Jacobi.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>row_sum</strong></p></td>
-<td><p>Scale each row so the sum of the magnitudes of the nonzero
-elements is 1.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>sym_diag</strong></p></td>
-<td><p>Symmetric scaling so that diagonal elements are 1.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>sym_row_sum</strong></p></td>
-<td><p>Symmetric scaling using the matrix row sums.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>none</dt><dd><p>No scaling is performed. This is the default if no <em>Matrix Scaling</em> card is
+present.</p>
+</dd>
+<dt>Jacobi</dt><dd><p>Point Jacobi scaling is performed.</p>
+</dd>
+<dt>BJacobi</dt><dd><p>Block Jacobi scaling is performed if the underlying matrix format is VBR.
+If the MSR matrix format is used, the scaling reverts to point Jacobi.</p>
+</dd>
+<dt>row_sum</dt><dd><p>Scale each row so the sum of the magnitudes of the nonzero elements is 1.</p>
+</dd>
+<dt>sym_diag</dt><dd><p>Symmetric scaling so that diagonal elements are 1.</p>
+</dd>
+<dt>sym_row_sum</dt><dd><p>Symmetric scaling using the matrix row sums.</p>
+</dd>
+</dl>
 <p>If the <em>Matrix Scaling</em> card is omitted, the default selection is <strong>none.</strong></p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">scaling</span> <span class="o">=</span> <span class="n">sym_diag</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>All of these scalings are supplied via the Aztec library and thus will not affect the linear
 systems that are solved by other means (using <strong>front</strong>, for example). In an odd twist of
 fate, the linear system always undergoes a row sum scaling (equivalent to the <strong>row_sum</strong>
 option) before these other scalings are applied. Note that when a nontrivial scaling is
 selected, the matrix is overwritten with a rescaled system.</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No References.</p>
 </div>
 </div>
 

@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Jacobian Reform Time Stride</strong></li>
+      <li>Jacobian Reform Time Stride</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,40 +160,30 @@
            <div itemprop="articleBody">
             
   <div class="section" id="jacobian-reform-time-stride">
-<h1><strong>Jacobian Reform Time Stride</strong><a class="headerlink" href="#jacobian-reform-time-stride" title="Permalink to this headline">¶</a></h1>
+<h1>Jacobian Reform Time Stride<a class="headerlink" href="#jacobian-reform-time-stride" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Jacobian</span> <span class="n">Reform</span> <span class="n">Time</span> <span class="n">Stride</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">integer</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This optional card has a single input parameter:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 21%" />
-<col style="width: 79%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;integer&gt;</p></td>
-<td><p><strong>k,</strong> the stride length for Jacobian reformations ( k ≥ 1 ).</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>&lt;integer&gt;</dt><dd><p><strong>k,</strong> the stride length for Jacobian reformations ( <span class="math notranslate nohighlight">\(k \geq 1\)</span> ).</p>
+</dd>
+</dl>
 <p>The <em>Jacobian Reform Time Stride</em> card is optional; there is no default.</p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Three examples are provided to illustrate how to use this card.</p>
 <p>Example #1:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Number</span> <span class="n">of</span> <span class="n">Newton</span> <span class="n">Iterations</span> <span class="o">=</span> <span class="mi">12</span> <span class="mi">1</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Modified</span> <span class="n">Newton</span> <span class="n">Tolerance</span> <span class="o">=</span> <span class="mf">1.9</span> <span class="mf">0.1</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Jacobian</span> <span class="n">Reform</span> <span class="n">Time</span> <span class="n">Stride</span> <span class="o">=</span> <span class="mi">2</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Newton</span> <span class="n">correction</span> <span class="n">factor</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">Modified</span> <span class="n">Newton</span> <span class="n">Tolerance</span> <span class="o">=</span> <span class="mf">1.9</span> <span class="mf">0.1</span>
+
+<span class="n">Jacobian</span> <span class="n">Reform</span> <span class="n">Time</span> <span class="n">Stride</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="n">Newton</span> <span class="n">correction</span> <span class="n">factor</span> <span class="o">=</span> <span class="mi">1</span>
 </pre></div>
 </div>
 <p>This will reform the Jacobian every 2 steps. Furthermore, if the convergence rate falls
@@ -203,30 +193,24 @@ reformation stride setting (from either <em>Number of Newton Iterations or Jacob
 Reform Time Stride</em>).</p>
 <p>Example #2:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Number</span> <span class="n">of</span> <span class="n">Newton</span> <span class="n">Iterations</span> <span class="o">=</span> <span class="mi">12</span> <span class="mi">1</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Modified Newton Tolerance = 1.9 0.1</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Jacobian</span> <span class="n">Reform</span> <span class="n">Time</span> <span class="n">Stride</span> <span class="o">=</span> <span class="mi">2</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Newton</span> <span class="n">correction</span> <span class="n">factor</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># Modified Newton Tolerance = 1.9 0.1</span>
+
+<span class="n">Jacobian</span> <span class="n">Reform</span> <span class="n">Time</span> <span class="n">Stride</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="n">Newton</span> <span class="n">correction</span> <span class="n">factor</span> <span class="o">=</span> <span class="mi">1</span>
 </pre></div>
 </div>
 <p>Note this differs from the previous example only by omitting the <em>Modified Newton
 Tolerance</em> card. This causes the Jacobian to be reformed every other time step.</p>
 <p>Example #3:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Number</span> <span class="n">of</span> <span class="n">Newton</span> <span class="n">Iterations</span> <span class="o">=</span> <span class="mi">12</span> <span class="mi">2</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Modified Newton Tolerance = 1.9 0.1</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Jacobian</span> <span class="n">Reform</span> <span class="n">Time</span> <span class="n">Stride</span> <span class="o">=</span> <span class="mi">1</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Newton</span> <span class="n">correction</span> <span class="n">factor</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># Modified Newton Tolerance = 1.9 0.1</span>
+
+<span class="n">Jacobian</span> <span class="n">Reform</span> <span class="n">Time</span> <span class="n">Stride</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">Newton</span> <span class="n">correction</span> <span class="n">factor</span> <span class="o">=</span> <span class="mi">1</span>
 </pre></div>
 </div>
 <p>We’ve changed the <em>Jacobian Reform Time Stride</em> from 2 to 1 and changed the second
@@ -234,17 +218,13 @@ parameter of the <em>Number of Newton Iterations</em> card from 1 to 2. This wil
 Jacobian to be reformed every other step.</p>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>If the second parameter on the <em>Number of Newton Iterations</em> card is present and greater
 than 1, this <em>Jacobian Reform Time Stride</em> card is ignored. Otherwise, this card simply
 forces the Jacobian to be rebuilt every <strong>k</strong> Newton steps. Often, this card will allow you
 to speed up your runs by foregoing a fresh Jacobian formation, but still maintain strong
 convergence. Moreover, without a Jacobian formation, the <strong>lu</strong> solver (see the <em>Solution
 Algorithm</em> card) can use a previously factored matrix and simply do a resolve.</p>
-</div>
-<div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>No References.</p>
 </div>
 </div>
 

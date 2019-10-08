@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Matrix Auxiliary Vector</strong></li>
+      <li>Matrix Auxiliary Vector</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,41 +160,32 @@
            <div itemprop="articleBody">
             
   <div class="section" id="matrix-auxiliary-vector">
-<h1><strong>Matrix Auxiliary Vector</strong><a class="headerlink" href="#matrix-auxiliary-vector" title="Permalink to this headline">¶</a></h1>
+<h1>Matrix Auxiliary Vector<a class="headerlink" href="#matrix-auxiliary-vector" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">auxiliary</span> <span class="n">vector</span> <span class="o">=</span> <span class="p">{</span><span class="n">resid</span> <span class="o">|</span> <span class="n">rand</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This optional card indicates to Aztec how the auxiliary vector r is determined.
 Permissible options are:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 78%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>resid</strong></p></td>
-<td><p>The auxiliary vector is set to the initial residual vector, viz. r
-= r(0).</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>rand</strong></p></td>
-<td><p>The auxiliary vector is filled with random numbers, each in
-the range [-1,1].</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>resid</dt><dd><p>The auxiliary vector is set to the initial residual vector, viz. <span class="math notranslate nohighlight">\(r = r(0)\)</span>.</p>
+</dd>
+<dt>rand</dt><dd><p>The auxiliary vector is filled with random numbers, each in the range
+<span class="math notranslate nohighlight">\([-1,1]\)</span>.</p>
+</dd>
+</dl>
 <p>If the <em>Matrix auxiliary vector</em> card is omitted, the default is <strong>resid.</strong></p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">auxiliary</span> <span class="n">vector</span> <span class="o">=</span> <span class="n">rand</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>The auxiliary vector is only used for certain iterative linear matrix solution algorithms.</p>
 <p>The <strong>rand</strong> option may cause difficulties with initial iterative solver steps because
 different processors may have different initial unknown values at shared unknowns.</p>

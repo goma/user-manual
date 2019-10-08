@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Solution Algorithm</strong></li>
+      <li>Solution Algorithm</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,12 +160,12 @@
            <div itemprop="articleBody">
             
   <div class="section" id="solution-algorithm">
-<h1><strong>Solution Algorithm</strong><a class="headerlink" href="#solution-algorithm" title="Permalink to this headline">¶</a></h1>
+<h1>Solution Algorithm<a class="headerlink" href="#solution-algorithm" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Solution</span> <span class="n">Algorithm</span> <span class="o">=</span> <span class="p">{</span><span class="n">char_string</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This required card selects an algorithm for the solution of the linear matrix system that
 arises at each Newton iteration (either for a steady-state solution or for the solution at
 each discrete time). Please note that at the time of this writing, new solver capabilities
@@ -192,92 +192,66 @@ Specifications</em> cards address).</p>
 included as part of the Technical Discussion section of this card. These comments
 provide assistance in choosing the <em>Solution Algorithm</em> for your problem.</p>
 <p>Valid options for {char_string} are as follows:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>lu</strong></p></td>
-<td><p>Direct factorization via Gaussian elimination using Sparse
-1.3. This solver is robust even for poorly conditioned matrix
-systems. It is unavailable when running <em>Goma</em> on multiple
-processors.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>front</strong></p></td>
-<td><p>Direct factorization based on Benner’s SNL_MPFRONT
-that eliminates equations and variables as the fully
-assembled rows of the matrix are acquired. This is the latest
-solver installed within <em>Goma</em> and users are encouraged to
-report their successes and failures with this option as part of
-testing. It is unavailable when running <em>Goma</em> on multiple
-processors.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>umf/umff</strong></p></td>
-<td><p>Direct factorization using UMFPACK. This multi-frontal
-solver has been hardwired to perform elimination only upon
-complete assembly. The <strong>umff</strong> option forces a full
-factorization every time, whereas <strong>umf</strong> does not. It is
-unavailable when running <em>Goma</em> on multiple processors.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>y12m</strong></p></td>
-<td><p>Direct factorization using the Y12M package. This package
-is accessible through the Aztec matrix solver interface and
-cannot be used for multiple processor computations. Other
-direct solvers are recommended against this one.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>gmres</strong></p></td>
-<td><p>Iterative solver from the Aztec package using the restarted
-generalized minimum residual method. Iterative solver
-options are important to convergence of this method, e.g.
-<em>Preconditioner, Size of Krylov subspace, Matrix,</em> etc.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>cg</strong></p></td>
-<td><p>Iterative solver from the Aztec package using the conjugate
-gradient method. Like other iterative solvers, the successful
-convergence of the conjugate gradient method for a linear
-system depends on preconditioners and other cards in the
-<em>Solver Specifications</em> section.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>cgs</strong></p></td>
-<td><p>Iterative solver from the Aztec package using the conjugate
-gradient squared method. Convergence of this method is
-frequently contingent on the linear system and on the choice
-of other cards in the <em>Solver Specifications</em> section.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>tfqmr</strong></p></td>
-<td><p>Iterative solver from the Aztec package using the transposefree
-quasi-minimum residual method. Convergence of this
-method is frequently contingent on the linear system and on
-the choice of other cards in the <em>Solver Specifications</em>
-section.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>bicgstab</strong></p></td>
-<td><p>Iterative solver from the Aztec package using the
-biconjugate gradient with stabilization. Convergence of this
-method is frequently contingent on the linear system and on
-the choice of other cards in the Solver Specifications
-section.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>amesos</strong></p></td>
-<td><p>Allows access to direct solver options implemented in
-parallel. Please see the user-notes below for Goma build
-options that must be exercised. This package is part of the
-Trilinos 6.0 framework. With this option, you must add an
-additional input card to specify the parallel direct solvers:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Amesos Solver Package = {superlu | klu | umfpack}
-
-Of these three options, we currently recommend “superlu”.
-All options can be run in parallel.
+<dl>
+<dt>lu</dt><dd><p>Direct factorization via Gaussian elimination using Sparse 1.3. This solver
+is robust even for poorly conditioned matrix systems. It is unavailable
+when running <em>Goma</em> on multiple processors.</p>
+</dd>
+<dt>front</dt><dd><p>Direct factorization based on Benner’s SNL_MPFRONT that eliminates
+equations and variables as the fully assembled rows of the matrix are
+acquired. This is the latest solver installed within <em>Goma</em> and users are
+encouraged to report their successes and failures with this option as part
+of testing. It is unavailable when running <em>Goma</em> on multiple processors.</p>
+</dd>
+<dt>umf/umff</dt><dd><p>Direct factorization using UMFPACK. This multi-frontal solver has been
+hardwired to perform elimination only upon complete assembly. The <strong>umff</strong>
+option forces a full factorization every time, whereas <strong>umf</strong> does not. It
+is unavailable when running <em>Goma</em> on multiple processors.</p>
+</dd>
+<dt>y12m</dt><dd><p>Direct factorization using the Y12M package. This package is accessible
+through the Aztec matrix solver interface and cannot be used for multiple
+processor computations. Other direct solvers are recommended against this
+one.</p>
+</dd>
+<dt>gmres</dt><dd><p>Iterative solver from the Aztec package using the restarted generalized
+minimum residual method. Iterative solver options are important to
+convergence of this method, e.g. <em>Preconditioner, Size of Krylov subspace,
+Matrix,</em> etc.</p>
+</dd>
+<dt>cg</dt><dd><p>Iterative solver from the Aztec package using the conjugate gradient
+method. Like other iterative solvers, the successful convergence of the
+conjugate gradient method for a linear system depends on preconditioners
+and other cards in the <em>Solver Specifications</em> section.</p>
+</dd>
+<dt>cgs</dt><dd><p>Iterative solver from the Aztec package using the conjugate gradient
+squared method. Convergence of this method is frequently contingent on the
+linear system and on the choice of other cards in the <em>Solver
+Specifications</em> section.</p>
+</dd>
+<dt>tfqmr</dt><dd><p>Iterative solver from the Aztec package using the transposefree
+quasi-minimum residual method. Convergence of this method is frequently
+contingent on the linear system and on the choice of other cards in the
+<em>Solver Specifications</em> section.</p>
+</dd>
+<dt>bicgstab</dt><dd><p>Iterative solver from the Aztec package using the biconjugate gradient with
+stabilization. Convergence of this method is frequently contingent on the
+linear system and on the choice of other cards in the Solver Specifications
+section.</p>
+</dd>
+<dt>amesos</dt><dd><p>Allows access to direct solver options implemented in parallel. Please see
+the user-notes below for Goma build options that must be exercised. This
+package is part of the Trilinos 6.0 framework. With this option, you must
+add an additional input card to specify the parallel direct solvers:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Amesos</span> <span class="n">Solver</span> <span class="n">Package</span> <span class="o">=</span> <span class="p">{</span><span class="n">superlu</span> <span class="o">|</span> <span class="n">mumps</span> <span class="o">|</span> <span class="n">klu</span> <span class="o">|</span> <span class="n">umfpack</span><span class="p">}</span>
 </pre></div>
 </div>
-</td>
-</tr>
-</tbody>
-</table>
+<p>Of these four options, we currently recommend <strong>mumps</strong>.
+All options can be run in parallel.</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Solution</span> <span class="n">Algorithm</span> <span class="o">=</span> <span class="n">lu</span>
 </pre></div>
@@ -291,7 +265,7 @@ All options can be run in parallel.
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>The direct factorization options are the most robust but consume the most
 computational resources (CPU time and memory, particularly for large and 3D
 problems). The iterative methods consume less resources but may take some
@@ -346,17 +320,8 @@ recommend these solvers when robustness is required over iterative solvers and
 when the matrix assembly time is excessive, which is often the case when
 overloaded equations like species diffusion, porous media equations, etc. are used.
 This option also performs well for three-dimensional problems of small to
-moderate size. To exercise these options you must build Goma in the following
-way (viz. make the following changes to the default Goma.mk file):</p></li>
+moderate size.</p></li>
 </ul>
-<ol class="arabic simple">
-<li><p>you must include the compiler define ENABLE_AMESOS.</p></li>
-<li><p>the TRILINOS_DIR must be set to /home/goma/production/rhel4/trilinos-6.0.14.</p></li>
-<li><p>the TRILINOS_ARCH must be set to RHEL4_PARALLEL.</p></li>
-<li><p>Comment out the line setting AMESOS_LIB to null and uncomment the line directly below this in Goma.mk</p></li>
-<li><p>Comment out the line setting SUPERLU_LIB to null and uncomment the line directly below this in Goma.mk Recompile Goma.</p></li>
-</ol>
-<p>Note that these options might change with time as this version of Trilinos becomes the default case.</p>
 </div>
 <div class="section" id="references">
 <h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>

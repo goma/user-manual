@@ -1,5 +1,5 @@
 ****************************
-**Matrix RILU Relax Factor**
+Matrix RILU Relax Factor
 ****************************
 
 ::
@@ -7,22 +7,21 @@
 	Matrix RILU relax factor = <float>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This optional card provides a relaxation factor to Aztec to be used in conjunction with
 preconditioners based on RILU(k,ω) approximate factorization. The input parameter
 <float> is defined as
 
-==================== =====================================================================
-<float>              **fac,** a floating point number ( fac ≥ 0 ) that specifies a
-                     relaxation factor.
-==================== =====================================================================
+<float>
+    **fac,** a floating point number ( fac ≥ 0 ) that specifies a relaxation
+    factor.
 
 If the *Matrix RILU relax factor* card is omitted, the default is **1.**
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -31,7 +30,7 @@ Following is a sample card:
 	Matrix RILU relax factor = 0.5
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 Some limiting values for fac provide specific behavior:

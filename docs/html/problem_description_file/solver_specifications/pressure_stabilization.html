@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Pressure Stabilization</strong></li>
+      <li>Pressure Stabilization</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,56 +160,44 @@
            <div itemprop="articleBody">
             
   <div class="section" id="pressure-stabilization">
-<h1><strong>Pressure Stabilization</strong><a class="headerlink" href="#pressure-stabilization" title="Permalink to this headline">¶</a></h1>
+<h1>Pressure Stabilization<a class="headerlink" href="#pressure-stabilization" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Pressure</span> <span class="n">Stabilization</span> <span class="o">=</span> <span class="p">{</span><span class="n">yes</span> <span class="o">|</span> <span class="n">no</span> <span class="o">|</span> <span class="n">local</span> <span class="o">|</span> <span class="n">pspp</span> <span class="o">|</span> <span class="n">pspp_e</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This optional card indicates whether or not pressure stabilization should be used. Valid
 options are</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>yes</strong></p></td>
-<td><p>Use the Galerkin Least square pressure stabilization method
-developed by Hughes, et. al. (1986).</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>local</strong></p></td>
-<td><p>Use the Galerkin Least square pressure stabilization method
-with local scaling.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>pspp</strong></p></td>
-<td><p>Use polynomial stabilized pressure projection stabilization
-method developed by Dohrmann and Bochev (2004). Please
-see Level Set PSPP filtering card if using with
-the level-set front tracking technique.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>pspp_e</strong></p></td>
-<td><p>Use polynomial stabilized pressure projection method with
-upgrade for nonuniform/graded meshes (recommended)</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>no</strong></p></td>
-<td><p>Do not use any pressure stabilization.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>yes</dt><dd><p>Use the Galerkin Least square pressure stabilization method developed by
+Hughes, et. al. (1986).</p>
+</dd>
+<dt>local</dt><dd><p>Use the Galerkin Least square pressure stabilization method with local
+scaling.</p>
+</dd>
+<dt>pspp</dt><dd><p>Use polynomial stabilized pressure projection stabilization method
+developed by Dohrmann and Bochev (2004). Please see Level Set PSPP
+filtering card if using with the level-set front tracking technique.</p>
+</dd>
+<dt>pspp_e</dt><dd><p>Use polynomial stabilized pressure projection method with upgrade for
+nonuniform/graded meshes (recommended)</p>
+</dd>
+<dt>no</dt><dd><p>Do not use any pressure stabilization.</p>
+</dd>
+</dl>
 <p>The amount of pressure stabilization to use is specified with the <em>Pressure Stabilization
 Scaling</em> card.</p>
 <p>The default is <strong>no</strong>, to not use pressure stabilization.</p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Pressure</span> <span class="n">Stabilization</span> <span class="o">=</span> <span class="n">yes</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>If input for this card is <strong>yes</strong>, the Hughes, et al. (1986) method adds the residual of the
 momentum equation weighted by the gradient of the Galerkin weight function to the
 Galerkin continuity equation. The result is that the continuity equation now has a
@@ -230,7 +218,7 @@ internally to Sandia which better accommodates graded meshes. This technique is
 invoked with the pspp_e option, which we recommend.</p>
 </div>
 <div class="section" id="references">
-<h2><strong>References</strong><a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <p>Hughes, T. J. R., L. P. Franca and M. Balestra, “A New Finite Element Formulation for
 Computational Fluid Dynamics: V. Circumventing the Babuska-Brezzi Condition: A
 Stable Petrov-Galerkin Formulation of the Stokes Problem Accommodating Equal-

@@ -1,5 +1,5 @@
 *****************************
-**Matrix Residual Norm Type**
+Matrix Residual Norm Type
 *****************************
 
 ::
@@ -7,7 +7,7 @@
 	Matrix residual norm type = {char_string}
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This optional card selects the type of norm that is used to measure the size of the
@@ -15,6 +15,7 @@ residuals occurring during the solution of the linear matrix system :math:`r \le
 :math:`z` is an approximation to the solution :math:`x` of the linear matrix problem :math:`Ax = b`. The types
 of norms used by the linear solver are controlled by values of {char_string}:
 
+.. tabularcolumns |l|L|
 
 ==================  ===============================================================================================================
 {char_string}       Norm type
@@ -52,9 +53,3 @@ use of the term residual to describe an aspect of the linear solver iteration. F
 matrix systems, a residual :math:`r` may be computed for any guess of the solution to :math:`Ax = b` as
 :math:`r(z) = b - Az`. If :math:`z = x`, the actual solution, then the residual is zero; otherwise, it is 
 some vector with a nonzero norm.
-
-
-
-
-.. 
-	TODO - Equation/ Table needs to be added with using the math function I believe. This would be in lines 18-20 where the picture lies right now. 

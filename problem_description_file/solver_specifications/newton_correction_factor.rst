@@ -1,5 +1,5 @@
 ****************************
-**Newton Correction Factor**
+Newton Correction Factor
 ****************************
 
 ::
@@ -7,7 +7,7 @@
 	Newton correction factor = <float_list>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This required card indicates the damping (or relaxation) factor for the Newton updates
@@ -16,26 +16,22 @@ residual from the Newton iteration. Definitions of the <float_list> input parame
 from one (f\ :sub:`1`) to six (f\ :sub:`2`, ... f\ :sub:`6`) floating point numbers (one required and five optional),
 are as follows:
 
-=================== ======================================================================
-<float1>            f\ :sub:`1`, damping factor for the Newton updates, where
-                    ( 0.0 < f\ :sub:`1` ≤ 1.0 ). A value of 1.0 gives the usual Newton’s
-                    method, otherwise, only a portion of the Newton update
-                    is applied to the solution. Values near 0 (e.g., 0.1) may
-                    be used effectively to aid convergence for sensitive
-                    problems where the initial guess is not very close to the
-                    final solution for the first several Newton iterations.
-                    This parameter can also be controlled from the
-                    command line (see **-r** option, Command-line
-                    Arguments, Chapter 3).
-[floatn]            These five floats [f\ :sub:`2`, ... f\ :sub:`6`] are optional but give 
-                    a way to
-                    more finely control the amount of relaxation applied to
-                    Newton updates. See the description below and the
-                    example for an explanation.
-=================== ======================================================================
+<float1>
+    f\ :sub:`1`, damping factor for the Newton updates, where ( 0.0 < f\
+    :sub:`1` ≤ 1.0 ). A value of 1.0 gives the usual Newton’s method,
+    otherwise, only a portion of the Newton update is applied to the solution.
+    Values near 0 (e.g., 0.1) may be used effectively to aid convergence for
+    sensitive problems where the initial guess is not very close to the final
+    solution for the first several Newton iterations. This parameter can also
+    be controlled from the command line (see **-r** option, Command-line
+    Arguments, Chapter 3).
+[floatn]
+    These five floats [f\ :sub:`2`, ... f\ :sub:`6`] are optional but give
+    a way to more finely control the amount of relaxation applied to Newton
+    updates. See the description below and the example for an explanation.
 
 ------------
-**Examples**
+Examples
 ------------
 
 A simple example is the following:
@@ -68,7 +64,7 @@ nonlinear residual:
 The default relaxation level for small residuals is 1.0.
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 The relaxation factor is used to intentionally shorten the solution update vector
@@ -97,10 +93,3 @@ while the f\ :sub:`2`, f\ :sub:`4`, and f\ :sub:`6` values are interval endpoint
 must be in ascending order, 0 < f\ :sub:`2` < f\ :sub:`4` < f\ :sub:`6`. Although no such restriction is put on the
 relaxation factors, they should generally satisfy 0 < f\ :sub:`5` ≤ f\ :sub:`3` ≤ f\ :sub:`1` ≤ 1.0.
 
-
-
---------------
-**References**
---------------
-
-No References.

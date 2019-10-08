@@ -140,7 +140,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>Matrix Overlap Type</strong></li>
+      <li>Matrix Overlap Type</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,44 +160,34 @@
            <div itemprop="articleBody">
             
   <div class="section" id="matrix-overlap-type">
-<h1><strong>Matrix Overlap Type</strong><a class="headerlink" href="#matrix-overlap-type" title="Permalink to this headline">¶</a></h1>
+<h1>Matrix Overlap Type<a class="headerlink" href="#matrix-overlap-type" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">overlap</span> <span class="nb">type</span> <span class="o">=</span> <span class="p">{</span><span class="n">standard</span> <span class="o">|</span> <span class="n">symmetric</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This card selects the kind of matrix overlap that occurs (for parallel computations).
 Valid options are:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 78%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>standard</strong></p></td>
-<td><p>The local processor considers only its own estimate for any
-unknown; results from adjacent processors are ignored. This
-is the default.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>symmetric</strong></p></td>
-<td><p>The local processor adds its own estimate together with
-estimates from adjacent processors, retaining symmetry of
-preconditioners if a symmetric technique is being
-employed.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>standard</dt><dd><p>The local processor considers only its own estimate for any unknown;
+results from adjacent processors are ignored. This is the default.</p>
+</dd>
+<dt>symmetric</dt><dd><p>The local processor adds its own estimate together with estimates from
+adjacent processors, retaining symmetry of preconditioners if a symmetric
+technique is being employed.</p>
+</dd>
+</dl>
 <p>If the <em>Matrix ovelap type</em> card is omitted, the default is <strong>standard.</strong></p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Following is a sample card:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Matrix</span> <span class="n">overlap</span> <span class="nb">type</span><span class="o">=</span> <span class="n">symmetric</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>This optional card determines how overlapping subdomain solver results are combined
 when different processors derive different estimates for the same solution unknown.</p>
 <p>This overlap option is moot for serial problems whose data decomposition is trivial.</p>

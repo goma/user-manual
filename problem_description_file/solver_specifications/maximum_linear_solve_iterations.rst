@@ -1,5 +1,5 @@
 ***********************************
-**Maximum Linear Solve Iterations**
+Maximum Linear Solve Iterations
 ***********************************
 
 ::
@@ -7,21 +7,20 @@
 	Maximum Linear Solve Iterations = <integer>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This optional card limits the maximum number of iterations used by iterative linear
 solver algorithms. The input parameter is defined as
 
-=================   ==========================================================================
-<integer>           <integer> **n,** any positive integer ( n > 0 ) that specifies the maximum
-                    number of iterations.
-=================   ==========================================================================
+<integer>
+    <integer> **n,** any positive integer ( n > 0 ) that specifies the maximum
+    number of iterations.
 
 If the *Maximum Linear Solve Iterations* card is omitted, the default selection is 500.
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -30,7 +29,7 @@ Following is a sample card:
 	Maximum Linear Solve Iterations = 5
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 If the linear system can be solved within a specified tolerance (see the *Residual Ratio
@@ -43,10 +42,8 @@ abnormal returns from Aztec are possible and are indicated on the LIS status lin
 the Aztec User’s Guide (Hutchinson, Shadid and Tuminaro, 1995) for further
 interpretation of different abnormal return status indicators.
 
-
-
 --------------
-**References**
+References
 --------------
 
 SAND95-1559: Aztec User’s Guide Version 1.0, Sandia Internal Report, Hutchinson,
