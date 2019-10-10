@@ -1,5 +1,5 @@
 *********
-**TABLE**
+TABLE
 *********
 
 ::
@@ -7,7 +7,7 @@
 	BC = TABLE SS <bc_id> {X|Y|Z|TIME} {ordinate} [species] {interpolation} [FILE = <fname>] [NAME = <identifier>]
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 **(PCC/VARIED))**
@@ -23,31 +23,31 @@ on its own line.
 
 Definitions of the input parameters are as follows:
 
-======================= ===========================================================================
-**TABLE**               Name of the boundary condition.
-**SS**                  Type of boundary condition (<bc_type>), where **SS**
-                        denotes side set in the EXODUS II database.
-<bc_id>                 The boundary flag identifier, an integer associated with
-                        <bc_type> that identifies the boundary location (side set
-                        in EXODUS II) in the problem domain.
-**{X|Y|Z|TIME}**        A char_string that identifies the independent table
-                        variable (abscissa). The strings X,Y, and Z refer of
-                        course to the three spatial coordinates. Depending on the
-                        choice here, the x, y, or z coordinate value at a given
-                        point, respectively, is used to obtain an interpolated
-                        ordinate value using the attached table data. If the TIME
-                        string appears here, however, the current simulation
-                        time is used to interpolate an ordinate value. This single
-                        value is applied uniformly to the sideset.
-{ordinate}              This string associates a variable type with the values of
-                        the ordinate in the attached table. It also identifies the
-                        equation that is supplanted by the boundary condition
-                        on the sideset. The following table lists the available
-                        string choices and the corresponding equation
-                        component clobbered by the boundary condition.
-======================= ===========================================================================
+TABLE
+    Name of the boundary condition.
+SS
+    Type of boundary condition (<bc_type>), where **SS** denotes side set in
+    the EXODUS II database.
+<bc_id>
+    The boundary flag identifier, an integer associated with <bc_type> that
+    identifies the boundary location (side set in EXODUS II) in the problem
+    domain.
+{X|Y|Z|TIME}
+    A char_string that identifies the independent table variable (abscissa).
+    The strings X,Y, and Z refer of course to the three spatial coordinates.
+    Depending on the choice here, the x, y, or z coordinate value at a given
+    point, respectively, is used to obtain an interpolated ordinate value using
+    the attached table data. If the TIME string appears here, however, the
+    current simulation time is used to interpolate an ordinate value. This
+    single value is applied uniformly to the sideset.
+{ordinate}
+    This string associates a variable type with the values of the ordinate in
+    the attached table. It also identifies the equation that is supplanted by
+    the boundary condition on the sideset. The following table lists the
+    available string choices and the corresponding equation component clobbered
+    by the boundary condition.
 
-|
+.. tabularcolumns:: |L|l|L|
 
 ============================= ============ ================================
 **String**                    **replaces** **Equation***
@@ -67,7 +67,7 @@ SOLID_DISPLACEMENT3 or DZ_RS               R_SOLID3
 SHEAR_RATE or SH                           R_SHEAR_RATE
 ============================= ============ ================================
 
-|
+.. tabularcolumns:: |L|l|L|
 
 ============================= ============ ================================
 **String**                    **replaces** **Equation***
@@ -80,7 +80,7 @@ S23                                        R_STRESS11
 S33                                        R_STRESS11
 ============================= ============ ================================
 
-|
+.. tabularcolumns:: |L|l|L|
 
 ============================= ============ ================================
 **String**                    **replaces** **Equation***
@@ -93,7 +93,7 @@ S23_1                                      R_STRESS23_1
 S33_1                                      R_STRESS33_1
 ============================= ============ ================================
 
-|
+.. tabularcolumns:: |L|l|L|
 
 ============================= ============ ================================
 **String**                    **replaces** **Equation***
@@ -106,7 +106,7 @@ S23_2                                      R_STRESS23_2
 S33_2                                      R_STRESS33_2
 ============================= ============ ================================
 
-|
+.. tabularcolumns:: |L|l|L|
 
 ============================= ============ ================================
 **String**                    **replaces** **Equation***
@@ -119,7 +119,7 @@ S23_3                                      R_STRESS23_3
 S33_3                                      R_STRESS33_3
 ============================= ============ ================================
 
-|
+.. tabularcolumns:: |L|l|L|
 
 ============================= ============ ================================
 **String**                    **replaces** **Equation***
@@ -132,7 +132,7 @@ S23_4                                      R_STRESS23_4
 S33_4                                      R_STRESS33_4
 ============================= ============ ================================
 
-|
+.. tabularcolumns:: |L|l|L|
 
 ============================= ============ ================================
 **String**                    **replaces** **Equation***
@@ -145,7 +145,7 @@ S23_5                                      R_STRESS23_5
 S33_5                                      R_STRESS33_5
 ============================= ============ ================================
 
-|
+.. tabularcolumns:: |L|l|L|
 
 ============================= ============ ================================
 **String**                    **replaces** **Equation***
@@ -158,7 +158,7 @@ S23_6                                      R_STRESS23_6
 S33_6                                      R_STRESS33_6
 ============================= ============ ================================
 
-|
+.. tabularcolumns:: |L|l|L|
 
 ============================= ============ ================================
 **String**                    **replaces** **Equation***
@@ -171,38 +171,32 @@ S23_7                                      R_STRESS23_7
 S33_7                                      R_STRESS33_7
 ============================= ============ ================================
 
-|
-
-======================= ===========================================================================
-[species]               An optional integer parameter that identifies the index
-                        of the appropriate species. Note, it should appear only
-                        when the <ordinate> string is *MASS_FRACTION*.
-{interpolation}         A char_string parameter that identifies the method
-                        chosen to interpolate between the attached table data
-                        points. For one-dimensional tables, the choices are
-                        *LINEAR*, which denotes simple linear interpolation, and
-                        *QUADRATIC*, which denotes quadratic Lagrangian
-                        interpolation. Note that the latter requires an odd
-                        number of data points be supplied in the table.
-[FILE = <fname>]        The optional char_string keyword "**FILE** =" indicates
-                        that the table data be read from a separate file identified
-                        by <fname>. This parameter is optional and if it is left
-                        out the table data will be read from the input deck itself
-                        following the *TABLE BC* card. Note that the file
-                        specified by <fname> will be first preprocessed by
-                        APREPRO if that option was enabled on the command
-                        line. This is a useful feature that allows for a quick way
-                        to introduce analytic expressions onto boundaries.
-[NAME = <identifier>]   The optional char_string keyword *NAME* = allows for a
-                        set of table data to be attached to the char_string
-                        parameter <identifier>. This option can only be used if
-                        the table data is read from a separate file identified by
-                        *FILE* = <*fname*>. In this case, the file <fname> is
-                        scanned for the char_string “identifier:” (note the
-                        colon). Once found the table data is read until
-                        encountering *END TABLE*. This option permits multiple
-                        sets of data in the same file.
-======================= ===========================================================================
+[species]
+    An optional integer parameter that identifies the index of the appropriate
+    species. Note, it should appear only when the <ordinate> string is
+    *MASS_FRACTION*.
+{interpolation}
+    A char_string parameter that identifies the method chosen to interpolate
+    between the attached table data points. For one-dimensional tables, the
+    choices are *LINEAR*, which denotes simple linear interpolation, and
+    *QUADRATIC*, which denotes quadratic Lagrangian interpolation. Note that
+    the latter requires an odd number of data points be supplied in the table.
+[FILE = <fname>]
+    The optional char_string keyword "**FILE** =" indicates that the table data
+    be read from a separate file identified by <fname>. This parameter is
+    optional and if it is left out the table data will be read from the input
+    deck itself following the *TABLE BC* card. Note that the file specified by
+    <fname> will be first preprocessed by APREPRO if that option was enabled on
+    the command line. This is a useful feature that allows for a quick way to
+    introduce analytic expressions onto boundaries.
+[NAME = <identifier>]
+    The optional char_string keyword *NAME* = allows for a set of table data to
+    be attached to the char_string parameter <identifier>. This option can only
+    be used if the table data is read from a separate file identified by *FILE*
+    = <*fname*>. In this case, the file <fname> is scanned for the char_string
+    “identifier:” (note the colon). Once found the table data is read until
+    encountering *END TABLE*. This option permits multiple sets of data in the
+    same file.
 
 The second half of the *TABLE_BC* implementation is the tabular data itself. In the
 *TABLE* boundary condition, it consists of a set of paired float values, each pair on its

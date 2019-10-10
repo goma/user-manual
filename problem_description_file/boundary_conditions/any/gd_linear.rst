@@ -1,5 +1,5 @@
 *************
-**GD_LINEAR**
+GD_LINEAR
 *************
 
 ::
@@ -7,7 +7,7 @@
 	BC = GD_LINEAR SS <bc_id> <equation_name> <integer1> <variable_name> <integer2> <float1> <float2>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 **(PCC/VARIED)**
@@ -27,29 +27,35 @@ residual replacement to any differential equation type. Please see the examples 
 these cards for details and instructive uses. Definitions of the input parameters are as
 follows:
 
-=================== =====================================================================
-**GD_LINEAR**       Name of the boundary condition (<bc_name>).
-**SS**              Type of boundary condition (<bc_type>), where **SS**
-                    denotes side set in the EXODUS II database.
-<bc_id>             The boundary flag identifier, an integer associated with
-                    <bc_type> that identifies the boundary location (side set
-                    in EXODUS II) in the problem domain.
-<equation_name>     A character string indicating the equation to which this
-                    boundary condition is applied (see the list of permissible
-                    values in the discussion above for *Category 1*).
-<integer1>          Species number of the mass transport equation. The
-                    value should be 0 unless the <equation_name> is of type R_MASS.
-<variable_name>     A character string indicating the variable that should be
-                    fixed (see the list of permissible values in the discussion
-                    above for *Category 1*).
-<integer2>          Species number of the concentration variable.The value
-                    should be 0 unless the <variable_name> is of type MASS_FRACTION.
-<float1>            Intercept :math:`C_1`
-<float2>            Slope :math:`C_2`
-=================== =====================================================================
+GD_LINEAR
+    Name of the boundary condition (<bc_name>).
+SS
+    Type of boundary condition (<bc_type>), where **SS** denotes side set in
+    the EXODUS II database.
+<bc_id>
+    The boundary flag identifier, an integer associated with <bc_type> that
+    identifies the boundary location (side set in EXODUS II) in the problem
+    domain.
+<equation_name>
+    A character string indicating the equation to which this boundary condition
+    is applied (see the list of permissible values in the discussion above for
+    *Category 1*).
+<integer1>
+    Species number of the mass transport equation. The value should be 0 unless
+    the <equation_name> is of type R_MASS.
+<variable_name>
+    A character string indicating the variable that should be fixed (see the
+    list of permissible values in the discussion above for *Category 1*).
+<integer2>
+    Species number of the concentration variable.The value should be 0 unless
+    the <variable_name> is of type MASS_FRACTION.
+<float1>
+    Intercept :math:`C_1`
+<float2>
+    Slope :math:`C_2`
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -66,7 +72,7 @@ case would lead to the mesh surface, defined by side set 1, to move or position 
 according to this linear relationship.
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 Note that this collocated boundary condition may be applied as a rotated, vector or
@@ -75,7 +81,3 @@ consult the example discussions on the other *GD_** options for more detailed
 examples, as this boundary condition card can be used in an additive way with those.
 
 
-
-
-.. 
-	TODO - Line 18 needs to be replaced with the actual equation rather than a photo of the equation.

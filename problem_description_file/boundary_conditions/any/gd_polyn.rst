@@ -1,5 +1,5 @@
 ************
-**GD_POLYN**
+GD_POLYN
 ************
 
 ::
@@ -7,7 +7,7 @@
 	BC = GD_POLYN SS <bc_id> <equation_name> <integer1> <variable_name> <integer2> <float_list>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 **(PCC/VARIED)**
@@ -23,34 +23,45 @@ polynomial dependence on a variable
 There are three required and four optional parameters in the <float_list>; definitions of
 the input parameters are as follows:
 
-=================== =====================================================================
-**GD_POLYN**        Name of the boundary condition (<bc_name>).
-**SS**              Type of boundary condition (<bc_type>), where **SS**
-                    denotes side set in the EXODUS II database.
-<bc_id>             The boundary flag identifier, an integer associated with
-                    <bc_type> that identifies the boundary location (side set
-                    in EXODUS II) in the problem domain.
-<equation_name>     A character string indicating the equation to which this
-                    boundary condition is applied (see the list of permissible
-                    values in the discussion above for *Category 1*).
-<integer1>          Species number of the mass transport equation. The
-                    value should be 0 unless the <equation_name> is of type R_MASS.
-<variable_name>     A character string indicating the variable that should be
-                    fixed (see the list of permissible values in the discussion
-                    above for *Category 1*).
-<integer2>          Species number of the concentration variable. The value
-                    should be 0 unless the <variable_name> is of type MASS_FRACTION.
-<float1>            Intercept :math:`C_1`.
-<float2>            Slope :math:`C_2`.
-<float3>            Acceleration :math:`C_3`.
-<float4>            Coefficient for 3rd-order term :math:`C_4`.
-<float5>            Coefficient for 4th-order term :math:`C_5`.
-<float6>            Coefficient for 5th-order term :math:`C_6`.
-<float7>            Coefficient for 6th-order term :math:`C_7``.
-=================== =====================================================================
+GD_POLYN
+    Name of the boundary condition (<bc_name>).
+SS
+    Type of boundary condition (<bc_type>), where **SS** denotes side set in
+    the EXODUS II database.
+<bc_id>
+    The boundary flag identifier, an integer associated with <bc_type> that
+    identifies the boundary location (side set in EXODUS II) in the problem
+    domain.
+<equation_name>
+    A character string indicating the equation to which this boundary condition
+    is applied (see the list of permissible values in the discussion above for
+    *Category 1*).
+<integer1>
+    Species number of the mass transport equation. The value should be 0 unless
+    the <equation_name> is of type R_MASS.
+<variable_name>
+    A character string indicating the variable that should be fixed (see the
+    list of permissible values in the discussion above for *Category 1*).
+<integer2>
+    Species number of the concentration variable. The value should be 0 unless
+    the <variable_name> is of type MASS_FRACTION.
+<float1>
+    Intercept :math:`C_1`.
+<float2>
+    Slope :math:`C_2`.
+<float3>
+    Acceleration :math:`C_3`.
+<float4>
+    Coefficient for 3rd-order term :math:`C_4`.
+<float5>
+    Coefficient for 4th-order term :math:`C_5`.
+<float6>
+    Coefficient for 5th-order term :math:`C_6`.
+<float7>
+    Coefficient for 6th-order term :math:`C_7``.
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a set of sample cards:
@@ -75,7 +86,7 @@ mesh position (N.B. not displacement, as *MESH_POSITION2* would be replaced by
 *MESH_DISPLACEMENT2* in the above).
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 This condition is not used as often as *GD_LINEAR* and *GD_PARAB*, and in fact
@@ -83,7 +94,3 @@ supersedes those conditions. Please consult the example discussions on the other
 options and the example section after *GD_TABLE* for more descriptive examples.
 
 
-
-
-.. 
-	TODO - In line 19 and 67 the images need to be replaced with the actual equations.

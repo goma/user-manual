@@ -146,23 +146,47 @@ follows the descriptions, explaining how the cards are used together in various 
 
 .. include:: /problem_description_file/boundary_conditions/any/fix.rst
 
+---------------------------------------------------------------------------------------
+
 .. include:: /problem_description_file/boundary_conditions/any/gd_const.rst
+
+---------------------------------------------------------------------------------------
 
 .. include:: /problem_description_file/boundary_conditions/any/gd_linear.rst
 
+---------------------------------------------------------------------------------------
+
 .. include:: /problem_description_file/boundary_conditions/any/gd_parab.rst
+
+---------------------------------------------------------------------------------------
 
 .. include:: /problem_description_file/boundary_conditions/any/gd_polyn.rst
 
+---------------------------------------------------------------------------------------
+
 .. include:: /problem_description_file/boundary_conditions/any/gd_time.rst
+
+---------------------------------------------------------------------------------------
 
 .. include:: /problem_description_file/boundary_conditions/any/gd_circ.rst
 
+---------------------------------------------------------------------------------------
+
 .. include:: /problem_description_file/boundary_conditions/any/gd_table.rst
+
+---------------------------------------------------------------------------------------
+
+.. include:: /problem_description_file/boundary_conditions/any/gd_usage.rst
+
+---------------------------------------------------------------------------------------
 
 .. include:: /problem_description_file/boundary_conditions/any/table_wicv.rst
 
+---------------------------------------------------------------------------------------
+
 .. include:: /problem_description_file/boundary_conditions/any/table_wics.rst
+
+---------------------------------------------------------------------------------------
 
 .. include:: /problem_description_file/boundary_conditions/any/table.rst
 

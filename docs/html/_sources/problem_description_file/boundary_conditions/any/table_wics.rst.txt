@@ -1,5 +1,5 @@
 **************
-**TABLE_WICS**
+TABLE_WICS
 **************
 
 ::
@@ -7,7 +7,7 @@
 	BC = TABLE_WICS SS <bc_id> {abscissa} {ordinate} {scale} {interpolation} [FILE = <fname>]
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 **(WIC/VARIED)**
@@ -19,33 +19,32 @@ flux for a thermal problem.
 
 Definitions of the input parameters are as follows:
 
-+------------------+---------------------------------------------------------------------------+
-|**TABLE_WICS**    |  Name of the boundary condition (<bc_name>).                              |
-+------------------+---------------------------------------------------------------------------+
-|**SS**            |  Type of boundary condition (<bc_type>), where **SS**                     |
-|                  |  denotes side set in the EXODUS II database.                              |
-+------------------+---------------------------------------------------------------------------+
-|<bc_id>           |  The boundary flag identifier, an integer associated with                 |
-|                  |  *TABLE_WICS* that identifies the boundary location (side                 |
-|                  |  set in EXODUS II) in the problem domain.                                 |
-+------------------+---------------------------------------------------------------------------+
-|{abscissa}        |  For one-dimensional tables (i.e. for use in 2D                           |
-|                  |  problems), the choices are restricted to one of the three                |
-|                  |  coordinate directions. Use the strings X, Y or Z to                      |
-|                  |  identify the direction of choice. For two-dimensional                    |
-|                  |  tables (i.e. for use in 3D problems) use XY, XZ, YX,                     |
-|                  |  YZ, ZX, or ZY to denote the coordinate of the first and                  |
-|                  |  second columns in the table.                                             | 
-+------------------+---------------------------------------------------------------------------+
-|{ordinate}        |  This string identifies the equation of the weak integrated               |
-|                  |  boundary term that the boundary data is added to. For                    |
-|                  |  example, use of the VELOCITY1 string will cause the                      |
-|                  |  table data to be used for the x-component of the liquid                  |
-|                  |  traction in the boundary integral for the x-momentum                     |
-|                  |  equation. See the following table.                                       |
-+------------------+---------------------------------------------------------------------------+
+TABLE_WICS
+    Name of the boundary condition (<bc_name>).                              
+SS
+    Type of boundary condition (<bc_type>), where **SS**
+    denotes side set in the EXODUS II database.                              
+<bc_id>
+    The boundary flag identifier, an integer associated with
+    *TABLE_WICS* that identifies the boundary location (side
+    set in EXODUS II) in the problem domain.                                 
+{abscissa}
+    For one-dimensional tables (i.e. for use in 2D
+    problems), the choices are restricted to one of the three
+    coordinate directions. Use the strings X, Y or Z to
+    identify the direction of choice. For two-dimensional
+    tables (i.e. for use in 3D problems) use XY, XZ, YX,
+    YZ, ZX, or ZY to denote the coordinate of the first and
+    second columns in the table.                                             
+{ordinate}
+    This string identifies the equation of the weak integrated
+    boundary term that the boundary data is added to. For
+    example, use of the VELOCITY1 string will cause the
+    table data to be used for the x-component of the liquid
+    traction in the boundary integral for the x-momentum
+    equation. See the following table.                                       
 
-|
+.. tabularcolumns:: |L|L|L|
 
 +-------------------------------------------+--------------------------+------------------------------+
 |**String**                                 |  **replaces**            |  **Equation**                |
@@ -73,43 +72,40 @@ Definitions of the input parameters are as follows:
 |S[1-3][1-3]_[1-7]                          |  polymer mode traction   |  R_STRESS[1-3][1-3]_[1-7]    |
 +-------------------------------------------+--------------------------+------------------------------+
 
-|
-
-+------------------+---------------------------------------------------------------------------+
-|{scale}           |  A floating point scale multiplier which can be used to                   |
-|                  |  scale the tabular data. The boundary data used will be                   |
-|                  |  the product of {scale} and the tabular data.                             |
-+------------------+---------------------------------------------------------------------------+
-|{interpolation}   |  This is the method chosen to interpolate between                         |
-|                  |  supplied data points.                                                    |
-|                  |                                                                           |
-|                  |  For one-dimensional tables, the choices are **LINEAR**,                  |
-|                  |  which denotes linear interpolation, **QUADRATIC**,                       |
-|                  |  which denotes quadratic Lagrangian interpolation and                     |
-|                  |  requires an odd number of data points, and **QUAD_GP**,                  |
-|                  |  which denotes quadratic interpolation where the data                     |
-|                  |  points represent Gauss point values. 3N data points (see                 |
-|                  |  Technical Discussion) are required for **QUAD_GP** interpolation.        |
-|                  |                                                                           |
-|                  |  For two-dimensional tables, **BIQUADRATIC** is                           |
-|                  |  currently the only choice. The first two columns of the                  |
-|                  |  table should define a rectangular, mapped grid where the                 |
-|                  |  second coordinate changes more quickly than the first.                   |
-|                  |  More complicated methods could be added latter.                          |
-+------------------+---------------------------------------------------------------------------+
-|[FILE = <fname>]  |  The keyword "**FILE** =" indicates that the table data be                |
-|                  |  read from a separate file identified by <fname>. This                    |
-|                  |  parameter is optional and if it is left out the table data               |
-|                  |  will be read from the input deck itself following the                    |
-|                  |  *TABLE_WICS* card. In this latter case, the end of the                   |
-|                  |  table is signaled by the keywords "END TABLE". Note                      |
-|                  |  that the file specified by FILE = is fully *apreproable*,                |
-|                  |  i.e., it will be preprocessed by APREPRO before                          |
-|                  |  reading if APREPRO is enabled.                                           |
-+------------------+---------------------------------------------------------------------------+
+{scale}
+    A floating point scale multiplier which can be used to
+    scale the tabular data. The boundary data used will be
+    the product of {scale} and the tabular data.                             
+{interpolation}
+    This is the method chosen to interpolate between
+    supplied data points.                                                    
+                                                                                             
+    For one-dimensional tables, the choices are **LINEAR**,
+    which denotes linear interpolation, **QUADRATIC**,
+    which denotes quadratic Lagrangian interpolation and
+    requires an odd number of data points, and **QUAD_GP**,
+    which denotes quadratic interpolation where the data
+    points represent Gauss point values. 3N data points (see
+    Technical Discussion) are required for **QUAD_GP** interpolation.        
+                                                                                             
+    For two-dimensional tables, **BIQUADRATIC** is
+    currently the only choice. The first two columns of the
+    table should define a rectangular, mapped grid where the
+    second coordinate changes more quickly than the first.
+    More complicated methods could be added latter.                          
+[FILE = <fname>]
+    The keyword "**FILE** =" indicates that the table data be
+    read from a separate file identified by <fname>. This
+    parameter is optional and if it is left out the table data
+    will be read from the input deck itself following the
+    *TABLE_WICS* card. In this latter case, the end of the
+    table is signaled by the keywords "END TABLE". Note
+    that the file specified by FILE = is fully *apreproable*,
+    i.e., it will be preprocessed by APREPRO before
+    reading if APREPRO is enabled.                                           
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -117,18 +113,18 @@ Following is a sample card:
 
      BC = TABLE_WICS SS 12 X TEMPERATURE QUADRATIC FILE =heatflux.table
 
-heatflux.table:
+:: 
 
-====== ====== 
-0.0    1.0
-0.5    1.5
-1.0    1.75
-1.5    2.0
-2.0    2.0
-====== ======
+    heatflux.table:
+    
+    0.0    1.0
+    0.5    1.5
+    1.0    1.75
+    1.5    2.0
+    2.0    2.0
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 The table data itself appears as columns of numbers. One-dimensional *TABLE_WICS*
@@ -148,10 +144,3 @@ The user is also referred to the section on **Boundary Condition Types** at the 
 of the *Boundary Condition Specifications*. In particular, look at the discussion of
 Weakly Integrated Conditions (WIC).
 
-
-
---------------
-**References**
---------------
-
-No References.

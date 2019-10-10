@@ -1,13 +1,13 @@
 ***********
-**GD_TIME**
+GD_TIME
 ***********
 
 ::
 
-	BC = BC = GD_TIME SS <bc_id> <equation_name> <integer1> <time_func_name> <integer2> <float1> <float2>
+	BC = BC = GD_TIME SS <bc_id> <equation_name> <integer1> <time_func_name> <integer2> <float1> <float2> [float3]
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 **(PCC/VARIED)**
@@ -20,27 +20,38 @@ cards for which the user wishes to modulate (viz. *GD_LINEAR, GD_PARAB*, etc.). 
 card can be used as many times as needed to construct the desired function. The
 examples below will clarify its use. Definitions of the input parameters are as follows:
 
-=================== =================================================================
-**GD_TIME**         Name of the boundary condition (<bc_name>).
-**SS**              Type of boundary condition (<bc_type>), where **SS**
-                    denotes side set in the EXODUS II database.
-<bc_id>             The boundary flag identifier, an integer associated with
-                    <bc_type> that identifies the boundary location (side set
-                    in EXODUS II) in the problem domain.
-<equation_name>     A character string indicating the equation to which this
-                    boundary condition is applied (see the list of permissible
-                    values in the discussion above for *Category 1*).
-<integer1>          Species number of the mass transport equation. The
-                    value should be 0 unless the <equation_name> is of type R_MASS.
-<time_func_name>    Keyword to identify the functional form of the time
-                    modulation. Permissible values for this parameter are
-                    LINEAR, EXPONENTIAL, and SINUSOIDAL.
-<integer2>          Set this required but unused parameter to zero.
-<float1>            :math:`C_0` model parameter
-<float2>            :math:`C_1` model parameter
-=================== =================================================================
-
+GD_TIME
+    Name of the boundary condition (<bc_name>).
+SS
+    Type of boundary condition (<bc_type>), where **SS** denotes side set in
+    the EXODUS II database.
+<bc_id> 
+    The boundary flag identifier, an integer associated with <bc_type> that
+    identifies the boundary location (side set in EXODUS II) in the problem
+    domain.
+<equation_name>
+    A character string indicating the equation to which this boundary condition
+    is applied (see the list of permissible values in the discussion above for
+    *Category 1*).
+<integer1>
+    Species number of the mass transport equation. The value should be 0 unless
+    the <equation_name> is of type R_MASS.
+<time_func_name>
+    Keyword to identify the functional form of the time modulation. Permissible
+    values for this parameter are LINEAR, EXPONENTIAL, and SINUSOIDAL.
+<integer2>
+    Set this required but unused parameter to zero.
+<float1>
+    :math:`C_0` model parameter
+<float2>
+    :math:`C_1` model parameter
+[float3]
+    Optional parameter to add a maximum time to be applied if :math:`t > t_{max}` then
+    :math:`t` is set to :math:`t_{max}`
+    
 The functional form of each time-modulation model is as follows:
+
+.. tabularcolumns:: |l|L|
 
 ===================== ===============================================================
 LINEAR:               :math:`f(t) = C_0 + C_1t`
@@ -49,20 +60,14 @@ SINUSOIDAL:           :math:`f(t) = \sin \left(C_0 + C_1t \right)`
 ===================== ===============================================================
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card set:
 ::
 
 	BC = GD_LINEAR SS 1 R_MESH_NORMAL 0 MESH_DISPLACEMENT1 0 1. 0.
-
-::
-
 	BC = GD_TIME SS 1 R_MESH_NORMAL 0 SINUSOIDAL 0 10. 2.
-
-::
-
 	BC = GD_LINEAR SS 1 R_MESH_NORMAL 0 MESH_POSITION1 0 0. -1.
 
 This set of cards leads to the application of :math:`x = sin(10.0 + 2t)` to the normal component
@@ -74,6 +79,14 @@ constant of 1.0 in the equation, the second card (*GD_TIME* card) multiplies tha
 constant with the sinusoidal time function, and the third card is used to put the linear
 term on mesh position. Note carefully the signs used.
 
+Invoking with a maximum time is done using the optional parameter:
+
+::
+
+    BC = GD_LINEAR SS 1 R_MOMENTUM1 0 VELOCITY1 0 {web_speed/time_max} 0.
+    BC = GD_TIME SS 1 R_MOMENTUM1 0 LINEAR 0 0 1. {time_max}
+    BC = GD_LINEAR SS 1 R_MOMENTUM1 0 VELOCITY1 0 0. -1.
+
 -------------------------
 **Technical Discussion**
 -------------------------
@@ -84,9 +97,3 @@ inconvenience of writing a user-defined boundary condition. Boundary conditions 
 pulsating flow, piston motion, roll-eccentricity effects in coating, time-evolving
 temperature transients, etc. can all be constructed using this card. The examples at the
 end of this section on *GD_** options will help the user construct such functions.
-
-
-
-
-.. 
-	TODO - There are three images spanding from lien 45 to 55 the equation need to be wrtten as well as the word a colon.

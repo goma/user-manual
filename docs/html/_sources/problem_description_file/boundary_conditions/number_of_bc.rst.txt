@@ -13,9 +13,8 @@ Description / Usage
 This required card indicates how many boundary condition (BC) cards are contained in
 the *Problem Description File*. The single input parameter is defined as
 
-================== ============================================================
-<integer>          The number of BC cards that follow.
-================== ============================================================
+<integer>
+    The number of BC cards that follow.
 
 If <integer> is set to -1, *Goma* will automatically count the number of BC cards
 between the *Number of BC* card and the *End of BC* card. This latter usage is generally

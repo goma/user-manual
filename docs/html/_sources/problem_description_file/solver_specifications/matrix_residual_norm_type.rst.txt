@@ -15,7 +15,7 @@ residuals occurring during the solution of the linear matrix system :math:`r \le
 :math:`z` is an approximation to the solution :math:`x` of the linear matrix problem :math:`Ax = b`. The types
 of norms used by the linear solver are controlled by values of {char_string}:
 
-.. tabularcolumns |l|L|
+.. tabularcolumns:: |l|L|
 
 ==================  ===============================================================================================================
 {char_string}       Norm type

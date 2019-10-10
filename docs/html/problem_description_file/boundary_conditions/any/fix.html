@@ -140,7 +140,7 @@
     
       <li><a href="../../../index.html">Docs</a> &raquo;</li>
         
-      <li><strong>FIX</strong></li>
+      <li>FIX</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,12 +160,12 @@
            <div itemprop="articleBody">
             
   <div class="section" id="fix">
-<h1><strong>FIX</strong><a class="headerlink" href="#fix" title="Permalink to this headline">¶</a></h1>
+<h1>FIX<a class="headerlink" href="#fix" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">FIX</span> <span class="n">NS</span> <span class="o">&lt;</span><span class="n">bc_id</span><span class="o">&gt;</span> <span class="p">{</span><span class="n">char_string</span><span class="p">}</span> <span class="o">&lt;</span><span class="n">integer1</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p><strong>(DC/VARIED)</strong></p>
 <p>This boundary condition card is used to fix the value of a nodal variable along a node
 set to the value it receives from an initial guess file (viz. either from the neutral file
@@ -244,7 +244,7 @@ concentration.</p>
 </dl>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>The following is an example of using this card to set the mesh displacement
 components in a 2-D problem:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span>    <span class="n">FIX</span>    <span class="n">NS</span>    <span class="mi">4</span>    <span class="n">MESH_DISPLACEMENT1</span>    <span class="mi">0</span>
@@ -259,7 +259,7 @@ moving another boundary (because the current displacements were not known, FIX
 was a convenient tool).</p>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
 <p>This boundary condition capability is indispensable for moving-mesh problems when
 the dependent variable is the mesh displacement from a stress free state. If one were to
 try to use the DX/DY/DZ type Dirichlet condition to suddenly freeze a mesh along a

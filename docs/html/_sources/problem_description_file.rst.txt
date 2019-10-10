@@ -108,7 +108,3 @@ them again.
    problem_description_file/post_processing_fluxes
    problem_description_file/post_processing_particle
    problem_description_file/post_processing_volume
-
-.. 
-	TODO - In line 486 where the word "EQUATION" is, it needs to be replaced with the correct equation fo this paragraph. In line 510 there is a picture in the place in which an equation needs to be written. Line 1146 contains a phtot that needs to be changed into an equation.
-

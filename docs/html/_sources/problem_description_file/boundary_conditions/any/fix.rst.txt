@@ -1,5 +1,5 @@
 *******
-**FIX**
+FIX
 *******
 
 ::
@@ -7,7 +7,7 @@
 	BC = FIX NS <bc_id> {char_string} <integer1>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 **(DC/VARIED)**
@@ -91,7 +91,7 @@ NS
     concentration.                                                          
 
 ------------
-**Examples**
+Examples
 ------------
 
 The following is an example of using this card to set the mesh displacement
@@ -110,7 +110,7 @@ moving another boundary (because the current displacements were not known, FIX
 was a convenient tool).
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 This boundary condition capability is indispensable for moving-mesh problems when

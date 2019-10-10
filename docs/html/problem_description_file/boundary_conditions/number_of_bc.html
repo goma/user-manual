@@ -168,17 +168,10 @@
 <h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
 <p>This required card indicates how many boundary condition (BC) cards are contained in
 the <em>Problem Description File</em>. The single input parameter is defined as</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 23%" />
-<col style="width: 77%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>&lt;integer&gt;</p></td>
-<td><p>The number of BC cards that follow.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>&lt;integer&gt;</dt><dd><p>The number of BC cards that follow.</p>
+</dd>
+</dl>
 <p>If &lt;integer&gt; is set to -1, <em>Goma</em> will automatically count the number of BC cards
 between the <em>Number of BC</em> card and the <em>End of BC</em> card. This latter usage is generally
 preferred if a large number of BCs are to be specified.</p>
