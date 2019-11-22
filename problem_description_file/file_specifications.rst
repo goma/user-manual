@@ -22,6 +22,10 @@ required and optional input records are as follows:
 
 -------------------------------------------------------------------------------
 
+.. include:: file_specifications/brk_file.rst
+
+-------------------------------------------------------------------------------
+
 .. include:: file_specifications/write_intermediate_results.rst
 
 -------------------------------------------------------------------------------

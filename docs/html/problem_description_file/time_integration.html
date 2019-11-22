@@ -163,14 +163,19 @@
 <li class="toctree-l4"><a class="reference internal" href="#id28">Examples</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#second-frequency-time">Second Frequency Time</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fix-frequency">Fix Frequency</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id29">Description / Usage</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id30">Examples</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#initial-time">Initial Time</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#second-frequency-time">Second Frequency Time</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id31">Description / Usage</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id32">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#initial-time">Initial Time</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id33">Description / Usage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id34">Examples</a></li>
 </ul>
 </li>
 </ul>
@@ -732,13 +737,39 @@ successive printings of the solution (any positive number).</p>
 </div>
 </div>
 <hr class="docutils" />
+<div class="section" id="fix-frequency">
+<h2>Fix Frequency<a class="headerlink" href="#fix-frequency" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Fix</span> <span class="n">Frequency</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">integer</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<div class="section" id="id29">
+<h3>Description / Usage<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>&lt;integer&gt;</dt><dd><p>fix frequency relative to number of prints (0 is disabled)</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id30">
+<h3>Examples<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h3>
+<p>Following are sample cards:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fix every print</span>
+<span class="n">Fix</span> <span class="n">Frequency</span> <span class="o">=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fix every 5 prints</span>
+<span class="n">Fix</span> <span class="n">Frequency</span> <span class="o">=</span> <span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
 <div class="section" id="second-frequency-time">
 <h2>Second Frequency Time<a class="headerlink" href="#second-frequency-time" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Second</span> <span class="n">frequency</span> <span class="n">time</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">float1</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">float2</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id29">
-<h3>Description / Usage<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id31">
+<h3>Description / Usage<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h3>
 <p>This card allows the time between successive writings of the solution to change after a
 specified time and is only used if the &lt;integer&gt; in the <em>Printing Frequency</em> card is set to
 0. Definitions of input parameters are as follows:</p>
@@ -751,8 +782,8 @@ card) for printing the solution at times greater than &lt;float1&gt;.</p>
 </dd>
 </dl>
 </div>
-<div class="section" id="id30">
-<h3>Examples<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id32">
+<h3>Examples<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample card that will change the printing frequency to print every 3
 time units after 15 time units:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Second</span> <span class="n">frequency</span> <span class="n">time</span> <span class="o">=</span> <span class="mf">15.</span> <span class="mf">3.</span>
@@ -766,8 +797,8 @@ time units after 15 time units:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Initial</span> <span class="n">Time</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<div class="section" id="id31">
-<h3>Description / Usage<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id33">
+<h3>Description / Usage<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h3>
 <p>This card sets the time at which the calculation starts. The input parameter is defined as</p>
 <dl class="simple">
 <dt>&lt;float&gt;</dt><dd><p>Any number indicating the initial solution time (in the same units as
@@ -781,8 +812,8 @@ read_exoII_file or read_exoII.</p>
 <p>Normally, the value of &lt;float&gt; will be set to zero unless the problem is a continuation
 of a previous transient problem.</p>
 </div>
-<div class="section" id="id32">
-<h3>Examples<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id34">
+<h3>Examples<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample card that shows a restart at 45 time units:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Initial</span> <span class="n">Time</span> <span class="o">=</span> <span class="mf">45.0</span>
 </pre></div>

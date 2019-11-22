@@ -1,5 +1,5 @@
 ******************************
-**Write Intermediate Results**
+Write Intermediate Results
 ******************************
 
 ::
@@ -7,7 +7,7 @@
 	Write Intermediate Results = {yes | no}
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This optional card controls the output of intermediate results. The permissible values
@@ -27,7 +27,7 @@ no
     converged iteration is output to the EXODUS II file.
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -36,7 +36,7 @@ Following is a sample card:
 	Write Intermediate Results = no
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 This file is useful to guard against machine crashes or accidental job kills, particularly

@@ -58,6 +58,10 @@ interfaces in an Eulerian fashion, making the problem inherently transient.
 
 -------------------------------------------------------------------------------
 
+.. include:: time_integration/fix_frequency.rst
+
+-------------------------------------------------------------------------------
+
 .. include:: time_integration/second_frequency_time.rst
 
 -------------------------------------------------------------------------------

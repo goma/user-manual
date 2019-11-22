@@ -1,5 +1,5 @@
 *************************
-**Output EXODUS II File**
+Output EXODUS II File
 *************************
 
 ::
@@ -7,7 +7,7 @@
 	Output EXODUS II file = <file_name>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This required card specifies the name of the output EXODUS II file. Any EXODUS II
@@ -26,7 +26,7 @@ specified in the *FEM file* card), then no replication of the input mesh data is
 and any results are simply appended to it.
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -35,7 +35,7 @@ Following is a sample card:
 	Output EXODUS II file = out.exoII
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 Although allowed, it is not advisable to make this file name the same as the file name
@@ -43,7 +43,7 @@ input on the *FEM file* card.
 
 
 --------------
-**References**
+References
 --------------
 
 The EXODUS II format is documented in:

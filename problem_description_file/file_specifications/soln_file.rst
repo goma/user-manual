@@ -1,5 +1,5 @@
 *************
-**SOLN File**
+SOLN File
 *************
 
 ::
@@ -7,7 +7,7 @@
 	SOLN file = <file_name>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This required card identifies the ASCII output file that will provide the initial guess for
@@ -25,7 +25,7 @@ and location of the corresponding degree-of-freedom. If **no** or **none** is us
 the file name, no ASCII information is written.
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -34,7 +34,7 @@ Following is a sample card:
 	SOLN file = soln.dat
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 This file represents the primary ASCII output of the *Goma* solution vector and the

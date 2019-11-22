@@ -1,12 +1,12 @@
 ************
-**FEM File**
+FEM File
 ************
 ::
 
 	FEM file = <file_name>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This required card specifies the name of the EXODUS II finite element mesh file. Any
@@ -22,7 +22,7 @@ EXODUS II file name is permissible, as specified below.
     maximum length of the file name is 85 characters.
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -31,7 +31,7 @@ Following is a sample card:
 	FEM file = in.exoII
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 This file contains the finite element discretization of the problem domain. Finite
@@ -40,7 +40,7 @@ translator from the preprocessor’s output format to the EXODUS II format is av
 to the analyst.
 
 --------------
-**References**
+References
 --------------
 
 The EXODUS II format is documented in:

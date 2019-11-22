@@ -1,5 +1,5 @@
 **************
-**Guess File**
+Guess File
 **************
 
 ::
@@ -7,7 +7,7 @@
 	GUESS file = <file_name>
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This required card identifies the input file that provides the initial guess for the solution
@@ -24,7 +24,7 @@ the same format as the file described in the *SOLN* file card. A solution file f
 previous simulation may be used.
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -33,7 +33,7 @@ Following is a sample card:
 	GUESS file = contin.dat
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 This file is typically a copy of the *SOLN file* thus being an exact replica of it. It

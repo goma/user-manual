@@ -1,5 +1,5 @@
 **************************
-**Write Initial Solution**
+Write Initial Solution
 **************************
 
 ::
@@ -7,7 +7,7 @@
 	Write initial solution = {yes | no}
 
 -----------------------
-**Description / Usage**
+Description / Usage
 -----------------------
 
 This optional card controls the output of an initial solution prior to the start of a time
@@ -23,7 +23,7 @@ no
     No initial solution is written.
 
 ------------
-**Examples**
+Examples
 ------------
 
 Following is a sample card:
@@ -32,7 +32,7 @@ Following is a sample card:
 	Write Initial Solution = yes
 
 -------------------------
-**Technical Discussion**
+Technical Discussion
 -------------------------
 
 This option is useful to activate when help is desired in debugging the startup portion of

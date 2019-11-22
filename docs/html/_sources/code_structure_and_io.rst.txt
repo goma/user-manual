@@ -135,6 +135,10 @@ descriptions (two ways are shown to specify each option, an abbreviated and a ve
                           Redirect *Goma* to read the input EXODUS II database
                           file (often called “*in.exoII*”) from *fn*.
 
+-brk fn
+                          Specify a Brk file, this overrides setting Brk File in
+                          Problem Description File
+
 -n int                    
                           Change the maximum number of Newton iterations to *int*. This is
                           especially convenient for setting the number of

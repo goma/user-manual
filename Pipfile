@@ -5,10 +5,11 @@ verify_ssl = true
 
 [dev-packages]
 pylint = "*"
+jedi = "*"
 
 [packages]
 sphinx = "*"
 sphinx-rtd-theme = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3"
