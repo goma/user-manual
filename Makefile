@@ -17,8 +17,10 @@ help:
 github:
 	$(MAKE) clean
 	$(MAKE) html
+	mv docs tmp_docs
+	mv tmp_docs/html docs
+	rm -rf tmp_docs
 	touch docs/.nojekyll
-	echo "<meta http-equiv=\"refresh\" content=\"0; url=./html/index.html\" />" > docs/index.html
 	echo "docs.gomafem.com" > docs/CNAME
 
 
