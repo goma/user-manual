@@ -193,11 +193,11 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#liquid-constitutive-equation">Liquid Constitutive Equation</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id52"><strong>Description / Usage</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id53"><strong>Examples</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id54"><strong>Technical Discussion</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id55"><strong>Theory</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id56"><strong>References</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id52">Description / Usage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id53">Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id54">Technical Discussion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id55">Theory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id56">References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#viscosity">Viscosity</a><ul>
@@ -1822,54 +1822,39 @@ Element Implementation”, J. Comp. Phys., 125 (1996) 83-103.</p>
 </pre></div>
 </div>
 <div class="section" id="id52">
-<h3><strong>Description / Usage</strong><a class="headerlink" href="#id52" title="Permalink to this headline">¶</a></h3>
+<h3>Description / Usage<a class="headerlink" href="#id52" title="Permalink to this headline">¶</a></h3>
 <p>This required card is used to specify the stress, strain-rate/strain constitutive equation
 associated with the momentum equations (e.g. Navier-Stokes equations) and contains
 Newtonian and generalized Newtonian models. The single input parameter is the
 {model_name} with the options listed below:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 15%" />
-<col style="width: 85%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>{model_name}</p></td>
-<td><p>Name of the constitutive equation, being one of the following values: <strong>NEWTONIAN, POWER_LAW,</strong>
-<strong>CARREAU, BINGHAM, CARREAU_WLF, CURE, THERMAL, EPOXY, SUSPENSION, FILLED_EPOXY,</strong>
-<strong>POWERLAW_SUSPENSION, CARREAU_SUSPENSION,</strong> or <strong>HERSCHEL_BULKLEY</strong>. Each of these
-constitutive models require additional parameters that are entered via additional cards, as
-described below.</p></td>
-</tr>
-</tbody>
-</table>
+<dl class="simple">
+<dt>{model_name}</dt><dd><p>Name of the constitutive equation, being one of the following values:
+<strong>NEWTONIAN, POWER_LAW,</strong> <strong>CARREAU, BINGHAM, CARREAU_WLF, CURE, THERMAL,
+EPOXY, SUSPENSION, FILLED_EPOXY,</strong>             <strong>POWERLAW_SUSPENSION,
+CARREAU_SUSPENSION,</strong> or <strong>HERSCHEL_BULKLEY</strong>. Each of these
+constitutive models require additional parameters that are entered via
+additional cards, as    described below.</p>
+</dd>
+</dl>
 <p>Thus,</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 21%" />
-<col style="width: 79%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>NEWTONIAN</strong></p></td>
-<td><p>For a simple constant viscosity Newtonian fluid. This model requires one floating point value,
-<span class="math notranslate nohighlight">\(\mu\)</span>, where <span class="math notranslate nohighlight">\(\mu\)</span> is the viscosity in the chosen units for the problem and is
-entered with the <em>Viscosity</em> card.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>POWER_LAW</strong></p></td>
-<td><p>For a power law model. This model requires two parameters. The first, μ0, is the zero
+<dl>
+<dt>NEWTONIAN</dt><dd><p>For a simple constant viscosity Newtonian fluid. This model requires one floating point value,</p>
+<p><span class="math notranslate nohighlight">\(\mu\)</span>, where <span class="math notranslate nohighlight">\(\mu\)</span> is the viscosity in the chosen units for the problem and is
+entered with the <em>Viscosity</em> card.</p>
+</dd>
+<dt>POWER_LAW</dt><dd><p>For a power law model. This model requires two parameters. The first, μ0, is the zero
 strain-rate limit of the viscosity and is entered with the <em>Low Rate Viscosity</em> card. The
 second, n, is the exponent on the strain rate which can take on any value between 1 (Newtonian)
 and 0 (infinitely shear thinning). n is entered with the <em>Power Law Exponent</em> card. The form of
 the equation is</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/376_goma_physics.png"><img alt="../_images/376_goma_physics.png" src="../_images/376_goma_physics.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="../_images/376_goma_physics.png"><img alt="../_images/376_goma_physics.png" src="../_images/376_goma_physics.png" style="width: 40%;" /></a>
 </div>
 <p>where is the second invariant of the shear-rate tensor. To obtain solutions with the power law
 model, it is best to start with a Newtonian initial guess since the viscosity becomes infinite
 at zero shear-rate.</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>CARREAU</strong></p></td>
-<td><p>For a Carreau-Yasuda strain-rate thinning or thickening relation. This option requires five
+</dd>
+<dt>CARREAU</dt><dd><p>For a Carreau-Yasuda strain-rate thinning or thickening relation. This option requires five
 floating point values. The first, μ0, is the zero strain-rate limit of the viscosity and is
 entered with the Low Rate Viscosity card. The second, n, is the exponent on the strain rate
 which can take on any value between 1 (Newtonian) and 0 (infinitely shear thinning). n is
@@ -1880,13 +1865,11 @@ entered with the Time Constant card. The fifth, a, is a dimensionless parameter 
 the transition between the low-rate and the power-law region and is entered with the Aexp card.
 The form of the equation is</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/377_goma_physics.png"><img alt="../_images/377_goma_physics.png" src="../_images/377_goma_physics.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="../_images/377_goma_physics.png"><img alt="../_images/377_goma_physics.png" src="../_images/377_goma_physics.png" style="width: 40%;" /></a>
 </div>
 <p>where is the second invariant of the shear-rate tensor.</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>BINGHAM</strong></p></td>
-<td><p>For a Bingham-Carreau-Yasuda fluid. This option requires eight floating point values. It uses
+</dd>
+<dt>BINGHAM</dt><dd><p>For a Bingham-Carreau-Yasuda fluid. This option requires eight floating point values. It uses
 the same parameters as the CARREAU model with the addition of coefficients to describe the
 yield and temperature dependent behavior. The first, μ0, is the zero strain-rate limit of the
 viscosity and is entered with the Low Rate Viscosity card. The second, n, is the exponent on
@@ -1898,30 +1881,28 @@ and μinf takes place. λ is entered with the Time Constant card. The fifth, a, 
 dimensionless parameter that describes the transition between the low-rate and the power-law
 region and is entered with the Aexp card. The form of the equation is</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/378_goma_physics.png"><img alt="../_images/378_goma_physics.png" src="../_images/378_goma_physics.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="../_images/378_goma_physics.png"><img alt="../_images/378_goma_physics.png" src="../_images/378_goma_physics.png" style="width: 40%;" /></a>
 </div>
 <p>where is a simplified temperature dependent shift factor that is expressed as an Arrhenius type
 temperature dependence of the following form:</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/379_goma_physics.png"><img alt="../_images/379_goma_physics.png" src="../_images/379_goma_physics.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="../_images/379_goma_physics.png"><img alt="../_images/379_goma_physics.png" src="../_images/379_goma_physics.png" style="width: 40%;" /></a>
 </div>
 <p>The exponent for the temperature dependence, Eμ/R, is input using the Thermal Exponent card.
 Tref is input using the Reference Temperature card in the thermal properties section of the
 material file. The stress at which the material yields is input with the Yield Stress card. The
 sharpness of the transition from the solid to fluid state, F, is indicated with the Yield
 Exponent card.</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>CARREAU_WLF</strong></p></td>
-<td><p>An extension of the Carreau-Yasuda model to incorporate a temperature-dependent shift in
+</dd>
+<dt>CARREAU_WLF</dt><dd><p>An extension of the Carreau-Yasuda model to incorporate a temperature-dependent shift in
 shear-rate according to the Williams-Landel-Ferry equation (Hudson and Jones, 1993). The form
 of the equation is</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/380_goma_physics.png"><img alt="../_images/380_goma_physics.png" src="../_images/380_goma_physics.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="../_images/380_goma_physics.png"><img alt="../_images/380_goma_physics.png" src="../_images/380_goma_physics.png" style="width: 40%;" /></a>
 </div>
 <p>where <span class="math notranslate nohighlight">\(a_T\)</span> is another form of the temperature-dependent shift factor:</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/381_goma_physics.png"><img alt="../_images/381_goma_physics.png" src="../_images/381_goma_physics.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="../_images/381_goma_physics.png"><img alt="../_images/381_goma_physics.png" src="../_images/381_goma_physics.png" style="width: 40%;" /></a>
 </div>
 <p>Here is a thermal exponential factor (can be Arrhenius) and is input by the <em>Thermal Exponent</em>
 card; <span class="math notranslate nohighlight">\(c_2\)</span> is the WLF constant 2 and is input by the <em>Thermal WLF Constant2</em> card. μ0,
@@ -1933,10 +1914,8 @@ and 0 (infinitely shear thinning) and is entered with the <em>Power Law Exponent
 transition between μ0 and μinf takes place and is entered with the <em>Time Constant</em> card. a, is
 a dimensionless parameter that describes the transition between the low-rate and the power-law
 region and is entered with the <em>Aexp</em> card.</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>CURE</strong></p></td>
-<td><p>For a model to increase the viscosity with the extent of reaction. The Cure model can be used
+</dd>
+<dt>CURE</dt><dd><p>For a model to increase the viscosity with the extent of reaction. The Cure model can be used
 to represent polymerizing systems whose viscosity depends on the extent of reaction. The form
 of the equation is</p>
 <div class="figure align-center">
@@ -1947,25 +1926,21 @@ viscosity and is entered with the <em>Low Rate Viscosity</em> card. The constant
 entered with the <em>Cure Gel Point</em> card and marks the extent of reaction at the transition from
 the liquid to the solid state. The exponents <em>A</em> and <em>B</em> are entered with the <em>Cure A Exponent</em>
 and <em>Cure B Exponent</em> cards.</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>THERMAL</strong></p></td>
-<td><p>For a temperature-dependent viscosity. This option, which requires two floating point values,
+</dd>
+<dt>THERMAL</dt><dd><p>For a temperature-dependent viscosity. This option, which requires two floating point values,
 can be used to represent fluids that change viscosity with temperature. The form of the
 equation is</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/383_goma_physics.png"><img alt="../_images/383_goma_physics.png" src="../_images/383_goma_physics.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="../_images/383_goma_physics.png"><img alt="../_images/383_goma_physics.png" src="../_images/383_goma_physics.png" style="width: 40%;" /></a>
 </div>
 <p>where the reference state viscosity, μ0, is entered with the <em>Low Rate Viscosity</em> card. The
 exponent, Eμ/R, is specified using the <em>Thermal Exponent</em> card.</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>EPOXY</strong></p></td>
-<td><p>For a thermal and curing component. The Epoxy model combines the temperature dependence of the
+</dd>
+<dt>EPOXY</dt><dd><p>For a thermal and curing component. The Epoxy model combines the temperature dependence of the
 <strong>THERMAL</strong> option with the extent of reaction dependence of the <strong>CURE</strong> option. The
 functional form of the equation is:</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/384_goma_physics.png"><img alt="../_images/384_goma_physics.png" src="../_images/384_goma_physics.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="../_images/384_goma_physics.png"><img alt="../_images/384_goma_physics.png" src="../_images/384_goma_physics.png" style="width: 40%;" /></a>
 </div>
 <p>Five cards must be used to specify all the parameters for this model. The first, μ0, is the
 reference state viscosity and is entered with the <em>Low Rate Viscosity</em> card. The thermal
@@ -1973,14 +1948,12 @@ exponent, Eμ/R, is specified using the <em>Thermal Exponent</em> card. The cons
 entered with the <em>Cure Gel Point</em> card and marks the extent of reaction at the transition from
 the liquid to the solid state. The exponents <em>A</em> and <em>B</em> are entered with the <em>Cure A Exponent</em>
 and <em>Cure B Exponent</em> cards.</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>SUSPENSION</strong></p></td>
-<td><p>For simulating a carrier fluid with high-volume fraction particles. This option invokes a
+</dd>
+<dt>SUSPENSION</dt><dd><p>For simulating a carrier fluid with high-volume fraction particles. This option invokes a
 concentrationdependent viscosity model useful in modeling solid suspensions. The functional
 form associated with this option is,</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/385_goma_physics.png"><img alt="../_images/385_goma_physics.png" src="../_images/385_goma_physics.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="../_images/385_goma_physics.png"><img alt="../_images/385_goma_physics.png" src="../_images/385_goma_physics.png" style="width: 40%;" /></a>
 </div>
 <p>where μ0 is effectively the viscosity of the suspending fluid specified with the
 <em>Low Rate Viscosity</em> card, n is an exponent specified by the <em>Power Law Exponent</em> card and is
@@ -1991,10 +1964,8 @@ correct species number “i” is specified with the Suspension Species Number c
 <span class="math notranslate nohighlight">\(C_i\)</span> &gt; <span class="math notranslate nohighlight">\(C_{max}\)</span> and n &lt; 0, the model as written above is physically undefined.
 For concentrations in this range, a very large value for viscosity will be used, effectively
 solidifying the material.</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>FILLED_EPOXY</strong></p></td>
-<td><p>This option combines the cure and thermal dependence of the <strong>EPOXY</strong> model with the solid
+</dd>
+<dt>FILLED_EPOXY</dt><dd><p>This option combines the cure and thermal dependence of the <strong>EPOXY</strong> model with the solid
 volume fraction dependence of the <strong>SUSPENSION</strong> model. The functional form of this equation is</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/386_goma_physics.png"><img alt="../_images/386_goma_physics.png" src="../_images/386_goma_physics.png" style="width: 90%;" /></a>
@@ -2020,10 +1991,8 @@ solid state. The cure exponent used in the <strong>EPOXY</strong> model is here 
 with the <em>Cure A Exponent</em> card and the temperature is entered with the <em>Unreacted Gel
 Temperature</em> card. Although it does not appear directly in the model equations, the <em>Cure
 Species Number</em> must also be specified.</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>POWERLAW_SUSPENSION</strong></p></td>
-<td><p>This is a specialized research model that incorporates the power law model with the suspension
+</dd>
+<dt>POWERLAW_SUSPENSION</dt><dd><p>This is a specialized research model that incorporates the power law model with the suspension
 model to try and simulate particles suspending in shear-thinning fluid. This option requires
 five input values. The first, μ0, is the zero strain-rate limit of the viscosity of the
 solvent and is entered with the <em>Low Rate Viscosity</em> card. The second, n, is the exponent on
@@ -2036,15 +2005,13 @@ convectivediffusion equation specified in the equation section of the previous c
 correct species number “i” is identified with the <em>Suspension Species Number</em> card. The form of
 the equation is</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/388_goma_physics.png"><img alt="../_images/388_goma_physics.png" src="../_images/388_goma_physics.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="../_images/388_goma_physics.png"><img alt="../_images/388_goma_physics.png" src="../_images/388_goma_physics.png" style="width: 40%;" /></a>
 </div>
 <p>where y is the second invariant of the shear-rate tensor. It is best to start with a Newtonian
 initial guess for the power law suspension model, since the viscosity for the power law model
 will become infinite at zero shear-rate.</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>CARREAU_SUSPENSION</strong></p></td>
-<td><p>This model is a hybrid for the flow of particle-laden suspensions in shear-thinning fluids. It
+</dd>
+<dt>CARREAU_SUSPENSION</dt><dd><p>This model is a hybrid for the flow of particle-laden suspensions in shear-thinning fluids. It
 uses a Carreau-Yasuda strain-rate thinning or thickening relation for the suspending fluid and
 a Krieger model for the suspension. This option requires eight input values. The first, μ0, is
 the zero strain- rate limit of the viscosity and is entered with the Low Rate Viscosity card.
@@ -2064,10 +2031,8 @@ equation specified in the equation section of the previous chapter. The correct 
 <a class="reference internal image-reference" href="../_images/389_goma_physics.png"><img alt="../_images/389_goma_physics.png" src="../_images/389_goma_physics.png" style="width: 90%;" /></a>
 </div>
 <p>where y is the second invariant of the shear-rate tensor.</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>HERSCHEL_BULKLEY</strong></p></td>
-<td><p>This is a variant on the power law model that includes a yield stress. It requires three input
+</dd>
+<dt>HERSCHEL_BULKLEY</dt><dd><p>This is a variant on the power law model that includes a yield stress. It requires three input
 values to operate: a reference viscosity value, μ0, a power-law exponent, n. and a yield shear
 stress value, <span class="math notranslate nohighlight">\(τ_y\)</span>. The model for this constitutive relations is as follows:</p>
 <div class="figure align-center">
@@ -2088,13 +2053,11 @@ This helps in that it allows for convergence at most yield stress values, but al
 the iteration scheme no longer uses an exact Jacobian. The difference is seen in that this
 model will take relatively more iterations to converge to an answer. The user should expect
 this and not be too troubled (it’s alright to be troubled a little).</p>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 </div>
 <div class="section" id="id53">
-<h3><strong>Examples</strong><a class="headerlink" href="#id53" title="Permalink to this headline">¶</a></h3>
+<h3>Examples<a class="headerlink" href="#id53" title="Permalink to this headline">¶</a></h3>
 <p>The following is a sample card setting the liquid constitutive equation type to
 <strong>NEWTONIAN</strong> and demonstrates the required cards:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Liquid</span> <span class="n">Constitutive</span> <span class="n">Equation</span> <span class="o">=</span> <span class="n">NEWTONIAN</span>
@@ -2359,18 +2322,18 @@ and demonstrates the required cards:</p>
 </div>
 </div>
 <div class="section" id="id54">
-<h3><strong>Technical Discussion</strong><a class="headerlink" href="#id54" title="Permalink to this headline">¶</a></h3>
+<h3>Technical Discussion<a class="headerlink" href="#id54" title="Permalink to this headline">¶</a></h3>
 <p>See Description/Usage section for this card.</p>
 </div>
 <div class="section" id="id55">
-<h3><strong>Theory</strong><a class="headerlink" href="#id55" title="Permalink to this headline">¶</a></h3>
+<h3>Theory<a class="headerlink" href="#id55" title="Permalink to this headline">¶</a></h3>
 <p>The <strong>NEWTONIAN, POWER_LAW,</strong> and <strong>CARREAU</strong> models are described in detail
 in Bird, et al. (1987). Details of the continuous yield stress model used in the Bingham-
 Carreau-Yasuda (<strong>BINGHAM</strong>) model, which is a Carreau model combined with a
 continuous yield stress model, can be found in Papanastasiou (1987).</p>
 </div>
 <div class="section" id="id56">
-<h3><strong>References</strong><a class="headerlink" href="#id56" title="Permalink to this headline">¶</a></h3>
+<h3>References<a class="headerlink" href="#id56" title="Permalink to this headline">¶</a></h3>
 <p>Bird, R. B., Armstrong, R. C., and Hassager, O. 1987. Dynamics of Polymeric Liquids,
 2nd ed., Wiley, New York, Vol. 1.</p>
 <p>Hudson, N. E. and Jones, T. E. R., 1993. “The A1 project - an overview”, Journal of
