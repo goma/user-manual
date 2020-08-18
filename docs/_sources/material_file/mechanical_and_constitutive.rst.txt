@@ -89,6 +89,8 @@ momentum conservation equations.
 
 .. include:: mechanical_and_constitutive/polymer_time_constant.rst
 
+.. include:: mechanical_and_constitutive/polymer_yield_stress.rst
+
 .. include:: mechanical_and_constitutive/mobility_parameter.rst
 
 .. include:: mechanical_and_constitutive/ptt_xi_parameter.rst
