@@ -165,42 +165,37 @@
 </pre></div>
 </div>
 <div class="section" id="description-usage">
-<h2><strong>Description / Usage</strong><a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
-<p>This card is used to specify the model for the yield exponent parameter, <em>F</em>, for the
-<strong>BINGHAM</strong> model option of the <em>Liquid Constitutive Equation</em> card. Definitions of the
-input parameters are as follows:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 86%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><strong>CONSTANT</strong></p></td>
-<td><p>Name of the model for the yield stress.</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>&lt;float&gt; - the value of the yield exponent, <em>F</em>, which has the dimensions of inverse shear-rate in
-whatever units are consistent with the problem of interest and which connotes the steepness of the
-transition from solid to fluid behavior for the Bingham-Carreau-Yasudamodel.</p></li>
-</ul>
-</div></blockquote>
-</td>
-</tr>
-</tbody>
-</table>
-<p>If <em>F</em> is large, the material has an abrupt transition from solid-like to fluid-like behavior,
-whereas for a small <em>F</em>, the transition is more gradual.</p>
+<h2>Description / Usage<a class="headerlink" href="#description-usage" title="Permalink to this headline">¶</a></h2>
+<p>This card is used to specify the model for the yield exponent parameter, <em>F</em>,
+for the <strong>BINGHAM</strong> model option of the <em>Liquid Constitutive Equation</em> card, or
+when the <em>Polymer Constitutive Equation</em> card is <strong>SARAMITO_OLDROYDB</strong>,
+<strong>SARAMITO_GIESEKUS</strong>, or <strong>SARAMITO_PTT</strong>. Definitions of the input parameters
+are as follows:</p>
+<dl class="simple">
+<dt>CONSTANT &lt;float&gt;</dt><dd><p>Name of the model for the yield exponent.
+&lt;float&gt; the value of the yield exponent, <em>F</em>, which has the dimensions
+of inverse shear-rate in whatever units are consistent with the
+problem of interest and which connotes the steepness of the
+transition from solid to fluid behavior for the Bingham-Carreau-Yasuda
+model or the Saramito yield stress model.</p>
+</dd>
+</dl>
+<p>For the <strong>BINGHAM</strong> model, if <em>F</em> is large, the material has an abrupt transition from solid-like to
+fluid-like behavior, whereas for a small <em>F</em>, the transition is more gradual.</p>
+<p>For the <strong>SARAMITO_OLDROYDB</strong>, <strong>SARAMITO_GIESEKUS</strong>, and <strong>SARAMITO_PTT</strong> models, the material has
+and abrupt transition when <em>F</em> equals zero. This Transistion becomes smooth for nonzero when <em>F</em>
+is greater than zero, with the transition becoming more gradual as <em>F</em> increases.</p>
 </div>
 <div class="section" id="examples">
-<h2><strong>Examples</strong><a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>The following is a sample card that sets the yield exponent to 10.0</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Yield</span> <span class="n">Exponent</span> <span class="o">=</span> <span class="n">CONSTANT</span> <span class="mf">10.0</span><span class="o">.</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="technical-discussion">
-<h2><strong>Technical Discussion</strong><a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
-<p>See Description/Usage for <em>Liquid Constitutive Equation</em> card.</p>
+<h2>Technical Discussion<a class="headerlink" href="#technical-discussion" title="Permalink to this headline">¶</a></h2>
+<p>See Description/Usage for <em>Liquid Constitutive Equation</em> and <em>Polymer Constitutive Equation</em> cards.</p>
 </div>
 </div>
 

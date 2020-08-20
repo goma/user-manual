@@ -6,47 +6,45 @@ Polymer Constitutive Equation
 
    Polymer Constitutive Equation = {model_name}
 
------------------------
-**Description / Usage**
------------------------
+-------------------
+Description / Usage
+-------------------
 
 This required card is used to specify the polymer constitutive equation. A single input
 parameter must be defined, that being the {model_name}.
 
-+-----------------+------------------------------------------------------------------------------------------------------------+
-|{model_name}     |Name of the constitutive equation model, being one of the following values: **NOPOLYMER, OLDROYDB, GIESEKUS,|
-|                 |PTT, SARAMITO_OLDROYDB, SARAMITO_GIESEKUS, SARAMITO_PTT, WHITE-METZNER**. Several of these polymer          |
-|                 |constitutive models require additional parameters for the polymer properties that are entered via           |
-|                 |additional cards, as described below. Please see the Example sectionand the tutorial referenced below.      |
-+-----------------+------------------------------------------------------------------------------------------------------------+
+{model_name}
+    Name of the constitutive equation model, being one of the following values: **NOPOLYMER, OLDROYDB, GIESEKUS,
+    PTT, SARAMITO_OLDROYDB, SARAMITO_GIESEKUS, SARAMITO_PTT, WHITE-METZNER**. Several of these polymer          
+    constitutive models require additional parameters for the polymer properties that are entered via           
+    additional cards, as described below. Please see the Example sectionand the tutorial referenced below.      
 
 Thus,
 
-+---------------------+------------------------------------------------------------------------------------------------------------+
-|**NOPOLYMER**        |For Newtonian and generalized Newtonian models. No floating point values are required.                      |
-+---------------------+------------------------------------------------------------------------------------------------------------+
-|**OLDROYDB**         |For the Oldroyd-B constitutive model. This option requires four floating point values, which are described  |
-|                     |below.                                                                                                      |
-+---------------------+------------------------------------------------------------------------------------------------------------+
-|**GIESEKUS**         |For the Giesekus model. This option requires five floating point values, which are described below.         |
-+---------------------+------------------------------------------------------------------------------------------------------------+
-|**PTT**              |For the Phan-Thien Tanner model. This option requires six floating point values, which are described below. |
-+---------------------+------------------------------------------------------------------------------------------------------------+
-|**SARAMITO_OLDROYDB**|For the Oldroyd-B model used with the Saramito yield model. This option requires six floating point values, |
-|                     |which are described below.                                                                                  |
-+---------------------+------------------------------------------------------------------------------------------------------------+
-|**SARAMITO_GIESEKUS**|For the Giesekus model used with the Saramito yield model. This option requires seven floating point values,| 
-|                     |which are described below.                                                                                  |
-+---------------------+------------------------------------------------------------------------------------------------------------+
-|**SARAMITO_PTT**     |For the Giesekus model used with the Saramito yield model. This option requires eight floating point values,|
-|                     |which are described below.                                                                                  |
-+---------------------+------------------------------------------------------------------------------------------------------------+
-|**WHITE_METZNER**    |For the White-Metzner model. This option is not currently working.                                          |
-+---------------------+------------------------------------------------------------------------------------------------------------+
+NOPOLYMER        
+    For Newtonian and generalized Newtonian models. No floating point values are required.                      
+OLDROYDB         
+    For the Oldroyd-B constitutive model. This option requires four floating point values, which are described  
+    below.                                                                                                      
+GIESEKUS
+    For the Giesekus model. This option requires five floating point values, which are described below.         
+PTT
+    For the Phan-Thien Tanner model. This option requires six floating point values, which are described below. 
+SARAMITO_OLDROYDB
+    For the Oldroyd-B model used with the Saramito yield model. This option requires six floating point values, 
+    which are described below.                                                                                  
+SARAMITO_GIESEKUS
+    For the Giesekus model used with the Saramito yield model. This option requires seven floating point values,
+    which are described below.                                                                                  
+SARAMITO_PTT
+    For the Giesekus model used with the Saramito yield model. This option requires eight floating point values,
+    which are described below.                                                                                  
+WHITE_METZNER    
+    For the White-Metzner model. This option is not currently working.                                          
 
-------------
-**Examples**
-------------
+--------
+Examples
+--------
 
 The following is a sample card that sets the polymer constitutive equation to
 **NOPOLYMER**. This option does not require any additional cards since it indicates
@@ -148,7 +146,7 @@ and yield exponent.
 
 ::
 
-   Polymer Constitutive Equation = OLDROYDB
+   Polymer Constitutive Equation = SARAMITO_OLDROYDB
 
 ::
 
@@ -181,7 +179,7 @@ stress, and yield exponent.
 
 ::
 
-   Polymer Constitutive Equation = GIESEKUS
+   Polymer Constitutive Equation = SARAMITO_GIESEKUS
 
 ::
 
@@ -218,7 +216,7 @@ constant, nonlinear PTT parameters, yield stress, and yield exponent.
 
 ::
 
-   Polymer Consitutive Equation = PTT
+   Polymer Consitutive Equation = SARAMITO_PTT
 
 ::
 
@@ -261,18 +259,18 @@ parser.
 
    Polymer Consitutive Equation = WHITE_METZNER
 
--------------------------
-**Technical Discussion**
--------------------------
+--------------------
+Technical Discussion
+--------------------
 
 The viscoelastic tutorial is helpful for usage issues such as extensions from single mode
 to multimodes.
 
 
 
---------------
-**References**
---------------
+----------
+References
+----------
 
 GT-014.1: Tutorial for Running Viscoelastic Flow Problems with GOMA, June 21,
 2000, R. R. Rao
